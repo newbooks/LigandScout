@@ -18,14 +18,11 @@ def test_help_aliases():
     assert short.exit_code == long.exit_code == 0
     assert short.stdout == long.stdout
     assert "ACCESSION_ID" in long.stdout
-    assert "--simple" in long.stdout
-    assert "--explore" in long.stdout
+    assert "--simple" not in long.stdout
+    assert "--explore" not in long.stdout
 
 
-@pytest.mark.parametrize("flags", [[], ["--simple"]])
-def test_simple_mode_queries_and_saves(
-    flags, monkeypatch, tmp_path, payload, empty_uniprot
-):
+def test_search_queries_and_saves(monkeypatch, tmp_path, payload, empty_uniprot):
     from ligandscout import cli
 
     monkeypatch.chdir(tmp_path)
@@ -43,7 +40,7 @@ def test_simple_mode_queries_and_saves(
         "Client",
         lambda **kwargs: real_client(transport=httpx.MockTransport(handler)),
     )
-    result = runner.invoke(app, [" p00699 ", *flags])
+    result = runner.invoke(app, [" p00699 "])
     assert result.exit_code == 0, result.output
     folder = tmp_path / "results/P00699"
     assert "Full measurements: ligands.tsv" in result.stdout
@@ -54,15 +51,26 @@ def test_simple_mode_queries_and_saves(
     assert "[INFO]" not in result.stdout
 
 
-def test_explore_placeholder():
-    result = runner.invoke(app, ["P00699", "--explore"])
+@pytest.mark.parametrize("flag", ["--simple", "--explore"])
+@pytest.mark.parametrize("accession", [[], ["P00699"]])
+def test_removed_flags_are_rejected_without_side_effects(
+    flag, accession, monkeypatch, tmp_path
+):
+    from ligandscout import cli
+
+    monkeypatch.chdir(tmp_path)
+
+    def forbidden(**kwargs):
+        pytest.fail("Removed flags must not create a network client")
+
+    monkeypatch.setattr(cli.httpx, "Client", forbidden)
+    result = runner.invoke(app, [*accession, flag])
     assert result.exit_code == 2
-    assert "Exploration mode is not implemented yet" in result.output
+    assert "No such option" in result.output
+    assert not list(tmp_path.iterdir())
 
 
-@pytest.mark.parametrize(
-    "args", [[], ["--simple"], ["--explore"], ["--log-level", "DEBUG"]]
-)
+@pytest.mark.parametrize("args", [[], ["--log-level", "DEBUG"]])
 def test_missing_accession_displays_help(args):
     result = runner.invoke(app, args)
     assert result.exit_code == 0
@@ -70,9 +78,7 @@ def test_missing_accession_displays_help(args):
     assert result.stderr == ""
 
 
-@pytest.mark.parametrize(
-    "args", [["P00699", "--simple", "--explore"], ["P00699", "-l", "INVALID"]]
-)
+@pytest.mark.parametrize("args", [["P00699", "--unknown"], ["P00699", "-l", "INVALID"]])
 def test_invalid_arguments(args):
     assert runner.invoke(app, args).exit_code == 2
 
@@ -167,7 +173,7 @@ def test_cli_output_failure(monkeypatch, tmp_path, positive):
     from ligandscout import cli
 
     monkeypatch.chdir(tmp_path)
-    monkeypatch.setattr(cli, "run_simple", lambda *args, **kwargs: positive)
+    monkeypatch.setattr(cli, "run_search", lambda *args, **kwargs: positive)
     monkeypatch.setattr(
         cli,
         "save_results",
@@ -184,7 +190,7 @@ def test_cli_interrupt(monkeypatch, tmp_path):
     monkeypatch.chdir(tmp_path)
     monkeypatch.setattr(
         cli,
-        "run_simple",
+        "run_search",
         lambda *args, **kwargs: (_ for _ in ()).throw(KeyboardInterrupt()),
     )
     result = runner.invoke(app, ["P00699"])
