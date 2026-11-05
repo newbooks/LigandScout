@@ -8,14 +8,14 @@ from dataclasses import asdict, replace
 import httpx
 import pytest
 
-from ligandscout.models import SearchOutcome, SourceError
+from ligandscout.models import SearchOutcome, SourceError, upgrade_bindingdb
 from ligandscout.report import COLUMNS, render_report, render_tsv
 from ligandscout.storage import save_results
 
 
 def test_report_and_schema(positive, tmp_path):
     folder = save_results(positive, root=tmp_path)
-    result = positive.result
+    result = upgrade_bindingdb(positive.result)
     data = json.loads((folder / "sources/bindingdb.json").read_text())
     assert data == asdict(result)
     assert set(data) == {
@@ -28,6 +28,10 @@ def test_report_and_schema(positive, tmp_path):
         "status",
         "records",
         "error",
+        "policy",
+        "warnings",
+        "counts",
+        "selection_audit",
     }
     assert (folder / "sources/bindingdb.raw.json").read_bytes() == positive.raw_body
     assert (folder / "report.md").read_text() == render_report(result)
@@ -161,8 +165,11 @@ def test_summary_is_bounded_without_dropping_saved_records(positive, tmp_path):
         for index in range(1000)
     ]
     summary = render_summary(positive.result, folder=tmp_path)
-    assert len(summary.splitlines()) <= 22
-    assert f"Unique ligands listed in BindingDB for {positive.result.accession}: 1000" in summary
+    assert len(summary.splitlines()) <= 23
+    assert (
+        f"Unique ligands listed in BindingDB for {positive.result.accession}: 1000"
+        in summary
+    )
     assert "Measurements: 1000" in summary
     assert summary.count("995 additional labels") == 2
     assert "not confirmed binding partners" in summary
@@ -185,13 +192,20 @@ def test_summary_counts_labels_and_sanitizes_them(positive, tmp_path):
 
     row = positive.result.records[0]
     positive.result.records = [replace(row, target_description="Major")] * 3 + [
-        replace(row, target_description="Other\n\x1btarget", measurement_type="Other\n\x1btype")
+        replace(
+            row,
+            target_description="Other\n\x1btarget",
+            measurement_type="Other\n\x1btype",
+        )
     ]
     summary = render_summary(positive.result, folder=tmp_path)
     assert "Reported targets (measurement counts):" in summary
     assert "Major: 3" in summary and "Other  target: 1" in summary
     assert summary.index("Major: 3") < summary.index("Other  target: 1")
-    assert f"Unique ligands listed in BindingDB for {positive.result.accession}: 1" in summary
+    assert (
+        f"Unique ligands listed in BindingDB for {positive.result.accession}: 1"
+        in summary
+    )
     assert "Measurements: 4" in summary
     assert "Ki: 3" in summary and "Other  type: 1" in summary
     assert "\x1b" not in summary
@@ -202,16 +216,16 @@ def test_html_unique_ligands_and_summary_link(positive, tmp_path):
     from ligandscout.report import render_html
 
     row = positive.result.records[0]
-    positive.result.records = [row, replace(row, target_description='Other target')]
+    positive.result.records = [row, replace(row, target_description="Other target")]
     folder = save_results(positive, root=tmp_path)
-    page = (folder / 'bindingdb-ligands.html').read_text()
+    page = (folder / "bindingdb-ligands.html").read_text()
     assert page == render_html(positive.result)
-    assert 'Unique ligands: 1 | Measurements: 2' in page
-    assert page.count('<tr><td><a ') == 1
-    assert '2 measurements' in page and 'Other target' in page
-    report = (folder / 'report.md').read_text()
-    assert '| Database | Ligands Count | Ligands Report |' in report
-    assert '| BindingDB | 1 | [View ligands](bindingdb-ligands.html) |' in report
+    assert "Unique ligands: 1 | Measurements: 2" in page
+    assert page.count("<tr><td><a ") == 1
+    assert "2 measurements" in page and "Other target" in page
+    report = (folder / "report.md").read_text()
+    assert "| Database | Ligands Count | Ligands Report |" in report
+    assert "| BindingDB | 1 | [View ligands](bindingdb-ligands.html) |" in report
 
 
 def test_html_escapes_remote_text_and_builds_safe_links(positive):
@@ -219,27 +233,109 @@ def test_html_escapes_remote_text_and_builds_safe_links(positive):
 
     row = positive.result.records[0]
     row.compound_name = '<script>alert("x")</script>'
-    row.target_description = '<img src=x onerror=alert(1)>'
-    row.measurement_value = '<bad>'
-    row.source_url = 'javascript:alert(1)'
+    row.target_description = "<img src=x onerror=alert(1)>"
+    row.measurement_value = "<bad>"
+    row.source_url = "javascript:alert(1)"
     page = render_html(positive.result)
-    assert '<script>' not in page and '<img' not in page
-    assert '&lt;script&gt;' in page and '&lt;bad&gt;' in page
-    assert 'javascript:' not in page
-    assert 'https://www.bindingdb.org/' in page
+    assert "<script>" not in page and "<img" not in page
+    assert "&lt;script&gt;" in page and "&lt;bad&gt;" in page
+    assert "javascript:" not in page
+    assert "https://www.bindingdb.org/" in page
 
 
-@pytest.mark.parametrize('status', ['failed', 'no_matches'])
+@pytest.mark.parametrize("status", ["failed", "no_matches"])
 def test_html_empty_results_replace_previous_report(positive, tmp_path, status):
     folder = save_results(positive, root=tmp_path)
-    result = replace(positive.result, records=[], status=status,
-                     error=SourceError('transport', 'Service unavailable', None)
-                     if status == 'failed' else None)
+    result = replace(
+        positive.result,
+        records=[],
+        status=status,
+        error=SourceError("transport", "Service unavailable", None)
+        if status == "failed"
+        else None,
+    )
     save_results(SearchOutcome(result, None), root=tmp_path)
-    page = (folder / 'bindingdb-ligands.html').read_text()
-    assert 'Unique ligands: 0 | Measurements: 0' in page
-    assert '<tr><td><a ' not in page
-    assert ('Search failed:' in page) == (status == 'failed')
-    assert ('No records found.' in page) == (status == 'no_matches')
-    if status == 'failed':
-        assert '| BindingDB | Unavailable |' in (folder / 'report.md').read_text()
+    page = (folder / "bindingdb-ligands.html").read_text()
+    count = "Unavailable" if status == "failed" else "0"
+    assert f"Unique ligands: {count} | Measurements: {count}" in page
+    assert "<tr><td><a " not in page
+    assert ("Search failed:" in page) == (status == "failed")
+    assert ("No records found." in page) == (status == "no_matches")
+    if status == "failed":
+        assert "| BindingDB | Unavailable |" in (folder / "report.md").read_text()
+
+
+@pytest.mark.parametrize("status", ["success", "no_matches", "failed"])
+def test_summary_separates_source_sections(positive, tmp_path, status):
+    from ligandscout.models import RunOutcome
+    from ligandscout.report import render_summary
+
+    bindingdb = replace(
+        positive.result,
+        status=status,
+        records=positive.result.records if status == "success" else [],
+        error=SourceError("http", "Unavailable", 503) if status == "failed" else None,
+    )
+    chembl = replace(bindingdb, source="ChEMBL")
+    run = RunOutcome(
+        bindingdb.accession,
+        [
+            SearchOutcome(bindingdb, None),
+            SearchOutcome(chembl, None),
+        ],
+    )
+    summary = render_summary(run, folder=tmp_path)
+    assert "\n\nSource: ChEMBL | Status:" in summary
+    assert "\n\n\nSource:" not in summary
+    assert f"\n\nResults: {tmp_path}\n" in summary
+    assert "\n\n\nResults:" not in summary
+    single = render_summary(bindingdb, folder=tmp_path)
+    assert f"\n\nResults: {tmp_path}\n" in single
+    assert summary.startswith(f"LigandScout: {bindingdb.accession}\nSource: BindingDB")
+
+
+@pytest.mark.parametrize("source", ["BindingDB", "ChEMBL"])
+def test_html_smiles_visible_unique_and_escaped(positive, source):
+    import re
+    from html import unescape
+
+    from ligandscout.report import render_html
+
+    row = positive.result.records[0]
+    first = 'C/C=C\\C.[Na+]&<tag>"'
+    second = "C" * 500
+    result = replace(
+        positive.result,
+        source=source,
+        records=[
+            replace(row, smiles=first),
+            replace(row, smiles=first),
+            replace(row, smiles=second),
+            replace(row, smiles=None),
+        ],
+    )
+    page = render_html(result)
+    assert "<th>SMILES</th>" in page
+    blocks = re.findall(r'<code class="smiles">(.*?)</code>', page, re.DOTALL)
+    assert [unescape(value) for value in blocks] == sorted([first, second])
+    assert "<tag>" not in page
+    assert page.index('<code class="smiles">') < page.index("<details>")
+    assert "user-select:all" in page
+    assert "overflow-wrap:anywhere" in page
+
+
+def test_html_missing_smiles_is_explicit(positive):
+    from ligandscout.report import render_html
+
+    row = positive.result.records[0]
+    result = replace(
+        positive.result,
+        records=[
+            replace(row, smiles=None),
+            replace(row, smiles="   "),
+        ],
+    )
+    page = render_html(result)
+    assert "<th>SMILES</th>" in page
+    assert '<code class="smiles">' not in page
+    assert "<td>Not supplied</td>" in page

@@ -30,6 +30,24 @@ def test_simple_mode_queries_and_saves(flags, monkeypatch, tmp_path, payload):
     real_client = httpx.Client
 
     def handler(request):
+        if request.url.host == "www.ebi.ac.uk":
+            if request.url.path.endswith("status.json"):
+                return httpx.Response(
+                    200, json={"chembl_db_version": "test", "status": "UP"}
+                )
+            assert request.url.params["target_components__accession"] == "P00699"
+            return httpx.Response(
+                200,
+                json={
+                    "targets": [],
+                    "page_meta": {
+                        "offset": 0,
+                        "limit": 100,
+                        "total_count": 0,
+                        "next": None,
+                    },
+                },
+            )
         assert request.url.params["uniprot"] == "P00699"
         return httpx.Response(200, json=payload)
 
@@ -130,14 +148,31 @@ def test_cli_empty_and_failed_results(status, body, expected, monkeypatch, tmp_p
 
     monkeypatch.chdir(tmp_path)
     real_client = httpx.Client
+
+    def handler(request):
+        if request.url.host == "www.ebi.ac.uk":
+            if request.url.path.endswith("status.json"):
+                return httpx.Response(
+                    200, json={"chembl_db_version": "test", "status": "UP"}
+                )
+            return httpx.Response(
+                200,
+                json={
+                    "targets": [],
+                    "page_meta": {
+                        "offset": 0,
+                        "limit": 100,
+                        "total_count": 0,
+                        "next": None,
+                    },
+                },
+            )
+        return httpx.Response(status, content=body)
+
     monkeypatch.setattr(
         cli.httpx,
         "Client",
-        lambda **kwargs: real_client(
-            transport=httpx.MockTransport(
-                lambda r: httpx.Response(status, content=body)
-            )
-        ),
+        lambda **kwargs: real_client(transport=httpx.MockTransport(handler)),
     )
     result = runner.invoke(app, ["P00699"])
     assert result.exit_code == expected, result.output

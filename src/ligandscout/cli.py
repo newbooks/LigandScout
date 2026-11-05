@@ -64,6 +64,7 @@ def search(
                 client=client,
                 sleep=time.sleep,
                 now=lambda: datetime.now(timezone.utc),
+                monotonic=time.monotonic,
             )
         folder = save_results(outcome, root=Path.cwd() / "results")
     except KeyboardInterrupt:
@@ -78,9 +79,11 @@ def search(
             err=True,
         )
         raise typer.Exit(1) from None
-    typer.echo(render_summary(outcome.result, folder=folder), nl=False)
-    if outcome.result.error:
-        LOG.error("%s", outcome.result.error.message)
+    typer.echo(render_summary(outcome, folder=folder), nl=False)
+    errors = [source.result.error for source in outcome.sources if source.result.error]
+    for error in errors:
+        LOG.error("%s", error.message)
+    if errors:
         raise typer.Exit(1)
 
 

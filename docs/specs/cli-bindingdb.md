@@ -1,8 +1,20 @@
 # CLI and BindingDB implementation specification
 
-Status: implemented. This specification defines the first implementation: one UniProt accession, simple mode, and BindingDB API access. Decisions below are the contract for this increment; broader README features remain planned.
+Status: implemented. This document preserves the original BindingDB adapter and
+first CLI increment. The current CLI queries both BindingDB and ChEMBL; the
+[ChEMBL integration specification](chembl-integration.md) supersedes the
+single-source orchestration, saved schema version, report interfaces, storage
+publication order, default source list and aggregate exit handling below.
+BindingDB's online request, parser, retry, measurement inclusion and raw-response
+policies remain unchanged. Its adapter may produce an internal version-1 result;
+orchestration/storage add version-2 metadata before saving. No homolog or
+name-based filtering has been added to BindingDB.
 
-`pip install -e .` installs the Typer command and `python -m ligandscout` entry point. Simple mode queries BindingDB; exploration remains an explicit placeholder that exits with code 2.
+`pip install -e .` installs the Typer command and `python -m ligandscout` entry
+point. Simple mode queries BindingDB and ChEMBL; exploration remains an explicit
+placeholder that exits with code 2. The single-source signatures and schemas
+below document the first increment; use the linked specification for current
+multi-source interfaces and file formats.
 
 ## BindingDB implementation workflow
 
@@ -13,6 +25,8 @@ Status: implemented. This specification defines the first implementation: one Un
 5. Build a source result with status `success`, `no_matches`, or `failed`. Retain all measurements; group by compound ID only when calculating the unique-ligand count.
 6. Save the source result and available raw response in `results/ACCESSION_ID/sources/`, overwriting the previous BindingDB output.
 7. Generate `ligands.tsv` and `report.md` from this invocation's normalized results, then print a compact terminal summary and return the appropriate exit code. A failure report must label the source as failed rather than claiming that no ligands were found.
+
+The next increment is documented in [ChEMBL integration](chembl-integration.md) (ready for implementation; not yet implemented). It defines multi-source orchestration and ChEMBL-specific target filtering without changing BindingDB selection.
 
 The first implementation integrates BindingDB only. Other APIs will later supply results in the same source-result schema; the combined table must not require a BindingDB-specific parser.
 
@@ -31,7 +45,7 @@ ligandscout P00176 --simple --log-level DEBUG
 | Argument or option | Behavior |
 | --- | --- |
 | `ACCESSION_ID` | Positional UniProt accession required to search. Accept one accession per invocation; if omitted, display help and exit successfully. |
-| `--simple` | Search only BindingDB records associated with the supplied accession. This is the default when neither mode flag is supplied. |
+| `--simple` | Search BindingDB and ChEMBL records associated with the supplied accession. This is the default when neither mode flag is supplied. |
 | `--explore` | Reserved placeholder. Exit with an explicit “Exploration mode is not implemented yet” message before making network requests. |
 | `--log-level`, `-l` | Default `INFO`; accept `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`, case-insensitively. Reject other values. |
 | `--help`, `-h` | Show matching help text and exit successfully without network access. |
@@ -302,7 +316,9 @@ a successful zero-match search.
 
 The standalone HTML requires no network assets or JavaScript. Group records by
 compound ID, sort IDs lexicographically, and render one row per ligand with supplied
-names (or `Not supplied`), distinct reported target descriptions, a compound link,
+names (or `Not supplied`), a visible SMILES column with each distinct nonblank
+supplied string in a separate selectable, wrapping monospace block (or `Not supplied`),
+distinct reported target descriptions, a compound link,
 and expandable measurement details containing every assay value, target, and
 available PMID/DOI. Escape all remote text and build BindingDB compound URLs from
 encoded IDs. Include accession, source, retrieval time, status, unique and measurement

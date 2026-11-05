@@ -1,0 +1,204 @@
+{
+  "targets": [
+    {
+      "target_chembl_id": "CHEMBL203",
+      "pref_name": "EGFR",
+      "target_type": "SINGLE PROTEIN",
+      "organism": "Homo sapiens",
+      "tax_id": 9606,
+      "target_components": [
+        {
+          "accession": "P00533",
+          "component_type": "PROTEIN"
+        }
+      ]
+    },
+    {
+      "target_chembl_id": "CHEMBL2111431",
+      "pref_name": "EGFR complex",
+      "target_type": "PROTEIN COMPLEX",
+      "target_components": [
+        {
+          "accession": "P00533",
+          "component_type": "PROTEIN"
+        },
+        {
+          "accession": "P04626",
+          "component_type": "PROTEIN"
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "activity_id": 1,
+      "molecule_chembl_id": "CHEMBL1",
+      "assay_chembl_id": "CHEMBL501",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "B",
+      "standard_type": "IC50",
+      "standard_value": "0",
+      "standard_relation": ">",
+      "standard_units": "nM",
+      "type": "IC50",
+      "value": "0.0125",
+      "units": "uM",
+      "relation": "=",
+      "potential_duplicate": 0
+    },
+    {
+      "activity_id": 2,
+      "molecule_chembl_id": "CHEMBL1",
+      "assay_chembl_id": "CHEMBL502",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "F",
+      "standard_type": "IC50",
+      "standard_value": "12.5",
+      "standard_relation": "=",
+      "standard_units": "nM",
+      "type": "IC50",
+      "value": "0.0125",
+      "units": "uM",
+      "relation": "=",
+      "potential_duplicate": 0
+    },
+    {
+      "activity_id": 3,
+      "molecule_chembl_id": "CHEMBL2",
+      "assay_chembl_id": "CHEMBL503",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "B",
+      "standard_type": "IC50",
+      "standard_value": "12.5",
+      "standard_relation": "=",
+      "standard_units": "nM",
+      "type": "IC50",
+      "value": "0.0125",
+      "units": "uM",
+      "relation": "=",
+      "potential_duplicate": 0
+    },
+    {
+      "activity_id": 4,
+      "molecule_chembl_id": "CHEMBL3",
+      "assay_chembl_id": "CHEMBL504",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "B",
+      "standard_type": "IC50",
+      "standard_value": "12.5",
+      "standard_relation": "=",
+      "standard_units": "nM",
+      "type": "IC50",
+      "value": "0.0125",
+      "units": "uM",
+      "relation": "=",
+      "potential_duplicate": 0
+    },
+    {
+      "activity_id": 5,
+      "molecule_chembl_id": "CHEMBL4",
+      "assay_chembl_id": "CHEMBL505",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "B",
+      "standard_type": "IC50",
+      "standard_value": null,
+      "standard_relation": "=",
+      "standard_units": "nM",
+      "type": "IC50",
+      "value": null,
+      "units": "uM",
+      "relation": "=",
+      "potential_duplicate": 0,
+      "activity_comment": "Inactive"
+    }
+  ],
+  "assays": [
+    {
+      "assay_chembl_id": "CHEMBL501",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "B",
+      "description": "Test assay",
+      "relationship_type": "D",
+      "confidence_score": 9,
+      "variant_sequence": null
+    },
+    {
+      "assay_chembl_id": "CHEMBL502",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "F",
+      "description": "Test assay",
+      "relationship_type": "D",
+      "confidence_score": 9,
+      "variant_sequence": {
+        "accession": "P00533",
+        "mutation": "L858R",
+        "isoform": 1
+      }
+    },
+    {
+      "assay_chembl_id": "CHEMBL503",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "B",
+      "description": "Test assay",
+      "relationship_type": "H",
+      "confidence_score": 8,
+      "variant_sequence": null
+    },
+    {
+      "assay_chembl_id": "CHEMBL504",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "B",
+      "description": "Test assay",
+      "relationship_type": null,
+      "confidence_score": 9,
+      "variant_sequence": null
+    },
+    {
+      "assay_chembl_id": "CHEMBL505",
+      "target_chembl_id": "CHEMBL203",
+      "document_chembl_id": "CHEMBL600",
+      "assay_type": "B",
+      "description": "Test assay",
+      "relationship_type": "D",
+      "confidence_score": 9,
+      "variant_sequence": null
+    }
+  ],
+  "molecules": [
+    {
+      "molecule_chembl_id": "CHEMBL1",
+      "pref_name": null,
+      "molecule_structures": null,
+      "molecule_hierarchy": {
+        "parent_chembl_id": "CHEMBL99"
+      }
+    },
+    {
+      "molecule_chembl_id": "CHEMBL4",
+      "pref_name": "<Example ligand>",
+      "molecule_structures": {
+        "canonical_smiles": "CCO",
+        "standard_inchi_key": "TEST"
+      },
+      "molecule_hierarchy": {
+        "parent_chembl_id": "CHEMBL99"
+      }
+    }
+  ],
+  "documents": [
+    {
+      "document_chembl_id": "CHEMBL600",
+      "pubmed_id": 12345,
+      "doi": "10.1000/example"
+    }
+  ]
+}
