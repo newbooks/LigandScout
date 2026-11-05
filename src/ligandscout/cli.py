@@ -64,7 +64,6 @@ def search(
                 client=client,
                 sleep=time.sleep,
                 now=lambda: datetime.now(timezone.utc),
-                monotonic=time.monotonic,
             )
         folder = save_results(outcome, root=Path.cwd() / "results")
     except KeyboardInterrupt:

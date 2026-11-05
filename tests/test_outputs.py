@@ -8,14 +8,14 @@ from dataclasses import asdict, replace
 import httpx
 import pytest
 
-from ligandscout.models import SearchOutcome, SourceError, upgrade_bindingdb
+from ligandscout.models import SearchOutcome, SourceError, upgrade_result
 from ligandscout.report import COLUMNS, render_report, render_tsv
 from ligandscout.storage import save_results
 
 
 def test_report_and_schema(positive, tmp_path):
     folder = save_results(positive, root=tmp_path)
-    result = upgrade_bindingdb(positive.result)
+    result = upgrade_result(positive.result)
     data = json.loads((folder / "sources/bindingdb.json").read_text())
     assert data == asdict(result)
     assert set(data) == {
@@ -210,6 +210,10 @@ def test_summary_counts_labels_and_sanitizes_them(positive, tmp_path):
     assert "Ki: 3" in summary and "Other  type: 1" in summary
     assert "\x1b" not in summary
     assert summary.index("Ki: 3") < summary.index("Other  type: 1")
+    assert summary.endswith(
+        "Full measurements: ligands.tsv | Details: index.html | Markdown: report.md\n"
+    )
+    assert "bindingdb-ligands.html" not in summary
 
 
 def test_html_unique_ligands_and_summary_link(positive, tmp_path):
@@ -265,37 +269,7 @@ def test_html_empty_results_replace_previous_report(positive, tmp_path, status):
         assert "| BindingDB | Unavailable |" in (folder / "report.md").read_text()
 
 
-@pytest.mark.parametrize("status", ["success", "no_matches", "failed"])
-def test_summary_separates_source_sections(positive, tmp_path, status):
-    from ligandscout.models import RunOutcome
-    from ligandscout.report import render_summary
-
-    bindingdb = replace(
-        positive.result,
-        status=status,
-        records=positive.result.records if status == "success" else [],
-        error=SourceError("http", "Unavailable", 503) if status == "failed" else None,
-    )
-    chembl = replace(bindingdb, source="ChEMBL")
-    run = RunOutcome(
-        bindingdb.accession,
-        [
-            SearchOutcome(bindingdb, None),
-            SearchOutcome(chembl, None),
-        ],
-    )
-    summary = render_summary(run, folder=tmp_path)
-    assert "\n\nSource: ChEMBL | Status:" in summary
-    assert "\n\n\nSource:" not in summary
-    assert f"\n\nResults: {tmp_path}\n" in summary
-    assert "\n\n\nResults:" not in summary
-    single = render_summary(bindingdb, folder=tmp_path)
-    assert f"\n\nResults: {tmp_path}\n" in single
-    assert summary.startswith(f"LigandScout: {bindingdb.accession}\nSource: BindingDB")
-
-
-@pytest.mark.parametrize("source", ["BindingDB", "ChEMBL"])
-def test_html_smiles_visible_unique_and_escaped(positive, source):
+def test_html_smiles_visible_unique_and_escaped(positive):
     import re
     from html import unescape
 
@@ -306,7 +280,7 @@ def test_html_smiles_visible_unique_and_escaped(positive, source):
     second = "C" * 500
     result = replace(
         positive.result,
-        source=source,
+        source="BindingDB",
         records=[
             replace(row, smiles=first),
             replace(row, smiles=first),
@@ -339,3 +313,116 @@ def test_html_missing_smiles_is_explicit(positive):
     assert "<th>SMILES</th>" in page
     assert '<code class="smiles">' not in page
     assert "<td>Not supplied</td>" in page
+
+
+def test_old_source_artifacts_are_not_loaded_or_linked(positive, tmp_path):
+    folder = tmp_path / positive.result.accession
+    sources = folder / "sources"
+    sources.mkdir(parents=True)
+    old_files = {
+        sources / "chembl.json": b'{"records": "old"}',
+        sources / "pubchem.json": b'{"records": "old"}',
+        folder / "chembl-ligands.html": b"old page",
+        folder / "pubchem-ligands.html": b"old page",
+    }
+    for path, body in old_files.items():
+        path.write_bytes(body)
+    save_results(positive, root=tmp_path)
+    for path, body in old_files.items():
+        assert path.read_bytes() == body
+    for name in ("report.md", "bindingdb-ligands.html", "ligands.tsv"):
+        text = (folder / name).read_text()
+        assert "chembl" not in text.lower() and "pubchem" not in text.lower()
+    rows = list(
+        csv.DictReader(
+            io.StringIO((folder / "ligands.tsv").read_text()), delimiter="\t"
+        )
+    )
+    assert {row["source"] for row in rows} == {"BindingDB"}
+
+
+@pytest.mark.parametrize("version", [1, 2, 3])
+def test_bindingdb_saved_schema_compatibility(positive, version):
+    from ligandscout.models import source_result_from_dict
+
+    current = upgrade_result(positive.result)
+    data = asdict(positive.result if version == 1 else current)
+    data["schema_version"] = version
+    if version == 2:
+        for key in ("candidate_assays", "eligible_assays"):
+            data["counts"].pop(key)
+        data["selection_audit"].pop("assays")
+    assert source_result_from_dict(data) == current
+
+
+def test_removed_source_results_are_rejected(positive):
+    from ligandscout.models import source_result_from_dict
+
+    data = asdict(upgrade_result(positive.result))
+    data["source"] = "RemovedSource"
+    with pytest.raises(ValueError, match="Unknown source"):
+        source_result_from_dict(data)
+
+
+@pytest.mark.parametrize("status", ["success", "no_matches", "failed"])
+def test_index_summary_links_and_rerun_overwrite(positive, tmp_path, status):
+    from html.parser import HTMLParser
+
+    from ligandscout.report import render_index
+
+    class Links(HTMLParser):
+        def __init__(self):
+            super().__init__()
+            self.hrefs = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag == "a":
+                self.hrefs.append(dict(attrs)["href"])
+
+    folder = save_results(positive, root=tmp_path)
+    result = replace(
+        positive.result,
+        status=status,
+        records=positive.result.records if status == "success" else [],
+        error=SourceError("http", "Service unavailable", 503)
+        if status == "failed"
+        else None,
+    )
+    save_results(SearchOutcome(result, positive.raw_body), root=tmp_path)
+    page = (folder / "index.html").read_text()
+    assert page == render_index(result)
+    assert f"<td>{status}</td>" in page
+    count = "Unavailable" if status == "failed" else "1" if status == "success" else "0"
+    assert f"<td>{count}</td><td>{count}</td>" in page
+    assert result.retrieved_at in page
+    assert "not confirmed binding partners" in page
+    assert ("search failed:" in page) == (status == "failed")
+    assert ("No BindingDB records found" in page) == (status == "no_matches")
+    links = Links()
+    links.feed(page)
+    assert set(links.hrefs) == {
+        "bindingdb-ligands.html",
+        "sources/bindingdb.json",
+        "ligands.tsv",
+        "report.md",
+    }
+    assert all((folder / href).is_file() for href in links.hrefs)
+    assert 'href="index.html"' in (folder / "bindingdb-ligands.html").read_text()
+    assert "chembl" not in page.lower() and "pubchem" not in page.lower()
+
+
+def test_index_escapes_errors_and_warnings(positive):
+    from ligandscout.report import render_index
+
+    result = replace(
+        positive.result,
+        records=[],
+        status="failed",
+        error=SourceError("schema", "<script>alert('bad')</script>", 200),
+        warnings=[
+            {"code": "test", "message": '<img src=x onerror="bad">', "role": None}
+        ],
+    )
+    page = render_index(result)
+    assert "<script>" not in page and "<img" not in page
+    assert "&lt;script&gt;" in page and "&lt;img" in page

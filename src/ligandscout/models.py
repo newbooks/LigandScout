@@ -2,6 +2,8 @@
 
 from dataclasses import dataclass, field, replace
 
+SOURCE_POLICIES = {"BindingDB": "bindingdb-associated-v1"}
+
 
 @dataclass
 class Measurement:
@@ -71,24 +73,6 @@ class SourceResult:
 class SearchOutcome:
     result: SourceResult
     raw_body: bytes | None
-    exchanges: list["HttpExchange"] = field(default_factory=list)
-
-
-@dataclass
-class HttpExchange:
-    sequence: int
-    request_id: int
-    role: str
-    requested_ids: list[str]
-    attempt: int
-    redirect_hop: int
-    url: str
-    parameters: dict[str, str]
-    retrieved_at: str
-    http_status: int | None
-    transport_error: str | None
-    location: str | None
-    body: bytes | None
 
 
 @dataclass
@@ -130,6 +114,20 @@ def upgrade_bindingdb(result: SourceResult) -> SourceResult:
     )
 
 
+def upgrade_result(result: SourceResult) -> SourceResult:
+    """Upgrade current adapter/saved results without inventing prior assay decisions."""
+    if result.schema_version == 1:
+        result = upgrade_bindingdb(result)
+    if result.schema_version == 2:
+        result = replace(
+            result,
+            schema_version=3,
+            counts=result.counts | {"candidate_assays": None, "eligible_assays": None},
+            selection_audit=result.selection_audit | {"assays": []},
+        )
+    return result
+
+
 def as_run(value: RunOutcome | SearchOutcome | SourceResult) -> RunOutcome:
     """Keep source renderers and callers usable while supporting multiple sources."""
     if isinstance(value, RunOutcome):
@@ -140,7 +138,7 @@ def as_run(value: RunOutcome | SearchOutcome | SourceResult) -> RunOutcome:
 
 
 def source_result_from_dict(data: dict) -> SourceResult:
-    """Read saved v1 BindingDB or v2 results; never combine saved search runs."""
+    """Read saved v1/v2/v3 results; never combine saved search runs."""
     import types
     from typing import get_args, get_origin, get_type_hints
 
@@ -166,7 +164,7 @@ def source_result_from_dict(data: dict) -> SourceResult:
     if (
         not isinstance(data, dict)
         or type(data.get("schema_version")) is not int
-        or data["schema_version"] not in (1, 2)
+        or data["schema_version"] not in (1, 2, 3)
     ):
         raise ValueError("Unsupported saved-result schema version.")
     legacy = data["schema_version"] == 1
@@ -231,7 +229,7 @@ def source_result_from_dict(data: dict) -> SourceResult:
         ):
             raise ValueError("Invalid saved source error.")
         error = SourceError(**{key: error[key] for key in get_type_hints(SourceError)})
-    if data["source"] not in ("BindingDB", "ChEMBL") or data["status"] not in (
+    if data["source"] not in SOURCE_POLICIES or data["status"] not in (
         "success",
         "no_matches",
         "failed",
@@ -249,7 +247,7 @@ def source_result_from_dict(data: dict) -> SourceResult:
         error=error,
     )
     if legacy:
-        return upgrade_bindingdb(result)
+        return upgrade_result(result)
     expected_counts = {
         "complete",
         "candidate_targets",
@@ -260,6 +258,8 @@ def source_result_from_dict(data: dict) -> SourceResult:
         "unverified_activities",
         "unique_ligands",
     }
+    if result.schema_version == 3:
+        expected_counts |= {"candidate_assays", "eligible_assays"}
     if (
         set(result.counts) != expected_counts
         or type(result.counts["complete"]) is not bool
@@ -271,7 +271,10 @@ def source_result_from_dict(data: dict) -> SourceResult:
         if k != "complete"
     ):
         raise ValueError("Invalid saved count value.")
-    if set(result.selection_audit) != {"outcome_reason", "targets", "activities"}:
+    expected_audit = {"outcome_reason", "targets", "activities"}
+    if result.schema_version == 3:
+        expected_audit.add("assays")
+    if set(result.selection_audit) != expected_audit:
         raise ValueError("Invalid saved audit.")
     if not check(result.selection_audit["outcome_reason"], str | None):
         raise ValueError("Invalid saved outcome reason.")
@@ -296,13 +299,7 @@ def source_result_from_dict(data: dict) -> SourceResult:
                 raise ValueError("Invalid audit entry.")
     if result.counts["complete"] != (result.status != "failed"):
         raise ValueError("Saved completeness disagrees with source status.")
-    if (
-        result.policy
-        != {
-            "BindingDB": "bindingdb-associated-v1",
-            "ChEMBL": "exact-single-protein-v1",
-        }[result.source]
-    ):
+    if result.policy != SOURCE_POLICIES[result.source]:
         raise ValueError("Unknown source policy.")
     if result.status == "failed":
         if any(
@@ -322,45 +319,19 @@ def source_result_from_dict(data: dict) -> SourceResult:
             raise ValueError("Saved counts disagree with records.")
         if result.status == "success" and not records:
             raise ValueError("Successful source must have records.")
-        if result.source == "ChEMBL":
-            if any(result.counts[k] is None for k in expected_counts - {"complete"}):
-                raise ValueError("Completed ChEMBL counts must be known.")
+    if result.schema_version == 3:
+        for entry in result.selection_audit["assays"]:
             if (
-                result.counts["candidate_activities"]
-                != result.counts["included_activities"]
-                + result.counts["excluded_activities"]
+                not isinstance(entry, dict)
+                or set(entry)
+                != {"assay_id", "version", "revision", "included", "reasons"}
+                or not check(entry["assay_id"], str)
+                or not check(entry["version"], str | None)
+                or not check(entry["revision"], str | None)
+                or type(entry["included"]) is not bool
+                or not check(entry["reasons"], list[str])
             ):
-                raise ValueError("Saved selection counts do not balance.")
-    for record in records:
-        if result.source == "ChEMBL":
-            values = record.source_values
-            family_keys = {
-                "type",
-                "value",
-                "relation",
-                "units",
-                "upper_value",
-                "text_value",
-            }
-            if set(values) != {"published", "standard", "pchembl_value"} or not check(
-                values["pchembl_value"], str | None
-            ):
-                raise ValueError("Invalid saved source values.")
-            for family in ("published", "standard"):
-                if (
-                    not isinstance(values[family], dict)
-                    or set(values[family]) != family_keys
-                    or not all(check(v, str | None) for v in values[family].values())
-                ):
-                    raise ValueError("Invalid saved measurement family.")
-            if record.measurement_basis not in ("published", "standard", "qualitative"):
-                raise ValueError("Invalid saved measurement basis.")
-            if (
-                record.target_match_status != "exact_accession_direct_assignment"
-                or record.target_confidence != 9
-                or record.target_relationship != "D"
-            ):
-                raise ValueError("Invalid saved ChEMBL target assignment.")
+                raise ValueError("Invalid saved assay audit.")
     for warning in result.warnings:
         if (
             set(warning) != {"code", "message", "role"}
@@ -369,4 +340,4 @@ def source_result_from_dict(data: dict) -> SourceResult:
             or not check(warning["role"], str | None)
         ):
             raise ValueError("Invalid saved warning.")
-    return result
+    return upgrade_result(result)
