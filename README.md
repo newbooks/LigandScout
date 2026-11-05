@@ -2,8 +2,7 @@
 
 Find known and potential ligands for a protein using its **Swiss-Prot accession ID** and available ligand resources.
 
-- **Simple mode:** Collect reported ligands and supporting evidence.
-- **Explore mode:** Infer potential ligands from PClass embedding neighbors and PClass-Dark cluster members.
+Collect reported ligands and supporting evidence for accessions supplied directly or by an upstream classifier.
 
 ## Installation
 
@@ -18,10 +17,10 @@ To install test dependencies, use `pip install -e '.[test]'`.
 
 ```bash
 ligandscout P00699
-ligandscout P00176 --simple
+ligandscout P00176
 ```
 
-The selected resources are **BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB**. Simple mode queries **BindingDB and UniProt** independently. UniProt ligands are enriched with SMILES from RCSB chemical components only when chemical identifiers match exactly; a separate experimental PDB complex search remains planned. It accepts one canonical UniProt accession, assumed to belong to Swiss-Prot. Running without an accession displays help. `--explore` remains a placeholder.
+The selected resources are **BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB**. The command queries **BindingDB and UniProt** independently. UniProt ligands are enriched with SMILES from RCSB chemical components only when chemical identifiers match exactly; a separate experimental PDB complex search remains planned. It accepts one canonical UniProt accession, assumed to belong to Swiss-Prot. Running without an accession displays help.
 
 Results are saved relative to the current directory:
 
@@ -48,7 +47,7 @@ Source JSON uses schema version 4; the reader also supports BindingDB v1/v2/v3 f
 
 Rerunning an accession makes fresh API requests and **overwrites generated source results and combined reports**, replacing stale rows even after an empty or failed search. Failed searches show `Unavailable`, distinct from a successful zero-match search. Ambiguous empty bodies are retried and recorded as failures if they persist. Previously saved files from removed integrations are left untouched but are never read into new results or linked from new reports.
 
-A source failure still allows the other source to complete and be saved. CCD enrichment outages retain UniProt annotations with warnings and missing structures. Use `--log-level DEBUG` for detailed logs. Exit codes are 0 for completed searches (including no matches), 1 for service/output failures, 2 for invalid input or the explore placeholder, and 130 for interruption. Publication is atomic per file, not across the directory; rerun after an output failure or interruption. Concurrent searches into the same accession folder are unsupported.
+A source failure still allows the other source to complete and be saved. CCD enrichment outages retain UniProt annotations with warnings and missing structures. Use `--log-level DEBUG` for detailed logs. Exit codes are 0 for completed searches (including no matches), 1 for service/output failures, 2 for invalid input, and 130 for interruption. Publication is atomic per file, not across the directory; rerun after an output failure or interruption. Concurrent searches into the same accession folder are unsupported.
 
 Implementation contracts: [CLI and BindingDB](docs/specs/cli-bindingdb.md), [UniProt ligands and sites](docs/specs/uniprot-integration.md).
 
@@ -72,9 +71,9 @@ UniProt annotations alone may not resolve every activity-specific complex relati
 
 ## Planned outputs
 
-Produce a human-readable report with JSON and TSV exports. Include source links and supporting evidence, and distinguish reported ligands from inferred candidates.
+Produce a human-readable report with JSON and TSV exports. Include source links and supporting evidence, and retain source-specific evidence and uncertainty.
 
-### Simple mode report example
+### Report example
 
 - Query accession: ...
 - Description: ...
@@ -83,22 +82,6 @@ Produce a human-readable report with JSON and TSV exports. Include source links 
 - Sequence length: ...
 
 | Database | Ligands Count | Ligands Report |
-| --- | --- | --- |
-| ... | ... | ... |
-
-### Explore mode report example
-
-Add two candidate tables to the simple-mode report. Include the number of neighbors or members with usable data alongside each percentage.
-
-Potential ligands inferred from the top 10 embedding neighbors (query side):
-
-| Database | Ligand | Reported percentage |
-| --- | --- | --- |
-| ... | ... | ... |
-
-Potential ligands inferred from cluster members (target side):
-
-| Database | Ligand | Reported percentage |
 | --- | --- | --- |
 | ... | ... | ... |
 

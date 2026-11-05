@@ -1,12 +1,12 @@
 # CLI and BindingDB implementation specification
 
-Status: implemented. The selected sources are BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB. Simple mode queries BindingDB and UniProt; RCSB CCD supplies optional exact-ID chemical enrichment. Experimental PDB interaction search is not implemented.
+Status: implemented. The selected sources are BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB. The command queries BindingDB and UniProt; RCSB CCD supplies optional exact-ID chemical enrichment. Experimental PDB interaction search is not implemented.
 
-`pip install -e .` installs the Typer command and `python -m ligandscout` entry point. Exploration remains a placeholder that exits with code 2. The [UniProt integration specification](uniprot-integration.md) defines current two-source orchestration, schema v4, request auditing, annotation/site reporting, and optional CCD enrichment. It supersedes the original single-source orchestration and schema descriptions below. BindingDB's request/parser/retry/measurement behavior is unchanged.
+`pip install -e .` installs the Typer command and `python -m ligandscout` entry point. The [UniProt integration specification](uniprot-integration.md) defines current two-source orchestration, schema v4, request auditing, annotation/site reporting, and optional CCD enrichment. It supersedes the original single-source orchestration and schema descriptions below. BindingDB's request/parser/retry/measurement behavior is unchanged.
 
 ## Original BindingDB-only orchestration and saved-format contract (historical)
 
-- `run_simple(accession, *, client, sleep, now) -> RunOutcome` normalizes the accession, fetches BindingDB once (subject to adapter retries), upgrades its metadata, and returns one source. It performs no other service requests.
+- `run_search(accession, *, client, sleep, now) -> RunOutcome` normalizes the accession, fetches BindingDB once (subject to adapter retries), upgrades its metadata, and returns one source. It performs no other service requests.
 - `RunOutcome.sources` remains a list to support future selected adapters. Rendering and storage retain this interface, but currently accept BindingDB source results only.
 - BindingDB's adapter produces its internal version-1 result. Orchestration and storage upgrade it to the existing shared schema version 3, retaining optional measurement/assay fields, `policy`, `warnings`, `counts`, and `selection_audit`. BindingDB v1/v2/v3 saved-result reading remains supported; removed source types are rejected. Keeping the schema avoids needless changes to existing BindingDB outputs.
 - Save `sources/bindingdb.json`, the final raw response, `bindingdb-ligands.html`, `ligands.tsv`, `report.md`, and `index.html`. HTML provides one row per unique compound with selectable SMILES and expandable measurement details. Markdown contains a database/count/HTML-link table plus full measurements. Stdout remains compact.
@@ -22,13 +22,13 @@ Current two-source indexes use “Records” for the shared count column: Bindin
 
 Every saved search creates or overwrites `results/ACCESSION/index.html` alongside the existing reports. Render it from the current `RunOutcome` through `render_index(value) -> str`; it must not load prior source files or initiate network requests. The page works locally without external scripts or stylesheets.
 
-Show the accession, simple mode, and the evidence disclaimer. Include one table row per queried database with its status, unique ligand count, measurement count, UTC retrieval time, relative link to `SLUG-ligands.html`, and relative link to `sources/SLUG.json`. Failed sources show `Unavailable` counts and escaped failure messages; completed empty searches show zero and an explicit no-match explanation. Include escaped source warnings and links to `ligands.tsv` and `report.md`. Do not list planned adapters as queried sources or add a cross-database total.
+Show the accession and the evidence disclaimer. Include one table row per queried database with its status, unique ligand count, measurement count, UTC retrieval time, relative link to `SLUG-ligands.html`, and relative link to `sources/SLUG.json`. Failed sources show `Unavailable` counts and escaped failure messages; completed empty searches show zero and an explicit no-match explanation. Include escaped source warnings and links to `ligands.tsv` and `report.md`. Do not list planned adapters as queried sources or add a cross-database total.
 
 Database result pages link back to `index.html`. The terminal summary identifies the index as the entry page and lists only `ligands.tsv`, `index.html`, and `report.md`; individual database HTML filenames are linked from the index. Stage and overwrite the index through the existing output publication path, including no-match and failed-source runs; output errors retain the existing exit behavior. Test generated links against files saved in a temporary accession directory, success/empty/failure counts, rerun overwrites, and HTML escaping of source errors/warnings.
 
 ## BindingDB implementation workflow
 
-1. Parse the command and handle help, invalid options, and the exploration placeholder without network or filesystem changes.
+1. Parse the command and handle help and invalid options without network or filesystem changes.
 2. Normalize and validate the supplied accession. Use the same normalized value for the API request, saved metadata, and result directory.
 3. Request BindingDB data for that accession through the API, applying the retry policy below. Do not require a preliminary UniProt call for this integration.
 4. Preserve the final HTTP response body, validate the response, and map each measurement to the shared record schema. A transport failure has no response body; do not reuse a body from an earlier attempt.
@@ -41,24 +41,21 @@ Future UniProt and RCSB PDB adapters will contribute through the shared result s
 ## Command contract
 
 ```text
-ligandscout ACCESSION_ID [--simple | --explore] [--log-level LEVEL]
+ligandscout ACCESSION_ID [--log-level LEVEL]
 ```
 
 ```bash
 ligandscout P00699
-ligandscout P00699 --simple
-ligandscout P00176 --simple --log-level DEBUG
+ligandscout P00176 --log-level DEBUG
 ```
 
 | Argument or option | Behavior |
 | --- | --- |
 | `ACCESSION_ID` | Positional UniProt accession required to search. Accept one accession per invocation; if omitted, display help and exit successfully. |
-| `--simple` | Search BindingDB records associated with the supplied accession. This is the default when neither mode flag is supplied. |
-| `--explore` | Reserved placeholder. Exit with an explicit “Exploration mode is not implemented yet” message before making network requests. |
 | `--log-level`, `-l` | Default `INFO`; accept `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`, case-insensitively. Reject other values. |
 | `--help`, `-h` | Show matching help text and exit successfully without network access. |
 
-If the accession is omitted, display full help on stdout and exit with code 0 before processing mode flags or starting a search. Otherwise, reject simultaneous `--simple` and `--explore`. Implement these as presence flags; do not expose generated `--no-simple` or `--no-explore` options. Do not require a `search` subcommand.
+If the accession is omitted, display full help on stdout and exit with code 0 before starting a search. The accession invokes the sole search workflow; no mode selector or `search` subcommand is required.
 
 Strip surrounding whitespace and uppercase the accession. Validate canonical six- or ten-character UniProt accession syntax before requesting data. This first version assumes the accession belongs to Swiss-Prot; it does not verify reviewed status or resolve obsolete accessions. Reject names, FASTA sequences, accession lists, and isoform suffixes with a clear usage error. Syntax validation alone does not prove that an entry exists.
 
@@ -70,7 +67,7 @@ Use `re.fullmatch` with this pattern after normalization:
 
 Examples: `p00699` and ` P00699 ` normalize to `P00699`; `A0A024RBG1` is syntactically valid; `P00699-2`, `LYZ`, an empty string, and `../P00699` are invalid. A syntactically valid accession with no BindingDB coverage is `no_matches`, not an accession-validation failure.
 
-Validation order is: Typer parsing and explicit help; missing accession help; conflicting modes; log-level validation; explore placeholder; accession validation; search. Unknown options and missing option values remain Typer usage errors even without an accession. Keep the positional argument optional in the Typer signature to support missing-accession help.
+Validation order is: Typer parsing and explicit help; missing accession help; log-level validation; accession validation; search. Unknown options and missing option values remain Typer usage errors even without an accession. Keep the positional argument optional in the Typer signature to support missing-accession help.
 
 ## Typer and logging conventions
 
@@ -205,7 +202,7 @@ Preserve inequality qualifiers and unknown measurement types. Do not convert IC5
 
 Save a full readable Markdown report with accession, mode, source, UTC retrieval time, unique compound count, measurement count, and all measurement rows. Print a compact summary to stdout with accession, source, status, unique compound and measurement counts, and output paths. Label the unique count as “Unique ligands listed in BindingDB for ACCESSION_ID: N”. Count distinct BindingDB monomer IDs across all returned rows, including when the same ID occurs under different target descriptions or assay types. This describes API-associated ligands, not independently verified binding partners. Include the five most frequent reported target descriptions and five most frequent measurement types, with measurement counts. Target counts count rows, not unique ligands; a ligand may occur under multiple target descriptions. Retain all target descriptions in saved reports. Sort labels by decreasing count and then lexicographically; state how many additional labels are omitted. Replace nonprintable characters in terminal labels with spaces and truncate labels to 100 characters. Do not print individual measurements to the terminal. List all measurement rows in stable order by compound ID, affinity type, affinity text, PMID, and DOI. Count unique ligands by BindingDB monomer ID without merging distinct measurements. Missing compound names must not trigger invented names or mandatory calls to another database.
 
-Use the same stable ordering in the JSON record list and TSV. Compare all sort keys lexicographically as strings, treating null as an empty string; ties retain API order. Render Markdown with a heading `# LigandScout: ACCESSION_ID`, mode `simple`, source, status, retrieval time, both counts, and columns `Compound`, `Reported target`, `Measurement`, `Value`, `Unit`, `References`. Link compounds to `source_url`; generate publication links only for a digits-only PMID and a DOI beginning with `10.`. Encode identifier path characters before constructing publication URLs; otherwise display escaped identifier text. Never use supplied identifiers as arbitrary URLs. Escape backslashes, pipes, HTML characters, and Markdown delimiters in cell text; replace CR/LF with spaces. Null references display `—`.
+Use the same stable ordering in the JSON record list and TSV. Compare all sort keys lexicographically as strings, treating null as an empty string; ties retain API order. Render Markdown with a heading `# LigandScout: ACCESSION_ID`, source, status, retrieval time, both counts, and columns `Compound`, `Reported target`, `Measurement`, `Value`, `Unit`, `References`. Link compounds to `source_url`; generate publication links only for a digits-only PMID and a DOI beginning with `10.`. Encode identifier path characters before constructing publication URLs; otherwise display escaped identifier text. Never use supplied identifiers as arbitrary URLs. Escape backslashes, pipes, HTML characters, and Markdown delimiters in cell text; replace CR/LF with spaces. Null references display `—`.
 
 On source failure, render status `failed`, its concise error message, zero current counts, and the empty table. Never print the no-match sentence for a failed request. Persist `report.md` and print the compact summary to stdout only after all output files have been saved successfully. The API error is also logged to stderr and the command exits 1.
 
@@ -243,7 +240,7 @@ Always make a fresh API request on rerun; saved results are output artifacts, no
 
 Create directories with `parents=True, exist_ok=True`. Render all artifacts in memory, stage temporary files in their destination directories, then publish with `os.replace`: current raw body first (if present), remove the obsolete raw variant, replace `ligands.tsv`, replace `report.md`, and replace `sources/bindingdb.json` last. Clean up remaining temporary files in `finally`. With no response body, remove both old raw variants. Replace only these generated filenames; preserve unrelated files and other sources' outputs. Do not load other sources' previous outputs into the compiled table in this increment.
 
-Atomicity is per file, not across the directory. On an output failure, log that the folder may contain incomplete or mixed results, exit 1, and do not print a completed report. Do not claim rollback or use a previous report as a successful fallback. Concurrent searches for the same accession folder are unsupported in this increment. On interruption, clean up temporary files and exit 130; if publication had started, the same partial-output limitation applies. Retrieval timestamps remain inside result files even though the directory contains no run history. Help, invalid input, and the explore placeholder create no result files.
+Atomicity is per file, not across the directory. On an output failure, log that the folder may contain incomplete or mixed results, exit 1, and do not print a completed report. Do not claim rollback or use a previous report as a successful fallback. Concurrent searches for the same accession folder are unsupported in this increment. On interruption, clean up temporary files and exit 130; if publication had started, the same partial-output limitation applies. Retrieval timestamps remain inside result files even though the directory contains no run history. Help and invalid input create no result files.
 
 ## Network handling and exit codes
 
@@ -257,7 +254,7 @@ For retryable HTTP statuses, parse `Retry-After` as nonnegative integer seconds 
 | --- | --- |
 | `0` | Search completed, including a successful search with no matches; help displayed successfully |
 | `1` | Network, HTTP, response-schema, or output-writing failure |
-| `2` | Invalid CLI input, conflicting modes, or unimplemented explore mode |
+| `2` | Invalid CLI input |
 | `130` | User interrupted the operation |
 
 ## Modules
@@ -268,37 +265,37 @@ For retryable HTTP statuses, parse `Retry-After` as nonnegative integer seconds 
 | `accessions.py` | Accession normalization and syntax validation |
 | `bindingdb.py` | HTTP requests, retry policy, response validation, and field mapping |
 | `models.py` | Measurement, provenance, and search-result models |
-| `search.py` | Simple-mode orchestration |
+| `search.py` | Search orchestration |
 | `report.py` | Stable human-readable output |
 | `storage.py` | Per-source JSON/raw responses, compiled TSV, Markdown report, and overwrite handling |
 
-Keep HTTP access and rendering separate so future API adapters can reuse the command workflow. Do not add PClass dependencies, exploration algorithms, additional source integrations, bulk-input options, or local database search in this increment.
+Keep HTTP access and rendering separate so future API adapters can reuse the command workflow. Do not add classifier callbacks, additional source integrations, bulk-input options, or local database search in this increment.
 
 Use standard-library dataclasses for `Measurement`, `SourceError`, `SourceResult`, and `SearchOutcome`; no model-validation dependency is needed. `SearchOutcome` holds the source result and optional complete response bytes. Keep these interfaces independently testable:
 
 ```text
 normalize_accession(value: str) -> str                 # ValueError on invalid input
 fetch_bindingdb(accession, *, client, sleep, now) -> SearchOutcome
-run_simple(accession, *, client, sleep, now) -> SearchOutcome
+run_search(accession, *, client, sleep, now) -> SearchOutcome
 render_summary(result: SourceResult, *, folder: Path) -> str
 render_report(result: SourceResult) -> str             # Markdown ending in newline
 render_tsv(result: SourceResult) -> str                # TSV ending in newline
 save_results(outcome: SearchOutcome, *, root: Path) -> Path
 ```
 
-`root` is `Path.cwd() / "results"` in the CLI and a temporary root in tests. `save_results` renders and publishes all artifacts, returning the accession directory; it raises `OSError` for output failures. `fetch_bindingdb` returns source failures as data and lets `KeyboardInterrupt` propagate. `run_simple` orchestrates BindingDB only and does not write files. The CLI owns client creation, calls `run_simple`, saves the outcome, prints the compact summary, and maps the result status or exception to an exit code. Do not catch unexpected programming errors as no matches.
+`root` is `Path.cwd() / "results"` in the CLI and a temporary root in tests. `save_results` renders and publishes all artifacts, returning the accession directory; it raises `OSError` for output failures. `fetch_bindingdb` returns source failures as data and lets `KeyboardInterrupt` propagate. `run_search` orchestrates BindingDB only and does not write files. The CLI owns client creation, calls `run_search`, saves the outcome, prints the compact summary, and maps the result status or exception to an exit code. Do not catch unexpected programming errors as no matches.
 
 ## Required pytest coverage and acceptance
 
 Use mocked HTTP responses and checked-in, small response fixtures for normal tests. Do not depend on live services or fixed live result counts.
 
-- CLI: default simple mode equals explicit `--simple`; root positional syntax; equivalent short/long help; missing or invalid accession; normalization; conflicting flags; placeholder explore mode makes no requests; log-level validation; stdout/stderr separation; both installed and module entry points.
+- CLI: root positional syntax; equivalent short/long help; missing or invalid accession; normalization; unknown flags are rejected without side effects; log-level validation; stdout/stderr separation; both installed and module entry points.
 - API: exact URL and parameters; no cutoff; positive responses and multiple measurements per compound; optional fields; unknown additional fields; original affinity qualifiers; both documented and observed empty responses.
 - Failures: malformed JSON, HTML, missing/wrong envelope, invalid records, HTTP errors, timeout/connection retries, exhausted retries, and `Retry-After` handling. Inject the sleeper so tests do not wait.
 - Report: bounded terminal summaries with target/type counts, full saved reports without row truncation, explicit unverified-evidence language, stable ordering, distinct compound and measurement counts, references, missing units, and a clear no-match message.
 - Shared schema: explicit null fields, source status/error metadata, publication identifiers, duplicate measurement preservation, and a TSV round trip with embedded tabs/newlines. Confirm that report rendering escapes Markdown table delimiters.
 - Workflow: a mocked accession-to-report success, no-match result, failure exit codes, and interrupt handling.
-- Storage: use pytest temporary directories to verify the accession folder layout, normalized JSON metadata/statuses, raw-response variants, TSV/Markdown output, and rerun overwrites. Cover success followed by no matches or failure, obsolete raw-file removal, output-writing errors, and preservation of unrelated files. Verify that help, invalid input, and explore mode create no files.
+- Storage: use pytest temporary directories to verify the accession folder layout, normalized JSON metadata/statuses, raw-response variants, TSV/Markdown output, and rerun overwrites. Cover success followed by no matches or failure, obsolete raw-file removal, output-writing errors, and preservation of unrelated files. Verify that help and invalid input create no files.
 
 Use `httpx.MockTransport` for response and exception scenarios, a fixed UTC clock, and a list-collecting sleeper. Fixtures must cover the positive envelope above, an empty list, an empty body, a JSON empty string, invalid required/optional field types, and HTML with HTTP 200. Assert the complete request parameters, saved schema keys/types, and deterministic report/TSV rows. Capture the warning and nonzero exit for a simulated failure during publication; do not test only the happy path.
 
@@ -309,7 +306,7 @@ Implementation sequence:
 1. Add the HTTPX dependency, models, accession validation, and parser tests.
 2. Add the API client and deterministic request/retry tests.
 3. Add report/TSV rendering and overwrite/storage tests.
-4. Replace the simple-mode CLI placeholder with orchestration and add end-to-end mocked CLI tests. Retain the explore placeholder and no-argument help behavior.
+4. Connect the CLI to search orchestration and add end-to-end mocked CLI tests. Retain no-argument help behavior.
 5. Update README with the command, result layout, overwrite behavior, and current source coverage. Run `python -m pytest -q` after an editable install with test dependencies, plus `git diff --check`.
 
 Run the relevant pytest suite when implementing or changing code and report its results. Optional live smoke checks may use P00533 as a previously observed positive case and P00699 as a previously observed no-match case; database contents may change. P00176 returned an empty response during implementation verification, so it is not a reliable positive control. Empty unstructured responses, including those for P00699, are indeterminate rather than confirmed no-match cases. Completion requires working packaging/entry points, passing tests, and README command examples consistent with this specification.

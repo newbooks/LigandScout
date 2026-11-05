@@ -1,6 +1,6 @@
 # UniProt ligand annotations and binding sites
 
-Status: implemented. Add UniProt alongside BindingDB in simple mode. This is annotation retrieval, not exploration or a prediction algorithm. Preserve the existing command, BindingDB selection, and API-only architecture.
+Status: implemented. Add UniProt alongside BindingDB in the accession search workflow. This retrieves annotations without calling a classifier or prediction service. Preserve the existing command, BindingDB selection, and API-only architecture.
 
 ## Scope and evidence
 
@@ -145,7 +145,7 @@ Stage artifacts before publishing through the current writer; overwrite current 
 
 ## Presentation beside BindingDB
 
-`run_simple` returns `[BindingDB, UniProt]` in that order even if one fails. Index and Markdown summaries contain one row per queried source, separate ligand counts, status and retrieval times, and links to each source's local HTML and JSON. Never sum cross-source ligand counts or link to an unimplemented PDB interaction search.
+`run_search` returns `[BindingDB, UniProt]` in that order even if one fails. Index and Markdown summaries contain one row per queried source, separate ligand counts, status and retrieval times, and links to each source's local HTML and JSON. Never sum cross-source ligand counts or link to an unimplemented PDB interaction search.
 
 The summary/index “Measurements” heading becomes “Records,” with source-specific explanatory labels: BindingDB measurement records versus UniProt ligand-annotation records. BindingDB terminal details may keep “Measurements”; UniProt uses “Ligand annotation records.” BindingDB detail tables keep their measurement semantics. The compact terminal output lists each source and remains bounded; it links to `index.html`, not individual HTML filenames.
 
@@ -260,7 +260,7 @@ models.py:
 report.py:
     render_uniprot_html(result) -> str
 search.py:
-    run_simple(accession, *, client, sleep, now, monotonic=time.monotonic) -> RunOutcome
+    run_search(accession, *, client, sleep, now, monotonic=time.monotonic) -> RunOutcome
 ```
 
 `HttpResult` carries parsed data, complete response bytes or null, final status, selected headers, and an optional `SourceError`; a first-page CCD-search 204 is an allowed empty search result, never a UniProt-entry success. The audit collector allocates request/exchange IDs and records every attempt before errors are converted to source failures. Generic schema failures are never caught as no matches. `fetch_uniprot` owns extraction, enrichment, result timestamp/provenance, and error conversion; it does not create or close the injected client or write files. `ParsedEntry` is a dataclass with `records`, `source_context`, `counts`, `selection_audit`, and `warnings` as described above, plus `status` (`success` or `no_matches`). It contains no transport metadata. `parse_entry` raises a typed `UniProtSchemaError` for invalid core data; `fetch_uniprot` builds the complete `SourceResult` with request/retrieval metadata after parsing. This avoids constructing a partially populated saved-result object. `enrich_ligands` changes only structure fields, warnings, and structure counts, preserving annotations and core source status. Let `KeyboardInterrupt` propagate to the CLI.

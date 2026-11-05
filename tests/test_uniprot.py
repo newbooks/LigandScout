@@ -18,7 +18,7 @@ from ligandscout.report import (
     render_report,
     render_summary,
 )
-from ligandscout.search import run_simple
+from ligandscout.search import run_search
 from ligandscout.storage import save_results
 from ligandscout.uniprot import fetch_uniprot
 
@@ -333,7 +333,7 @@ def test_sources_are_independent(
         )
 
     with httpx.Client(transport=httpx.MockTransport(handler)) as client:
-        run = run_simple(
+        run = run_search(
             "P00699", client=client, sleep=lambda _: None, now=now, monotonic=lambda: 0
         )
     assert [s.result.status for s in run.sources] == [

@@ -10,7 +10,7 @@ import typer
 
 from ligandscout.accessions import normalize_accession
 from ligandscout.report import render_summary
-from ligandscout.search import run_simple
+from ligandscout.search import run_search
 from ligandscout.storage import save_results
 
 LOG = logging.getLogger(__name__)
@@ -26,29 +26,18 @@ app = typer.Typer(
 def search(
     ctx: typer.Context,
     accession_id: str | None = typer.Argument(None, help="Swiss-Prot accession ID."),
-    simple: bool = typer.Option(
-        False, "--simple", help="Search this accession (default mode)."
-    ),
-    explore: bool = typer.Option(
-        False, "--explore", help="Exploration mode (not implemented)."
-    ),
     log_level: str = typer.Option("INFO", "--log-level", "-l", help="Logging level."),
 ) -> None:
     """Search for binding partners of ACCESSION_ID."""
     if accession_id is None:
         typer.echo(ctx.get_help())
         raise typer.Exit()
-    if simple and explore:
-        raise typer.BadParameter("--simple and --explore cannot be used together.")
     level = log_level.upper()
     if level not in {"DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"}:
         raise typer.BadParameter(
             "Use DEBUG, INFO, WARNING, ERROR, or CRITICAL.", param_hint="--log-level"
         )
     logging.basicConfig(level=level, format="[%(levelname)s]: %(message)s", force=True)
-    if explore:
-        typer.echo("Exploration mode is not implemented yet.", err=True)
-        raise typer.Exit(2)
     try:
         accession = normalize_accession(accession_id)
     except ValueError as exc:
@@ -59,7 +48,7 @@ def search(
     )
     try:
         with httpx.Client(timeout=30.0, follow_redirects=False) as client:
-            outcome = run_simple(
+            outcome = run_search(
                 accession,
                 client=client,
                 sleep=time.sleep,

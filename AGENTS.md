@@ -18,7 +18,7 @@
 
 ## Implementation specifications
 
-- Follow the [CLI and BindingDB implementation specification](docs/specs/cli-bindingdb.md) for the implemented simple-mode command. The UniProt extension is defined in the [UniProt integration specification](docs/specs/uniprot-integration.md).
+- Follow the [CLI and BindingDB implementation specification](docs/specs/cli-bindingdb.md) for the implemented search command. The UniProt extension is defined in the [UniProt integration specification](docs/specs/uniprot-integration.md).
 - Whenever an algorithm changes, update the relevant implementation specification as part of the same change without waiting for a separate request. Keep the documented inputs, outputs, steps, assumptions, and limitations consistent with the code.
 - If no implementation specification exists, create one under `docs/specs/` for the affected functionality.
 

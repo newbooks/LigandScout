@@ -1,11 +1,11 @@
-"""Ensure simple mode queries only the implemented source."""
+"""Ensure searches query both implemented sources."""
 
 import httpx
 
-from ligandscout.search import run_simple
+from ligandscout.search import run_search
 
 
-def test_simple_mode_requests_bindingdb_and_uniprot(payload, now, empty_uniprot):
+def test_search_requests_bindingdb_and_uniprot(payload, now, empty_uniprot):
     requests = []
 
     def handler(request):
@@ -18,7 +18,7 @@ def test_simple_mode_requests_bindingdb_and_uniprot(payload, now, empty_uniprot)
         return httpx.Response(200, json=payload)
 
     with httpx.Client(transport=httpx.MockTransport(handler)) as client:
-        outcome = run_simple(" p00699 ", client=client, sleep=lambda _: None, now=now)
+        outcome = run_search(" p00699 ", client=client, sleep=lambda _: None, now=now)
     assert len(requests) == 2
     assert outcome.accession == "P00699"
     assert [s.result.source for s in outcome.sources] == ["BindingDB", "UniProt"]

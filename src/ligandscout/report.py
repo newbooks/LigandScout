@@ -180,7 +180,6 @@ def render_report(value) -> str:
     lines = [
         f"# LigandScout: {run.accession}",
         "",
-        "- Mode: simple",
         "",
         "| Database | Ligands Count | Ligands Report |",
         "| --- | --- | --- |",
@@ -319,7 +318,7 @@ def render_index(value) -> str:
             "th{background:#eee}.table-wrap{overflow-x:auto}</style></head><body>"
         ),
         f"<h1>LigandScout: {esc(run.accession)}</h1>",
-        "<p>Mode: simple. Results from databases queried in this search.</p>",
+        "<p>Results from databases queried in this search.</p>",
         "<p>Source-specific ligand evidence is summarized below. Counts are per database.</p>",
         (
             '<p><a href="ligands.tsv">Full measurement table (TSV)</a> | '
