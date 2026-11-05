@@ -5,6 +5,39 @@ Find known and potential ligands for a protein using its **Swiss-Prot accession 
 - **Simple mode:** Collect reported ligands and supporting evidence.
 - **Explore mode:** Infer potential ligands from PClass embedding neighbors and PClass-Dark cluster members.
 
+## Installation
+
+```bash
+pip install -e .
+ligandscout --help
+```
+
+To install test dependencies, use `pip install -e '.[test]'`.
+
+## Search
+
+```bash
+ligandscout P00699
+ligandscout P00176 --simple
+```
+
+Simple mode currently queries **BindingDB only** through its API. It accepts one canonical UniProt accession, assumed to belong to Swiss-Prot. Running without an accession displays help. `--explore` is reserved and is not implemented yet.
+
+Results are saved relative to the current directory:
+
+```text
+results/P00699/
+├── sources/
+│   ├── bindingdb.json
+│   └── bindingdb.raw.json
+├── ligands.tsv
+└── report.md
+```
+
+The JSON stores normalized evidence and query provenance; the raw file preserves the API response (`.txt` for non-JSON responses). The TSV contains one row per measurement, and the terminal displays a compact summary of counts and reported target labels. The full Markdown report remains in `report.md`. Rerunning an accession makes a fresh request and **overwrites generated results** in its folder. Failed searches are recorded separately from successful searches with no matches, replacing stale records. Empty API bodies are retried and treated as indeterminate failures if they persist; only a structured empty result is reported as no matches. Unspecified affinity units remain unknown rather than being inferred. Results are API-associated records, not confirmed binding partners: target accession mappings and assay evidence still require verification. A dataset reference can contain several targets, and IC50 alone does not prove direct binding.
+
+Use `--log-level DEBUG` for detailed logs. Exit codes are 0 for completed searches (including no matches), 1 for service/output failures, 2 for invalid input or the explore placeholder, and 130 for interruption. If saving is interrupted or fails midway, the folder may contain incomplete results; rerun the search. Other sources and the richer reports below remain planned.
+
 ## Ligand Databases
 
 Planned resources include ligand, annotation, and compound databases. API and download options were checked in November 2026.
@@ -13,10 +46,8 @@ Planned resources include ligand, annotation, and compound databases. API and do
 | --- | --- | --- | --- |
 | BindingDB | Protein–small-molecule affinity measurements | [REST](https://www.bindingdb.org/rwd/bind/BindingDBRESTfulAPI.jsp) | [TSV, SDF, database dumps](https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp) |
 | ChEMBL | Compound–target bioactivity and assays | [REST](https://chembl.gitbook.io/chembl-interface-documentation/web-services/chembl-data-web-services) | [Database dumps, SDF](https://chembl.gitbook.io/chembl-interface-documentation/downloads) |
-| IUPHAR/BPS Guide to Pharmacology | Curated ligands and pharmacological interactions | [REST; API key required](https://www.guidetopharmacology.org/webServices.jsp) | [Ligand and interaction tables](https://www.guidetopharmacology.org/download.jsp) |
 | PubChem / BioAssay | Chemical records and screening results | [PUG REST](https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest) | [Bulk data](https://ftp.ncbi.nlm.nih.gov/pubchem/) |
 | RCSB PDB | Ligands observed in experimental structures | [Search / Data APIs](https://www.rcsb.org/docs/programmatic-access/web-apis-overview) | [Structures and ligand files](https://www.rcsb.org/docs/programmatic-access/file-download-services) |
-| BRENDA | Enzyme substrates, products, inhibitors, activators, and kinetics | [SOAP; registration required](https://www.brenda.dsmz.de/soap.php) | [Text / JSON; accept license](https://www.brenda-enzymes.de/download.php) |
 | UniProtKB/Swiss-Prot | Binding sites, cofactors, target cross-references, and subunit structure | [REST](https://www.uniprot.org/help/programmatic_access) | [Release files](https://www.uniprot.org/help/downloads) |
 | UniProt-GOA | GO molecular functions and relations describing how a protein contributes to an activity | [QuickGO](https://www.ebi.ac.uk/QuickGO/api/index.html) | [GOA annotation files, including GAF](https://www.ebi.ac.uk/GOA/downloads) |
 | Rhea | Reaction substrates and products, linked through protein annotations | [REST / SPARQL](https://www.rhea-db.org/help/api) | [Reaction data](https://www.rhea-db.org/help/download) |
@@ -44,9 +75,9 @@ Produce a human-readable report with JSON and TSV exports. Include source links 
 - Functional context: monomer / homomer / heteromeric complex / unknown, with activity-specific GO relations, partner or complex names, and supporting evidence where available
 - Sequence length: ...
 
-| Database | Ligands |
-| --- | --- |
-| ... | ... |
+| Database | Ligands Count | Ligands Report | 
+| --- | --- | --- |
+| ... | ... | ... |
 
 ### Explore mode report example
 
