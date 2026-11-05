@@ -23,13 +23,17 @@ def test_help_aliases():
 
 
 @pytest.mark.parametrize("flags", [[], ["--simple"]])
-def test_simple_mode_queries_and_saves(flags, monkeypatch, tmp_path, payload):
+def test_simple_mode_queries_and_saves(
+    flags, monkeypatch, tmp_path, payload, empty_uniprot
+):
     from ligandscout import cli
 
     monkeypatch.chdir(tmp_path)
     real_client = httpx.Client
 
     def handler(request):
+        if request.url.host == "rest.uniprot.org":
+            return httpx.Response(200, json=empty_uniprot)
         assert request.url.host == "www.bindingdb.org"
         assert request.url.params["uniprot"] == "P00699"
         return httpx.Response(200, json=payload)
@@ -124,7 +128,9 @@ def test_no_network_or_files_for_nonsearch_commands(args, monkeypatch, tmp_path)
         (200, b"", 1),
     ],
 )
-def test_cli_empty_and_failed_results(status, body, expected, monkeypatch, tmp_path):
+def test_cli_empty_and_failed_results(
+    status, body, expected, monkeypatch, tmp_path, empty_uniprot
+):
     from ligandscout import cli
 
     monkeypatch.setattr(cli.time, "sleep", lambda seconds: None)
@@ -133,6 +139,8 @@ def test_cli_empty_and_failed_results(status, body, expected, monkeypatch, tmp_p
     real_client = httpx.Client
 
     def handler(request):
+        if request.url.host == "rest.uniprot.org":
+            return httpx.Response(200, json=empty_uniprot)
         assert request.url.host == "www.bindingdb.org"
         return httpx.Response(status, content=body)
 

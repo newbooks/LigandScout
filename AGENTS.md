@@ -8,7 +8,7 @@
 
 ## Ligand search: API access
 
-- Limit source integrations to BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB. BindingDB is currently implemented; the other two are planned.
+- Limit source integrations to BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB. BindingDB and UniProt are implemented. RCSB CCD structure enrichment is implemented; experimental complex/contact search remains planned.
 
 - Always implement ligand searches through the resources' online APIs. This is the agreed architecture for occasional batches of about 20 accessions.
 - Do not implement searches against downloaded database dumps or local database mirrors unless the user explicitly changes this decision. Local caching of API responses is allowed.
@@ -18,7 +18,7 @@
 
 ## Implementation specifications
 
-- Follow the [CLI and BindingDB implementation specification](docs/specs/cli-bindingdb.md) for the initial simple-mode command.
+- Follow the [CLI and BindingDB implementation specification](docs/specs/cli-bindingdb.md) for the implemented simple-mode command. The UniProt extension is defined in the [UniProt integration specification](docs/specs/uniprot-integration.md).
 - Whenever an algorithm changes, update the relevant implementation specification as part of the same change without waiting for a separate request. Keep the documented inputs, outputs, steps, assumptions, and limitations consistent with the code.
 - If no implementation specification exists, create one under `docs/specs/` for the affected functionality.
 

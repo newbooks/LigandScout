@@ -33,11 +33,13 @@ EVIDENCE_NOTE = "API-associated records, not confirmed binding partners. Target 
 
 
 def evidence_note(result):
+    if result.source == "UniProt":
+        return "UniProt ligand/cofactor annotations may be experimental or inferred. CCD supplies chemical structure only; annotation alone does not prove direct binding."
     return EVIDENCE_NOTE
 
 
 def source_slug(result):
-    return {"BindingDB": "bindingdb"}[result.source]
+    return {"BindingDB": "bindingdb", "UniProt": "uniprot"}[result.source]
 
 
 def ligand_count(result):
@@ -49,6 +51,8 @@ def ligand_count(result):
 
 
 def compound_url(result, record):
+    if result.source == "UniProt":
+        return record.source_url
     identifier = quote(record.compound_id, safe="")
     return (
         "https://www.bindingdb.org/rwd/bind/chemsearch/marvin/MolStructure.jsp?monomerid="
@@ -73,15 +77,19 @@ def render_summary(value, *, folder: Path) -> str:
             [
                 f"Source: {result.source} | Status: {result.status}",
                 f"Unique ligands listed in {result.source} for {result.accession}: {ligand_count(result)}",
-                f"Measurements: {('Unavailable' if result.error else len(result.records))}",
+                f"{'Ligand annotation records' if result.source == 'UniProt' else 'Measurements'}: {('Unavailable' if result.error else len(result.records))}",
             ]
         )
         if result.error:
             lines.append(f"Search failed: {result.error.message}")
         elif result.status == "no_matches":
-            lines.append(f"No BindingDB records found for {result.accession}.")
+            lines.append(
+                f"No specifically identified ligands/cofactors annotated in UniProt for {result.accession}."
+                if result.source == "UniProt"
+                else f"No BindingDB records found for {result.accession}."
+            )
             lines.append("This does not establish the absence of binding partners.")
-        if result.records:
+        if result.records and result.source != "UniProt":
             for label, counts in (
                 (
                     "Reported targets",
@@ -111,8 +119,13 @@ def render_summary(value, *, folder: Path) -> str:
         if result.records:
             lines.append(evidence_note(result))
         lines.extend(
-            f"Warning: {terminal_label(w['message'])}" for w in visible_warnings(result)
+            f"Warning: {terminal_label(w['message'])}"
+            for w in visible_warnings(result)[:5]
         )
+        if len(result.warnings) > 5:
+            lines.append(
+                f"... {len(result.warnings) - 5} additional warnings in saved results"
+            )
         lines.append("")
     lines.extend(
         [
@@ -187,6 +200,11 @@ def render_report(value) -> str:
         )
     for outcome in run.sources:
         result = outcome.result
+        if result.source == "UniProt":
+            from ligandscout.uniprot_report import render_markdown
+
+            lines.extend([render_markdown(result), ""])
+            continue
         lines.extend(
             [
                 f"## {result.source}",
@@ -302,14 +320,14 @@ def render_index(value) -> str:
         ),
         f"<h1>LigandScout: {esc(run.accession)}</h1>",
         "<p>Mode: simple. Results from databases queried in this search.</p>",
-        f"<p>{esc(EVIDENCE_NOTE)}</p>",
+        "<p>Source-specific ligand evidence is summarized below. Counts are per database.</p>",
         (
             '<p><a href="ligands.tsv">Full measurement table (TSV)</a> | '
             '<a href="report.md">Detailed Markdown report</a></p>'
         ),
         (
             '<div class="table-wrap"><table><thead><tr><th>Database</th><th>Status</th>'
-            "<th>Unique ligands</th><th>Measurements</th><th>Retrieved (UTC)</th>"
+            "<th>Unique ligands</th><th>Records</th><th>Retrieved (UTC)</th>"
             "<th>Results</th></tr></thead><tbody>"
         ),
     ]
@@ -331,13 +349,23 @@ def render_index(value) -> str:
         )
     for outcome in run.sources:
         result = outcome.result
+        lines.append(f"<p>{esc(result.source)}: {esc(evidence_note(result))}</p>")
+        if result.source == "UniProt":
+            lines.append(
+                "<p>UniProt records are ligand-annotation groups; BindingDB records are activity measurements.</p>"
+            )
         if result.error:
             lines.append(
                 f"<p>{esc(result.source)} search failed: {esc(result.error.message)}</p>"
             )
         elif result.status == "no_matches":
+            message = (
+                f"No specifically identified ligands/cofactors annotated in UniProt for {esc(result.accession)}."
+                if result.source == "UniProt"
+                else f"No {esc(result.source)} records found for {esc(result.accession)}."
+            )
             lines.append(
-                f"<p>No {esc(result.source)} records found for {esc(result.accession)}. "
+                f"<p>{message} "
                 "This does not establish the absence of binding partners.</p>"
             )
         lines.extend(
@@ -350,6 +378,10 @@ def render_index(value) -> str:
 
 def render_html(result: SourceResult) -> str:
     """One row per source compound; expandable details preserve all activities."""
+    if result.source == "UniProt":
+        from ligandscout.uniprot_report import render_uniprot_html
+
+        return render_uniprot_html(result)
     esc = html.escape
     grouped = {}
     for record in result.records:

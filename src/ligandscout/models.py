@@ -2,7 +2,19 @@
 
 from dataclasses import dataclass, field, replace
 
-SOURCE_POLICIES = {"BindingDB": "bindingdb-associated-v1"}
+SOURCE_POLICIES = {
+    "BindingDB": "bindingdb-associated-v1",
+    "UniProt": "uniprot-annotated-ligands-v1",
+}
+ANNOTATION_COUNTS = (
+    "annotation_records",
+    "identified_chemical_ids",
+    "binding_site_annotations",
+    "generic_binding_sites",
+    "cofactor_annotations",
+    "smiles_available",
+    "smiles_unavailable",
+)
 
 
 @dataclass
@@ -43,6 +55,10 @@ class Measurement:
     measurement_text: str | None = None
     measurement_basis: str | None = None
     source_values: dict = field(default_factory=dict)
+    ligand_roles: list[str] = field(default_factory=list)
+    binding_sites: list[dict] = field(default_factory=list)
+    annotation_evidence: list[dict] = field(default_factory=list)
+    structure_provenance: dict = field(default_factory=dict)
 
 
 @dataclass
@@ -67,12 +83,31 @@ class SourceResult:
     warnings: list[dict] = field(default_factory=list)
     counts: dict = field(default_factory=dict)
     selection_audit: dict = field(default_factory=dict)
+    source_context: dict = field(default_factory=dict)
+
+
+@dataclass
+class HttpExchange:
+    sequence: int
+    request_id: int
+    role: str
+    chemical_id: str | None
+    attempt: int
+    redirect_hop: int
+    url: str
+    parameters: dict
+    retrieved_at: str
+    http_status: int | None
+    transport_error: str | None
+    response_headers: dict
+    body: bytes | None
 
 
 @dataclass
 class SearchOutcome:
     result: SourceResult
     raw_body: bytes | None
+    exchanges: list[HttpExchange] = field(default_factory=list)
 
 
 @dataclass
@@ -125,6 +160,14 @@ def upgrade_result(result: SourceResult) -> SourceResult:
             counts=result.counts | {"candidate_assays": None, "eligible_assays": None},
             selection_audit=result.selection_audit | {"assays": []},
         )
+    if result.schema_version == 3:
+        result = replace(
+            result,
+            schema_version=4,
+            counts=result.counts
+            | {"record_kind": "measurement"}
+            | dict.fromkeys(ANNOTATION_COUNTS),
+        )
     return result
 
 
@@ -164,13 +207,27 @@ def source_result_from_dict(data: dict) -> SourceResult:
     if (
         not isinstance(data, dict)
         or type(data.get("schema_version")) is not int
-        or data["schema_version"] not in (1, 2, 3)
+        or data["schema_version"] not in (1, 2, 3, 4)
     ):
         raise ValueError("Unsupported saved-result schema version.")
     legacy = data["schema_version"] == 1
     if legacy and data.get("source") != "BindingDB":
         raise ValueError("Version 1 supports BindingDB only.")
+    if data["schema_version"] < 4 and data.get("source") != "BindingDB":
+        raise ValueError("Older schemas support BindingDB only.")
     hints = get_type_hints(Measurement)
+    if data["schema_version"] < 4:
+        hints = {
+            k: v
+            for k, v in hints.items()
+            if k
+            not in (
+                "ligand_roles",
+                "binding_sites",
+                "annotation_evidence",
+                "structure_provenance",
+            )
+        }
     original_fields = (
         "compound_id",
         "compound_name",
@@ -202,6 +259,8 @@ def source_result_from_dict(data: dict) -> SourceResult:
             raise ValueError("Version 1 requires measurement type and value.")
         records.append(Measurement(**{key: row[key] for key in expected}))
     root_hints = get_type_hints(SourceResult)
+    if data["schema_version"] < 4:
+        root_hints.pop("source_context")
     original_root = (
         "schema_version",
         "accession",
@@ -246,6 +305,28 @@ def source_result_from_dict(data: dict) -> SourceResult:
         records=records,
         error=error,
     )
+    if result.source == "UniProt":
+        from ligandscout.uniprot_schema import validate_result
+
+        validate_result(result)
+        return result
+    if result.schema_version == 4:
+        if result.counts.get("record_kind") != "measurement" or any(
+            result.counts.get(k) is not None for k in ANNOTATION_COUNTS
+        ):
+            raise ValueError("Invalid BindingDB annotation counts.")
+        if not {"record_kind", *ANNOTATION_COUNTS} <= result.counts.keys():
+            raise ValueError("Missing v4 counts.")
+        # Validate the original count/audit contract before restoring the v4 defaults.
+        result = replace(
+            result,
+            schema_version=3,
+            counts={
+                k: v
+                for k, v in result.counts.items()
+                if k not in ("record_kind", *ANNOTATION_COUNTS)
+            },
+        )
     if legacy:
         return upgrade_result(result)
     expected_counts = {

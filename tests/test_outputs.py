@@ -32,6 +32,7 @@ def test_report_and_schema(positive, tmp_path):
         "warnings",
         "counts",
         "selection_audit",
+        "source_context",
     }
     assert (folder / "sources/bindingdb.raw.json").read_bytes() == positive.raw_body
     assert (folder / "report.md").read_text() == render_report(result)
@@ -348,6 +349,11 @@ def test_bindingdb_saved_schema_compatibility(positive, version):
     current = upgrade_result(positive.result)
     data = asdict(positive.result if version == 1 else current)
     data["schema_version"] = version
+    if version in (2, 3):
+        from ligandscout.models import ANNOTATION_COUNTS
+
+        for key in ("record_kind", *ANNOTATION_COUNTS):
+            data["counts"].pop(key)
     if version == 2:
         for key in ("candidate_assays", "eligible_assays"):
             data["counts"].pop(key)
