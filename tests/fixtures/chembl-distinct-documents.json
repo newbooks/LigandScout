@@ -1,0 +1,34 @@
+{
+  "activity": {
+    "activity_id": 23317250,
+    "assay_chembl_id": "CHEMBL4879556",
+    "target_chembl_id": "CHEMBL1862",
+    "document_chembl_id": "CHEMBL4507256",
+    "molecule_chembl_id": "CHEMBL3697701",
+    "assay_type": "B",
+    "assay_variant_accession": "P00519",
+    "assay_variant_mutation": "E255K",
+    "standard_type": "% Control",
+    "standard_relation": "=",
+    "standard_value": "52.0",
+    "standard_units": "%"
+  },
+  "assay": {
+    "assay_chembl_id": "CHEMBL4879556",
+    "target_chembl_id": "CHEMBL1862",
+    "document_chembl_id": "CHEMBL6193874",
+    "assay_type": "B",
+    "relationship_type": "D",
+    "confidence_score": 9,
+    "description": "Inhibition of ABL1(E255K)-phosphorylated at compound concentration of 10.0 uM using the ScanMax (DiscoverX)",
+    "variant_sequence": {
+      "accession": "P00519",
+      "isoform": null,
+      "mutation": "E255K",
+      "organism": "Homo sapiens",
+      "tax_id": 9606,
+      "version": 4
+    }
+  },
+  "note": "Minimal fields from saved P00519 ChEMBL API responses: activity 23317250 and assay CHEMBL4879556; documents legitimately differ."
+}

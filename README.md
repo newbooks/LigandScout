@@ -21,7 +21,7 @@ ligandscout P00699
 ligandscout P00176 --simple
 ```
 
-Simple mode currently queries **BindingDB only** through its API. It accepts one canonical UniProt accession, assumed to belong to Swiss-Prot. Running without an accession displays help. `--explore` is reserved and is not implemented yet.
+Simple mode queries **BindingDB and ChEMBL** through their online APIs. It accepts one canonical UniProt accession, assumed to belong to Swiss-Prot. Running without an accession displays help. `--explore` is reserved and is not implemented yet.
 
 Results are saved relative to the current directory:
 
@@ -29,18 +29,31 @@ Results are saved relative to the current directory:
 results/P00699/
 ├── sources/
 │   ├── bindingdb.json
-│   └── bindingdb.raw.json
+│   ├── bindingdb.raw.json
+│   ├── chembl.json
+│   ├── chembl-requests.json
+│   └── chembl-raw/
+├── bindingdb-ligands.html
+├── chembl-ligands.html
 ├── ligands.tsv
 └── report.md
 ```
 
-The JSON stores normalized evidence and query provenance; the raw file preserves the API response (`.txt` for non-JSON responses). The TSV contains one row per measurement, and the terminal displays a compact summary of counts and reported target labels. The full Markdown report remains in `report.md`. Rerunning an accession makes a fresh request and **overwrites generated results** in its folder. Failed searches are recorded separately from successful searches with no matches, replacing stale records. Empty API bodies are retried and treated as indeterminate failures if they persist; only a structured empty result is reported as no matches. Unspecified affinity units remain unknown rather than being inferred. Results are API-associated records, not confirmed binding partners: target accession mappings and assay evidence still require verification. A dataset reference can contain several targets, and IC50 alone does not prove direct binding.
+Open `report.md` for a database/count/report table, then follow each source's local HTML link. HTML lists one row per unique source compound ID, with a visible, selectable SMILES column, expandable measurements and links to database entries. `ligands.tsv` contains all included measurements from both sources. Counts are separate per source: the same compound or experiment can appear in both databases, so the counts are not a globally unique total.
 
-Use `--log-level DEBUG` for detailed logs. Exit codes are 0 for completed searches (including no matches), 1 for service/output failures, 2 for invalid input or the explore placeholder, and 130 for interruption. If saving is interrupted or fails midway, the folder may contain incomplete results; rerun the search. Other sources and the richer reports below remain planned.
+ChEMBL requires an exact UniProt component accession on a single-protein target and a direct assay-target assignment with confidence 9. It excludes homolog assignments, families and complexes. Both binding and functional assays are included, including inactive, inconclusive and qualitative records; these are tested compounds, not necessarily proven binders. Variants are retained and labeled where annotated. A query with no exact ChEMBL coverage does not silently search a related accession. BindingDB retains its API associations without independently verified target identities. IC50 alone does not establish physical binding.
+
+Source JSON uses schema version 2 and records status, retrieval time, policy and provenance. ChEMBL additionally saves selection decisions, excluded/unverified activity counts, release information when available, and a manifest linking every HTTP exchange to its raw response and SHA-256. BindingDB preserves its final raw response (`.txt` for non-JSON bodies). The TSV keeps the original columns and appends assay, target, variant, selection and original-value metadata. Missing units remain unknown.
+
+Rerunning an accession makes fresh API requests and **overwrites generated results**, replacing stale rows even after an empty or failed search. Sources run independently: one failure still allows the other source's results to be saved. Failed sources show `Unavailable`, distinct from a successful zero-match search. Ambiguous BindingDB empty bodies are retried; ChEMBL requires a complete structured collection. Release metadata outages produce warnings without invalidating otherwise complete ChEMBL results.
+
+Use `--log-level DEBUG` for detailed logs. Exit codes are 0 when both sources complete (including no matches), 1 if any source or output fails, 2 for invalid input or the explore placeholder, and 130 for interruption. Publication is atomic per file, not across the output directory; if saving fails or is interrupted, rerun because the folder may contain mixed results. Concurrent searches into the same accession folder are unsupported. Annotation, other sources, and explore-mode features below remain planned.
+
+Implementation contracts: [BindingDB](docs/specs/cli-bindingdb.md) and [ChEMBL / multi-source reporting](docs/specs/chembl-integration.md).
 
 ## Ligand Databases
 
-Planned resources include ligand, annotation, and compound databases. API and download options were checked in November 2026.
+BindingDB and ChEMBL are implemented. Additional planned resources include ligand, annotation, and compound databases. API and download options were checked in November 2026.
 
 | Database | Coverage and use | Online API | Downloads |
 | --- | --- | --- | --- |
