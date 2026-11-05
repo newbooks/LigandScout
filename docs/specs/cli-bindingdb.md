@@ -1,20 +1,28 @@
 # CLI and BindingDB implementation specification
 
-Status: implemented. This document preserves the original BindingDB adapter and
-first CLI increment. The current CLI queries both BindingDB and ChEMBL; the
-[ChEMBL integration specification](chembl-integration.md) supersedes the
-single-source orchestration, saved schema version, report interfaces, storage
-publication order, default source list and aggregate exit handling below.
-BindingDB's online request, parser, retry, measurement inclusion and raw-response
-policies remain unchanged. Its adapter may produce an internal version-1 result;
-orchestration/storage add version-2 metadata before saving. No homolog or
-name-based filtering has been added to BindingDB.
+Status: implemented. The project resource scope is **BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB**. BindingDB is the only implemented adapter. UniProt and RCSB PDB are planned; this change does not make speculative requests to either service.
 
-`pip install -e .` installs the Typer command and `python -m ligandscout` entry
-point. Simple mode queries BindingDB and ChEMBL; exploration remains an explicit
-placeholder that exits with code 2. The single-source signatures and schemas
-below document the first increment; use the linked specification for current
-multi-source interfaces and file formats.
+`pip install -e .` installs the Typer command and `python -m ligandscout` entry point. Simple mode queries BindingDB; exploration remains a placeholder that exits with code 2. The original BindingDB parser, retry, measurement inclusion, and target-verification policies remain in effect.
+
+## Current orchestration and saved-format contract
+
+- `run_simple(accession, *, client, sleep, now) -> RunOutcome` normalizes the accession, fetches BindingDB once (subject to adapter retries), upgrades its metadata, and returns one source. It performs no other service requests.
+- `RunOutcome.sources` remains a list to support future selected adapters. Rendering and storage retain this interface, but currently accept BindingDB source results only.
+- BindingDB's adapter produces its internal version-1 result. Orchestration and storage upgrade it to the existing shared schema version 3, retaining optional measurement/assay fields, `policy`, `warnings`, `counts`, and `selection_audit`. BindingDB v1/v2/v3 saved-result reading remains supported; removed source types are rejected. Keeping the schema avoids needless changes to existing BindingDB outputs.
+- Save `sources/bindingdb.json`, the final raw response, `bindingdb-ligands.html`, `ligands.tsv`, `report.md`, and `index.html`. HTML provides one row per unique compound with selectable SMILES and expandable measurement details. Markdown contains a database/count/HTML-link table plus full measurements. Stdout remains compact.
+- Stage all artifacts before publishing. Replace raw files, database HTML, TSV, Markdown, index HTML, then normalized JSON; remove obsolete BindingDB raw variants after publication. Atomicity remains per file.
+- Regenerate reports only from current-run BindingDB records. Preserve historical files from removed integrations and unrelated user files without reading or linking them. Do not recursively delete existing result directories.
+- A BindingDB failure is saved and produces exit code 1; a completed empty search exits 0. UniProt and PDB are not included as queried or failed sources until their adapters exist.
+
+The sections below preserve the original BindingDB data contract (including its internal v1 fields). The current shared schema/output extensions above take precedence over older single-source signatures or v1 serialization descriptions.
+
+## HTML summary index
+
+Every saved search creates or overwrites `results/ACCESSION/index.html` alongside the existing reports. Render it from the current `RunOutcome` through `render_index(value) -> str`; it must not load prior source files or initiate network requests. The page works locally without external scripts or stylesheets.
+
+Show the accession, simple mode, and the evidence disclaimer. Include one table row per queried database with its status, unique ligand count, measurement count, UTC retrieval time, relative link to `SLUG-ligands.html`, and relative link to `sources/SLUG.json`. Failed sources show `Unavailable` counts and escaped failure messages; completed empty searches show zero and an explicit no-match explanation. Include escaped source warnings and links to `ligands.tsv` and `report.md`. Do not list planned adapters as queried sources or add a cross-database total.
+
+Database result pages link back to `index.html`. The terminal summary identifies the index as the entry page and lists only `ligands.tsv`, `index.html`, and `report.md`; individual database HTML filenames are linked from the index. Stage and overwrite the index through the existing output publication path, including no-match and failed-source runs; output errors retain the existing exit behavior. Test generated links against files saved in a temporary accession directory, success/empty/failure counts, rerun overwrites, and HTML escaping of source errors/warnings.
 
 ## BindingDB implementation workflow
 
@@ -26,9 +34,7 @@ multi-source interfaces and file formats.
 6. Save the source result and available raw response in `results/ACCESSION_ID/sources/`, overwriting the previous BindingDB output.
 7. Generate `ligands.tsv` and `report.md` from this invocation's normalized results, then print a compact terminal summary and return the appropriate exit code. A failure report must label the source as failed rather than claiming that no ligands were found.
 
-The next increment is documented in [ChEMBL integration](chembl-integration.md) (ready for implementation; not yet implemented). It defines multi-source orchestration and ChEMBL-specific target filtering without changing BindingDB selection.
-
-The first implementation integrates BindingDB only. Other APIs will later supply results in the same source-result schema; the combined table must not require a BindingDB-specific parser.
+Future UniProt and RCSB PDB adapters will contribute through the shared result structure. Other database integrations are out of scope.
 
 ## Command contract
 
@@ -45,7 +51,7 @@ ligandscout P00176 --simple --log-level DEBUG
 | Argument or option | Behavior |
 | --- | --- |
 | `ACCESSION_ID` | Positional UniProt accession required to search. Accept one accession per invocation; if omitted, display help and exit successfully. |
-| `--simple` | Search BindingDB and ChEMBL records associated with the supplied accession. This is the default when neither mode flag is supplied. |
+| `--simple` | Search BindingDB records associated with the supplied accession. This is the default when neither mode flag is supplied. |
 | `--explore` | Reserved placeholder. Exit with an explicit “Exploration mode is not implemented yet” message before making network requests. |
 | `--log-level`, `-l` | Default `INFO`; accept `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`, case-insensitively. Reject other values. |
 | `--help`, `-h` | Show matching help text and exit successfully without network access. |
@@ -184,7 +190,7 @@ target_description, evidence_type, measurement_type, measurement_value,
 measurement_unit, pmid, doi, source_url, retrieved_at
 ```
 
-The commas above delimit the column names for readability; the actual file uses tabs. Repeat source-level accession, source, and retrieval time on each row. Encode nulls as empty cells, write headers even with zero records, and use Python's `csv.writer` with delimiter `\t`, `QUOTE_MINIMAL`, and line terminator `\n` (open files with `newline=""`).
+The commas above delimit the column names for readability; the actual file uses tabs. Repeat source-level accession, source, and retrieval time on each row. Retain the existing appended shared metadata columns in the current TSV format. Encode nulls as empty cells, write headers even with zero records, and use Python's `csv.writer` with delimiter `\t`, `QUOTE_MINIMAL`, and line terminator `\n` (open files with `newline=""`).
 
 Keep a measurement record for each returned row, including:
 
@@ -220,6 +226,8 @@ results/P00699/
 ├── sources/
 │   ├── bindingdb.json
 │   └── bindingdb.raw.json
+├── index.html
+├── bindingdb-ligands.html
 ├── ligands.tsv
 └── report.md
 ```

@@ -8,6 +8,8 @@
 
 ## Ligand search: API access
 
+- Limit source integrations to BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB. BindingDB is currently implemented; the other two are planned.
+
 - Always implement ligand searches through the resources' online APIs. This is the agreed architecture for occasional batches of about 20 accessions.
 - Do not implement searches against downloaded database dumps or local database mirrors unless the user explicitly changes this decision. Local caching of API responses is allowed.
 - Start from a Swiss-Prot accession and resolve any additional identifiers required by each API through API calls.

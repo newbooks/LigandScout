@@ -21,7 +21,7 @@ ligandscout P00699
 ligandscout P00176 --simple
 ```
 
-Simple mode queries **BindingDB and ChEMBL** through their online APIs. It accepts one canonical UniProt accession, assumed to belong to Swiss-Prot. Running without an accession displays help. `--explore` is reserved and is not implemented yet.
+The selected resources are **BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB**. Simple mode currently queries **BindingDB only**; UniProt and RCSB PDB integrations are planned. It accepts one canonical UniProt accession, assumed to belong to Swiss-Prot. Running without an accession displays help. `--explore` remains a placeholder.
 
 Results are saved relative to the current directory:
 
@@ -29,42 +29,34 @@ Results are saved relative to the current directory:
 results/P00699/
 ├── sources/
 │   ├── bindingdb.json
-│   ├── bindingdb.raw.json
-│   ├── chembl.json
-│   ├── chembl-requests.json
-│   └── chembl-raw/
+│   └── bindingdb.raw.json
+├── index.html
 ├── bindingdb-ligands.html
-├── chembl-ligands.html
 ├── ligands.tsv
 └── report.md
 ```
 
-Open `report.md` for a database/count/report table, then follow each source's local HTML link. HTML lists one row per unique source compound ID, with a visible, selectable SMILES column, expandable measurements and links to database entries. `ligands.tsv` contains all included measurements from both sources. Counts are separate per source: the same compound or experiment can appear in both databases, so the counts are not a globally unique total.
+The terminal displays a compact summary. Open `results/<accession>/index.html` for the summary, source status, ligand and measurement counts, retrieval times, and links to each database’s results. Individual database pages link back to this index. `report.md` remains available as a detailed Markdown report. The HTML report lists one row per unique compound ID, with selectable SMILES, expandable measurements, reported targets, and reference links. `ligands.tsv` contains all current BindingDB measurements.
 
-ChEMBL requires an exact UniProt component accession on a single-protein target and a direct assay-target assignment with confidence 9. It excludes homolog assignments, families and complexes. Both binding and functional assays are included, including inactive, inconclusive and qualitative records; these are tested compounds, not necessarily proven binders. Variants are retained and labeled where annotated. A query with no exact ChEMBL coverage does not silently search a related accession. BindingDB retains its API associations without independently verified target identities. IC50 alone does not establish physical binding.
+Results are API-associated records, not confirmed binding partners. BindingDB target identities and assay evidence have not been independently verified; IC50 alone does not establish physical binding. Missing units remain unknown. Planned UniProt annotations will provide biological context, while RCSB PDB will supply structural evidence.
 
-Source JSON uses schema version 2 and records status, retrieval time, policy and provenance. ChEMBL additionally saves selection decisions, excluded/unverified activity counts, release information when available, and a manifest linking every HTTP exchange to its raw response and SHA-256. BindingDB preserves its final raw response (`.txt` for non-JSON bodies). The TSV keeps the original columns and appends assay, target, variant, selection and original-value metadata. Missing units remain unknown.
+Source JSON uses schema version 3; the reader also supports BindingDB v1/v2 files. Saved results retain retrieval time, query provenance, policy, status, and available measurement/target metadata. BindingDB preserves its final raw response (`.txt` for non-JSON bodies).
 
-Rerunning an accession makes fresh API requests and **overwrites generated results**, replacing stale rows even after an empty or failed search. Sources run independently: one failure still allows the other source's results to be saved. Failed sources show `Unavailable`, distinct from a successful zero-match search. Ambiguous BindingDB empty bodies are retried; ChEMBL requires a complete structured collection. Release metadata outages produce warnings without invalidating otherwise complete ChEMBL results.
+Rerunning an accession makes fresh API requests and **overwrites generated BindingDB results and combined reports**, replacing stale rows even after an empty or failed search. Failed searches show `Unavailable`, distinct from a successful zero-match search. Ambiguous empty bodies are retried and recorded as failures if they persist. Previously saved files from removed integrations are left untouched but are never read into new results or linked from new reports.
 
-Use `--log-level DEBUG` for detailed logs. Exit codes are 0 when both sources complete (including no matches), 1 if any source or output fails, 2 for invalid input or the explore placeholder, and 130 for interruption. Publication is atomic per file, not across the output directory; if saving fails or is interrupted, rerun because the folder may contain mixed results. Concurrent searches into the same accession folder are unsupported. Annotation, other sources, and explore-mode features below remain planned.
+Use `--log-level DEBUG` for detailed logs. Exit codes are 0 for completed searches (including no matches), 1 for service/output failures, 2 for invalid input or the explore placeholder, and 130 for interruption. Publication is atomic per file, not across the directory; rerun after an output failure or interruption. Concurrent searches into the same accession folder are unsupported.
 
-Implementation contracts: [BindingDB](docs/specs/cli-bindingdb.md) and [ChEMBL / multi-source reporting](docs/specs/chembl-integration.md).
+Implementation contract: [CLI and BindingDB](docs/specs/cli-bindingdb.md).
 
 ## Ligand Databases
 
-BindingDB and ChEMBL are implemented. Additional planned resources include ligand, annotation, and compound databases. API and download options were checked in November 2026.
+Only these three resources are in scope. All integrations use online APIs.
 
-| Database | Coverage and use | Online API | Downloads |
+| Database | Purpose | Status | API |
 | --- | --- | --- | --- |
-| BindingDB | Protein–small-molecule affinity measurements | [REST](https://www.bindingdb.org/rwd/bind/BindingDBRESTfulAPI.jsp) | [TSV, SDF, database dumps](https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp) |
-| ChEMBL | Compound–target bioactivity and assays | [REST](https://chembl.gitbook.io/chembl-interface-documentation/web-services/chembl-data-web-services) | [Database dumps, SDF](https://chembl.gitbook.io/chembl-interface-documentation/downloads) |
-| PubChem / BioAssay | Chemical records and screening results | [PUG REST](https://pubchem.ncbi.nlm.nih.gov/docs/pug-rest) | [Bulk data](https://ftp.ncbi.nlm.nih.gov/pubchem/) |
-| RCSB PDB | Ligands observed in experimental structures | [Search / Data APIs](https://www.rcsb.org/docs/programmatic-access/web-apis-overview) | [Structures and ligand files](https://www.rcsb.org/docs/programmatic-access/file-download-services) |
-| UniProtKB/Swiss-Prot | Binding sites, cofactors, target cross-references, and subunit structure | [REST](https://www.uniprot.org/help/programmatic_access) | [Release files](https://www.uniprot.org/help/downloads) |
-| UniProt-GOA | GO molecular functions and relations describing how a protein contributes to an activity | [QuickGO](https://www.ebi.ac.uk/QuickGO/api/index.html) | [GOA annotation files, including GAF](https://www.ebi.ac.uk/GOA/downloads) |
-| Rhea | Reaction substrates and products, linked through protein annotations | [REST / SPARQL](https://www.rhea-db.org/help/api) | [Reaction data](https://www.rhea-db.org/help/download) |
-| ChEBI | Compound identifiers, structures, and roles for normalization | [REST](https://www.ebi.ac.uk/chebi/tools) | [SDF, ontology, database dumps](https://www.ebi.ac.uk/chebi/downloads) |
+| BindingDB | Protein–small-molecule activity and affinity measurements | Implemented | [REST](https://www.bindingdb.org/rwd/bind/BindingDBRESTfulAPI.jsp) |
+| UniProtKB/Swiss-Prot | Protein identity, processed chains, biological ligands, cofactors, binding sites, and subunit context | Planned | [REST](https://www.uniprot.org/help/programmatic_access) |
+| RCSB PDB | Experimental protein–ligand complexes and binding-site context | Planned | [Search / Data APIs](https://www.rcsb.org/docs/programmatic-access/web-apis-overview) |
 
 Assay hits, reaction participants, and structural observations require interpretation before they can support a claim of direct binding. Record unavailable sources and retrieval dates. Inferred candidates require validation.
 
@@ -72,9 +64,7 @@ Assay hits, reaction participants, and structural observations require interpret
 
 Use Swiss-Prot **Subunit structure** (`CC   -!- SUBUNIT:` in the flat file), **Function**, and their supporting evidence to assess whether the query protein performs an activity as a monomer, a homomer (multiple copies of the same protein), or a heteromeric complex (different proteins). Report this context for each activity where evidence is available; otherwise report it as unknown.
 
-Supplement this assessment with UniProt-GOA molecular-function annotations. In [GAF 2.2](https://geneontology.org/docs/go-annotation-file-gaf-format-2.2/), column 4 explicitly records `enables` or `contributes_to`, optionally prefixed with `NOT|`. `contributes_to` can capture a subunit's contribution to an activity of a complex; **`enables` does not establish that the protein functions alone**. Preserve negation and annotation evidence rather than treating either relation as a definitive oligomeric-state label.
-
-Swiss-Prot [flat-file GO cross-references](https://web.expasy.org/docs/userman.html) (`DR   GO; ...`) contain the GO identifier, aspect/term, and evidence/source, but do not preserve these relations as structured fields. Obtain the relations from GOA and match annotations by UniProt accession, retaining isoform information when present. Check the `!gaf-version:` header: in [GAF 2.1](https://geneontology.org/page/go-annotation-file-gaf-format-21), column 4 is an optional qualifier field that supports `contributes_to`, while the ordinary positive molecular-function relation is implicit rather than an explicit `enables` value.
+UniProt annotations alone may not resolve every activity-specific complex relationship. Report uncertainty explicitly rather than inferring that a protein acts alone from a GO molecular-function term.
 
 ## Planned outputs
 
@@ -88,7 +78,7 @@ Produce a human-readable report with JSON and TSV exports. Include source links 
 - Functional context: monomer / homomer / heteromeric complex / unknown, with activity-specific GO relations, partner or complex names, and supporting evidence where available
 - Sequence length: ...
 
-| Database | Ligands Count | Ligands Report | 
+| Database | Ligands Count | Ligands Report |
 | --- | --- | --- |
 | ... | ... | ... |
 
