@@ -1,10 +1,10 @@
 # CLI and BindingDB implementation specification
 
-Status: implemented. The project resource scope is **BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB**. BindingDB is the only implemented adapter. UniProt and RCSB PDB are planned; this change does not make speculative requests to either service.
+Status: implemented. The selected sources are BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB. Simple mode queries BindingDB and UniProt; RCSB CCD supplies optional exact-ID chemical enrichment. Experimental PDB interaction search is not implemented.
 
-`pip install -e .` installs the Typer command and `python -m ligandscout` entry point. Simple mode queries BindingDB; exploration remains a placeholder that exits with code 2. The original BindingDB parser, retry, measurement inclusion, and target-verification policies remain in effect.
+`pip install -e .` installs the Typer command and `python -m ligandscout` entry point. Exploration remains a placeholder that exits with code 2. The [UniProt integration specification](uniprot-integration.md) defines current two-source orchestration, schema v4, request auditing, annotation/site reporting, and optional CCD enrichment. It supersedes the original single-source orchestration and schema descriptions below. BindingDB's request/parser/retry/measurement behavior is unchanged.
 
-## Current orchestration and saved-format contract
+## Original BindingDB-only orchestration and saved-format contract (historical)
 
 - `run_simple(accession, *, client, sleep, now) -> RunOutcome` normalizes the accession, fetches BindingDB once (subject to adapter retries), upgrades its metadata, and returns one source. It performs no other service requests.
 - `RunOutcome.sources` remains a list to support future selected adapters. Rendering and storage retain this interface, but currently accept BindingDB source results only.
@@ -17,6 +17,8 @@ Status: implemented. The project resource scope is **BindingDB, UniProtKB/Swiss-
 The sections below preserve the original BindingDB data contract (including its internal v1 fields). The current shared schema/output extensions above take precedence over older single-source signatures or v1 serialization descriptions.
 
 ## HTML summary index
+
+Current two-source indexes use “Records” for the shared count column: BindingDB activity measurements versus UniProt ligand-annotation groups. Source-specific notes identify the evidence differences.
 
 Every saved search creates or overwrites `results/ACCESSION/index.html` alongside the existing reports. Render it from the current `RunOutcome` through `render_index(value) -> str`; it must not load prior source files or initiate network requests. The page works locally without external scripts or stylesheets.
 

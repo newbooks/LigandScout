@@ -39,3 +39,16 @@ def fetch(now):
 @pytest.fixture
 def positive(fetch, payload):
     return fetch(lambda request: httpx.Response(200, json=payload))[0]
+
+
+@pytest.fixture
+def uniprot_entry():
+    return json.loads(
+        (Path(__file__).parent / "fixtures/uniprot-annotations.json").read_text()
+    )
+
+
+@pytest.fixture
+def empty_uniprot(uniprot_entry):
+    uniprot_entry.update(primaryAccession="P00699", features=[], comments=[])
+    return uniprot_entry
