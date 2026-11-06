@@ -304,3 +304,13 @@ Implement in this order: shared v4 models/reader; UniProt HTTP/extraction; optio
 - [P00519 entry JSON](https://rest.uniprot.org/uniprotkb/P00519.json): observed binding-site, cofactor, and reaction JSON structures.
 - [RCSB Search API](https://search.rcsb.org/) and [Data API](https://data.rcsb.org/): CCD identity lookup and descriptors.
 - [CCD ATP JSON](https://data.rcsb.org/rest/v1/core/chemcomp/ATP): observed ChEBI mapping and stereo/non-stereo SMILES fields.
+
+### GO annotation index section
+
+The additive [GO annotation specification](go-annotations.md) defines UniProt GO term extraction, audited QuickGO relation enrichment, optional saved context, and MF/BP/CC presentation in `index.html`. This enrichment does not change ligand selection or counts.
+
+### Accession-level function description in the index
+
+UniProt supplies accession-level free-text function descriptions in `comments` entries with `commentType=FUNCTION` (see the [UniProt function guide](https://www.ebi.ac.uk/training/online/courses/uniprot-exploring-protein-sequence-and-functional-info/exploring-a-uniprotkb-entry/the-entry-view/function/)). The adapter already retains these in `source_context.context_comments`. Render their full, untruncated text before the GO section of `index.html`, with a UniProtKB/Swiss-Prot accession/function link and original retrieval date. Preserve any molecule/isoform label so qualified descriptions do not become general assertions. Escape descriptions and labels as HTML text. Exclude other comment types from this section. Missing FUNCTION text is reported as not supplied; a failed/absent UniProt source is reported as unavailable. Because UniProt offers this description, no `profunc` fallback is introduced. Rendering is offline and also applies to reused source results; no extra API request or schema change is required.
+
+Function readability: retain separate source `texts[]` values and split embedded line endings into separate nonempty paragraphs in source order. For source paragraphs supplied as a single long block, add display-only paragraph boundaries at sentence-ending punctuation followed by whitespace and an uppercase letter, once at least 600 characters have accumulated. Avoid boundaries after common abbreviations (`e.g.`, `i.e.`, `Dr.`, `Mr.`, `Mrs.`, `vs.`, `Fig.`, `No.`). Keep all source wording and sentence order; disclose that additional paragraph breaks were added for readability. Do not truncate or summarize. Render explicit paragraph margins of 1.75em (a blank line between paragraphs), 1.75 line height, and a maximum reading width of 78ch. Keep attribution/retrieval metadata visually secondary, and retain isoform subheadings with clear spacing. Saved source data and provenance remain unchanged.

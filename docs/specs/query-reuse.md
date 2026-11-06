@@ -14,3 +14,5 @@ Run sources in the existing order. Reused UniProt context remains available to a
 Always rebuild all source HTML pages, `index.html`, `report.md` and `ligands.tsv` from all current outcomes, including reused sources. Missing combined reports alone do not trigger API queries. Refreshed sources retain existing publication, raw cleanup, error and exit-code behavior. `--force` can replace a previously successful snapshot with a failed or empty search, as ordinary fresh searches do. There is no directory-wide transaction or support for concurrent writers to one accession folder.
 
 Regression coverage includes default reuse without requests, successful zero-match reuse, forced refresh, independent source invalidation, malformed data, accession mismatch, manifest corruption, missing raw/source reports, and preservation of source snapshots while rebuilding combined reports.
+
+UniProt snapshots without `source_context.go_annotations` predate GO reporting and are refreshed once on ordinary reruns. See [GO annotations](go-annotations.md). GO enrichment failures remain optional and do not invalidate an otherwise completed UniProt query.

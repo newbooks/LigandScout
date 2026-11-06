@@ -326,6 +326,70 @@ def html_references(record):
     return "; ".join(links)
 
 
+def function_paragraphs(text):
+    """Keep source breaks; space long prose at conservative sentence boundaries."""
+    for supplied in text.splitlines():
+        supplied = supplied.strip()
+        if not supplied:
+            continue
+        start = 0
+        for boundary in re.finditer(r"[.!?]\s+(?=[A-Z])", supplied):
+            end = boundary.start() + 1
+            if end - start < 600 or supplied[:end].lower().endswith(
+                ("e.g.", "i.e.", "dr.", "mr.", "mrs.", "vs.", "fig.", "no.")
+            ):
+                continue
+            yield supplied[start:end]
+            start = boundary.end()
+        if supplied[start:]:
+            yield supplied[start:]
+
+
+def render_function(result):
+    """Display full accession-level FUNCTION comments with their UniProt source."""
+    lines = ['<section id="protein-function"><h2>Protein function</h2>']
+    if result is None or result.error:
+        return "\n".join(
+            lines
+            + [
+                "<p>Function description unavailable: UniProt results unavailable.</p></section>"
+            ]
+        )
+    entry = result.source_context.get("entry", {})
+    accession = entry.get("primary_accession", result.accession)
+    lines.append(
+        f'<p class="function-source">Source: <a href="https://www.uniprot.org/uniprotkb/{quote(accession, safe="")}/entry#function">UniProtKB/Swiss-Prot ({html.escape(accession)})</a>'
+        f" | Retrieved: {html.escape(result.retrieved_at)}</p>"
+    )
+    found = False
+    for comment in result.source_context.get("context_comments", []):
+        if comment["comment_type"] != "FUNCTION":
+            continue
+        data = comment["data"]
+        texts = [
+            t["value"]
+            for t in data.get("texts", [])
+            if isinstance(t.get("value"), str) and t["value"].strip()
+        ]
+        if not texts:
+            continue
+        found = True
+        if data.get("molecule"):
+            lines.append(f"<h3>{html.escape(str(data['molecule']))}</h3>")
+        lines.extend(
+            f'<p class="function-paragraph">{html.escape(paragraph)}</p>\n'
+            for text in texts
+            for paragraph in function_paragraphs(text)
+        )
+    if not found:
+        lines.append("<p>No function description supplied in this UniProt entry.</p>")
+    if found:
+        lines.append(
+            '<p class="function-note">Source wording retained; additional paragraph breaks added to long text for readability.</p>'
+        )
+    return "\n".join(lines + ["</section>"])
+
+
 def render_index(value) -> str:
     """Render a small, offline entry page for the sources queried in this run."""
     run = as_run(value)
@@ -338,7 +402,11 @@ def render_index(value) -> str:
             "<style>body{font:16px system-ui;max-width:1100px;margin:32px auto;padding:0 16px}"
             "table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:10px;"
             "border-bottom:1px solid #ddd;vertical-align:top;overflow-wrap:anywhere}"
-            "th{background:#eee}.table-wrap{overflow-x:auto}</style></head><body>"
+            "th{background:#eee}.table-wrap{overflow-x:auto}.go-table{table-layout:fixed}"
+            "#protein-function{margin-block:2.5rem;max-width:78ch}"
+            ".function-paragraph{line-height:1.75;margin:0 0 1.75em}"
+            ".function-source,.function-note{font-size:.9rem;color:#555;line-height:1.5}"
+            "#protein-function h3{margin-top:1.75rem}</style></head><body>"
         ),
         f"<h1>LigandScout: {esc(run.accession)}</h1>",
         "<p>Results from databases queried in this search.</p>",
@@ -394,6 +462,13 @@ def render_index(value) -> str:
             f"<p>{esc(result.source)} warning: {esc(w['message'])}</p>"
             for w in visible_warnings(result)
         )
+    from ligandscout.go_annotations import render_go
+
+    uniprot = next(
+        (s.result for s in run.sources if s.result.source == "UniProt"), None
+    )
+    lines.append(render_function(uniprot))
+    lines.append(render_go(uniprot))
     lines.append("</body></html>")
     return "\n".join(lines) + "\n"
 

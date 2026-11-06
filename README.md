@@ -92,3 +92,7 @@ Produce a human-readable report with JSON and TSV exports. Include source links 
 ## License
 
 See [LICENSE](LICENSE) for the repository license. External data and tools remain subject to their own terms.
+
+The results index also lists UniProt GO annotations under Molecular Function (MF), Biological Process (BP), and Cellular Component (CC), one term per row in aligned Description and Relation columns. Explicit relation labels come from QuickGO/GOA; missing labels are shown as `not supplied`, without assuming `enables`. Lookup failures retain the available UniProt terms. Older saved UniProt results are refreshed once to populate this section; later runs reuse the saved annotations.
+
+The index displays accession-level protein function descriptions from UniProtKB/Swiss-Prot above the GO tables, with a source link and retrieval date. Isoform labels are retained where supplied.

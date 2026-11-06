@@ -226,7 +226,7 @@ def validate_result(result):
     else:
         context = result.source_context
         demand(
-            set(context)
+            set(context) - {"go_annotations"}
             == {
                 "entry",
                 "generic_sites",
@@ -236,6 +236,13 @@ def validate_result(result):
             },
             "Invalid UniProt context.",
         )
+        if "go_annotations" in context:
+            from ligandscout.go_annotations import validate_saved_go
+
+            try:
+                validate_saved_go(context["go_annotations"])
+            except ValueError as exc:
+                raise UniProtSchemaError(str(exc)) from exc
         entry = context["entry"]
         demand(
             isinstance(entry, dict)

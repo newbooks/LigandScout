@@ -104,6 +104,11 @@ def load_completed(root: Path, accession: str, source: str) -> SearchOutcome | N
             "previous search did not complete",
         )
         _require(result.counts.get("complete") is True, "incomplete result counts")
+        if source == "UniProt":
+            _require(
+                "go_annotations" in result.source_context,
+                "saved UniProt result predates GO annotations",
+            )
         report = folder / f"{slug}-ligands.html"
         _require(
             report.is_file() and report.stat().st_size > 0, "missing source report"
