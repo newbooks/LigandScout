@@ -33,13 +33,17 @@ EVIDENCE_NOTE = "API-associated records, not confirmed binding partners. Target 
 
 
 def evidence_note(result):
+    if result.source == "RCSB PDB":
+        return "RCSB-reported structural contacts establish proximity, not affinity or physiological binding."
     if result.source == "UniProt":
         return "UniProt ligand/cofactor annotations may be experimental or inferred. CCD supplies chemical structure only; annotation alone does not prove direct binding."
     return EVIDENCE_NOTE
 
 
 def source_slug(result):
-    return {"BindingDB": "bindingdb", "UniProt": "uniprot"}[result.source]
+    return {"BindingDB": "bindingdb", "UniProt": "uniprot", "RCSB PDB": "rcsb"}[
+        result.source
+    ]
 
 
 def ligand_count(result):
@@ -51,7 +55,7 @@ def ligand_count(result):
 
 
 def compound_url(result, record):
-    if result.source == "UniProt":
+    if result.source in ("UniProt", "RCSB PDB"):
         return record.source_url
     identifier = quote(record.compound_id, safe="")
     return (
@@ -65,7 +69,15 @@ def terminal_label(value):
 
 
 def visible_warnings(result):
-    return result.warnings
+    return [
+        warning
+        for warning in result.warnings
+        if not (
+            result.source == "RCSB PDB"
+            and warning["code"] == "residue_mapping"
+            and warning["message"].endswith(": mapped, mismatch.")
+        )
+    ]
 
 
 def render_summary(value, *, folder: Path) -> str:
@@ -77,19 +89,25 @@ def render_summary(value, *, folder: Path) -> str:
             [
                 f"Source: {result.source} | Status: {result.status}",
                 f"Unique ligands listed in {result.source} for {result.accession}: {ligand_count(result)}",
-                f"{'Ligand annotation records' if result.source == 'UniProt' else 'Measurements'}: {('Unavailable' if result.error else len(result.records))}",
+                f"{'Ligand annotation records' if result.source == 'UniProt' else 'Structural ligand records' if result.source == 'RCSB PDB' else 'Measurements'}: {('Unavailable' if result.error else len(result.records))}",
             ]
         )
+        if outcome.reused:
+            lines.append(f"Reused saved results retrieved at {result.retrieved_at}")
+        if result.source == "RCSB PDB":
+            lines.append(
+                f"Contact sites: {'Unavailable' if result.error else result.counts['contact_sites']}"
+            )
         if result.error:
             lines.append(f"Search failed: {result.error.message}")
         elif result.status == "no_matches":
             lines.append(
                 f"No specifically identified ligands/cofactors annotated in UniProt for {result.accession}."
                 if result.source == "UniProt"
-                else f"No BindingDB records found for {result.accession}."
+                else f"No {result.source} records found for {result.accession}."
             )
             lines.append("This does not establish the absence of binding partners.")
-        if result.records and result.source != "UniProt":
+        if result.records and result.source == "BindingDB":
             for label, counts in (
                 (
                     "Reported targets",
@@ -122,9 +140,9 @@ def render_summary(value, *, folder: Path) -> str:
             f"Warning: {terminal_label(w['message'])}"
             for w in visible_warnings(result)[:5]
         )
-        if len(result.warnings) > 5:
+        if len(visible_warnings(result)) > 5:
             lines.append(
-                f"... {len(result.warnings) - 5} additional warnings in saved results"
+                f"... {len(visible_warnings(result)) - 5} additional warnings in saved results"
             )
         lines.append("")
     lines.extend(
@@ -199,6 +217,11 @@ def render_report(value) -> str:
         )
     for outcome in run.sources:
         result = outcome.result
+        if result.source == "RCSB PDB":
+            from ligandscout.rcsb_report import render_markdown
+
+            lines.extend([render_markdown(result), ""])
+            continue
         if result.source == "UniProt":
             from ligandscout.uniprot_report import render_markdown
 
@@ -351,7 +374,7 @@ def render_index(value) -> str:
         lines.append(f"<p>{esc(result.source)}: {esc(evidence_note(result))}</p>")
         if result.source == "UniProt":
             lines.append(
-                "<p>UniProt records are ligand-annotation groups; BindingDB records are activity measurements.</p>"
+                "<p>UniProt records are ligand-annotation groups; BindingDB records are activity measurements; RCSB records are grouped structural ligands.</p>"
             )
         if result.error:
             lines.append(
@@ -369,7 +392,7 @@ def render_index(value) -> str:
             )
         lines.extend(
             f"<p>{esc(result.source)} warning: {esc(w['message'])}</p>"
-            for w in result.warnings
+            for w in visible_warnings(result)
         )
     lines.append("</body></html>")
     return "\n".join(lines) + "\n"
@@ -377,6 +400,10 @@ def render_index(value) -> str:
 
 def render_html(result: SourceResult) -> str:
     """One row per source compound; expandable details preserve all activities."""
+    if result.source == "RCSB PDB":
+        from ligandscout.rcsb_report import render_rcsb_html
+
+        return render_rcsb_html(result)
     if result.source == "UniProt":
         from ligandscout.uniprot_report import render_uniprot_html
 

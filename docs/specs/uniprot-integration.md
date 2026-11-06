@@ -2,11 +2,13 @@
 
 Status: implemented. Add UniProt alongside BindingDB in the accession search workflow. This retrieves annotations without calling a classifier or prediction service. Preserve the existing command, BindingDB selection, and API-only architecture.
 
+Current shared serialization is schema v5, as defined in the [RCSB integration spec](rcsb-integration.md). The UniProt adapter and its annotation validator retain the v4 contract below internally; shared upgrades add null structural counters without changing annotations. Readers accept UniProt v4/v5.
+
 ## Scope and evidence
 
 Query only the supplied accession's reviewed UniProt entry. Collect explicitly identified binding-site ligands and cofactors; retain generic binding sites, catalytic reactions, function, and subunit information as context. Do not assign every reaction participant as a binding partner. Do not infer ligands from names, sequence similarity, GO terms, keywords, domains, or catalytic residues.
 
-Automatically attempt structure enrichment for each eligible identifier; “optional” below means that failure to enrich does not fail the annotation search, not that a new CLI flag is required. Use only the selected resources: UniProt for annotations and RCSB PDB's Chemical Component Dictionary (CCD) for optional SMILES enrichment. The CCD call supplies chemical identity, not evidence that the molecule binds this protein. No ChEBI, Rhea, PubChem, ChEMBL, or other external API calls are introduced; their identifiers/links may be preserved as UniProt provenance. Experimental PDB complex/contact retrieval remains a separate future adapter.
+Automatically attempt structure enrichment for each eligible identifier; “optional” below means that failure to enrich does not fail the annotation search, not that a new CLI flag is required. Use only the selected resources: UniProt for annotations and RCSB PDB's Chemical Component Dictionary (CCD) for optional SMILES enrichment. The CCD call supplies chemical identity, not evidence that the molecule binds this protein. No ChEBI, Rhea, PubChem, ChEMBL, or other external API calls are introduced; their identifiers/links may be preserved as UniProt provenance. Experimental PDB ligand contacts are retrieved by the separate implemented [RCSB adapter](rcsb-integration.md).
 
 Present the result as “UniProt-annotated ligands and cofactors,” with annotation evidence attached. Reviewed status does not imply that every annotation was measured experimentally. Preserve ECO codes and their source identifiers; distinguish experimental, similarity-based, and other annotations without assigning invented confidence scores. No measured affinity values are fabricated.
 
@@ -29,7 +31,7 @@ Retrieve the complete entry, including sequence, `features`, `comments`, referen
 
 Use the shared synchronous HTTPX client with TLS verification and 30-second operation timeouts. Reuse BindingDB's three-attempt retry/backoff/Retry-After and HTTPS redirect rules, implemented in `api_http.py` for the new requests. Reuse existing retry-delay logic where practical, but leave the BindingDB request/parser implementation unchanged in this increment; its tests remain the compatibility contract. Retry transient transport failures, HTTP 429/5xx, and ambiguous empty bodies/decoded JSON empty strings; do not retry 404 or malformed nonempty responses. Follow only explicit HTTPS redirects, up to five per attempt, with retries restarting the original URL.
 
-UniProt entry retrieval is one object, so it has no pagination. Both sources run independently: a UniProt failure must not prevent BindingDB output, and vice versa. The CLI exits 1 if either core source fails, otherwise 0. Optional chemical-enrichment failures are warnings and do not invalidate the core UniProt result.
+UniProt entry retrieval is one object, so it has no pagination. BindingDB, UniProt and RCSB run independently: a failure of one source must not prevent output from the others. The CLI exits 1 if any core source fails, otherwise 0. Optional chemical-enrichment failures are warnings and do not invalidate the core UniProt result.
 
 ## Annotation extraction
 
@@ -141,7 +143,7 @@ ligands.tsv
 
 Store each complete UniProt/CCD HTTP response separately (`.txt` for non-JSON). The request manifest records monotonically increasing exchange ID, role, query chemical IDs, URL/parameters, attempt/redirect, UTC time, HTTP status or transport error, selected response headers, relative raw path, and SHA-256. Record empty final responses and enrichment failures. Retain core entry JSON, not only extracted fields. Never fabricate a database release from the retrieval date.
 
-Stage artifacts before publishing through the current writer; overwrite current generated source files, source HTML, index, and combined reports on rerun. Remove only stale numbered raw files owned by this manifest after successful publication, preserving unrelated files and historical removed-source artifacts. No timestamp subdirectory or implicit prior-result cache. Keep per-file atomicity and existing output failure/interruption behavior.
+Stage artifacts before publishing through the current writer; overwrite current generated source files, source HTML, index, and combined reports on rerun. Remove only stale numbered raw files owned by this manifest after successful publication, preserving unrelated files and historical removed-source artifacts. No timestamp subdirectory. Completed source snapshots are reused by default under the shared [query reuse policy](query-reuse.md); `--force` bypasses reuse. Only refreshed source artifacts are overwritten. Keep per-file atomicity and existing output failure/interruption behavior.
 
 ## Presentation beside BindingDB
 

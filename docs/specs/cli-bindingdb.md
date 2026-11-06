@@ -1,8 +1,8 @@
 # CLI and BindingDB implementation specification
 
-Status: implemented. The selected sources are BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB. The command queries BindingDB and UniProt; RCSB CCD supplies optional exact-ID chemical enrichment. Experimental PDB interaction search is not implemented.
+Status: implemented. The selected sources are BindingDB, UniProtKB/Swiss-Prot, and RCSB PDB. The command queries all three sources independently. RCSB provides structural ligand contacts and CCD chemical descriptors.
 
-`pip install -e .` installs the Typer command and `python -m ligandscout` entry point. The [UniProt integration specification](uniprot-integration.md) defines current two-source orchestration, schema v4, request auditing, annotation/site reporting, and optional CCD enrichment. It supersedes the original single-source orchestration and schema descriptions below. BindingDB's request/parser/retry/measurement behavior is unchanged.
+`pip install -e .` installs the Typer command and `python -m ligandscout` entry point. The [UniProt integration specification](uniprot-integration.md) defines annotation/site reporting and exact-ID CCD enrichment. The [RCSB integration specification](rcsb-integration.md) defines the current three-source orchestration, additive schema v5, and structural contact reporting. It supersedes the original single-source orchestration and schema descriptions below. BindingDB's request/parser/retry/measurement behavior is unchanged.
 
 ## Original BindingDB-only orchestration and saved-format contract (historical)
 
@@ -18,7 +18,7 @@ The sections below preserve the original BindingDB data contract (including its 
 
 ## HTML summary index
 
-Current two-source indexes use “Records” for the shared count column: BindingDB activity measurements versus UniProt ligand-annotation groups. Source-specific notes identify the evidence differences.
+Current indexes use “Records” for the shared count column: BindingDB activity measurements, UniProt ligand-annotation groups, and RCSB grouped structural ligands. Source-specific notes identify the evidence differences.
 
 Every saved search creates or overwrites `results/ACCESSION/index.html` alongside the existing reports. Render it from the current `RunOutcome` through `render_index(value) -> str`; it must not load prior source files or initiate network requests. The page works locally without external scripts or stylesheets.
 
@@ -218,7 +218,7 @@ Known review case: [entry 912](https://www.bindingdb.org/entry/912) contains cat
 
 ### Saved results
 
-Save results under `results/ACCESSION_ID/`, relative to the current working directory, using the normalized accession. Do not create timestamp or version subfolders. Repeating a search for the same accession overwrites its generated results without prompting.
+Save results under `results/ACCESSION_ID/`, relative to the current working directory, using the normalized accession. Do not create timestamp or version subfolders. Repeating a search reuses complete source results by default; `--force` refreshes all sources without prompting. See [query reuse](query-reuse.md).
 
 ```text
 results/P00699/
@@ -236,7 +236,7 @@ results/P00699/
 - `ligands.tsv`: compiled measurement table using the normalized source records and preserving source attribution. Initially it contains only BindingDB records; additional sources will contribute through the same normalized result structure.
 - `report.md`: the full readable report; stdout contains only a compact summary.
 
-Always make a fresh API request on rerun; saved results are output artifacts, not an implicit cache. Overwrite the source result and regenerate the compiled table and report from the current invocation. For no matches, write an empty records list and a header-only TSV. For a service or parsing failure, write status `failed`, an empty records list, and error details; regenerate the report and header-only TSV so previous successful records are not presented as current. Output-writing failures exit with code 1 and must not be reported as a completed search.
+Apply the per-source reuse checks in [query reuse](query-reuse.md) before making API requests. For refreshed sources, overwrite the source result. Regenerate the compiled table and report from both reused and refreshed outcomes in the current invocation. For no matches, write an empty records list and a header-only TSV. For a service or parsing failure, write status `failed`, an empty records list, and error details; regenerate the report and header-only TSV so previous successful records are not presented as current. Output-writing failures exit with code 1 and must not be reported as a completed search.
 
 Create directories with `parents=True, exist_ok=True`. Render all artifacts in memory, stage temporary files in their destination directories, then publish with `os.replace`: current raw body first (if present), remove the obsolete raw variant, replace `ligands.tsv`, replace `report.md`, and replace `sources/bindingdb.json` last. Clean up remaining temporary files in `finally`. With no response body, remove both old raw variants. Replace only these generated filenames; preserve unrelated files and other sources' outputs. Do not load other sources' previous outputs into the compiled table in this increment.
 

@@ -342,13 +342,18 @@ def test_old_source_artifacts_are_not_loaded_or_linked(positive, tmp_path):
     assert {row["source"] for row in rows} == {"BindingDB"}
 
 
-@pytest.mark.parametrize("version", [1, 2, 3])
+@pytest.mark.parametrize("version", [1, 2, 3, 4])
 def test_bindingdb_saved_schema_compatibility(positive, version):
     from ligandscout.models import source_result_from_dict
 
     current = upgrade_result(positive.result)
     data = asdict(positive.result if version == 1 else current)
     data["schema_version"] = version
+    if version in (2, 3, 4):
+        from ligandscout.rcsb_schema import STRUCTURAL_COUNTS
+
+        for key in STRUCTURAL_COUNTS:
+            data["counts"].pop(key)
     if version in (2, 3):
         from ligandscout.models import ANNOTATION_COUNTS
 

@@ -26,6 +26,11 @@ app = typer.Typer(
 def search(
     ctx: typer.Context,
     accession_id: str | None = typer.Argument(None, help="Swiss-Prot accession ID."),
+    force: bool = typer.Option(
+        False,
+        "--force",
+        help="Query every database again and overwrite completed source results.",
+    ),
     log_level: str = typer.Option("INFO", "--log-level", "-l", help="Logging level."),
 ) -> None:
     """Search for binding partners of ACCESSION_ID."""
@@ -46,6 +51,7 @@ def search(
     logging.getLogger("httpx").setLevel(
         logging.WARNING if level != "DEBUG" else logging.DEBUG
     )
+    root = Path.cwd() / "results"
     try:
         with httpx.Client(timeout=30.0, follow_redirects=False) as client:
             outcome = run_search(
@@ -54,8 +60,10 @@ def search(
                 sleep=time.sleep,
                 now=lambda: datetime.now(timezone.utc),
                 monotonic=time.monotonic,
+                root=root,
+                force=force,
             )
-        folder = save_results(outcome, root=Path.cwd() / "results")
+        folder = save_results(outcome, root=root)
     except KeyboardInterrupt:
         typer.echo(
             "Interrupted; any output folder may contain incomplete results.", err=True

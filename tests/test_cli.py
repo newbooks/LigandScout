@@ -29,6 +29,8 @@ def test_search_queries_and_saves(monkeypatch, tmp_path, payload, empty_uniprot)
     real_client = httpx.Client
 
     def handler(request):
+        if request.url.host == "search.rcsb.org":
+            return httpx.Response(204)
         if request.url.host == "rest.uniprot.org":
             return httpx.Response(200, json=empty_uniprot)
         assert request.url.host == "www.bindingdb.org"
@@ -145,6 +147,8 @@ def test_cli_empty_and_failed_results(
     real_client = httpx.Client
 
     def handler(request):
+        if request.url.host == "search.rcsb.org":
+            return httpx.Response(204)
         if request.url.host == "rest.uniprot.org":
             return httpx.Response(200, json=empty_uniprot)
         assert request.url.host == "www.bindingdb.org"

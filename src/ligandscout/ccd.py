@@ -141,32 +141,13 @@ def lookup(chemical, *, audit, client, sleep, now, monotonic):
                     }
                 )
                 continue
-            descriptors = data.get("rcsb_chem_comp_descriptor", {})
-            if not isinstance(descriptors, dict) or any(
-                v is not None and not isinstance(v, str)
-                for v in (
-                    descriptors.get("SMILES_stereo"),
-                    descriptors.get("SMILES"),
-                    descriptors.get("InChIKey"),
-                )
-            ):
-                raise EnrichmentError("Invalid CCD descriptor.")
-            field = next(
-                (
-                    k
-                    for k in ("SMILES_stereo", "SMILES")
-                    if descriptors.get(k) and descriptors[k].strip()
-                ),
-                None,
-            )
+            field, smiles, inchikey = descriptors(data)
             candidate = {
                 "ccd_id": identifier,
                 "mapping": matches[0],
                 "smiles_field": field,
-                "smiles": descriptors[field] if field else None,
-                "inchikey": descriptors.get("InChIKey")
-                if (descriptors.get("InChIKey") or "").strip()
-                else None,
+                "smiles": smiles,
+                "inchikey": inchikey,
                 "request_id": audit.request_count,
                 "reason": None,
             }
@@ -230,3 +211,25 @@ def enrich_ligands(result, *, audit, client, sleep, now, monotonic):
             )
     result.counts = annotation_counts(result.records, result.source_context)
     return result
+
+
+def descriptors(data):
+    """Select a descriptor from an already identified CCD component."""
+    values = data.get("rcsb_chem_comp_descriptor", {})
+    if not isinstance(values, dict) or any(
+        v is not None and not isinstance(v, str)
+        for v in (
+            values.get("SMILES_stereo"),
+            values.get("SMILES"),
+            values.get("InChIKey"),
+        )
+    ):
+        raise EnrichmentError("Invalid CCD descriptor.")
+    field = next(
+        (k for k in ("SMILES_stereo", "SMILES") if (values.get(k) or "").strip()), None
+    )
+    return (
+        field,
+        values[field] if field else None,
+        values.get("InChIKey") if (values.get("InChIKey") or "").strip() else None,
+    )
