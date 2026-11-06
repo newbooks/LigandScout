@@ -1,0 +1,111 @@
+{
+  "query_id" : "a245ec88-a16a-4650-aa9a-dd71d8a20e79",
+  "result_type" : "polymer_entity",
+  "total_count" : 35,
+  "result_set" : [ {
+    "identifier" : "1V4S_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1V4T_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3A0I_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3F9M_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3FGU_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3FR0_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3GOI_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3H1V_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3ID8_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3IDH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3IMX_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3QIC_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3S41_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3VEV_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3VEY_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3VF6_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4DCH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4DHY_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4ISE_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4ISF_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4ISG_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4IWV_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4IXC_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4L3Q_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4LC9_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "4MLE_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4MLH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4NO7_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "4RCH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "5V4W_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "5V4X_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "6E0E_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "6E0I_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "7T78_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "7T79_1",
+    "score" : 1.0
+  } ]
+}

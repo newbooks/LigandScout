@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "accession": "P00519",
+  "exchanges": [
+    {
+      "sequence": 1,
+      "request_id": 1,
+      "role": "entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://rest.uniprot.org/uniprotkb/P00519.json",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:41:33.537577Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:41:33 GMT",
+        "content-type": "application/json",
+        "x-uniprot-release": "2026_04",
+        "x-uniprot-release-date": "04-November-2026"
+      },
+      "raw_path": "uniprot-raw/000001.json",
+      "sha256": "5ac7d2c4b5d646680d041f48976ff1b4752d3f7ddfc848d8ae4d3e528168122a"
+    },
+    {
+      "sequence": 2,
+      "request_id": 2,
+      "role": "go_annotations",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search",
+      "parameters": {
+        "geneProductId": "UniProtKB:P00519",
+        "limit": "200",
+        "page": "1"
+      },
+      "retrieved_at": "2026-11-06T00:41:34.351893Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:41:33 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "uniprot-raw/000002.json",
+      "sha256": "688cf1909f4ef0fb63d126c7219cf23c96ad2958d4428d88394c998cbd4ecc99"
+    },
+    {
+      "sequence": 3,
+      "request_id": 3,
+      "role": "go_annotations",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search",
+      "parameters": {
+        "geneProductId": "UniProtKB:P00519",
+        "limit": "200",
+        "page": "2"
+      },
+      "retrieved_at": "2026-11-06T00:41:34.555647Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:41:33 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "uniprot-raw/000003.json",
+      "sha256": "2977f2a34e9f15b950a303248e59b8ca1cd8f3e45bdd793bf02b40e678a5ff46"
+    },
+    {
+      "sequence": 4,
+      "request_id": 4,
+      "role": "ccd_search",
+      "chemical_id": "CHEBI:18420",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "parameters": {
+        "json": "{\"query\":{\"type\":\"terminal\",\"service\":\"text_chem\",\"parameters\":{\"attribute\":\"rcsb_chem_comp_related.resource_accession_code\",\"operator\":\"exact_match\",\"value\":\"CHEBI:18420\"}},\"return_type\":\"mol_definition\",\"request_options\":{\"paginate\":{\"start\":0,\"rows\":100}}}"
+      },
+      "retrieved_at": "2026-11-06T00:41:35.356641Z",
+      "http_status": 204,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:41:35 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "uniprot-raw/000004.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sequence": 5,
+      "request_id": 5,
+      "role": "ccd_search",
+      "chemical_id": "CHEBI:30616",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "parameters": {
+        "json": "{\"query\":{\"type\":\"terminal\",\"service\":\"text_chem\",\"parameters\":{\"attribute\":\"rcsb_chem_comp_related.resource_accession_code\",\"operator\":\"exact_match\",\"value\":\"CHEBI:30616\"}},\"return_type\":\"mol_definition\",\"request_options\":{\"paginate\":{\"start\":0,\"rows\":100}}}"
+      },
+      "retrieved_at": "2026-11-06T00:41:35.381787Z",
+      "http_status": 204,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:41:34 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "uniprot-raw/000005.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

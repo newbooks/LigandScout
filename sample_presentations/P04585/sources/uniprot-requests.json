@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "accession": "P04585",
+  "exchanges": [
+    {
+      "sequence": 1,
+      "request_id": 1,
+      "role": "entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://rest.uniprot.org/uniprotkb/P04585.json",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:02:37.999098Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:02:37 GMT",
+        "content-type": "application/json",
+        "x-uniprot-release": "2026_04",
+        "x-uniprot-release-date": "04-November-2026"
+      },
+      "raw_path": "uniprot-raw/000001.json",
+      "sha256": "fe3d71d0377f99aa8be56f6bc6b3dc5c6e80abcf3842e84a71ecf45d6e2c8e4f"
+    },
+    {
+      "sequence": 2,
+      "request_id": 2,
+      "role": "go_annotations",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search",
+      "parameters": {
+        "geneProductId": "UniProtKB:P04585",
+        "limit": "200",
+        "page": "1"
+      },
+      "retrieved_at": "2026-11-06T01:02:38.523524Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:02:38 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "uniprot-raw/000002.json",
+      "sha256": "fe7ff7c62a158927ce0ba35e8c348be4c4dd192279002cff369bf19cd8afe79c"
+    },
+    {
+      "sequence": 3,
+      "request_id": 3,
+      "role": "ccd_search",
+      "chemical_id": "CHEBI:18420",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "parameters": {
+        "json": "{\"query\":{\"type\":\"terminal\",\"service\":\"text_chem\",\"parameters\":{\"attribute\":\"rcsb_chem_comp_related.resource_accession_code\",\"operator\":\"exact_match\",\"value\":\"CHEBI:18420\"}},\"return_type\":\"mol_definition\",\"request_options\":{\"paginate\":{\"start\":0,\"rows\":100}}}"
+      },
+      "retrieved_at": "2026-11-06T01:02:38.579457Z",
+      "http_status": 204,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:02:38 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "uniprot-raw/000003.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "sequence": 4,
+      "request_id": 4,
+      "role": "ccd_search",
+      "chemical_id": "CHEBI:29105",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "parameters": {
+        "json": "{\"query\":{\"type\":\"terminal\",\"service\":\"text_chem\",\"parameters\":{\"attribute\":\"rcsb_chem_comp_related.resource_accession_code\",\"operator\":\"exact_match\",\"value\":\"CHEBI:29105\"}},\"return_type\":\"mol_definition\",\"request_options\":{\"paginate\":{\"start\":0,\"rows\":100}}}"
+      },
+      "retrieved_at": "2026-11-06T01:02:39.064746Z",
+      "http_status": 204,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:02:39 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "uniprot-raw/000004.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

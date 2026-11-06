@@ -1,0 +1,306 @@
+{
+  "query_id" : "26e97e29-5ff8-4f66-b362-f24848fd6eef",
+  "result_type" : "polymer_entity",
+  "total_count" : 416,
+  "result_set" : [ {
+    "identifier" : "1S1T_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1T_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1U_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1U_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1V_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1V_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1W_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1W_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1X_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1S1X_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1T05_4",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TAM_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TKT_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TKT_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TKX_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TKX_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TKZ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TKZ_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TL1_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TL1_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TL3_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1TL3_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1VRT_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1VRT_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1VRU_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1VRU_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2FDE_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2HND_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2HNY_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2HNZ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2KOD_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2NPH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2OPP_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2OPP_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2OPQ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2OPQ_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2OPR_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2OPR_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2OPS_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2OPS_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2RF2_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2RF2_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2RKI_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2RKI_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2WHH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2WOM_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2WOM_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2WON_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2WON_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2YNF_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2YNF_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2YNG_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2YNG_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2YNH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2YNH_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "2YNI_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "2YNI_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "36BT_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "36BT_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "36CP_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "36CP_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "36CW_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "36CW_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "36DK_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "36DK_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "36DN_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "36DN_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3AO2_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3C6T_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3C6T_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3C6U_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3C6U_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DI6_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DI6_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DLE_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DLE_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DLG_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DLG_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DM2_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DM2_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DMJ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DMJ_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DOK_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DOK_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DOL_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DOL_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DOX_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DRP_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DRP_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DRR_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DRR_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DRS_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DRS_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DYA_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3DYA_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3E01_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3E01_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3FFI_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "3FFI_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "3I0R_1",
+    "score" : 1.0
+  } ]
+}

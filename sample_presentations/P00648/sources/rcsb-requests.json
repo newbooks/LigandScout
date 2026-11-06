@@ -1,0 +1,5138 @@
+{
+  "schema_version": 1,
+  "accession": "P00648",
+  "exchanges": [
+    {
+      "sequence": 1,
+      "request_id": 1,
+      "role": "rcsb_search",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://search.rcsb.org/rcsbsearch/v2/query",
+      "parameters": {
+        "json": "{\"query\":{\"type\":\"terminal\",\"service\":\"text\",\"parameters\":{\"attribute\":\"rcsb_polymer_entity_container_identifiers.reference_sequence_identifiers.database_accession\",\"operator\":\"exact_match\",\"value\":\"P00648\"}},\"return_type\":\"polymer_entity\",\"request_options\":{\"results_content_type\":[\"experimental\"],\"paginate\":{\"start\":0,\"rows\":100},\"sort\":[{\"sort_by\":\"rcsb_id\",\"direction\":\"asc\"}]}}"
+      },
+      "retrieved_at": "2026-11-06T00:57:51.364942Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:50 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000001.json",
+      "sha256": "1d8d90c285434787b2565143733a640a1dcdbf854f1435a722f01217bc5957e9"
+    },
+    {
+      "sequence": 2,
+      "request_id": 2,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1A2P/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:51.467843Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:51 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000002.json",
+      "sha256": "f6ddd080f7422a6942db99d4238856e84dcbba3ab1fa35804cd23e55b6d86793"
+    },
+    {
+      "sequence": 3,
+      "request_id": 3,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1A2P",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:51.941538Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:51 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000003.json",
+      "sha256": "6e6a165b89052ff05181b1ad6d184d14d44cb63d6e42286b285612cf8c27a15c"
+    },
+    {
+      "sequence": 4,
+      "request_id": 4,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1B20/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:52.440811Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:52 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000004.json",
+      "sha256": "ca30b2a03a1d9f97a61c6772d6a35253ae00e2cee1010d857b0e942954f4d821"
+    },
+    {
+      "sequence": 5,
+      "request_id": 5,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1B20",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:52.943165Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:52 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000005.json",
+      "sha256": "27d97c7e241154209072962991dbd11b03625f1fd4892aff827d1894fb80f84a"
+    },
+    {
+      "sequence": 6,
+      "request_id": 6,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1B21/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:53.444083Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:53 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000006.json",
+      "sha256": "cd849dd70578eaa1c45102c08a996fa5827a1c44794e12cffef31fd9ae3d02a1"
+    },
+    {
+      "sequence": 7,
+      "request_id": 7,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1B21",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:53.925930Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:53 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000007.json",
+      "sha256": "1c01e80d5a97d83f67f3731de29ff4452b532619910512f6569e97d0a9b931f0"
+    },
+    {
+      "sequence": 8,
+      "request_id": 8,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1B27/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:54.438924Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:54 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000008.json",
+      "sha256": "ac64d9ce35af24dfaab8d85f959855c29016e740911a8d5c90bec53cfeeff46c"
+    },
+    {
+      "sequence": 9,
+      "request_id": 9,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1B27",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:54.941792Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:54 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000009.json",
+      "sha256": "ec781f1f28e0bb72773ea30e1ea5a2704f12b341f8a867d26fef27cda6751c97"
+    },
+    {
+      "sequence": 10,
+      "request_id": 10,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1B2S/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:55.422977Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:55 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000010.json",
+      "sha256": "e603eebfdc30ddc629b8ae462c5d10a0075afc7bcec7e4d84021cc445fb71008"
+    },
+    {
+      "sequence": 11,
+      "request_id": 11,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1B2S",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:55.924791Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:55 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000011.json",
+      "sha256": "599344fe788ef33312ea9bb080dee02873a43b19423443be7c37d930e2cedd91"
+    },
+    {
+      "sequence": 12,
+      "request_id": 12,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1B2U/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:56.427044Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:56 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000012.json",
+      "sha256": "d481222089955c0a3d5b2cd56e725fa9c4b0672c9d322b65f6788df421818f68"
+    },
+    {
+      "sequence": 13,
+      "request_id": 13,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1B2U",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:56.930176Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:56 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000013.json",
+      "sha256": "9c1519ef76a62a403bd8a9ad592219a22c9b9757fcf6d83817ea6fc2bc2b6858"
+    },
+    {
+      "sequence": 14,
+      "request_id": 14,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1B2X/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:57.432069Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:57 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000014.json",
+      "sha256": "7f9f58255435b505e7f4444956da59c4226383f7af9cdba7e5a5dc2a51b7b66d"
+    },
+    {
+      "sequence": 15,
+      "request_id": 15,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1B2X",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:57.942949Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:57 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000015.json",
+      "sha256": "297827893a3c36a121a92dcd9936fdabf73a48e9461593135a81ca0b006b01ba"
+    },
+    {
+      "sequence": 16,
+      "request_id": 16,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1B2Z/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:58.447329Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:58 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000016.json",
+      "sha256": "6ed758909322d4226f97fb8016156d8706c5340797b0e494ae955e9d86cfe0e9"
+    },
+    {
+      "sequence": 17,
+      "request_id": 17,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1B2Z",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:58.948815Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:58 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000017.json",
+      "sha256": "7255025e70a07c6c31eac06354d3a3da4ef5612058ad505a048f5e94e1fcab30"
+    },
+    {
+      "sequence": 18,
+      "request_id": 18,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1B3S/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:59.450783Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:59 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000018.json",
+      "sha256": "bf3fe7c685cdb86e982bbcb941928a7740ec7f9b0272be64a7d7fee1c7c829e3"
+    },
+    {
+      "sequence": 19,
+      "request_id": 19,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1B3S",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:59.941713Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:59 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000019.json",
+      "sha256": "332c5312a5dff978e666ed737ea80ff7718781b25530b010e97a126b2e0ee0e9"
+    },
+    {
+      "sequence": 20,
+      "request_id": 20,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BAN/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:00.434772Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:00 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000020.json",
+      "sha256": "7f11d321fa5f980b31ffb757841d6d2268cb647fde4b4135f967a345851f93b5"
+    },
+    {
+      "sequence": 21,
+      "request_id": 21,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BAN",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:00.946740Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:00 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000021.json",
+      "sha256": "dcafb8981fef1fa5ab7ae73268eebec1b2b7466cbcf9c6dfc6168de2f49dce0e"
+    },
+    {
+      "sequence": 22,
+      "request_id": 22,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BAO/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:01.431677Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:01 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000022.json",
+      "sha256": "4d7b2640ad1c08a2176bc4731c94bc01291a0b882ed6c1f50b78b2a7b90212dd"
+    },
+    {
+      "sequence": 23,
+      "request_id": 23,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BAO",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:01.931539Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:01 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000023.json",
+      "sha256": "72654fe0a354c26cd5baf7b4b65deb91d1d006fe4f5fe1145a4d5ef2250fc443"
+    },
+    {
+      "sequence": 24,
+      "request_id": 24,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BGS/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:02.444723Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:02 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000024.json",
+      "sha256": "0434cb6f5606c4f17c0d326cecf26ad19d2ff4b84eb180acecdfc3be46aa8063"
+    },
+    {
+      "sequence": 25,
+      "request_id": 25,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BGS",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:02.945411Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:02 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000025.json",
+      "sha256": "b7b5fceca7d4ecd117a388f7e6e4acb1af5664cec5dc31ad3b114b3d4ca63eaa"
+    },
+    {
+      "sequence": 26,
+      "request_id": 26,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BNE/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:03.449156Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:03 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000026.json",
+      "sha256": "ec6f88eea27a0d35f94876f2b945ce5d038a873eb3e10375041943f9ceadb01e"
+    },
+    {
+      "sequence": 27,
+      "request_id": 27,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BNE",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:03.929885Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:03 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000027.json",
+      "sha256": "3f3ef4579cf416cc828790622f1e4d34d8a41f67800a66c54551637d9f3d3107"
+    },
+    {
+      "sequence": 28,
+      "request_id": 28,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BNF/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:04.433367Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:04 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000028.json",
+      "sha256": "8ef5f7dc68ece7311320fd3495d6864f3aa09f25e495ec4ef8790e46f74a46d0"
+    },
+    {
+      "sequence": 29,
+      "request_id": 29,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BNF",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:04.935018Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:04 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000029.json",
+      "sha256": "88cf942519307c50cb76bc9aef7c6525efc048e5c0e82fd488372681402928d7"
+    },
+    {
+      "sequence": 30,
+      "request_id": 30,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BNG/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:05.438178Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:05 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000030.json",
+      "sha256": "ba1772218ca0d8413a5f5ed2d0c8354d9a1c017b3dcfa01ef521698e1de9fa5c"
+    },
+    {
+      "sequence": 31,
+      "request_id": 31,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BNG",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:05.953711Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:05 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000031.json",
+      "sha256": "c00a98101a380a614b147d5f87192870345294ea4b8fd2352d09f212d4d92525"
+    },
+    {
+      "sequence": 32,
+      "request_id": 32,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BNI/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:06.451391Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:06 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000032.json",
+      "sha256": "22501fd4a65a6559ac99f0081c0666186cd07415e582b9de3f9233df502b7f2e"
+    },
+    {
+      "sequence": 33,
+      "request_id": 33,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BNI",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:06.932069Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:06 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000033.json",
+      "sha256": "68671d36d977a1b9bf6117999d907712bced2a61f8483d1968fe043e6089a681"
+    },
+    {
+      "sequence": 34,
+      "request_id": 34,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BNJ/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:07.436352Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:07 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000034.json",
+      "sha256": "fdb2a564c0cd4fb0ede63eb12b0ca5c365965502172752ec278ced5349fe2c02"
+    },
+    {
+      "sequence": 35,
+      "request_id": 35,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BNJ",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:07.939866Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:07 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000035.json",
+      "sha256": "255999ab09904df51c1d425d34121ebd75b0863b34971292c1cb563c9d035398"
+    },
+    {
+      "sequence": 36,
+      "request_id": 36,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BNR/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:08.439711Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:08 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000036.json",
+      "sha256": "54becd6cdbd54dc65eb6eb6087c0e5fea789b5ba07c756a53b28a9c5e22ed523"
+    },
+    {
+      "sequence": 37,
+      "request_id": 37,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BNR",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:08.931290Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:08 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000037.json",
+      "sha256": "0753e6a10a9c335e1e495cc4c788945ec94ecef6efb53edd2f11a131a3f4a12e"
+    },
+    {
+      "sequence": 38,
+      "request_id": 38,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BNS/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:09.433553Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:09 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000038.json",
+      "sha256": "838e9fc0c1dcdbe1636d291e700f7a7ae39f6eb2fc31a3123d14c9fe1917c21f"
+    },
+    {
+      "sequence": 39,
+      "request_id": 39,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BNS",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:09.936417Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:09 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000039.json",
+      "sha256": "00408a46896c40d7b363eecc1f874bde2047287a6a41f03ff1b38514829b414a"
+    },
+    {
+      "sequence": 40,
+      "request_id": 40,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BRG/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:10.465241Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:10 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000040.json",
+      "sha256": "c88c8f9197cf177ef6e27826c96b3967670a39cb3d8b5dea19c9242e60318cff"
+    },
+    {
+      "sequence": 41,
+      "request_id": 41,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BRG",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:10.944065Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:10 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000041.json",
+      "sha256": "08481c0eaa70fe01a2140e764daa44e118bbee53dc35d2636f544bc912d35c16"
+    },
+    {
+      "sequence": 42,
+      "request_id": 42,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BRH/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:11.433106Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:11 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000042.json",
+      "sha256": "a52eb2dbbbbdfcca210c1f98de467a14e55da3839ba2c1fcf489f47066938600"
+    },
+    {
+      "sequence": 43,
+      "request_id": 43,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BRH",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:11.935383Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:11 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000043.json",
+      "sha256": "a52b4c1f143cc707b9b521a765c8c2c30a4c9b149626f55760efb40bb359a19f"
+    },
+    {
+      "sequence": 44,
+      "request_id": 44,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BRI/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:12.456274Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:12 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000044.json",
+      "sha256": "4eca546a17e060a6e1ed96a6357c5776479b4456fe728b68ea010434e822947f"
+    },
+    {
+      "sequence": 45,
+      "request_id": 45,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BRI",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:12.960131Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:12 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000045.json",
+      "sha256": "d5d5cf3310fe654d990f51a96acdf20004ca76d0f459e7a3b9982d22b1041495"
+    },
+    {
+      "sequence": 46,
+      "request_id": 46,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BRJ/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:13.447142Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:13 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000046.json",
+      "sha256": "a83f679ad72144bbd9d6d0a6ed153128d4eb8981dc091498177d5bc53c120152"
+    },
+    {
+      "sequence": 47,
+      "request_id": 47,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BRJ",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:13.944993Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:13 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000047.json",
+      "sha256": "70480745fbb8ba0ce1999eb9544407c73a925e508b8e38755969f6f89d79abdb"
+    },
+    {
+      "sequence": 48,
+      "request_id": 48,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BRK/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:14.439982Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:14 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000048.json",
+      "sha256": "033721c4d5d109d25ed610bf9ae83ab5fb59f22b8ee1e5b637832fa8aa1cd517"
+    },
+    {
+      "sequence": 49,
+      "request_id": 49,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BRK",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:14.950361Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:14 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000049.json",
+      "sha256": "71d79d2dd1a3aa827786270f284c309fc5a26abc947b8277e2990e8ad7404dea"
+    },
+    {
+      "sequence": 50,
+      "request_id": 50,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BRN/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:15.441911Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:15 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000050.json",
+      "sha256": "1141257abdeb7040e2e0c1e73fb78f53f0c3eb68062ee1cd1781e6d84c442825"
+    },
+    {
+      "sequence": 51,
+      "request_id": 51,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BRN",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:15.962268Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:15 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000051.json",
+      "sha256": "35b941478b071380451ee858b65836325f99cf81140f1061cd159745c951d1b9"
+    },
+    {
+      "sequence": 52,
+      "request_id": 52,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BRS/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:16.443417Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:16 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000052.json",
+      "sha256": "ffe953fd7478ccea97cefa5cdebb458c839be1f9d01a8a942ed7c63af5009020"
+    },
+    {
+      "sequence": 53,
+      "request_id": 53,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BRS",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:16.962293Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:16 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000053.json",
+      "sha256": "ba1179fdfceb5c28e004c69fd463a1a0934d6125b3139ad95e6abb9cc12c65c4"
+    },
+    {
+      "sequence": 54,
+      "request_id": 54,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BSA/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:17.466993Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:17 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000054.json",
+      "sha256": "6edf67792e26f707ee7ee671f91aa30476d23702f026dd84e8f5e53f24a3970a"
+    },
+    {
+      "sequence": 55,
+      "request_id": 55,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BSA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:17.957185Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:17 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000055.json",
+      "sha256": "8280c1b3df7fc8242c8182a05b43ac16e94416260098559154969d56369afe58"
+    },
+    {
+      "sequence": 56,
+      "request_id": 56,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BSB/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:18.450289Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:18 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000056.json",
+      "sha256": "7b2f4db228dc8bc231116f663e2a6e06992759de466fb5c8af48a4e0e6564787"
+    },
+    {
+      "sequence": 57,
+      "request_id": 57,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BSB",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:18.960637Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:18 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000057.json",
+      "sha256": "9bc8fd3dd276466d70c5b0ba9a3a8b0ced9161a34376ffcdae41ee01d976b53f"
+    },
+    {
+      "sequence": 58,
+      "request_id": 58,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BSC/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:19.454441Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:19 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000058.json",
+      "sha256": "2190436c634379482b726f662c0447c2608c0021e20453ffeb408e32e0fc9ff8"
+    },
+    {
+      "sequence": 59,
+      "request_id": 59,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BSC",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:19.956544Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:19 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000059.json",
+      "sha256": "b8c11dc4ef692c43ea94dd74d570431e1ee8d886365426cb18de8ded5cc2e840"
+    },
+    {
+      "sequence": 60,
+      "request_id": 60,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BSD/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:20.448415Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:20 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000060.json",
+      "sha256": "f8d4a254e147ba1acdbf44d48c615893abdeb7b63658ff21cf9114dbc6c00aae"
+    },
+    {
+      "sequence": 61,
+      "request_id": 61,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BSD",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:20.960756Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:20 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000061.json",
+      "sha256": "329d328c9256a8482c7b498035c3ea7503fef64150795aed759a123e7dd56307"
+    },
+    {
+      "sequence": 62,
+      "request_id": 62,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1BSE/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:21.443199Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:21 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000062.json",
+      "sha256": "2ce66cb187e3ad3e8d0812923994526a5708a76e6883d07b6d94b31ef208de27"
+    },
+    {
+      "sequence": 63,
+      "request_id": 63,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1BSE",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:21.944365Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:21 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000063.json",
+      "sha256": "32959c1bd868e9a1fdbde8286b1e0b0290e7b55f4d17c348ed23aac92f791130"
+    },
+    {
+      "sequence": 64,
+      "request_id": 64,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1FW7/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:22.467521Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:22 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000064.json",
+      "sha256": "7d426d06996aec07521fb208301ae6a9a587641264ee1e54aa0593288483beb3"
+    },
+    {
+      "sequence": 65,
+      "request_id": 65,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1FW7",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:22.969986Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:22 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000065.json",
+      "sha256": "44d7f11f534430915cccdb7d65af075a83cc618da03807d1b80b0ac2ff75a360"
+    },
+    {
+      "sequence": 66,
+      "request_id": 66,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1RNB/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:23.462221Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:23 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000066.json",
+      "sha256": "fa3f18439b71d9a4125e90ac4f6ba8ba20bd75bdc371a4c43d7e49544ca12bcf"
+    },
+    {
+      "sequence": 67,
+      "request_id": 67,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1RNB",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:23.943094Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:23 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000067.json",
+      "sha256": "bd58f9313f42817c6b20c02d498b9d56c294249a5801595816542b083a334217"
+    },
+    {
+      "sequence": 68,
+      "request_id": 68,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1X1U/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:24.458273Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:24 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000068.json",
+      "sha256": "2211a583127812c552e0e97894f3055d35f46809f6d9aa3301fa7f6335dd6bcd"
+    },
+    {
+      "sequence": 69,
+      "request_id": 69,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1X1U",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:24.970546Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:24 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000069.json",
+      "sha256": "b40a68fb7d57664cd61be333759aa6f6d017b9fc2deb9fd6f683652e130e29c3"
+    },
+    {
+      "sequence": 70,
+      "request_id": 70,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1X1W/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:25.450536Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:25 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000070.json",
+      "sha256": "b7ab3ca1928e8c7fb9d276f0ce9d900f4daf78e9e6d295146c1681e08e789292"
+    },
+    {
+      "sequence": 71,
+      "request_id": 71,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1X1W",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:25.963310Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:25 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000071.json",
+      "sha256": "c8777d55d76fe37c5d8e3ba9ff8e7cf0041cec8431be56dc8973bb5ca18c824a"
+    },
+    {
+      "sequence": 72,
+      "request_id": 72,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1X1X/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:26.464589Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:26 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000072.json",
+      "sha256": "5d15b6183543b72b1f5607a7bb2c507c814879c9ba65b7273386fa0571aab9b2"
+    },
+    {
+      "sequence": 73,
+      "request_id": 73,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1X1X",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:26.965603Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:26 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000073.json",
+      "sha256": "a09165f5b6bec9f2a5e34a99da911ab4160e80827dd5a84586d29d9b45d0c7b2"
+    },
+    {
+      "sequence": 74,
+      "request_id": 74,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1X1Y/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:27.468498Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:27 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000074.json",
+      "sha256": "d2b1ae243be08f88e9e029a860ea8db166bde1d2f8d338c4204299984a8dd7de"
+    },
+    {
+      "sequence": 75,
+      "request_id": 75,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1X1Y",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:27.951155Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:27 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000075.json",
+      "sha256": "401ae7491c840ebd2904322b53d07d6715cb45764ceec9b0fed1a8afc83ce8a0"
+    },
+    {
+      "sequence": 76,
+      "request_id": 76,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1YVS/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:28.461746Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:28 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000076.json",
+      "sha256": "82b2c68fd83aa82f8adae155325968508657293872963e60b9ea8910331eb4ca"
+    },
+    {
+      "sequence": 77,
+      "request_id": 77,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/1YVS",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:28.955772Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:28 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000077.json",
+      "sha256": "5d5ab2fdc2dff8375f5a8961dc302638051ae5d59ca4b729ea577f9c4c0924f2"
+    },
+    {
+      "sequence": 78,
+      "request_id": 78,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2C4B/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:29.479133Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:29 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000078.json",
+      "sha256": "0a24c33e002acc5745afe4e87d24c6411446c8dca3055266217c2dfe72209056"
+    },
+    {
+      "sequence": 79,
+      "request_id": 79,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2C4B",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:29.970380Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:29 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000079.json",
+      "sha256": "6a50a7d3bd951ceb628fecc41f6859f78bc2ef4690d5b60d175e2d9b1d27a2f7"
+    },
+    {
+      "sequence": 80,
+      "request_id": 80,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2F4Y/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:30.458671Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:30 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000080.json",
+      "sha256": "63f3e7afe49394c8fc2a3d73c5e370ccca3e51ca8db727850833b7fabf63c563"
+    },
+    {
+      "sequence": 81,
+      "request_id": 81,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2F4Y",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:30.996390Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:30 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000081.json",
+      "sha256": "7e95cd0e7acb5fa96bfe7b17052bd6b6f65187aa234c49f8578b83f3367ce29b"
+    },
+    {
+      "sequence": 82,
+      "request_id": 82,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2F56/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:31.475890Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:31 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000082.json",
+      "sha256": "03dc6b86c13d004dc362ad33688ade0181ed5e7cc990489cd21ea2926b550eae"
+    },
+    {
+      "sequence": 83,
+      "request_id": 83,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2F56",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:31.966060Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:31 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000083.json",
+      "sha256": "e1683d95e47d8d4ba990964af58b419152be33446ce4449b932bde1741f5bff2"
+    },
+    {
+      "sequence": 84,
+      "request_id": 84,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2F5M/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:32.469041Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:32 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000084.json",
+      "sha256": "ae50cc874a97ff99addc06ae595e86aa59ede69198079e2a9fcde3329b29afb4"
+    },
+    {
+      "sequence": 85,
+      "request_id": 85,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2F5M",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:32.964265Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:32 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000085.json",
+      "sha256": "e8c4ed14abd903fae55c3dc8bb5063bd392767c4e5092b2ade85ce2d4e92e2e9"
+    },
+    {
+      "sequence": 86,
+      "request_id": 86,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2F5W/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:33.474685Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:33 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000086.json",
+      "sha256": "ac7de8d59a1afd7518fbf92050fb6e482a59616b9c3d2ea87d4f7803c2a4d2fe"
+    },
+    {
+      "sequence": 87,
+      "request_id": 87,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2F5W",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:33.949437Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:33 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000087.json",
+      "sha256": "b7ab991edd00115d6020a78f9be2bc59e1f8435b8a4ba137ffce2450bbf42354"
+    },
+    {
+      "sequence": 88,
+      "request_id": 88,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2KF3/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:34.470825Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:34 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000088.json",
+      "sha256": "a2bda782e5a3cb70b44ffd78116a7f5656a72649ce87fc458b7d578e07c5e599"
+    },
+    {
+      "sequence": 89,
+      "request_id": 89,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2KF3",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:34.968738Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:34 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000089.json",
+      "sha256": "06af6f392f8dadb8f08aba3e75aa247109f94253bd86639da5e48b51165d67ab"
+    },
+    {
+      "sequence": 90,
+      "request_id": 90,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2KF4/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:35.456210Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:35 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000090.json",
+      "sha256": "180e35f7ce78173dd439d14c6681de2e348a4b5bf5a8fd54013975da811a5b40"
+    },
+    {
+      "sequence": 91,
+      "request_id": 91,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2KF4",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:35.976541Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:35 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000091.json",
+      "sha256": "78d248fbd6b28f5753ec7d1aa89d0094ca5941eac426b6c2173eb1ef7228e6e9"
+    },
+    {
+      "sequence": 92,
+      "request_id": 92,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2KF5/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:36.478859Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:36 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000092.json",
+      "sha256": "87a458d96009e23c5f028c27dc1314f1ab7a8f2b58c657d45abb46956ece8dc4"
+    },
+    {
+      "sequence": 93,
+      "request_id": 93,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2KF5",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:36.971139Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:36 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000093.json",
+      "sha256": "2f3f8c7b7e843955f1c40ccde5172047768a48491c02481142258a5137fb9675"
+    },
+    {
+      "sequence": 94,
+      "request_id": 94,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2KF6/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:37.454140Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:37 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000094.json",
+      "sha256": "9cd1906e77595c6a335bee30d99c55b9f838568fd55b37e9bd436e141bed577d"
+    },
+    {
+      "sequence": 95,
+      "request_id": 95,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2KF6",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:37.971441Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:37 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000095.json",
+      "sha256": "0d98ac0300d786560358ae1a4e8d6b01144ec4c389394e768e4f51c6a844178b"
+    },
+    {
+      "sequence": 96,
+      "request_id": 96,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/2ZA4/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:38.464522Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:38 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000096.json",
+      "sha256": "3479d34b8db150a7964076bb9d2abe9e6e8230634b13cee707f1c926bab6d1f5"
+    },
+    {
+      "sequence": 97,
+      "request_id": 97,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/2ZA4",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:38.965123Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:38 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000097.json",
+      "sha256": "e4c82df9272533c9ac09492a12a06f3ecfa17648a4083a724e7f82ae5f52bfe1"
+    },
+    {
+      "sequence": 98,
+      "request_id": 98,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3DA7/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:39.479205Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:39 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000098.json",
+      "sha256": "1622eaa088f2b3c180c5d30aeebd79b41ec648f590668069aa8c92fd6da7e144"
+    },
+    {
+      "sequence": 99,
+      "request_id": 99,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/3DA7",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:39.957972Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:39 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000099.json",
+      "sha256": "ad9779b9a9fe057a3feaca83d6c4ebd238ebffd69480f34384d23a024f43a9fa"
+    },
+    {
+      "sequence": 100,
+      "request_id": 100,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3KCH/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:40.457682Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:40 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000100.json",
+      "sha256": "d72dd8c2a5bab24d385dbef1e88af88bda5bcd12d5a3dc7e44be3536c7f301be"
+    },
+    {
+      "sequence": 101,
+      "request_id": 101,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/3KCH",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:40.958606Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:40 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000101.json",
+      "sha256": "e1f9ea9afbbd904cb0513400d68638a95586c5a9a125fd69f77a4f412112b21a"
+    },
+    {
+      "sequence": 102,
+      "request_id": 102,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3Q3F/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:41.462450Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:41 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000102.json",
+      "sha256": "f30ea62cc7e3f966f264e7bd0c169ab6613b73326674236151d57c751db5bbe7"
+    },
+    {
+      "sequence": 103,
+      "request_id": 103,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/3Q3F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:41.965050Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:41 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000103.json",
+      "sha256": "cecd2c8536e3b8cf6c9852866558db02a5ca1312c4301e782657f524f6689231"
+    },
+    {
+      "sequence": 104,
+      "request_id": 104,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/6PQK/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:42.454153Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:42 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000104.json",
+      "sha256": "94fde35825a8349bc346a536320c724c643e13f78595c6e84f6d3b37e77486d5"
+    },
+    {
+      "sequence": 105,
+      "request_id": 105,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/6PQK",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:42.957106Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:42 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000105.json",
+      "sha256": "8d789a9bf1cd3e047641d4f688ddccdd5f5c8ba1c383f678c0cc47c53b1f785e"
+    },
+    {
+      "sequence": 106,
+      "request_id": 106,
+      "role": "rcsb_polymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/7MRX/1",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:43.460979Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:43 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000106.json",
+      "sha256": "5bc7122af32fbafb5d05d7aa6318422cc7e25e2948b4b29edcedf3220012bc54"
+    },
+    {
+      "sequence": 107,
+      "request_id": 107,
+      "role": "rcsb_entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/entry/7MRX",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:43.963376Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:43 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000107.json",
+      "sha256": "4e31c8b1f6e32b016ca24d60ef698f7cdbeb80cf51389be751fccc9a7bc558bf"
+    },
+    {
+      "sequence": 108,
+      "request_id": 108,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1A2P/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:44.462355Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:44 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000108.json",
+      "sha256": "451b2a4c0fc75816881dfd017b1f33ff3dfd30b1638e8f6c7cad6b4c8875fe03"
+    },
+    {
+      "sequence": 109,
+      "request_id": 109,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1A2P/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:44.964799Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:44 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000109.json",
+      "sha256": "7cf3ab79faf8d47fc42ca30111e0a9a5988ce1d45b49d315ff35e004c85667a9"
+    },
+    {
+      "sequence": 110,
+      "request_id": 110,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1A2P/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:45.456860Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:45 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000110.json",
+      "sha256": "730ef2a4b6590ea9d5af6208a14c6ed6ce9891657108231b90d72733716d76b0"
+    },
+    {
+      "sequence": 111,
+      "request_id": 111,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1A2P/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:45.958941Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:45 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000111.json",
+      "sha256": "d14b11f379ddb44a097ba2a7dc1e579f3af6e10d73ede4eb9bda125746a5cca3"
+    },
+    {
+      "sequence": 112,
+      "request_id": 112,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1B20/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:46.482493Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:46 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000112.json",
+      "sha256": "4665cf43f957c2829611e49a5e014811928e281248b69d57cef7722af9665d6c"
+    },
+    {
+      "sequence": 113,
+      "request_id": 113,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1B20/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:46.958415Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:46 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000113.json",
+      "sha256": "a57b378a3bd5a5cac54afeecea163ceb1692d29ada4727be65e7644f473ef91f"
+    },
+    {
+      "sequence": 114,
+      "request_id": 114,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1B20/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:47.479905Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:47 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000114.json",
+      "sha256": "e7743301b02110d1a5bf78ce542539b188593c6ccc4f8c58c41ce674bd7fe92b"
+    },
+    {
+      "sequence": 115,
+      "request_id": 115,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1B20/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:47.983203Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:47 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000115.json",
+      "sha256": "db55220dffcbd22b14d81f968e66247e18828d62b220504d1a2e8dc4a2f321ec"
+    },
+    {
+      "sequence": 116,
+      "request_id": 116,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1B21/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:48.484515Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:48 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000116.json",
+      "sha256": "7dc0d058e27b2213325b4252d5d73fa770a5b019f48519b1dd2842b0c48e3580"
+    },
+    {
+      "sequence": 117,
+      "request_id": 117,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1B21/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:48.967592Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:48 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000117.json",
+      "sha256": "d509b96af12f9f47d600e17448f46018272be775c1dced904b28c24b936f6080"
+    },
+    {
+      "sequence": 118,
+      "request_id": 118,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1B2S/3",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:49.460008Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:49 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000118.json",
+      "sha256": "9433f5c49e8e7ff00bb7b99827a1a6969c5b47cc1cf09205b160f2390258683a"
+    },
+    {
+      "sequence": 119,
+      "request_id": 119,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1B2S/G",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:49.961669Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:49 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000119.json",
+      "sha256": "331ca3d71f4d017100d8835b65a93e2b3d46c793a71944b6c365a26c87308227"
+    },
+    {
+      "sequence": 120,
+      "request_id": 120,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1B2S/H",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:50.482511Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:50 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000120.json",
+      "sha256": "3bbeaee293b920051268d801442e0f690fa34ffa54d1628a0fb53b861148f392"
+    },
+    {
+      "sequence": 121,
+      "request_id": 121,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1B2X/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:50.984981Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:50 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000121.json",
+      "sha256": "605afeebbd861c63b2ad9f72bab999e4bce564ab0cdbfd4589ff760e549ba89a"
+    },
+    {
+      "sequence": 122,
+      "request_id": 122,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1B2X/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:51.476398Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:51 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000122.json",
+      "sha256": "d08960952848e7cd6155dea387e507333ffe31bf9b0f3f65b4a1ec6cb4a37086"
+    },
+    {
+      "sequence": 123,
+      "request_id": 123,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1B2Z/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:51.978984Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:51 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000123.json",
+      "sha256": "3e2212ff39955b6e85ee9521877294017fa205bac896b670620cfb0d5d37a464"
+    },
+    {
+      "sequence": 124,
+      "request_id": 124,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1B2Z/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:52.481370Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:52 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000124.json",
+      "sha256": "fb8e78cadbdca65cd27181ed52a0b5c41988e04ad505418e7e848c4f9818d5e7"
+    },
+    {
+      "sequence": 125,
+      "request_id": 125,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1BAO/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:52.982348Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:52 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000125.json",
+      "sha256": "40190c1500e4067b717e817d99e347b2035b7590b82957935945872645ee6337"
+    },
+    {
+      "sequence": 126,
+      "request_id": 126,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1BAO/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:53.485294Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:53 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000126.json",
+      "sha256": "480d4c0d6246842cc8c9d1507774b7a88a20159c348338f9534325c7e1734647"
+    },
+    {
+      "sequence": 127,
+      "request_id": 127,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1BRG/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:53.967096Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:53 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000127.json",
+      "sha256": "e7fcd3b9c9d1235e1620558892bc66d7117d7c8eb9deda28931187f898efb757"
+    },
+    {
+      "sequence": 128,
+      "request_id": 128,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1BRG/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:54.469982Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:54 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000128.json",
+      "sha256": "0a0d45f2b293cf736f1585fd359a8d85d2e074b85646c4b5b3b2a6a1a0c38721"
+    },
+    {
+      "sequence": 129,
+      "request_id": 129,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1BRH/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:54.980722Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:54 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000129.json",
+      "sha256": "d6de712abe86c004e1f3c1d9a6a244d50d4069feac74df82b34f92120ace85b9"
+    },
+    {
+      "sequence": 130,
+      "request_id": 130,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1BRH/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:55.484076Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:55 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000130.json",
+      "sha256": "5652f415587fb63705be27427bcea025229c10f9b2af4a4cf7febe5a75219214"
+    },
+    {
+      "sequence": 131,
+      "request_id": 131,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1BRJ/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:55.986141Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:55 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000131.json",
+      "sha256": "020a10abd4060aa53d447dfb90180320c555d10f09db10c9d24e75be20f43ffc"
+    },
+    {
+      "sequence": 132,
+      "request_id": 132,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1BRJ/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:56.467936Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:56 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000132.json",
+      "sha256": "db89f4514aa1021c63748cba40f749c1c389bbbbacd4a9300accb053754aac07"
+    },
+    {
+      "sequence": 133,
+      "request_id": 133,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1BRK/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:56.970691Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:56 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000133.json",
+      "sha256": "c9d3b2fe8ab5bfe480a2c5603ab8075520327254cfd9d220b63706ee4f52be0a"
+    },
+    {
+      "sequence": 134,
+      "request_id": 134,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1BRK/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:57.472759Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:57 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000134.json",
+      "sha256": "1abc25d9ef06ce6c89b0b5a0fefcf710767075a460fc3b7692002200ae81a4ea"
+    },
+    {
+      "sequence": 135,
+      "request_id": 135,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1BRK/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:57.984111Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:57 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000135.json",
+      "sha256": "4b1f1ac540017408577c26b4d757c3f707694886432f562285027ad09d398da3"
+    },
+    {
+      "sequence": 136,
+      "request_id": 136,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1BRK/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:58.486928Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:58 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000136.json",
+      "sha256": "ffa92f2d4053b718845e10a7be9ebd431d5d31ccb291de05ec59ed63c7f7fd6c"
+    },
+    {
+      "sequence": 137,
+      "request_id": 137,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1RNB/3",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:58.970212Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:58 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000137.json",
+      "sha256": "1b695fd1b37a606b1dc2c0a180f07bda1ff0e0ab42339f7b7391b0ea2589165f"
+    },
+    {
+      "sequence": 138,
+      "request_id": 138,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1RNB/C",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:59.482692Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:59 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000138.json",
+      "sha256": "39ff8e924cef565303bd269361a4b2df6b6f39dd7f394c7bebdf9c58c169f724"
+    },
+    {
+      "sequence": 139,
+      "request_id": 139,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1YVS/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:58:59.992837Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:58:59 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000139.json",
+      "sha256": "bb41e82d45fc5939a953d9a0f8a15ea049b48237e785e8525456e1510cd57a1a"
+    },
+    {
+      "sequence": 140,
+      "request_id": 140,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1YVS/B",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:00.488319Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:00 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000140.json",
+      "sha256": "f2e3ea74dee3bb98fa57ded09fe960702b97d6e8a834080fb8a8586d22710c61"
+    },
+    {
+      "sequence": 141,
+      "request_id": 141,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1YVS/C",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:00.977711Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:00 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000141.json",
+      "sha256": "edc89bfe01bae2da79c51e771666c297c5e742d5a58dfa0d636bcc76ae1898cf"
+    },
+    {
+      "sequence": 142,
+      "request_id": 142,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2C4B/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:01.470275Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:01 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000142.json",
+      "sha256": "c2b500e9dceb21a57417a7236ae31b16cec33fc69e967a5316aea0fbdf77401b"
+    },
+    {
+      "sequence": 143,
+      "request_id": 143,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/C",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:01.991508Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:01 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000143.json",
+      "sha256": "7afdce03592494d8091d7dc828e52c3e205d158f4fc37e7cefff9cc7fee7c3cf"
+    },
+    {
+      "sequence": 144,
+      "request_id": 144,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:02.493908Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:02 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000144.json",
+      "sha256": "d2c0b3dae677e1c6cad29c76c1bac4f29fd6ea993f5e76d75937e5e94fdc5b58"
+    },
+    {
+      "sequence": 145,
+      "request_id": 145,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/IA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:02.976843Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:02 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000145.json",
+      "sha256": "bb82e2821a68fca7d6da63ab6d2aae4c477de7ba690d18eb392378b1ad519cd9"
+    },
+    {
+      "sequence": 146,
+      "request_id": 146,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/JA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:03.489427Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:03 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000146.json",
+      "sha256": "a5bf5a2009e3a85a2ffff3ddc5a5acef0b2d1f9c897635f60912ab11095f5d33"
+    },
+    {
+      "sequence": 147,
+      "request_id": 147,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2C4B/3",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:03.970229Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:03 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000147.json",
+      "sha256": "f6a1a4f2381f2037f7a1fde980b1ad36f71f1f039843eb4dd778a7b96ad4fb9e"
+    },
+    {
+      "sequence": 148,
+      "request_id": 148,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:04.473559Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:04 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000148.json",
+      "sha256": "49e2ca4db98f9b667a017fc973d5fd38fa8614a581ec96183407e7c8be7afccc"
+    },
+    {
+      "sequence": 149,
+      "request_id": 149,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2C4B/4",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:04.975041Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:04 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000149.json",
+      "sha256": "aee79a85a983b0db3356a8b0e8ee8b66369ac3de06221d1a4c3545da8b6aad43"
+    },
+    {
+      "sequence": 150,
+      "request_id": 150,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:05.477517Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:05 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000150.json",
+      "sha256": "fcdf274f3a906e8eaad414625dda6c39ce6f7c8e20a6ebe812fa49f882218d19"
+    },
+    {
+      "sequence": 151,
+      "request_id": 151,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/G",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:05.988987Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:05 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000151.json",
+      "sha256": "044c9011bb7daa2d20f6c9ea86d5ff5a04d6a0cbc68889a4b803a51db3ee460b"
+    },
+    {
+      "sequence": 152,
+      "request_id": 152,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/H",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:06.491498Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:06 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000152.json",
+      "sha256": "c58fec9205a2578ad9f3f0f68432d18490cdbb5ab69e4c7a2c9034cb90fc9e90"
+    },
+    {
+      "sequence": 153,
+      "request_id": 153,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/I",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:06.993679Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:06 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000153.json",
+      "sha256": "cbb0c218a0c35f0e2f32a70ac2887592288ed9183d05627205dc332d3cc18c64"
+    },
+    {
+      "sequence": 154,
+      "request_id": 154,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/LA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:07.496591Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:07 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000154.json",
+      "sha256": "d6c0783fd780aa741e41bd57317d9f1c66dec1e8152954dc4eeebc5e3b4fbd17"
+    },
+    {
+      "sequence": 155,
+      "request_id": 155,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/MA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:07.987225Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:07 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000155.json",
+      "sha256": "ac80c3171edf31ebe850e8b4c7694bc210803fccd4d20692c9d07db13a513aeb"
+    },
+    {
+      "sequence": 156,
+      "request_id": 156,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/NA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:08.489443Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:08 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000156.json",
+      "sha256": "f60f29336dcd6fc558170c8224ea65f63e5ed79266a00527cad712067bd84c43"
+    },
+    {
+      "sequence": 157,
+      "request_id": 157,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/OA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:08.982237Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:08 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000157.json",
+      "sha256": "bc7645942bbe41068caa9654b4a228a8da9d71cdfa3620dfffa6c2f4d4a40bc2"
+    },
+    {
+      "sequence": 158,
+      "request_id": 158,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/PA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:09.492936Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:09 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000158.json",
+      "sha256": "eb8489a9152a07df238cb622b4ce3658cf932f46c5b9ca94986c1f9d141b1023"
+    },
+    {
+      "sequence": 159,
+      "request_id": 159,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/QA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:09.975239Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:09 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000159.json",
+      "sha256": "08fb85cc038274eff0396a4d5c914f85ecb3109b165e17711b3e1a03c36b569c"
+    },
+    {
+      "sequence": 160,
+      "request_id": 160,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2C4B/5",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:10.497392Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:10 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000160.json",
+      "sha256": "f3e668c46b9321bc42272ce63af9474212a9c442e40a0f17752eb8797bc24736"
+    },
+    {
+      "sequence": 161,
+      "request_id": 161,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/AB",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:10.980890Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:10 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000161.json",
+      "sha256": "fe0da42e8501b9750e3e122cba8babc61cdfe33f35c74b5e41aba70f075cec47"
+    },
+    {
+      "sequence": 162,
+      "request_id": 162,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/J",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:11.502882Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:11 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000162.json",
+      "sha256": "538250115738786dce9e4673b42a1fa731ce680abe8c644b1a518c9003efc6ad"
+    },
+    {
+      "sequence": 163,
+      "request_id": 163,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/K",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:12.004329Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:12 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000163.json",
+      "sha256": "84a552c2b130b06bf206c68b7629915e2fb2f9184b070f2cb4f9c51704e4415f"
+    },
+    {
+      "sequence": 164,
+      "request_id": 164,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2C4B/6",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:12.496631Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:12 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000164.json",
+      "sha256": "323ea2a883088387ca104b2a5e853b7d8313ff5ebd3d3f1e52d030d1342d7794"
+    },
+    {
+      "sequence": 165,
+      "request_id": 165,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/HA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:12.999186Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:12 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000165.json",
+      "sha256": "480acdccd306c8e3b763274844df67c9c72d250ce95d2be58192a21aa09d8806"
+    },
+    {
+      "sequence": 166,
+      "request_id": 166,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/L",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:13.501437Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:13 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000166.json",
+      "sha256": "5bb2d8e8520aa1232258c0577bec7361814afdc7181861f02bcd684c7429f39e"
+    },
+    {
+      "sequence": 167,
+      "request_id": 167,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/M",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:13.983250Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:13 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000167.json",
+      "sha256": "2d045e790f0383e82f93b41c48266204933ca26aa586a8ebe7168dd82aeca20e"
+    },
+    {
+      "sequence": 168,
+      "request_id": 168,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/N",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:14.475042Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:14 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000168.json",
+      "sha256": "710bd9601cd7975faf6e7680b871900b395dc13a7991f2bd8d26cfd6af3a40f2"
+    },
+    {
+      "sequence": 169,
+      "request_id": 169,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/O",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:14.977560Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:14 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000169.json",
+      "sha256": "f7f1efb705fb423b643817f9cf3e5e2742140ab086c4faa5e21a8beac070a286"
+    },
+    {
+      "sequence": 170,
+      "request_id": 170,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/P",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:15.499599Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:15 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000170.json",
+      "sha256": "4112fc3baaaf5927e3644c3b15bc1443bfa623571dda6e79b4bf928f0132c2dc"
+    },
+    {
+      "sequence": 171,
+      "request_id": 171,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/Q",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:16.001788Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:15 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000171.json",
+      "sha256": "b90fb1a4c4ac9870c0cfef1656c471b0edceb0a4c221e3bd622f5c05e84b1234"
+    },
+    {
+      "sequence": 172,
+      "request_id": 172,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/R",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:16.503864Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:16 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000172.json",
+      "sha256": "55a1de6263951106586d3ffbd455677c48828599af062eb23144ab6205e4f2a7"
+    },
+    {
+      "sequence": 173,
+      "request_id": 173,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/RA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:16.995449Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:16 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000173.json",
+      "sha256": "c2f9a46db7d9492e997c02a996fe283f506845ed2a1519220003d2e8ba3b1377"
+    },
+    {
+      "sequence": 174,
+      "request_id": 174,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/SA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:17.507179Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:17 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000174.json",
+      "sha256": "99884d21b0ec5374f5a267da5e6cade0997ec6dd8bed9642deca69a0e415eae8"
+    },
+    {
+      "sequence": 175,
+      "request_id": 175,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/TA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:17.999611Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:17 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000175.json",
+      "sha256": "a1e171261b13479b1b58c74105b2a44428d723afe767473d5152aff8a2598b7a"
+    },
+    {
+      "sequence": 176,
+      "request_id": 176,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/UA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:18.504235Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:18 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000176.json",
+      "sha256": "b5dbbb08cced879e6c74e3895bfb4ec09c1ae1520f06c0fad16817d69f2c257c"
+    },
+    {
+      "sequence": 177,
+      "request_id": 177,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/VA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:18.984061Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:18 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000177.json",
+      "sha256": "31482be28c0b5ef3d2eba198cc4a75fa83315cd6b86bdca4073e2c4a43b00faa"
+    },
+    {
+      "sequence": 178,
+      "request_id": 178,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/WA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:19.486305Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:19 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000178.json",
+      "sha256": "01afdc1c9537272278826b6658016954e800c8e9e00a23213e5103ae07bff588"
+    },
+    {
+      "sequence": 179,
+      "request_id": 179,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/XA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:19.978174Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:19 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000179.json",
+      "sha256": "32b03782d5bf4df4565b036221e70df7f46caf4c11fbd3d51c08b0e6d7d8d4ff"
+    },
+    {
+      "sequence": 180,
+      "request_id": 180,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/YA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:20.500610Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:20 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000180.json",
+      "sha256": "22883af6df9172b925214f4113edd423d7a2a5ee7c5253e8bc0c7eb106c729e7"
+    },
+    {
+      "sequence": 181,
+      "request_id": 181,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/ZA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:20.985333Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:20 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000181.json",
+      "sha256": "f37a75b2144c7f095a6d6dfedb41d68be5565bfc7ed492d1c5544078a9a8181f"
+    },
+    {
+      "sequence": 182,
+      "request_id": 182,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2C4B/7",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:21.495200Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:21 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000182.json",
+      "sha256": "55173ab633bd2a3c0590d0323e8a19a8250f221d88bc96b44196498d0fa4d489"
+    },
+    {
+      "sequence": 183,
+      "request_id": 183,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/AA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:21.992322Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:21 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000183.json",
+      "sha256": "7d2bb2f083240bc6df2c078559750cf9f78e250ce1a23128cd67d4114eeb4e59"
+    },
+    {
+      "sequence": 184,
+      "request_id": 184,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/BA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:22.498613Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:22 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000184.json",
+      "sha256": "1c7c81dc7729cfb21beb8372e8797a030e62132916b11e702e4f3ad46bdf1739"
+    },
+    {
+      "sequence": 185,
+      "request_id": 185,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/CA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:23.001014Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:22 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000185.json",
+      "sha256": "2554d6cbd843fd5d590dbe757be4018c35ea462876f63167da9a11e170ecccd7"
+    },
+    {
+      "sequence": 186,
+      "request_id": 186,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/DA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:23.484503Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:23 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000186.json",
+      "sha256": "40bbf28e2c2e898336af223d323e14d07699d740eb65ac1d60cfcf116f93db72"
+    },
+    {
+      "sequence": 187,
+      "request_id": 187,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/EA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:23.985602Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:23 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000187.json",
+      "sha256": "fe0b9e77d66c91643e15c5e538cd955f842b4ac35e41d6f9b13d0eb0e01bad01"
+    },
+    {
+      "sequence": 188,
+      "request_id": 188,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/FA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:24.488498Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:24 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000188.json",
+      "sha256": "b29db7410bfed207778e6128efe0aadd08e81f2142d5603e6279369e3acfcf6b"
+    },
+    {
+      "sequence": 189,
+      "request_id": 189,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/GA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:24.990327Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:24 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000189.json",
+      "sha256": "16d288a4dcda84113b8ed85955d57d951aa238e6caa2dfc0a0e580a979d6a012"
+    },
+    {
+      "sequence": 190,
+      "request_id": 190,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/S",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:25.502119Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:25 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000190.json",
+      "sha256": "9d81c3919749d7cfa8025304af5e483b57ac2792e918823cfd7379d080526d91"
+    },
+    {
+      "sequence": 191,
+      "request_id": 191,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/T",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:26.004035Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:26 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000191.json",
+      "sha256": "080d55ec2ff834f8db81944657770e4bfe7f58f696b9e0af0bac4f88567acd2b"
+    },
+    {
+      "sequence": 192,
+      "request_id": 192,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/U",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:26.506635Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:26 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000192.json",
+      "sha256": "af57f5b0ff182a70706ce99b196351a1fb7547b288371b362acd30ed671c1656"
+    },
+    {
+      "sequence": 193,
+      "request_id": 193,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/V",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:27.007964Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:27 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000193.json",
+      "sha256": "1822bbadd4a89330e20c9692817f2d41e92067a10219f15fe565ee04de36b0e0"
+    },
+    {
+      "sequence": 194,
+      "request_id": 194,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/W",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:27.492151Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:27 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000194.json",
+      "sha256": "28ba97e67eff81b929f55180e7228425ce872b732e36b696f221611bc2948576"
+    },
+    {
+      "sequence": 195,
+      "request_id": 195,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/X",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:28.002710Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:27 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000195.json",
+      "sha256": "4cf5013709fe61c5ca15ce3a3cba30c82df8bc76dcb55604ffde6cf0b035698e"
+    },
+    {
+      "sequence": 196,
+      "request_id": 196,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/Y",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:28.504684Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:28 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000196.json",
+      "sha256": "4c28989fd15cf7038e743f87ca10c31431c2ce8cc57339d2641c8f0a8fa5d1e7"
+    },
+    {
+      "sequence": 197,
+      "request_id": 197,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/Z",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:28.987956Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:28 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000197.json",
+      "sha256": "675074f177014b7a1958b8e89708273a500eb70e4cb42c2e18b767d085b60cdf"
+    },
+    {
+      "sequence": 198,
+      "request_id": 198,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2C4B/8",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:29.489387Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:29 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000198.json",
+      "sha256": "d82f79dcad2f49784b0ff6aac086ec85d14d2c6cb0ff608d100f76906ed579f8"
+    },
+    {
+      "sequence": 199,
+      "request_id": 199,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2C4B/KA",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:30.002182Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:29 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000199.json",
+      "sha256": "2d5803da13d81fa7036fa8a963d443ef00d3f49b0e75feef4fd27a916c07b595"
+    },
+    {
+      "sequence": 200,
+      "request_id": 200,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2F4Y/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:30.503484Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:30 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000200.json",
+      "sha256": "8baf38e776a7ddd5898424c117f3c6f50487f7f1a019d5d70a02046bc5974c17"
+    },
+    {
+      "sequence": 201,
+      "request_id": 201,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F4Y/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:30.986188Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:30 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000201.json",
+      "sha256": "9001f18f551d8d61d1b9af5f80be9aa7154f1d493313a76da574d2fc5e66d67a"
+    },
+    {
+      "sequence": 202,
+      "request_id": 202,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2F56/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:31.488379Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:31 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000202.json",
+      "sha256": "c03df69137ec93cd613cfcf77796ddae467571dbdc48d563924880b28ec05838"
+    },
+    {
+      "sequence": 203,
+      "request_id": 203,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:31.992381Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:31 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000203.json",
+      "sha256": "715d23b377af73f818db50456196041420b811bfb3a9c8aed24ea5f90b26f3c4"
+    },
+    {
+      "sequence": 204,
+      "request_id": 204,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:32.495935Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:32 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000204.json",
+      "sha256": "bd0e21991d10a64d42bfaecdbd485f6738e7412085f6a11d861abd4fec416d30"
+    },
+    {
+      "sequence": 205,
+      "request_id": 205,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:33.004207Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:33 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000205.json",
+      "sha256": "bf73bb70c0b37df89ae01f3c6f7d12d94999d63a8a7532cf608076919cc7d7d6"
+    },
+    {
+      "sequence": 206,
+      "request_id": 206,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/G",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:33.507694Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:33 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000206.json",
+      "sha256": "134d08c8dd7a6a03b187c55a86369c33574864203bce7eb48e90c28af383a59b"
+    },
+    {
+      "sequence": 207,
+      "request_id": 207,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/H",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:33.990394Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:33 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000207.json",
+      "sha256": "efc2fab8c09415beb7381bc9b16a0d323324312ec78a6aad79911b5f2685fb70"
+    },
+    {
+      "sequence": 208,
+      "request_id": 208,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/I",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:34.491386Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:34 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000208.json",
+      "sha256": "fc992d2179378ecde2dd65d7833fcced9223b48accb09decd89149fe97751809"
+    },
+    {
+      "sequence": 209,
+      "request_id": 209,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/J",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:35.003560Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:34 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000209.json",
+      "sha256": "409d0617f426254037d19670e8b22488c760956c76e62a4c29e9b117fda63580"
+    },
+    {
+      "sequence": 210,
+      "request_id": 210,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/K",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:35.516255Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:35 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000210.json",
+      "sha256": "459fb6c51ac9caa9fff8eeaa7eea6a03caa48cb42d46ec7ff38d1be059c9a65e"
+    },
+    {
+      "sequence": 211,
+      "request_id": 211,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/L",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:36.008472Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:36 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000211.json",
+      "sha256": "35e97d81744f6227e3bd59acf20095c11a56c3254bb57cb92ea4e7e9d61737d8"
+    },
+    {
+      "sequence": 212,
+      "request_id": 212,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/N",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:36.500177Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:36 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000212.json",
+      "sha256": "5a065ecab822727a457742fe6234fa89491787490cf2a454e55d3b6b46a9578b"
+    },
+    {
+      "sequence": 213,
+      "request_id": 213,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/O",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:37.012248Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:37 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000213.json",
+      "sha256": "1bbe1b0b0f6446501b1dfa02d5eeed8af61df0cf800ce67357974aef57795beb"
+    },
+    {
+      "sequence": 214,
+      "request_id": 214,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2F56/3",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:37.513926Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:37 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000214.json",
+      "sha256": "4d45ceffe1fff0e7bdfdaeb8f8072a0596063b2a1cc60fdd1c7757793580b52a"
+    },
+    {
+      "sequence": 215,
+      "request_id": 215,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F56/M",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:37.997023Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:37 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000215.json",
+      "sha256": "ca5c2127b66d5e3e9b0be13ba1df0e604daaa963aa0485dba82cd637cb486eb0"
+    },
+    {
+      "sequence": 216,
+      "request_id": 216,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2F5M/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:38.488515Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:38 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000216.json",
+      "sha256": "db4fd5b2ec04d0dc3a6ca5ef8b46c1389e6206d79db3d4b49e996bab44422112"
+    },
+    {
+      "sequence": 217,
+      "request_id": 217,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F5M/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:38.991598Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:38 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000217.json",
+      "sha256": "ca261b9d8456154ebc36252da57520bdf12fd2c9a3012f6e524c272ea4588b34"
+    },
+    {
+      "sequence": 218,
+      "request_id": 218,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F5M/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:39.512601Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:39 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000218.json",
+      "sha256": "216dda6a6d3dc74b8285b3b010ed975b59f26a72485eaa329a2fdfbef3d177f4"
+    },
+    {
+      "sequence": 219,
+      "request_id": 219,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2F5W/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:40.015120Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:40 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000219.json",
+      "sha256": "6fdd5915b93984fc77ef3c2159ccc2331002eecacb9650dc4c4923b4bb7c3c44"
+    },
+    {
+      "sequence": 220,
+      "request_id": 220,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F5W/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:40.517369Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:40 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000220.json",
+      "sha256": "c597e7d8754177761519b0ed1a1afdda182b1a5079805e1aac2ac20c865157c9"
+    },
+    {
+      "sequence": 221,
+      "request_id": 221,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2F5W/3",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:40.999674Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:40 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000221.json",
+      "sha256": "c0a9a3c79407c5e0982a99f7e6a8985a87a49b61b087725cb83ed0d7b3f55cd4"
+    },
+    {
+      "sequence": 222,
+      "request_id": 222,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2F5W/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:41.512076Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:41 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000222.json",
+      "sha256": "5a24b8a41052ab5f8f26d282af72ebb5d8bbeb170ebc5c94a3eebd70dd7423b2"
+    },
+    {
+      "sequence": 223,
+      "request_id": 223,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/2ZA4/3",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:42.003488Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:41 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000223.json",
+      "sha256": "2642b5f44cb5c87cb16ff361ff9d2d3e000591d661d05aad64bf27c2c092162b"
+    },
+    {
+      "sequence": 224,
+      "request_id": 224,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2ZA4/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:42.515864Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:42 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000224.json",
+      "sha256": "d6fdea7ac2c99c8b70eacefc1a480867300df18bea57a9ac79674add9015d2e4"
+    },
+    {
+      "sequence": 225,
+      "request_id": 225,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/2ZA4/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:42.998543Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:42 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000225.json",
+      "sha256": "f7e356ab2f41701324de9593ed30ed6f054df9c58d1cddaf4bc0a76d4b89da52"
+    },
+    {
+      "sequence": 226,
+      "request_id": 226,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3KCH/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:43.511089Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:43 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000226.json",
+      "sha256": "275604f6331ffce9e08f91c3c87f8fbb871bc9b482758189feb9bc65091704e4"
+    },
+    {
+      "sequence": 227,
+      "request_id": 227,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3KCH/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:43.993573Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:43 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000227.json",
+      "sha256": "a63ae00e36c4c95e4761a34335e521a1eab17eb7ad75f523bf1667113a18a26f"
+    },
+    {
+      "sequence": 228,
+      "request_id": 228,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3KCH/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:44.495476Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:44 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000228.json",
+      "sha256": "f1566fdca6573602c2b3d1f6289abe6aab6c0c494ef5498d01713a60a16ab902"
+    },
+    {
+      "sequence": 229,
+      "request_id": 229,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3KCH/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:45.008835Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:45 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000229.json",
+      "sha256": "1a646be570340ade94d57cc5a6c569630a09b6bd9d1be61545b45ce88aa4d4a8"
+    },
+    {
+      "sequence": 230,
+      "request_id": 230,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3Q3F/2",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:45.521872Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:45 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000230.json",
+      "sha256": "310237aab8e4c2dc8fea46473e1e5ce035b87ebd7c0201a0427d9d06402f2d45"
+    },
+    {
+      "sequence": 231,
+      "request_id": 231,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/B",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:46.021419Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:46 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000231.json",
+      "sha256": "e20055bcc7662038279c2c05ed3f59e3d9a1cbd59acd4f671c46c79dc6cabbbd"
+    },
+    {
+      "sequence": 232,
+      "request_id": 232,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/C",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:46.514220Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:46 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000232.json",
+      "sha256": "df3df4592c7adff076a59ffbb09145cb0fb6695b3218b6eda91807b726dc30a9"
+    },
+    {
+      "sequence": 233,
+      "request_id": 233,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/D",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:47.001042Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:46 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000233.json",
+      "sha256": "55423b37ed1fb8c6431fe8290a760dab64daf98995dbfac6b8b2abfd64990b87"
+    },
+    {
+      "sequence": 234,
+      "request_id": 234,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:47.513619Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:47 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000234.json",
+      "sha256": "94acbf387ccdf489a41dd15cfbabc417ce4f66ce387fb24767728cd0410fe74f"
+    },
+    {
+      "sequence": 235,
+      "request_id": 235,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:48.014449Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:48 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000235.json",
+      "sha256": "c9b890d48ccd577c488be433885d4de33e85baf66143ede0a0cb13d8a68059ae"
+    },
+    {
+      "sequence": 236,
+      "request_id": 236,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/G",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:48.516888Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:48 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000236.json",
+      "sha256": "0d00492047455b70c49d2399be6efddbb700dfabf4de7197b0f57aad7f446e8d"
+    },
+    {
+      "sequence": 237,
+      "request_id": 237,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/H",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:49.000194Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:48 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000237.json",
+      "sha256": "358830338f602c50d189a188d02fb51cdc71dd84bfb9bc28508913e07f105ad3"
+    },
+    {
+      "sequence": 238,
+      "request_id": 238,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/I",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:49.502733Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:49 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000238.json",
+      "sha256": "ff91475bcfa9ad0aab196187a9c20c9eaac4053ddd46430acdf9b73bdfb8a6e2"
+    },
+    {
+      "sequence": 239,
+      "request_id": 239,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/J",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:50.004198Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:49 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000239.json",
+      "sha256": "e63be7b050097d1dfda6b588a7572d6a59ef26898672c360be6861a46fa99db7"
+    },
+    {
+      "sequence": 240,
+      "request_id": 240,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/K",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:50.525665Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:50 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000240.json",
+      "sha256": "f2492400dbece2233865265dba88895874bb9db0daf67812be2333392f8e2437"
+    },
+    {
+      "sequence": 241,
+      "request_id": 241,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/L",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:50.998151Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:50 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000241.json",
+      "sha256": "3b79c3fb9f890de76db20b85965c2807d2515f1c7bc76128bc02b4ff825c48a4"
+    },
+    {
+      "sequence": 242,
+      "request_id": 242,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/M",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:51.519894Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:51 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000242.json",
+      "sha256": "7e1ee1c7ec9c8025e45148b207b2c61698d7a9d57f395090fe52b058f1b2816e"
+    },
+    {
+      "sequence": 243,
+      "request_id": 243,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/N",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:52.013524Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:52 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000243.json",
+      "sha256": "bb066d07c1207d3db0807c2ed5898cfebde1ae38fbb3877c0e113feceb8802f6"
+    },
+    {
+      "sequence": 244,
+      "request_id": 244,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/O",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:52.504496Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:52 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000244.json",
+      "sha256": "c1b62fe1752ee75ed7cadb94de131e098c2eb7d51f39da054c43edc94cf5920c"
+    },
+    {
+      "sequence": 245,
+      "request_id": 245,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/P",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:53.028039Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:53 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000245.json",
+      "sha256": "3dbaeee79a8cdf5f5b54a5b647c6bcdeecce9305d18bb6dde92d5975681c15c8"
+    },
+    {
+      "sequence": 246,
+      "request_id": 246,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3Q3F/Q",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:53.526916Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:53 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000246.json",
+      "sha256": "6300df956757e751d59213366a95b6291b5ea81910e179ac59bf5e7d9602bd2d"
+    },
+    {
+      "sequence": 247,
+      "request_id": 247,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/6PQK/3",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:54.001713Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:53 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000247.json",
+      "sha256": "ffecf5bd64c3ff4638f7d170e726bd6b16a0dbf22e957bbed5412031a6bd2e41"
+    },
+    {
+      "sequence": 248,
+      "request_id": 248,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6PQK/E",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:54.503863Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:54 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000248.json",
+      "sha256": "f4ca5d6e301df831ee3018d96717cf8de37cc540deebd400e37b22b0bead7633"
+    },
+    {
+      "sequence": 249,
+      "request_id": 249,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6PQK/J",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:55.015675Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:55 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000249.json",
+      "sha256": "fcd75707b83efc4140f5d3d8cf5d80275afe82b1c2542dfb468f786d85ac31ba"
+    },
+    {
+      "sequence": 250,
+      "request_id": 250,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6PQK/K",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:55.528095Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:55 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000250.json",
+      "sha256": "852f55238ca7f7f3a2a7ee0049610dd6ea9729bd7f2fe8a619eeb1f3ba607b27"
+    },
+    {
+      "sequence": 251,
+      "request_id": 251,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6PQK/L",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:56.010233Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:56 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000251.json",
+      "sha256": "b08a670dcc1593499c88c564babcfba513ad073df0cfae8dcbed9cd745ba4160"
+    },
+    {
+      "sequence": 252,
+      "request_id": 252,
+      "role": "rcsb_nonpolymer_entity",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/6PQK/4",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:56.523581Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:56 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000252.json",
+      "sha256": "e184dfac746af6fe539dcfc35fd32b341ead07ae21c52b7f1280e4731150a84f"
+    },
+    {
+      "sequence": 253,
+      "request_id": 253,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6PQK/F",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:57.005506Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:57 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000253.json",
+      "sha256": "cec565ee2ecdedb09f460bbc3b15b08c4d5dbabdeb3869e9a9d2f73557425117"
+    },
+    {
+      "sequence": 254,
+      "request_id": 254,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6PQK/G",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:57.525959Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:57 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000254.json",
+      "sha256": "3ecfd387a046c4e11496ad4703f8403ba7112726e9b4963943956f23d1f8c755"
+    },
+    {
+      "sequence": 255,
+      "request_id": 255,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6PQK/H",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:58.029767Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:58 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000255.json",
+      "sha256": "e36b8fc849e3af349dda93ff473b937df5c09ae455ddd59a66ef0ab1253da42a"
+    },
+    {
+      "sequence": 256,
+      "request_id": 256,
+      "role": "rcsb_nonpolymer_instance",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6PQK/I",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:58.510229Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:58 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000256.json",
+      "sha256": "e8fa399ab46107a23f35a939a250832ce2d320e8d693b6df757c181a0eb15094"
+    },
+    {
+      "sequence": 257,
+      "request_id": 257,
+      "role": "rcsb_component",
+      "chemical_id": "2PE",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/2PE",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:59.012577Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:59 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000257.json",
+      "sha256": "433a6e04464ae2b5f79cc29c4bde46ae38bf48ba5110314bbfbd57e18876498a"
+    },
+    {
+      "sequence": 258,
+      "request_id": 258,
+      "role": "rcsb_component",
+      "chemical_id": "BRJ",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/BRJ",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:59:59.504647Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:59:59 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000258.json",
+      "sha256": "ae177750969c489a5a5fc4d75b7a6f3415c39af4cc975c53df26ef8f367939e0"
+    },
+    {
+      "sequence": 259,
+      "request_id": 259,
+      "role": "rcsb_component",
+      "chemical_id": "CL",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/CL",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:00.026540Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:00 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000259.json",
+      "sha256": "9c98f20584954b21a3bac06cce1af3fa129f34a2f9294eab202725142ba7443e"
+    },
+    {
+      "sequence": 260,
+      "request_id": 260,
+      "role": "rcsb_component",
+      "chemical_id": "EDO",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/EDO",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:00.526221Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:00 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000260.json",
+      "sha256": "98a68b76e7963239184637a2865f6036d0192c8ad7255cdec9731f57928895a0"
+    },
+    {
+      "sequence": 261,
+      "request_id": 261,
+      "role": "rcsb_component",
+      "chemical_id": "FMT",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/FMT",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:01.028516Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:01 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000261.json",
+      "sha256": "aa35f5ed5751d582d9c1750ffb7c375b7da5182aeab2fa7fa85d78cbbe3da480"
+    },
+    {
+      "sequence": 262,
+      "request_id": 262,
+      "role": "rcsb_component",
+      "chemical_id": "GOL",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/GOL",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:01.512585Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:01 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000262.json",
+      "sha256": "c0010f06af30b8de547162437681ee0bba3d228402a9ccffacd8a169dbc85912"
+    },
+    {
+      "sequence": 263,
+      "request_id": 263,
+      "role": "rcsb_component",
+      "chemical_id": "MES",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/MES",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:02.013892Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:02 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000263.json",
+      "sha256": "8af0b807d750f0cef5c5d653b78e0d36a7899c0400fa8bf71a04b7ff3abdb28a"
+    },
+    {
+      "sequence": 264,
+      "request_id": 264,
+      "role": "rcsb_component",
+      "chemical_id": "PO4",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/PO4",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:02.515002Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:02 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000264.json",
+      "sha256": "f9fbab7b35db10602b9bff92c5696734f82d156c24a8182a1b628ba85ab79315"
+    },
+    {
+      "sequence": 265,
+      "request_id": 265,
+      "role": "rcsb_component",
+      "chemical_id": "PTD",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/PTD",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:03.038551Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:03 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000265.json",
+      "sha256": "ac9144fe8222d422959935a565f3e40df22dbf48454818bdfa2c9a3d1fe434cd"
+    },
+    {
+      "sequence": 266,
+      "request_id": 266,
+      "role": "rcsb_component",
+      "chemical_id": "SO4",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/SO4",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:03.531527Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:03 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000266.json",
+      "sha256": "57aceedeab06d4d0d48593c491d478dbdabd9dbf9523330e338df7d2bf58e992"
+    },
+    {
+      "sequence": 267,
+      "request_id": 267,
+      "role": "rcsb_component",
+      "chemical_id": "TOU",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/TOU",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:04.011790Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:04 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000267.json",
+      "sha256": "13817f8adcd6517daf56ae352c23160325a8578d291544a3a86e01fe120ed518"
+    },
+    {
+      "sequence": 268,
+      "request_id": 268,
+      "role": "rcsb_component",
+      "chemical_id": "UNX",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/UNX",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:04.513109Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:04 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000268.json",
+      "sha256": "c70ada997bd2e75ad039b8b7326c69460fd830c63d4d40c47914556d8278234a"
+    },
+    {
+      "sequence": 269,
+      "request_id": 269,
+      "role": "rcsb_component",
+      "chemical_id": "URE",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/URE",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:05.015717Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:05 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000269.json",
+      "sha256": "99f97e9a13ca0b960cc9832497159bc4b411fd801487bc373b793a5f36fbac66"
+    },
+    {
+      "sequence": 270,
+      "request_id": 270,
+      "role": "rcsb_component",
+      "chemical_id": "ZN",
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://data.rcsb.org/rest/v1/core/chemcomp/ZN",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T01:00:05.527356Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 01:00:05 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "rcsb-raw/000270.json",
+      "sha256": "1c14113a1e548349dad66cb5b6c42ed790238cef31d7894324afbc6d2e78760b"
+    }
+  ]
+}

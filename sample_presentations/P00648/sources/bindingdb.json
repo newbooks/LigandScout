@@ -1,0 +1,56 @@
+{
+  "schema_version": 5,
+  "accession": "P00648",
+  "source": "BindingDB",
+  "retrieved_at": "2026-11-06T00:57:49.912239Z",
+  "request": {
+    "url": "https://www.bindingdb.org/rest/getLigandsByUniprots",
+    "parameters": {
+      "uniprot": "P00648",
+      "response": "application/json"
+    }
+  },
+  "source_version": null,
+  "status": "no_matches",
+  "records": [],
+  "error": null,
+  "policy": "bindingdb-associated-v1",
+  "warnings": [],
+  "counts": {
+    "complete": true,
+    "candidate_targets": null,
+    "eligible_targets": null,
+    "candidate_activities": 0,
+    "included_activities": 0,
+    "excluded_activities": 0,
+    "unverified_activities": null,
+    "unique_ligands": 0,
+    "candidate_assays": null,
+    "eligible_assays": null,
+    "record_kind": "measurement",
+    "annotation_records": null,
+    "identified_chemical_ids": null,
+    "binding_site_annotations": null,
+    "generic_binding_sites": null,
+    "cofactor_annotations": null,
+    "smiles_available": null,
+    "smiles_unavailable": null,
+    "candidate_entries": null,
+    "accepted_target_entities": null,
+    "examined_ligand_instances": null,
+    "included_ligand_instances": null,
+    "excluded_water_instances": null,
+    "instances_without_reported_contacts": null,
+    "instances_without_target_contacts": null,
+    "contact_sites": null,
+    "contact_residues": null,
+    "mapped_contact_residues": null
+  },
+  "selection_audit": {
+    "outcome_reason": "no_activities",
+    "targets": [],
+    "activities": [],
+    "assays": []
+  },
+  "source_context": {}
+}

@@ -1,0 +1,442 @@
+{
+  "schema_version": 5,
+  "accession": "P00648",
+  "source": "UniProt",
+  "retrieved_at": "2026-11-06T00:57:50.255937Z",
+  "request": {
+    "url": "https://rest.uniprot.org/uniprotkb/P00648.json",
+    "parameters": {}
+  },
+  "source_version": "2026_04",
+  "status": "no_matches",
+  "records": [],
+  "error": null,
+  "policy": "uniprot-annotated-ligands-v1",
+  "warnings": [],
+  "counts": {
+    "candidate_targets": null,
+    "eligible_targets": null,
+    "candidate_activities": null,
+    "included_activities": null,
+    "excluded_activities": null,
+    "unverified_activities": null,
+    "candidate_assays": null,
+    "eligible_assays": null,
+    "complete": true,
+    "record_kind": "ligand_annotation",
+    "unique_ligands": 0,
+    "annotation_records": 0,
+    "identified_chemical_ids": 0,
+    "binding_site_annotations": 0,
+    "generic_binding_sites": 0,
+    "cofactor_annotations": 0,
+    "smiles_available": 0,
+    "smiles_unavailable": 0,
+    "candidate_entries": null,
+    "accepted_target_entities": null,
+    "examined_ligand_instances": null,
+    "included_ligand_instances": null,
+    "excluded_water_instances": null,
+    "instances_without_reported_contacts": null,
+    "instances_without_target_contacts": null,
+    "contact_sites": null,
+    "contact_residues": null,
+    "mapped_contact_residues": null
+  },
+  "selection_audit": {
+    "outcome_reason": "no_identified_annotations",
+    "targets": [],
+    "activities": [],
+    "assays": []
+  },
+  "source_context": {
+    "entry": {
+      "primary_accession": "P00648",
+      "query_accession": "P00648",
+      "secondary_accessions": [],
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "entry_name": "RNBR_BACAM",
+      "protein_name": "Ribonuclease",
+      "organism": "Bacillus amyloliquefaciens",
+      "taxon_id": 1390,
+      "sequence": "MMKMEGIALKKRLSWISVCLLVLVSAAGMLFSTAAKTETSSHKAHTEAQVINTFDGVADYLQTYHKLPDNYITKSEAQALGWVASKGNLADVAPGKSIGGDIFSNREGKLPGKSGRTWREADINYTSGFRNSDRILYSSDWLIYKTTDHYQTFTKIR",
+      "sequence_length": 157,
+      "entry_audit": {
+        "entryVersion": 147,
+        "sequenceVersion": 2,
+        "firstPublicDate": "1986-07-21",
+        "lastAnnotationUpdateDate": "2026-11-04",
+        "lastSequenceUpdateDate": "1989-07-01"
+      },
+      "references": [
+        {
+          "referenceNumber": 1,
+          "citation": {
+            "id": "3007290",
+            "citationType": "journal article",
+            "authors": [
+              "Paddon C.J.",
+              "Hartley R.W."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "3007290"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0378-1119(85)90045-9"
+              }
+            ],
+            "title": "Cloning, sequencing and transcription of an inactivated copy of Bacillus amyloliquefaciens extracellular ribonuclease (barnase).",
+            "publicationDate": "1985",
+            "journal": "Gene",
+            "firstPage": "231",
+            "lastPage": "239",
+            "volume": "40"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+          ]
+        },
+        {
+          "referenceNumber": 2,
+          "citation": {
+            "id": "3050134",
+            "citationType": "journal article",
+            "authors": [
+              "Hartley R.W."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "3050134"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0022-2836(88)90568-2"
+              }
+            ],
+            "title": "Barnase and barstar. Expression of its cloned inhibitor permits expression of a cloned ribonuclease.",
+            "publicationDate": "1988",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "913",
+            "lastPage": "915",
+            "volume": "202"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 48-157"
+          ]
+        },
+        {
+          "referenceNumber": 3,
+          "citation": {
+            "id": "4553460",
+            "citationType": "journal article",
+            "authors": [
+              "Hartley R.W.",
+              "Barker E.A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "4553460"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/newbio235015a0"
+              }
+            ],
+            "title": "Amino-acid sequence of extracellular ribonuclease (barnase) of Bacillus amyloliquefaciens.",
+            "publicationDate": "1972",
+            "journal": "Nature New Biol.",
+            "firstPage": "15",
+            "lastPage": "16",
+            "volume": "235"
+          },
+          "referencePositions": [
+            "PROTEIN SEQUENCE OF 48-157"
+          ]
+        },
+        {
+          "referenceNumber": 4,
+          "citation": {
+            "id": "1888730",
+            "citationType": "journal article",
+            "authors": [
+              "Bycroft M.",
+              "Ludvigsen S.",
+              "Fersht A.R.",
+              "Poulsen F.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1888730"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi00099a030"
+              }
+            ],
+            "title": "Determination of the three-dimensional solution structure of barnase using nuclear magnetic resonance spectroscopy.",
+            "publicationDate": "1991",
+            "journal": "Biochemistry",
+            "firstPage": "8697",
+            "lastPage": "8701",
+            "volume": "30"
+          },
+          "referencePositions": [
+            "STRUCTURE BY NMR"
+          ]
+        },
+        {
+          "referenceNumber": 5,
+          "citation": {
+            "id": "1569554",
+            "citationType": "journal article",
+            "authors": [
+              "Sancho J.",
+              "Neira J.L.",
+              "Fersht A.R."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1569554"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0022-2836(92)90559-3"
+              }
+            ],
+            "title": "An N-terminal fragment of barnase has residual helical structure similar to that in a refolding intermediate.",
+            "publicationDate": "1992",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "749",
+            "lastPage": "758",
+            "volume": "224"
+          },
+          "referencePositions": [
+            "STRUCTURE BY NMR OF 48-83"
+          ]
+        },
+        {
+          "referenceNumber": 6,
+          "citation": {
+            "id": "9708913",
+            "citationType": "journal article",
+            "authors": [
+              "Reibarkh M.Y.A.",
+              "Nolde D.E.",
+              "Vasilieva L.I.",
+              "Bocharov E.V.",
+              "Shulga A.A.",
+              "Kirpichnikov M.P.",
+              "Arseniev A.S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9708913"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0014-5793(98)00765-0"
+              }
+            ],
+            "title": "Three-dimensional structure of binase in solution.",
+            "publicationDate": "1998",
+            "journal": "FEBS Lett.",
+            "firstPage": "250",
+            "lastPage": "254",
+            "volume": "431"
+          },
+          "referencePositions": [
+            "STRUCTURE BY NMR OF 48-157"
+          ]
+        },
+        {
+          "referenceNumber": 7,
+          "citation": {
+            "id": "2023257",
+            "citationType": "journal article",
+            "authors": [
+              "Baudet S.",
+              "Janin J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "2023257"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0022-2836(91)90862-z"
+              }
+            ],
+            "title": "Crystal structure of a barnase-d(GpC) complex at 1.9-A resolution.",
+            "publicationDate": "1991",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "123",
+            "lastPage": "132",
+            "volume": "219"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 8,
+          "citation": {
+            "id": "16100951",
+            "citationType": "journal article",
+            "authors": [
+              "Guillet V.",
+              "Lapthorn A.",
+              "Hartley R.W.",
+              "Mauguen Y."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "16100951"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0969-2126(93)90018-c"
+              }
+            ],
+            "title": "Recognition between a bacterial ribonuclease, barnase, and its natural inhibitor, barstar.",
+            "publicationDate": "1993",
+            "journal": "Structure",
+            "firstPage": "165",
+            "lastPage": "177",
+            "volume": "1"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY OF COMPLEX WITH BARNASE"
+          ]
+        },
+        {
+          "referenceNumber": 9,
+          "citation": {
+            "id": "11914482",
+            "citationType": "journal article",
+            "authors": [
+              "Vaughan C.K.",
+              "Harryson P.",
+              "Buckle A.M.",
+              "Fersht A.R."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11914482"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1107/s0907444902001567"
+              }
+            ],
+            "title": "A structural double-mutant cycle: estimating the strength of a buried salt bridge in barnase.",
+            "publicationDate": "2002",
+            "journal": "Acta Crystallogr. D",
+            "firstPage": "591",
+            "lastPage": "600",
+            "volume": "58"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 10,
+          "citation": {
+            "id": "2696173",
+            "citationType": "journal article",
+            "authors": [
+              "Hartley R.W."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "2696173"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0968-0004(89)90104-7"
+              }
+            ],
+            "title": "Barnase and barstar: two small proteins to fold and fit together.",
+            "publicationDate": "1989",
+            "journal": "Trends Biochem. Sci.",
+            "firstPage": "450",
+            "lastPage": "454",
+            "volume": "14"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        }
+      ]
+    },
+    "generic_sites": [],
+    "generic_cofactors": [],
+    "context_comments": [
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/0",
+        "data": {
+          "texts": [
+            {
+              "value": "Hydrolyzes phosphodiester bonds in RNA, poly- and oligoribonucleotides resulting in 3'-nucleoside monophosphates via 2',3'-cyclophosphate intermediates"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      }
+    ],
+    "processed_products": [
+      {
+        "annotation_path": "/features/2",
+        "name": "Ribonuclease",
+        "start": 48,
+        "end": 157
+      }
+    ],
+    "go_annotations": {
+      "status": "success",
+      "terms": [
+        {
+          "id": "GO:0005576",
+          "name": "extracellular region",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0003723",
+          "name": "RNA binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0004521",
+          "name": "RNA endonuclease activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        }
+      ],
+      "request_ids": [
+        2
+      ],
+      "error": null
+    }
+  }
+}

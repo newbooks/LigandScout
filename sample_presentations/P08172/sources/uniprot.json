@@ -1,0 +1,926 @@
+{
+  "schema_version": 5,
+  "accession": "P08172",
+  "source": "UniProt",
+  "retrieved_at": "2026-11-06T01:47:29.373065Z",
+  "request": {
+    "url": "https://rest.uniprot.org/uniprotkb/P08172.json",
+    "parameters": {}
+  },
+  "source_version": "2026_04",
+  "status": "no_matches",
+  "records": [],
+  "error": null,
+  "policy": "uniprot-annotated-ligands-v1",
+  "warnings": [],
+  "counts": {
+    "candidate_targets": null,
+    "eligible_targets": null,
+    "candidate_activities": null,
+    "included_activities": null,
+    "excluded_activities": null,
+    "unverified_activities": null,
+    "candidate_assays": null,
+    "eligible_assays": null,
+    "complete": true,
+    "record_kind": "ligand_annotation",
+    "unique_ligands": 0,
+    "annotation_records": 0,
+    "identified_chemical_ids": 0,
+    "binding_site_annotations": 0,
+    "generic_binding_sites": 0,
+    "cofactor_annotations": 0,
+    "smiles_available": 0,
+    "smiles_unavailable": 0,
+    "candidate_entries": null,
+    "accepted_target_entities": null,
+    "examined_ligand_instances": null,
+    "included_ligand_instances": null,
+    "excluded_water_instances": null,
+    "instances_without_reported_contacts": null,
+    "instances_without_target_contacts": null,
+    "contact_sites": null,
+    "contact_residues": null,
+    "mapped_contact_residues": null
+  },
+  "selection_audit": {
+    "outcome_reason": "no_identified_annotations",
+    "targets": [],
+    "activities": [],
+    "assays": []
+  },
+  "source_context": {
+    "entry": {
+      "primary_accession": "P08172",
+      "query_accession": "P08172",
+      "secondary_accessions": [
+        "Q4VBK6",
+        "Q9P1X9"
+      ],
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "entry_name": "ACM2_HUMAN",
+      "protein_name": "Muscarinic acetylcholine receptor M2",
+      "organism": "Homo sapiens",
+      "taxon_id": 9606,
+      "sequence": "MNNSTNSSNNSLALTSPYKTFEVVFIVLVAGSLSLVTIIGNILVMVSIKVNRHLQTVNNYFLFSLACADLIIGVFSMNLYTLYTVIGYWPLGPVVCDLWLALDYVVSNASVMNLLIISFDRYFCVTKPLTYPVKRTTKMAGMMIAAAWVLSFILWAPAILFWQFIVGVRTVEDGECYIQFFSNAAVTFGTAIAAFYLPVIIMTVLYWHISRASKSRIKKDKKEPVANQDPVSPSLVQGRIVKPNNNNMPSSDDGLEHNKIQNGKAPRDPVTENCVQGEEKESSNDSTSVSAVASNMRDDEITQDENTVSTSLGHSKDENSKQTCIRIGTKTPKSDSCTPTNTTVEVVGSSGQNGDEKQNIVARKIVKMTKQPAKKKPPPSREKKVTRTILAILLAFIITWAPYNVMVLINTFCAPCIPNTVWTIGYWLCYINSTINPACYALCNATFKKTFKHLLMCHYKNIGATR",
+      "sequence_length": 466,
+      "entry_audit": {
+        "entryVersion": 231,
+        "sequenceVersion": 1,
+        "firstPublicDate": "1988-08-01",
+        "lastAnnotationUpdateDate": "2026-11-04",
+        "lastSequenceUpdateDate": "1988-08-01"
+      },
+      "references": [
+        {
+          "referenceNumber": 1,
+          "citation": {
+            "id": "3037705",
+            "citationType": "journal article",
+            "authors": [
+              "Bonner T.I.",
+              "Buckley N.J.",
+              "Young A.C.",
+              "Brann M.R."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "3037705"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1126/science.3037705"
+              }
+            ],
+            "title": "Identification of a family of muscarinic acetylcholine receptor genes.",
+            "publicationDate": "1987",
+            "journal": "Science",
+            "firstPage": "527",
+            "lastPage": "532",
+            "volume": "237"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+          ]
+        },
+        {
+          "referenceNumber": 2,
+          "citation": {
+            "id": "3443095",
+            "citationType": "journal article",
+            "authors": [
+              "Peralta E.G.",
+              "Ashkenazi A.",
+              "Winslow J.W.",
+              "Smith D.H.",
+              "Ramachandran J.",
+              "Capon D.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "3443095"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1002/j.1460-2075.1987.tb02733.x"
+              }
+            ],
+            "title": "Distinct primary structures, ligand-binding properties and tissue-specific expression of four human muscarinic acetylcholine receptors.",
+            "publicationDate": "1987",
+            "journal": "EMBO J.",
+            "firstPage": "3923",
+            "lastPage": "3929",
+            "volume": "6"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+            "FUNCTION",
+            "SUBCELLULAR LOCATION"
+          ]
+        },
+        {
+          "referenceNumber": 3,
+          "citation": {
+            "id": "CI-A6VDT35SGVOAT",
+            "citationType": "submission",
+            "authors": [
+              "Puhl H.L. III",
+              "Ikeda S.R.",
+              "Aronstam R.S."
+            ],
+            "title": "cDNA clones of human proteins involved in signal transduction sequenced by the Guthrie cDNA resource center (www.cdna.org).",
+            "publicationDate": "APR-2002",
+            "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+          ],
+          "referenceComments": [
+            {
+              "value": "Brain",
+              "type": "TISSUE"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 4,
+          "citation": {
+            "id": "15489334",
+            "citationType": "journal article",
+            "authoringGroup": [
+              "The MGC Project Team"
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15489334"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1101/gr.2596504"
+              }
+            ],
+            "title": "The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).",
+            "publicationDate": "2004",
+            "journal": "Genome Res.",
+            "firstPage": "2121",
+            "lastPage": "2127",
+            "volume": "14"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+          ]
+        },
+        {
+          "referenceNumber": 5,
+          "citation": {
+            "id": "15014171",
+            "citationType": "journal article",
+            "authors": [
+              "Kitano T.",
+              "Liu Y.-H.",
+              "Ueda S.",
+              "Saitou N."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15014171"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1093/molbev/msh100"
+              }
+            ],
+            "title": "Human-specific amino acid changes found in 103 protein-coding genes.",
+            "publicationDate": "2004",
+            "journal": "Mol. Biol. Evol.",
+            "firstPage": "936",
+            "lastPage": "944",
+            "volume": "21"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 27-466"
+          ]
+        },
+        {
+          "referenceNumber": 6,
+          "citation": {
+            "id": "7822302",
+            "citationType": "journal article",
+            "authors": [
+              "Gurevich V.V.",
+              "Dion S.B.",
+              "Onorato J.J.",
+              "Ptasienski J.",
+              "Kim C.M.",
+              "Sterne-Marr R.",
+              "Hosey M.M.",
+              "Benovic J.L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "7822302"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1074/jbc.270.2.720"
+              }
+            ],
+            "title": "Arrestin interactions with G protein-coupled receptors. Direct binding studies of wild type and mutant arrestins with rhodopsin, beta 2-adrenergic, and m2 muscarinic cholinergic receptors.",
+            "publicationDate": "1995",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "720",
+            "lastPage": "731",
+            "volume": "270"
+          },
+          "referencePositions": [
+            "INTERACTION WITH ARRB1 AND ARRB2"
+          ]
+        },
+        {
+          "referenceNumber": 7,
+          "citation": {
+            "id": "16548883",
+            "citationType": "journal article",
+            "authors": [
+              "Leong W.F.",
+              "Chow V.T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "16548883"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1111/j.1462-5822.2005.00644.x"
+              }
+            ],
+            "title": "Transcriptomic and proteomic analyses of rhabdomyosarcoma cells reveal differential cellular gene expression in response to enterovirus 71 infection.",
+            "publicationDate": "2006",
+            "journal": "Cell. Microbiol.",
+            "firstPage": "565",
+            "lastPage": "580",
+            "volume": "8"
+          },
+          "referencePositions": [
+            "INDUCTION",
+            "IDENTIFICATION BY MASS SPECTROMETRY"
+          ]
+        },
+        {
+          "referenceNumber": 8,
+          "citation": {
+            "id": "15229186",
+            "citationType": "journal article",
+            "authors": [
+              "Wang J.C.",
+              "Hinrichs A.L.",
+              "Stock H.",
+              "Budde J.",
+              "Allen R.",
+              "Bertelsen S.",
+              "Kwon J.M.",
+              "Wu W.",
+              "Dick D.M.",
+              "Rice J.",
+              "Jones K.",
+              "Nurnberger J.I. Jr.",
+              "Tischfield J.",
+              "Porjesz B.",
+              "Edenberg H.J.",
+              "Hesselbrock V.",
+              "Crowe R.",
+              "Schuckit M.",
+              "Begleiter H.",
+              "Reich T.",
+              "Goate A.M.",
+              "Bierut L.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15229186"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1093/hmg/ddh194"
+              }
+            ],
+            "title": "Evidence of common and specific genetic effects: association of the muscarinic acetylcholine receptor M2 (CHRM2) gene with alcohol dependence and major depressive syndrome.",
+            "publicationDate": "2004",
+            "journal": "Hum. Mol. Genet.",
+            "firstPage": "1903",
+            "lastPage": "1911",
+            "volume": "13"
+          },
+          "referencePositions": [
+            "INVOLVEMENT IN SUSCEPTIBILITY TO ALCOHOLISM AND MAJOR DEPRESSIVE DISORDER"
+          ]
+        },
+        {
+          "referenceNumber": 9,
+          "citation": {
+            "id": "20976005",
+            "citationType": "journal article",
+            "authors": [
+              "Reiner C.L.",
+              "McCullar J.S.",
+              "Kow R.L.",
+              "Le J.H.",
+              "Goodlett D.R.",
+              "Nathanson N.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "20976005"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1371/journal.pone.0013517"
+              }
+            ],
+            "title": "RACK1 associates with muscarinic receptors and regulates M(2) receptor trafficking.",
+            "publicationDate": "2010",
+            "journal": "PLoS ONE",
+            "firstPage": "E13517",
+            "lastPage": "E13517",
+            "volume": "5"
+          },
+          "referencePositions": [
+            "INTERACTION WITH RACK1"
+          ]
+        },
+        {
+          "referenceNumber": 10,
+          "citation": {
+            "id": "37209686",
+            "citationType": "journal article",
+            "authors": [
+              "Maharana J.",
+              "Sarma P.",
+              "Yadav M.K.",
+              "Saha S.",
+              "Singh V.",
+              "Saha S.",
+              "Chami M.",
+              "Banerjee R.",
+              "Shukla A.K."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "37209686"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.molcel.2023.04.025"
+              }
+            ],
+            "title": "Structural snapshots uncover a key phosphorylation motif in GPCRs driving beta-arrestin activation.",
+            "publicationDate": "2023",
+            "journal": "Mol. Cell",
+            "firstPage": "2091",
+            "lastPage": "2107",
+            "volume": "83"
+          },
+          "referencePositions": [
+            "PHOSPHORYLATION",
+            "DOMAIN",
+            "MUTAGENESIS OF VAL-308"
+          ]
+        },
+        {
+          "referenceNumber": 11,
+          "citation": {
+            "id": "22278061",
+            "citationType": "journal article",
+            "authors": [
+              "Haga K.",
+              "Kruse A.C.",
+              "Asada H.",
+              "Yurugi-Kobayashi T.",
+              "Shiroishi M.",
+              "Zhang C.",
+              "Weis W.I.",
+              "Okada T.",
+              "Kobilka B.K.",
+              "Haga T.",
+              "Kobayashi T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "22278061"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/nature10753"
+              }
+            ],
+            "title": "Structure of the human M2 muscarinic acetylcholine receptor bound to an antagonist.",
+            "publicationDate": "2012",
+            "journal": "Nature",
+            "firstPage": "547",
+            "lastPage": "551",
+            "volume": "482"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH THE ANTAGONIST 3-QUINUCLIDINYLBENZILATE",
+            "SUBCELLULAR LOCATION",
+            "TOPOLOGY",
+            "DISULFIDE BONDS"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "3UON"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 12,
+          "citation": {
+            "id": "24256733",
+            "citationType": "journal article",
+            "authors": [
+              "Kruse A.C.",
+              "Ring A.M.",
+              "Manglik A.",
+              "Hu J.",
+              "Hu K.",
+              "Eitel K.",
+              "Hubner H.",
+              "Pardon E.",
+              "Valant C.",
+              "Sexton P.M.",
+              "Christopoulos A.",
+              "Felder C.C.",
+              "Gmeiner P.",
+              "Steyaert J.",
+              "Weis W.I.",
+              "Garcia K.C.",
+              "Wess J.",
+              "Kobilka B.K."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "24256733"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/nature12735"
+              }
+            ],
+            "title": "Activation and allosteric modulation of a muscarinic acetylcholine receptor.",
+            "publicationDate": "2013",
+            "journal": "Nature",
+            "firstPage": "101",
+            "lastPage": "106",
+            "volume": "504"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEXES WITH THE AGONIST IPEROXO AND THE ALLOSTERIC EFFECTOR LY2119620",
+            "FUNCTION",
+            "SUBCELLULAR LOCATION",
+            "TOPOLOGY",
+            "DISULFIDE BONDS",
+            "MOTIF",
+            "MUTAGENESIS OF ASN-58; ASP-103; TYR-206 AND ASN-404"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "4MQS"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "4MQT"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 13,
+          "citation": {
+            "id": "36690613",
+            "citationType": "journal article",
+            "authors": [
+              "Xu J.",
+              "Wang Q.",
+              "Hubner H.",
+              "Hu Y.",
+              "Niu X.",
+              "Wang H.",
+              "Maeda S.",
+              "Inoue A.",
+              "Tao Y.",
+              "Gmeiner P.",
+              "Du Y.",
+              "Jin C.",
+              "Kobilka B.K."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "36690613"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/s41467-022-35726-z"
+              }
+            ],
+            "title": "Structural and dynamic insights into supra-physiological activation and allosteric modulation of a muscarinic acetylcholine receptor.",
+            "publicationDate": "2023",
+            "journal": "Nat. Commun.",
+            "firstPage": "376",
+            "lastPage": "376",
+            "volume": "14"
+          },
+          "referencePositions": [
+            "STRUCTURE BY ELECTRON MICROSCOPY AND 368-466 IN COMPLEX WITH ACETYLCHOLINE; ALLOSTERIC EFFECTOR LY2119620; GNAO1; GNB1 AND GNG2",
+            "FUNCTION",
+            "ACTIVITY REGULATION",
+            "DISULFIDE BONDS"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "7T8X"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "7T90"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "7T94"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "7T96"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 14,
+          "citation": {
+            "id": "38175886",
+            "citationType": "journal article",
+            "authors": [
+              "Maharana J.",
+              "Sano F.K.",
+              "Sarma P.",
+              "Yadav M.K.",
+              "Duan L.",
+              "Stepniewski T.M.",
+              "Chaturvedi M.",
+              "Ranjan A.",
+              "Singh V.",
+              "Saha S.",
+              "Mahajan G.",
+              "Chami M.",
+              "Shihoya W.",
+              "Selent J.",
+              "Chung K.Y.",
+              "Banerjee R.",
+              "Nureki O.",
+              "Shukla A.K."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "38175886"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1126/science.adj3347"
+              }
+            ],
+            "title": "Molecular insights into atypical modes of beta-arrestin interaction with seven transmembrane receptors.",
+            "publicationDate": "2024",
+            "journal": "Science",
+            "firstPage": "101",
+            "lastPage": "108",
+            "volume": "383"
+          },
+          "referencePositions": [
+            "STRUCTURE BY ELECTRON MICROSCOPY IN COMPLEX WITH ARRB1 AND ARRB2",
+            "DOMAIN",
+            "INTERACTION WITH ARRB1 AND ARRB2",
+            "PHOSPHORYLATION AT THR-302; THR-307; SER-309; THR-310; SER-311 AND SER-315",
+            "MUTAGENESIS OF 307-THR--THR-310 AND 340-THR--THR-343"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "8J8R"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "8J97"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "8JAF"
+            }
+          ]
+        }
+      ]
+    },
+    "generic_sites": [],
+    "generic_cofactors": [],
+    "context_comments": [
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/0",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "24256733"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "3443095"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "36690613"
+                }
+              ],
+              "value": "Muscarinic receptor for acetylcholine, a neurotransmitter found in the brain, neuromuscular junctions and the autonomic ganglia (PubMed:24256733, PubMed:3443095, PubMed:36690613). Ligand binding causes a conformation change that triggers signaling via guanine nucleotide-binding proteins (G proteins) and modulates the activity of downstream effectors, such as adenylate cyclase (PubMed:36690613). CHRM2 is coupled to G(i)/G(o) (GNAI1 or GNAO1) G proteins and mediates signaling by inhibiting adenylate cyclase activity (PubMed:36690613)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      },
+      {
+        "comment_type": "ACTIVITY REGULATION",
+        "annotation_path": "/comments/1",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "36690613"
+                }
+              ],
+              "value": "Activated by allosteric modulator LY2119620"
+            }
+          ],
+          "commentType": "ACTIVITY REGULATION"
+        }
+      },
+      {
+        "comment_type": "SUBUNIT",
+        "annotation_path": "/comments/2",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "20976005"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "38175886"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7822302"
+                }
+              ],
+              "value": "Interacts (when phosphorylated) with ARRB1 and ARRB2; the interaction is associated with internalization of the receptor and short-term desensitization to the ligand (PubMed:38175886, PubMed:7822302). Interacts with RACK1; the interaction regulates CHRM2 internalization (PubMed:20976005)"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        }
+      }
+    ],
+    "processed_products": [
+      {
+        "annotation_path": "/features/0",
+        "name": "Muscarinic acetylcholine receptor M2",
+        "start": 1,
+        "end": 466
+      }
+    ],
+    "go_annotations": {
+      "status": "success",
+      "terms": [
+        {
+          "id": "GO:0006940",
+          "name": "regulation of smooth muscle contraction",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007186",
+          "name": "G protein-coupled receptor signaling pathway",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007187",
+          "name": "G protein-coupled receptor signaling pathway, coupled to cyclic nucleotide second messenger",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007188",
+          "name": "adenylate cyclase-modulating G protein-coupled receptor signaling pathway",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007193",
+          "name": "adenylate cyclase-inhibiting G protein-coupled receptor signaling pathway",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007197",
+          "name": "adenylate cyclase-inhibiting G protein-coupled acetylcholine receptor signaling pathway",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007207",
+          "name": "phospholipase C-activating G protein-coupled acetylcholine receptor signaling pathway",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007213",
+          "name": "G protein-coupled acetylcholine receptor signaling pathway",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007268",
+          "name": "chemical synaptic transmission",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0007399",
+          "name": "nervous system development",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0008016",
+          "name": "regulation of heart contraction",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0009615",
+          "name": "response to virus",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0005886",
+          "name": "plasma membrane",
+          "aspect": "CC",
+          "relations": [
+            "is_active_in",
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0016020",
+          "name": "membrane",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0030425",
+          "name": "dendrite",
+          "aspect": "CC",
+          "relations": [
+            "is_active_in"
+          ]
+        },
+        {
+          "id": "GO:0030669",
+          "name": "clathrin-coated endocytic vesicle membrane",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0045202",
+          "name": "synapse",
+          "aspect": "CC",
+          "relations": [
+            "is_active_in"
+          ]
+        },
+        {
+          "id": "GO:0045211",
+          "name": "postsynaptic membrane",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0016907",
+          "name": "G protein-coupled acetylcholine receptor activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:1990763",
+          "name": "arrestin family protein binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        }
+      ],
+      "request_ids": [
+        2
+      ],
+      "error": null
+    }
+  }
+}

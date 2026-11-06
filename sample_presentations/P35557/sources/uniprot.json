@@ -1,0 +1,3923 @@
+{
+  "schema_version": 5,
+  "accession": "P35557",
+  "source": "UniProt",
+  "retrieved_at": "2026-11-06T01:53:00.908469Z",
+  "request": {
+    "url": "https://rest.uniprot.org/uniprotkb/P35557.json",
+    "parameters": {}
+  },
+  "source_version": "2026_04",
+  "status": "success",
+  "records": [
+    {
+      "compound_id": "CHEBI:30616",
+      "compound_name": "ATP",
+      "smiles": null,
+      "inchikey": null,
+      "target_description": "Hexokinase-4",
+      "evidence_type": "uniprot_annotation",
+      "measurement_type": null,
+      "measurement_value": null,
+      "measurement_unit": null,
+      "pmid": null,
+      "doi": null,
+      "source_url": "https://www.uniprot.org/uniprotkb/P35557/entry",
+      "source_record_id": null,
+      "target_id": "P35557",
+      "target_accessions": [
+        "P35557"
+      ],
+      "assay_id": null,
+      "document_id": null,
+      "assay_type": null,
+      "assay_description": null,
+      "target_organism": "Homo sapiens",
+      "target_tax_id": "9606",
+      "target_relationship": null,
+      "target_confidence": null,
+      "target_match_status": "entry_annotation",
+      "variant_accession": null,
+      "variant_mutation": null,
+      "variant_isoform": null,
+      "activity_comment": null,
+      "data_validity_comment": null,
+      "potential_duplicate": null,
+      "parent_compound_id": null,
+      "measurement_relation": null,
+      "measurement_upper_value": null,
+      "measurement_text": null,
+      "measurement_basis": null,
+      "source_values": {
+        "aliases": [
+          "ATP"
+        ],
+        "binding_annotations": [
+          {
+            "annotation_path": "/features/4",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 78,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 83,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:30616"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P19367"
+                }
+              ],
+              "ligand": {
+                "name": "ATP",
+                "id": "ChEBI:CHEBI:30616"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/8",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 228,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 228,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:30616"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "22101819"
+                },
+                {
+                  "evidenceCode": "ECO:0007744",
+                  "source": "PDB",
+                  "id": "3FGU"
+                },
+                {
+                  "evidenceCode": "ECO:0007744",
+                  "source": "PDB",
+                  "id": "3ID8"
+                }
+              ],
+              "ligand": {
+                "name": "ATP",
+                "id": "ChEBI:CHEBI:30616"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/12",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 295,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 296,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:30616"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "22101819"
+                },
+                {
+                  "evidenceCode": "ECO:0007744",
+                  "source": "PDB",
+                  "id": "3FGU"
+                },
+                {
+                  "evidenceCode": "ECO:0007744",
+                  "source": "PDB",
+                  "id": "3ID8"
+                }
+              ],
+              "ligand": {
+                "name": "ATP",
+                "id": "ChEBI:CHEBI:30616"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/13",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 332,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 336,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:30616"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "22101819"
+                },
+                {
+                  "evidenceCode": "ECO:0007744",
+                  "source": "PDB",
+                  "id": "3FGU"
+                },
+                {
+                  "evidenceCode": "ECO:0007744",
+                  "source": "PDB",
+                  "id": "3ID8"
+                }
+              ],
+              "ligand": {
+                "name": "ATP",
+                "id": "ChEBI:CHEBI:30616"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/14",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 411,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 415,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:30616"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "22101819"
+                },
+                {
+                  "evidenceCode": "ECO:0007744",
+                  "source": "PDB",
+                  "id": "3FGU"
+                },
+                {
+                  "evidenceCode": "ECO:0007744",
+                  "source": "PDB",
+                  "id": "3ID8"
+                }
+              ],
+              "ligand": {
+                "name": "ATP",
+                "id": "ChEBI:CHEBI:30616"
+              }
+            }
+          }
+        ],
+        "cofactor_annotations": []
+      },
+      "ligand_roles": [
+        "binding_site"
+      ],
+      "binding_sites": [
+        {
+          "annotation_path": "/features/4",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 78,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 83,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "DLGGTN",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/0",
+              "name": "Hexokinase-4",
+              "start": 1,
+              "end": 465
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/4/evidences/0",
+              "evidence_code": "ECO:0000250",
+              "source": "UniProtKB",
+              "source_id": "P19367",
+              "category": "similarity"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/8",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 228,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 228,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "T",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/0",
+              "name": "Hexokinase-4",
+              "start": 1,
+              "end": 465
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/8/evidences/0",
+              "evidence_code": "ECO:0000269",
+              "source": "PubMed",
+              "source_id": "22101819",
+              "category": "experimental"
+            },
+            {
+              "annotation_path": "/features/8/evidences/1",
+              "evidence_code": "ECO:0007744",
+              "source": "PDB",
+              "source_id": "3FGU",
+              "category": "other"
+            },
+            {
+              "annotation_path": "/features/8/evidences/2",
+              "evidence_code": "ECO:0007744",
+              "source": "PDB",
+              "source_id": "3ID8",
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/12",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 295,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 296,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "GK",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/0",
+              "name": "Hexokinase-4",
+              "start": 1,
+              "end": 465
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/12/evidences/0",
+              "evidence_code": "ECO:0000269",
+              "source": "PubMed",
+              "source_id": "22101819",
+              "category": "experimental"
+            },
+            {
+              "annotation_path": "/features/12/evidences/1",
+              "evidence_code": "ECO:0007744",
+              "source": "PDB",
+              "source_id": "3FGU",
+              "category": "other"
+            },
+            {
+              "annotation_path": "/features/12/evidences/2",
+              "evidence_code": "ECO:0007744",
+              "source": "PDB",
+              "source_id": "3ID8",
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/13",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 332,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 336,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "TRFVS",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/0",
+              "name": "Hexokinase-4",
+              "start": 1,
+              "end": 465
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/13/evidences/0",
+              "evidence_code": "ECO:0000269",
+              "source": "PubMed",
+              "source_id": "22101819",
+              "category": "experimental"
+            },
+            {
+              "annotation_path": "/features/13/evidences/1",
+              "evidence_code": "ECO:0007744",
+              "source": "PDB",
+              "source_id": "3FGU",
+              "category": "other"
+            },
+            {
+              "annotation_path": "/features/13/evidences/2",
+              "evidence_code": "ECO:0007744",
+              "source": "PDB",
+              "source_id": "3ID8",
+              "category": "other"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/14",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 411,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 415,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "SVYKL",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/0",
+              "name": "Hexokinase-4",
+              "start": 1,
+              "end": 465
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/14/evidences/0",
+              "evidence_code": "ECO:0000269",
+              "source": "PubMed",
+              "source_id": "22101819",
+              "category": "experimental"
+            },
+            {
+              "annotation_path": "/features/14/evidences/1",
+              "evidence_code": "ECO:0007744",
+              "source": "PDB",
+              "source_id": "3FGU",
+              "category": "other"
+            },
+            {
+              "annotation_path": "/features/14/evidences/2",
+              "evidence_code": "ECO:0007744",
+              "source": "PDB",
+              "source_id": "3ID8",
+              "category": "other"
+            }
+          ]
+        }
+      ],
+      "annotation_evidence": [
+        {
+          "annotation_path": "/features/4/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": "UniProtKB",
+          "source_id": "P19367",
+          "category": "similarity"
+        },
+        {
+          "annotation_path": "/features/8/evidences/0",
+          "evidence_code": "ECO:0000269",
+          "source": "PubMed",
+          "source_id": "22101819",
+          "category": "experimental"
+        },
+        {
+          "annotation_path": "/features/8/evidences/1",
+          "evidence_code": "ECO:0007744",
+          "source": "PDB",
+          "source_id": "3FGU",
+          "category": "other"
+        },
+        {
+          "annotation_path": "/features/8/evidences/2",
+          "evidence_code": "ECO:0007744",
+          "source": "PDB",
+          "source_id": "3ID8",
+          "category": "other"
+        },
+        {
+          "annotation_path": "/features/12/evidences/0",
+          "evidence_code": "ECO:0000269",
+          "source": "PubMed",
+          "source_id": "22101819",
+          "category": "experimental"
+        },
+        {
+          "annotation_path": "/features/12/evidences/1",
+          "evidence_code": "ECO:0007744",
+          "source": "PDB",
+          "source_id": "3FGU",
+          "category": "other"
+        },
+        {
+          "annotation_path": "/features/12/evidences/2",
+          "evidence_code": "ECO:0007744",
+          "source": "PDB",
+          "source_id": "3ID8",
+          "category": "other"
+        },
+        {
+          "annotation_path": "/features/13/evidences/0",
+          "evidence_code": "ECO:0000269",
+          "source": "PubMed",
+          "source_id": "22101819",
+          "category": "experimental"
+        },
+        {
+          "annotation_path": "/features/13/evidences/1",
+          "evidence_code": "ECO:0007744",
+          "source": "PDB",
+          "source_id": "3FGU",
+          "category": "other"
+        },
+        {
+          "annotation_path": "/features/13/evidences/2",
+          "evidence_code": "ECO:0007744",
+          "source": "PDB",
+          "source_id": "3ID8",
+          "category": "other"
+        },
+        {
+          "annotation_path": "/features/14/evidences/0",
+          "evidence_code": "ECO:0000269",
+          "source": "PubMed",
+          "source_id": "22101819",
+          "category": "experimental"
+        },
+        {
+          "annotation_path": "/features/14/evidences/1",
+          "evidence_code": "ECO:0007744",
+          "source": "PDB",
+          "source_id": "3FGU",
+          "category": "other"
+        },
+        {
+          "annotation_path": "/features/14/evidences/2",
+          "evidence_code": "ECO:0007744",
+          "source": "PDB",
+          "source_id": "3ID8",
+          "category": "other"
+        }
+      ],
+      "structure_provenance": {
+        "provider": "RCSB CCD",
+        "status": "no_exact_mapping",
+        "requested_chemical_id": "CHEBI:30616",
+        "smiles_field": null,
+        "candidate_components": [],
+        "request_ids": [
+          3
+        ]
+      }
+    }
+  ],
+  "error": null,
+  "policy": "uniprot-annotated-ligands-v1",
+  "warnings": [
+    {
+      "code": "inferred_annotation",
+      "message": "CHEBI:30616: Includes similarity/sequence-based evidence; not all annotations are experimental.",
+      "role": "CHEBI:30616"
+    },
+    {
+      "code": "structure_no_exact_mapping",
+      "message": "CHEBI:30616: SMILES no_exact_mapping.",
+      "role": "CHEBI:30616"
+    }
+  ],
+  "counts": {
+    "candidate_targets": null,
+    "eligible_targets": null,
+    "candidate_activities": null,
+    "included_activities": null,
+    "excluded_activities": null,
+    "unverified_activities": null,
+    "candidate_assays": null,
+    "eligible_assays": null,
+    "complete": true,
+    "record_kind": "ligand_annotation",
+    "unique_ligands": 1,
+    "annotation_records": 1,
+    "identified_chemical_ids": 1,
+    "binding_site_annotations": 5,
+    "generic_binding_sites": 6,
+    "cofactor_annotations": 0,
+    "smiles_available": 0,
+    "smiles_unavailable": 1,
+    "candidate_entries": null,
+    "accepted_target_entities": null,
+    "examined_ligand_instances": null,
+    "included_ligand_instances": null,
+    "excluded_water_instances": null,
+    "instances_without_reported_contacts": null,
+    "instances_without_target_contacts": null,
+    "contact_sites": null,
+    "contact_residues": null,
+    "mapped_contact_residues": null
+  },
+  "selection_audit": {
+    "outcome_reason": null,
+    "targets": [],
+    "activities": [],
+    "assays": []
+  },
+  "source_context": {
+    "entry": {
+      "primary_accession": "P35557",
+      "query_accession": "P35557",
+      "secondary_accessions": [
+        "A4D2J2",
+        "A4D2J3",
+        "Q05810"
+      ],
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "entry_name": "HXK4_HUMAN",
+      "protein_name": "Hexokinase-4",
+      "organism": "Homo sapiens",
+      "taxon_id": 9606,
+      "sequence": "MLDDRARMEAAKKEKVEQILAEFQLQEEDLKKVMRRMQKEMDRGLRLETHEEASVKMLPTYVRSTPEGSEVGDFLSLDLGGTNFRVMLVKVGEGEEGQWSVKTKHQMYSIPEDAMTGTAEMLFDYISECISDFLDKHQMKHKKLPLGFTFSFPVRHEDIDKGILLNWTKGFKASGAEGNNVVGLLRDAIKRRGDFEMDVVAMVNDTVATMISCYYEDHQCEVGMIVGTGCNACYMEEMQNVELVEGDEGRMCVNTEWGAFGDSGELDEFLLEYDRLVDESSANPGQQLYEKLIGGKYMGELVRLVLLRLVDENLLFHGEASEQLRTRGAFETRFVSQVESDTGDRKQIYNILSTLGLRPSTTDCDIVRRACESVSTRAAHMCSAGLAGVINRMRESRSEDVMRITVGVDGSVYKLHPSFKERFHASVRRLTPSCEITFIESEEGSGRGAALVSAVACKKACMLGQ",
+      "sequence_length": 465,
+      "entry_audit": {
+        "entryVersion": 244,
+        "sequenceVersion": 1,
+        "firstPublicDate": "1994-06-01",
+        "lastAnnotationUpdateDate": "2026-11-04",
+        "lastSequenceUpdateDate": "1994-06-01"
+      },
+      "references": [
+        {
+          "referenceNumber": 1,
+          "citation": {
+            "id": "1354840",
+            "citationType": "journal article",
+            "authors": [
+              "Tanizawa Y.",
+              "Matsutani A.",
+              "Chiu K.C.",
+              "Permutt M.A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1354840"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1210/mend.6.7.1354840"
+              }
+            ],
+            "title": "Human glucokinase gene: isolation, structural characterization, and identification of a microsatellite repeat polymorphism.",
+            "publicationDate": "1992",
+            "journal": "Mol. Endocrinol.",
+            "firstPage": "1070",
+            "lastPage": "1081",
+            "volume": "6"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+          ]
+        },
+        {
+          "referenceNumber": 2,
+          "citation": {
+            "id": "1871135",
+            "citationType": "journal article",
+            "authors": [
+              "Tanizawa Y.",
+              "Koranyi L.I.",
+              "Welling C.M.",
+              "Permutt M.A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1871135"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1073/pnas.88.16.7294"
+              }
+            ],
+            "title": "Human liver glucokinase gene: cloning and sequence determination of two alternatively spliced cDNAs.",
+            "publicationDate": "1991",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "7294",
+            "lastPage": "7297",
+            "volume": "88"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [MRNA]",
+            "VARIANT THR-107"
+          ]
+        },
+        {
+          "referenceNumber": 3,
+          "citation": {
+            "id": "1511800",
+            "citationType": "journal article",
+            "authors": [
+              "Nishi S.",
+              "Stoffel M.",
+              "Xiang K.S.",
+              "Shows T.B.",
+              "Bell G.I.",
+              "Takeda J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1511800"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1007/bf00429094"
+              }
+            ],
+            "title": "Human pancreatic beta-cell glucokinase: cDNA sequence and localization of the polymorphic gene to chromosome 7, band p13.",
+            "publicationDate": "1992",
+            "journal": "Diabetologia",
+            "firstPage": "743",
+            "lastPage": "747",
+            "volume": "35"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [MRNA]"
+          ],
+          "referenceComments": [
+            {
+              "value": "Pancreas",
+              "type": "TISSUE"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 4,
+          "citation": {
+            "id": "1612194",
+            "citationType": "journal article",
+            "authors": [
+              "Koranyi L.I.",
+              "Tanizawa Y.",
+              "Welling C.M.",
+              "Rabin D.U.",
+              "Permutt M.A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1612194"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/diab.41.7.807"
+              }
+            ],
+            "title": "Human islet glucokinase gene. Isolation and sequence analysis of full-length cDNA.",
+            "publicationDate": "1992",
+            "journal": "Diabetes",
+            "firstPage": "807",
+            "lastPage": "811",
+            "volume": "41"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [MRNA]"
+          ],
+          "referenceComments": [
+            {
+              "value": "Pancreas",
+              "type": "TISSUE"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 5,
+          "citation": {
+            "id": "1502186",
+            "citationType": "journal article",
+            "authors": [
+              "Stoffel M.",
+              "Froguel P.",
+              "Takeda J.",
+              "Zouali H.",
+              "Vionnet N.",
+              "Nishi S.",
+              "Weber I.T.",
+              "Harrison R.W.",
+              "Pilkis S.J.",
+              "Lesage S.",
+              "Vaxillaire M.",
+              "Velho G.",
+              "Sun F.",
+              "Iris F.",
+              "Passa P.",
+              "Cohen D.",
+              "Bell G.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1502186"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1073/pnas.89.16.7698"
+              }
+            ],
+            "title": "Human glucokinase gene: isolation, characterization, and identification of two missense mutations linked to early-onset non-insulin-dependent (type 2) diabetes mellitus.",
+            "publicationDate": "1992",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "7698",
+            "lastPage": "7702",
+            "volume": "89"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+            "VARIANTS MODY2 MET-228 AND ARG-261"
+          ],
+          "referenceComments": [
+            {
+              "value": "Placenta",
+              "type": "TISSUE"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 6,
+          "citation": {
+            "id": "CI-DLOVAFLNCG1PU",
+            "citationType": "journal article",
+            "authors": [
+              "Stoffel M.",
+              "Froguel P.",
+              "Takeda J.",
+              "Zouali H.",
+              "Vionnet N.",
+              "Nishi S.",
+              "Weber I.T.",
+              "Harrison R.W.",
+              "Pilkis S.J.",
+              "Lesage S.",
+              "Vaxillaire M.",
+              "Velho G.",
+              "Sun F.",
+              "Iris F.",
+              "Passa P.",
+              "Cohen D.",
+              "Bell G.I."
+            ],
+            "publicationDate": "1992",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "10562",
+            "lastPage": "10562",
+            "volume": "89"
+          },
+          "referencePositions": [
+            "ERRATUM OF PUBMED:1502186"
+          ]
+        },
+        {
+          "referenceNumber": 7,
+          "citation": {
+            "id": "1464666",
+            "citationType": "journal article",
+            "authors": [
+              "Sakura H.",
+              "Eto K.",
+              "Kadowaki H.",
+              "Simokawa K.",
+              "Ueno H.",
+              "Koda N.",
+              "Fukushima Y.",
+              "Akanuma Y.",
+              "Yazaki Y.",
+              "Kadowaki T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1464666"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1210/jcem.75.6.1464666"
+              }
+            ],
+            "title": "Structure of the human glucokinase gene and identification of a missense mutation in a Japanese patient with early-onset non-insulin-dependent diabetes mellitus.",
+            "publicationDate": "1992",
+            "journal": "J. Clin. Endocrinol. Metab.",
+            "firstPage": "1571",
+            "lastPage": "1573",
+            "volume": "75"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+            "VARIANT THR-107",
+            "VARIANT MODY2 ARG-261"
+          ]
+        },
+        {
+          "referenceNumber": 8,
+          "citation": {
+            "id": "14702039",
+            "citationType": "journal article",
+            "authors": [
+              "Ota T.",
+              "Suzuki Y.",
+              "Nishikawa T.",
+              "Otsuki T.",
+              "Sugiyama T.",
+              "Irie R.",
+              "Wakamatsu A.",
+              "Hayashi K.",
+              "Sato H.",
+              "Nagai K.",
+              "Kimura K.",
+              "Makita H.",
+              "Sekine M.",
+              "Obayashi M.",
+              "Nishi T.",
+              "Shibahara T.",
+              "Tanaka T.",
+              "Ishii S.",
+              "Yamamoto J.",
+              "Saito K.",
+              "Kawai Y.",
+              "Isono Y.",
+              "Nakamura Y.",
+              "Nagahari K.",
+              "Murakami K.",
+              "Yasuda T.",
+              "Iwayanagi T.",
+              "Wagatsuma M.",
+              "Shiratori A.",
+              "Sudo H.",
+              "Hosoiri T.",
+              "Kaku Y.",
+              "Kodaira H.",
+              "Kondo H.",
+              "Sugawara M.",
+              "Takahashi M.",
+              "Kanda K.",
+              "Yokoi T.",
+              "Furuya T.",
+              "Kikkawa E.",
+              "Omura Y.",
+              "Abe K.",
+              "Kamihara K.",
+              "Katsuta N.",
+              "Sato K.",
+              "Tanikawa M.",
+              "Yamazaki M.",
+              "Ninomiya K.",
+              "Ishibashi T.",
+              "Yamashita H.",
+              "Murakawa K.",
+              "Fujimori K.",
+              "Tanai H.",
+              "Kimata M.",
+              "Watanabe M.",
+              "Hiraoka S.",
+              "Chiba Y.",
+              "Ishida S.",
+              "Ono Y.",
+              "Takiguchi S.",
+              "Watanabe S.",
+              "Yosida M.",
+              "Hotuta T.",
+              "Kusano J.",
+              "Kanehori K.",
+              "Takahashi-Fujii A.",
+              "Hara H.",
+              "Tanase T.-O.",
+              "Nomura Y.",
+              "Togiya S.",
+              "Komai F.",
+              "Hara R.",
+              "Takeuchi K.",
+              "Arita M.",
+              "Imose N.",
+              "Musashino K.",
+              "Yuuki H.",
+              "Oshima A.",
+              "Sasaki N.",
+              "Aotsuka S.",
+              "Yoshikawa Y.",
+              "Matsunawa H.",
+              "Ichihara T.",
+              "Shiohata N.",
+              "Sano S.",
+              "Moriya S.",
+              "Momiyama H.",
+              "Satoh N.",
+              "Takami S.",
+              "Terashima Y.",
+              "Suzuki O.",
+              "Nakagawa S.",
+              "Senoh A.",
+              "Mizoguchi H.",
+              "Goto Y.",
+              "Shimizu F.",
+              "Wakebe H.",
+              "Hishigaki H.",
+              "Watanabe T.",
+              "Sugiyama A.",
+              "Takemoto M.",
+              "Kawakami B.",
+              "Yamazaki M.",
+              "Watanabe K.",
+              "Kumagai A.",
+              "Itakura S.",
+              "Fukuzumi Y.",
+              "Fujimori Y.",
+              "Komiyama M.",
+              "Tashiro H.",
+              "Tanigami A.",
+              "Fujiwara T.",
+              "Ono T.",
+              "Yamada K.",
+              "Fujii Y.",
+              "Ozaki K.",
+              "Hirao M.",
+              "Ohmori Y.",
+              "Kawabata A.",
+              "Hikiji T.",
+              "Kobatake N.",
+              "Inagaki H.",
+              "Ikema Y.",
+              "Okamoto S.",
+              "Okitani R.",
+              "Kawakami T.",
+              "Noguchi S.",
+              "Itoh T.",
+              "Shigeta K.",
+              "Senba T.",
+              "Matsumura K.",
+              "Nakajima Y.",
+              "Mizuno T.",
+              "Morinaga M.",
+              "Sasaki M.",
+              "Togashi T.",
+              "Oyama M.",
+              "Hata H.",
+              "Watanabe M.",
+              "Komatsu T.",
+              "Mizushima-Sugano J.",
+              "Satoh T.",
+              "Shirai Y.",
+              "Takahashi Y.",
+              "Nakagawa K.",
+              "Okumura K.",
+              "Nagase T.",
+              "Nomura N.",
+              "Kikuchi H.",
+              "Masuho Y.",
+              "Yamashita R.",
+              "Nakai K.",
+              "Yada T.",
+              "Nakamura Y.",
+              "Ohara O.",
+              "Isogai T.",
+              "Sugano S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "14702039"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/ng1285"
+              }
+            ],
+            "title": "Complete sequencing and characterization of 21,243 full-length human cDNAs.",
+            "publicationDate": "2004",
+            "journal": "Nat. Genet.",
+            "firstPage": "40",
+            "lastPage": "45",
+            "volume": "36"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 2)"
+          ],
+          "referenceComments": [
+            {
+              "value": "Liver",
+              "type": "TISSUE"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 9,
+          "citation": {
+            "id": "12690205",
+            "citationType": "journal article",
+            "authors": [
+              "Scherer S.W.",
+              "Cheung J.",
+              "MacDonald J.R.",
+              "Osborne L.R.",
+              "Nakabayashi K.",
+              "Herbrick J.-A.",
+              "Carson A.R.",
+              "Parker-Katiraee L.",
+              "Skaug J.",
+              "Khaja R.",
+              "Zhang J.",
+              "Hudek A.K.",
+              "Li M.",
+              "Haddad M.",
+              "Duggan G.E.",
+              "Fernandez B.A.",
+              "Kanematsu E.",
+              "Gentles S.",
+              "Christopoulos C.C.",
+              "Choufani S.",
+              "Kwasnicka D.",
+              "Zheng X.H.",
+              "Lai Z.",
+              "Nusskern D.R.",
+              "Zhang Q.",
+              "Gu Z.",
+              "Lu F.",
+              "Zeesman S.",
+              "Nowaczyk M.J.",
+              "Teshima I.",
+              "Chitayat D.",
+              "Shuman C.",
+              "Weksberg R.",
+              "Zackai E.H.",
+              "Grebe T.A.",
+              "Cox S.R.",
+              "Kirkpatrick S.J.",
+              "Rahman N.",
+              "Friedman J.M.",
+              "Heng H.H.Q.",
+              "Pelicci P.G.",
+              "Lo-Coco F.",
+              "Belloni E.",
+              "Shaffer L.G.",
+              "Pober B.",
+              "Morton C.C.",
+              "Gusella J.F.",
+              "Bruns G.A.P.",
+              "Korf B.R.",
+              "Quade B.J.",
+              "Ligon A.H.",
+              "Ferguson H.",
+              "Higgins A.W.",
+              "Leach N.T.",
+              "Herrick S.R.",
+              "Lemyre E.",
+              "Farra C.G.",
+              "Kim H.-G.",
+              "Summers A.M.",
+              "Gripp K.W.",
+              "Roberts W.",
+              "Szatmari P.",
+              "Winsor E.J.T.",
+              "Grzeschik K.-H.",
+              "Teebi A.",
+              "Minassian B.A.",
+              "Kere J.",
+              "Armengol L.",
+              "Pujana M.A.",
+              "Estivill X.",
+              "Wilson M.D.",
+              "Koop B.F.",
+              "Tosi S.",
+              "Moore G.E.",
+              "Boright A.P.",
+              "Zlotorynski E.",
+              "Kerem B.",
+              "Kroisel P.M.",
+              "Petek E.",
+              "Oscier D.G.",
+              "Mould S.J.",
+              "Doehner H.",
+              "Doehner K.",
+              "Rommens J.M.",
+              "Vincent J.B.",
+              "Venter J.C.",
+              "Li P.W.",
+              "Mural R.J.",
+              "Adams M.D.",
+              "Tsui L.-C."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12690205"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1126/science.1083423"
+              }
+            ],
+            "title": "Human chromosome 7: DNA sequence and biology.",
+            "publicationDate": "2003",
+            "journal": "Science",
+            "firstPage": "767",
+            "lastPage": "772",
+            "volume": "300"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ]
+        },
+        {
+          "referenceNumber": 10,
+          "citation": {
+            "id": "CI-5GBD0VIIJ7C63",
+            "citationType": "submission",
+            "authors": [
+              "Mural R.J.",
+              "Istrail S.",
+              "Sutton G.G.",
+              "Florea L.",
+              "Halpern A.L.",
+              "Mobarry C.M.",
+              "Lippert R.",
+              "Walenz B.",
+              "Shatkay H.",
+              "Dew I.",
+              "Miller J.R.",
+              "Flanigan M.J.",
+              "Edwards N.J.",
+              "Bolanos R.",
+              "Fasulo D.",
+              "Halldorsson B.V.",
+              "Hannenhalli S.",
+              "Turner R.",
+              "Yooseph S.",
+              "Lu F.",
+              "Nusskern D.R.",
+              "Shue B.C.",
+              "Zheng X.H.",
+              "Zhong F.",
+              "Delcher A.L.",
+              "Huson D.H.",
+              "Kravitz S.A.",
+              "Mouchard L.",
+              "Reinert K.",
+              "Remington K.A.",
+              "Clark A.G.",
+              "Waterman M.S.",
+              "Eichler E.E.",
+              "Adams M.D.",
+              "Hunkapiller M.W.",
+              "Myers E.W.",
+              "Venter J.C."
+            ],
+            "publicationDate": "SEP-2005",
+            "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ]
+        },
+        {
+          "referenceNumber": 11,
+          "citation": {
+            "id": "15489334",
+            "citationType": "journal article",
+            "authoringGroup": [
+              "The MGC Project Team"
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15489334"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1101/gr.2596504"
+              }
+            ],
+            "title": "The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).",
+            "publicationDate": "2004",
+            "journal": "Genome Res.",
+            "firstPage": "2121",
+            "lastPage": "2127",
+            "volume": "14"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA]"
+          ],
+          "referenceComments": [
+            {
+              "value": "Lung",
+              "type": "TISSUE"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 12,
+          "citation": {
+            "id": "7742312",
+            "citationType": "journal article",
+            "authors": [
+              "Xu L.Z.",
+              "Weber I.T.",
+              "Harrison R.W.",
+              "Gidh-Jain M.",
+              "Pilkis S.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "7742312"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi00018a011"
+              }
+            ],
+            "title": "Sugar specificity of human beta-cell glucokinase: correlation of molecular models with kinetic measurements.",
+            "publicationDate": "1995",
+            "journal": "Biochemistry",
+            "firstPage": "6083",
+            "lastPage": "6092",
+            "volume": "34"
+          },
+          "referencePositions": [
+            "FUNCTION",
+            "CATALYTIC ACTIVITY",
+            "BIOPHYSICOCHEMICAL PROPERTIES"
+          ]
+        },
+        {
+          "referenceNumber": 13,
+          "citation": {
+            "id": "8878425",
+            "citationType": "journal article",
+            "authors": [
+              "Velho G.",
+              "Petersen K.F.",
+              "Perseghin G.",
+              "Hwang J.H.",
+              "Rothman D.L.",
+              "Pueyo M.E.",
+              "Cline G.W.",
+              "Froguel P.",
+              "Shulman G.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8878425"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1172/jci118974"
+              }
+            ],
+            "title": "Impaired hepatic glycogen synthesis in glucokinase-deficient (MODY-2) subjects.",
+            "publicationDate": "1996",
+            "journal": "J. Clin. Invest.",
+            "firstPage": "1755",
+            "lastPage": "1761",
+            "volume": "98"
+          },
+          "referencePositions": [
+            "INVOLVEMENT IN MODY2",
+            "FUNCTION"
+          ]
+        },
+        {
+          "referenceNumber": 14,
+          "citation": {
+            "id": "10456334",
+            "citationType": "journal article",
+            "authors": [
+              "de la Iglesia N.",
+              "Veiga-da-Cunha M.",
+              "Van Schaftingen E.",
+              "Guinovart J.J.",
+              "Ferrer J.C."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "10456334"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0014-5793(99)00971-0"
+              }
+            ],
+            "title": "Glucokinase regulatory protein is essential for the proper subcellular localisation of liver glucokinase.",
+            "publicationDate": "1999",
+            "journal": "FEBS Lett.",
+            "firstPage": "332",
+            "lastPage": "338",
+            "volume": "456"
+          },
+          "referencePositions": [
+            "ACTIVITY REGULATION",
+            "SUBCELLULAR LOCATION"
+          ]
+        },
+        {
+          "referenceNumber": 15,
+          "citation": {
+            "id": "19146401",
+            "citationType": "journal article",
+            "authors": [
+              "Pal P.",
+              "Miller B.G."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "19146401"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi802142q"
+              }
+            ],
+            "title": "Activating mutations in the human glucokinase gene revealed by genetic selection.",
+            "publicationDate": "2009",
+            "journal": "Biochemistry",
+            "firstPage": "814",
+            "lastPage": "816",
+            "volume": "48"
+          },
+          "referencePositions": [
+            "FUNCTION",
+            "CATALYTIC ACTIVITY",
+            "MUTAGENESIS OF SER-64; MET-197; ILE-211 AND SER-453"
+          ]
+        },
+        {
+          "referenceNumber": 16,
+          "citation": {
+            "id": "24187134",
+            "citationType": "journal article",
+            "authors": [
+              "Hofmeister-Brix A.",
+              "Kollmann K.",
+              "Langer S.",
+              "Schultz J.",
+              "Lenzen S.",
+              "Baltrusch S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "24187134"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1074/jbc.m113.526632"
+              }
+            ],
+            "title": "Identification of the ubiquitin-like domain of midnolin as a new glucokinase interaction partner.",
+            "publicationDate": "2013",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "35824",
+            "lastPage": "35839",
+            "volume": "288"
+          },
+          "referencePositions": [
+            "INTERACTION WITH MIDN",
+            "SUBCELLULAR LOCATION"
+          ]
+        },
+        {
+          "referenceNumber": 17,
+          "citation": {
+            "id": "8194664",
+            "citationType": "journal article",
+            "authors": [
+              "St Charles R.",
+              "Harrison R.W.",
+              "Bell G.I.",
+              "Pilkis S.J.",
+              "Weber I.T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8194664"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/diab.43.6.784"
+              }
+            ],
+            "title": "Molecular model of human beta-cell glucokinase built by analogy to the crystal structure of yeast hexokinase B.",
+            "publicationDate": "1994",
+            "journal": "Diabetes",
+            "firstPage": "784",
+            "lastPage": "791",
+            "volume": "43"
+          },
+          "referencePositions": [
+            "3D-STRUCTURE MODELING"
+          ]
+        },
+        {
+          "referenceNumber": 18,
+          "citation": {
+            "id": "15016359",
+            "citationType": "journal article",
+            "authors": [
+              "Kamata K.",
+              "Mitsuya M.",
+              "Nishimura T.",
+              "Eiki J.",
+              "Nagata Y."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15016359"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.str.2004.02.005"
+              }
+            ],
+            "title": "Structural basis for allosteric regulation of the monomeric allosteric enzyme human glucokinase.",
+            "publicationDate": "2004",
+            "journal": "Structure",
+            "firstPage": "429",
+            "lastPage": "438",
+            "volume": "12"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY OF APOPROTEIN AND IN COMPLEX WITH GLUCOSE",
+            "SUBUNIT",
+            "ACTIVITY REGULATION"
+          ]
+        },
+        {
+          "referenceNumber": 19,
+          "citation": {
+            "id": "19362831",
+            "citationType": "journal article",
+            "authors": [
+              "Mitsuya M.",
+              "Kamata K.",
+              "Bamba M.",
+              "Watanabe H.",
+              "Sasaki Y.",
+              "Sasaki K.",
+              "Ohyama S.",
+              "Hosaka H.",
+              "Nagata Y.",
+              "Eiki J.",
+              "Nishimura T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "19362831"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.bmcl.2009.03.137"
+              }
+            ],
+            "title": "Discovery of novel 3,6-disubstituted 2-pyridinecarboxamide derivatives as GK activators.",
+            "publicationDate": "2009",
+            "journal": "Bioorg. Med. Chem. Lett.",
+            "firstPage": "2718",
+            "lastPage": "2721",
+            "volume": "19"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH SYNTHETIC ALLOSTERIC ACTIVATOR"
+          ]
+        },
+        {
+          "referenceNumber": 20,
+          "citation": {
+            "id": "22101819",
+            "citationType": "journal article",
+            "authors": [
+              "Petit P.",
+              "Antoine M.",
+              "Ferry G.",
+              "Boutin J.A.",
+              "Lagarde A.",
+              "Gluais L.",
+              "Vincentelli R.",
+              "Vuillard L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "22101819"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1107/s0907444911036729"
+              }
+            ],
+            "title": "The active conformation of human glucokinase is not altered by allosteric activators.",
+            "publicationDate": "2011",
+            "journal": "Acta Crystallogr. D",
+            "firstPage": "929",
+            "lastPage": "935",
+            "volume": "67"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH ATP ANALOG AND GLUCOSE"
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "3F9M"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "3FGU"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "3ID8"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "3IDH"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "4NO7"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 21,
+          "citation": {
+            "id": "23957911",
+            "citationType": "journal article",
+            "authors": [
+              "Beck T.",
+              "Miller B.G."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "23957911"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi400838t"
+              }
+            ],
+            "title": "Structural basis for regulation of human glucokinase by glucokinase regulatory protein.",
+            "publicationDate": "2013",
+            "journal": "Biochemistry",
+            "firstPage": "6232",
+            "lastPage": "6239",
+            "volume": "52"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH RAT GCKR"
+          ]
+        },
+        {
+          "referenceNumber": 22,
+          "citation": {
+            "id": "1360036",
+            "citationType": "journal article",
+            "authors": [
+              "Katagiri H.",
+              "Asano T.",
+              "Ishihara H.",
+              "Inukai K.",
+              "Anai M.",
+              "Miyazaki J.",
+              "Tsukuda K.",
+              "Kikuchi M.",
+              "Yazaki Y.",
+              "Oka Y."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1360036"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0140-6736(92)92494-z"
+              }
+            ],
+            "title": "Nonsense mutation of glucokinase gene in late-onset non-insulin-dependent diabetes mellitus.",
+            "publicationDate": "1992",
+            "journal": "Lancet",
+            "firstPage": "1316",
+            "lastPage": "1317",
+            "volume": "340"
+          },
+          "referencePositions": [
+            "INVOLVEMENT IN T2D",
+            "VARIANT T2D 186-ARG--GLN-465 DEL"
+          ]
+        },
+        {
+          "referenceNumber": 23,
+          "citation": {
+            "id": "1303265",
+            "citationType": "journal article",
+            "authors": [
+              "Stoffel M.",
+              "Patel P.",
+              "Lo Y.-M.D.",
+              "Hattersley A.T.",
+              "Lucassen A.M.",
+              "Page R.",
+              "Bell J.I.",
+              "Bell G.I.",
+              "Turner R.C.",
+              "Wainscoat J.S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1303265"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/ng1092-153"
+              }
+            ],
+            "title": "Missense glucokinase mutation in maturity-onset diabetes of the young and mutation screening in late-onset diabetes.",
+            "publicationDate": "1992",
+            "journal": "Nat. Genet.",
+            "firstPage": "153",
+            "lastPage": "156",
+            "volume": "2"
+          },
+          "referencePositions": [
+            "VARIANT MODY2 ARG-299"
+          ]
+        },
+        {
+          "referenceNumber": 24,
+          "citation": {
+            "id": "8454109",
+            "citationType": "journal article",
+            "authors": [
+              "Chiu K.C.",
+              "Tanizawa Y.",
+              "Permutt M.A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8454109"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/diab.42.4.579"
+              }
+            ],
+            "title": "Glucokinase gene variants in the common form of NIDDM.",
+            "publicationDate": "1993",
+            "journal": "Diabetes",
+            "firstPage": "579",
+            "lastPage": "582",
+            "volume": "42"
+          },
+          "referencePositions": [
+            "VARIANT THR-11"
+          ]
+        },
+        {
+          "referenceNumber": 25,
+          "citation": {
+            "id": "8495817",
+            "citationType": "journal article",
+            "authors": [
+              "Stoffel M.",
+              "Bell K.L.",
+              "Blackburn C.L.",
+              "Powell K.L.",
+              "Seo T.S.",
+              "Takeda J.",
+              "Vionnet N.",
+              "Xiang K.-S.",
+              "Gidh-Jain M.",
+              "Pilkis S.J.",
+              "Ober C.",
+              "Bell G.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8495817"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/diab.42.6.937"
+              }
+            ],
+            "title": "Identification of glucokinase mutations in subjects with gestational diabetes mellitus.",
+            "publicationDate": "1993",
+            "journal": "Diabetes",
+            "firstPage": "937",
+            "lastPage": "940",
+            "volume": "42"
+          },
+          "referencePositions": [
+            "VARIANT MODY2 PRO-131"
+          ]
+        },
+        {
+          "referenceNumber": 26,
+          "citation": {
+            "id": "8325892",
+            "citationType": "journal article",
+            "authors": [
+              "Takeda J.",
+              "Gidh-Jain M.",
+              "Xu L.Z.",
+              "Froguel P.",
+              "Velho G.",
+              "Vaxillaire M.",
+              "Cohen D.",
+              "Shimada F.",
+              "Makino H.",
+              "Nishi S.",
+              "Stoffel M.",
+              "Vionnet N.",
+              "St Charles R.",
+              "Harrison R.W.",
+              "Weber I.T.",
+              "Bell G.I.",
+              "Pilkis S.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8325892"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0021-9258(18)82456-5"
+              }
+            ],
+            "title": "Structure/function studies of human beta-cell glucokinase. Enzymatic properties of a sequence polymorphism, mutations associated with diabetes, and other site-directed mutants.",
+            "publicationDate": "1993",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "15200",
+            "lastPage": "15204",
+            "volume": "268"
+          },
+          "referencePositions": [
+            "VARIANT ASN-4",
+            "VARIANTS MODY2 LYS-70; PRO-131; THR-188; ARG-257 AND GLU-414",
+            "MUTAGENESIS OF GLU-177; GLU-256 AND LYS-414",
+            "CATALYTIC ACTIVITY",
+            "FUNCTION"
+          ]
+        },
+        {
+          "referenceNumber": 27,
+          "citation": {
+            "id": "8433729",
+            "citationType": "journal article",
+            "authors": [
+              "Froguel P.",
+              "Zouali H.",
+              "Vionnet N.",
+              "Velho G.",
+              "Vaxillaire M.",
+              "Sun F.",
+              "Lesage S.",
+              "Stoffel M.",
+              "Takeda J.",
+              "Passa P."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8433729"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1056/nejm199303113281005"
+              }
+            ],
+            "title": "Familial hyperglycemia due to mutations in glucokinase. Definition of a subtype of diabetes mellitus.",
+            "publicationDate": "1993",
+            "journal": "N. Engl. J. Med.",
+            "firstPage": "697",
+            "lastPage": "702",
+            "volume": "328"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 ARG-175; MET-182; ALA-203; GLN-300; LYS-300 AND PRO-309"
+          ]
+        },
+        {
+          "referenceNumber": 28,
+          "citation": {
+            "id": "8446612",
+            "citationType": "journal article",
+            "authors": [
+              "Gidh-Jain M.",
+              "Takeda J.",
+              "Xu L.Z.",
+              "Lange A.J.",
+              "Vionnet N.",
+              "Stoffel M.",
+              "Froguel P.",
+              "Velho G.",
+              "Sun D.",
+              "Cohen D.",
+              "Patel P.",
+              "Lo Y.-M.D.",
+              "Hattersley A.T.",
+              "Luthman H.",
+              "Wedell A.",
+              "St Charles R.",
+              "Harrison R.W.",
+              "Weber I.T.",
+              "Bell G.I.",
+              "Pilkis S.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8446612"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1073/pnas.90.5.1932"
+              }
+            ],
+            "title": "Glucokinase mutations associated with non-insulin-dependent (type 2) diabetes mellitus have decreased enzymatic activity: implications for structure/function relationships.",
+            "publicationDate": "1993",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "1932",
+            "lastPage": "1936",
+            "volume": "90"
+          },
+          "referencePositions": [
+            "CHARACTERIZATION OF VARIANTS MODY2",
+            "VARIANT MODY2 GLN-279"
+          ]
+        },
+        {
+          "referenceNumber": 29,
+          "citation": {
+            "id": "8168652",
+            "citationType": "journal article",
+            "authors": [
+              "Hager J.",
+              "Blanche H.",
+              "Sun F.",
+              "Vionnet N.",
+              "Vaxillaire M.",
+              "Poller W.",
+              "Cohen D.",
+              "Czernichow P.",
+              "Velho G.",
+              "Robert J.-J.",
+              "Cohen N.",
+              "Froguel P."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8168652"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/diab.43.5.730"
+              }
+            ],
+            "title": "Six mutations in the glucokinase gene identified in MODY by using a nonradioactive sensitive screening technique.",
+            "publicationDate": "1994",
+            "journal": "Diabetes",
+            "firstPage": "730",
+            "lastPage": "733",
+            "volume": "43"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 TRP-36; MET-209 AND GLU-261"
+          ]
+        },
+        {
+          "referenceNumber": 30,
+          "citation": {
+            "id": "9049484",
+            "citationType": "journal article",
+            "authors": [
+              "Velho G.",
+              "Blanche H.",
+              "Vaxillaire M.",
+              "Bellanne-Chantelot C.",
+              "Pardini V.C.",
+              "Timsit J.",
+              "Passa P.",
+              "Deschamps I.",
+              "Robert J.-J.",
+              "Weber I.T.",
+              "Marotta D.",
+              "Pilkis S.J.",
+              "Lipkind G.M.",
+              "Bell G.I.",
+              "Froguel P."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9049484"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1007/s001250050666"
+              }
+            ],
+            "title": "Identification of 14 new glucokinase mutations and description of the clinical profile of 42 MODY-2 families.",
+            "publicationDate": "1997",
+            "journal": "Diabetologia",
+            "firstPage": "217",
+            "lastPage": "224",
+            "volume": "40"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 SER-53; ALA-80; ARG-137; PRO-168; 186-ARG--GLN-465 DEL; THR-210; ARG-213; MET-226; 248-GLU--GLN-465 DEL; ARG-261; LEU-336; 360-SER--GLN-465 DEL AND MET-367"
+          ]
+        },
+        {
+          "referenceNumber": 31,
+          "citation": {
+            "id": "10694920",
+            "citationType": "journal article",
+            "authors": [
+              "Guazzini B.",
+              "Gaffi D.",
+              "Mainieri D.",
+              "Multari G.",
+              "Cordera R.",
+              "Bertolini S.",
+              "Pozza G.",
+              "Meschi F.",
+              "Barbetti F."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "10694920"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1002/(sici)1098-1004(1998)12:2<136::aid-humu11>3.0.co;2-0"
+              }
+            ],
+            "title": "Three novel missense mutations in the glucokinase gene (G80S; E221K; G227C) in Italian subjects with maturity-onset diabetes of the young (MODY).",
+            "publicationDate": "1998",
+            "journal": "Hum. Mutat.",
+            "firstPage": "136",
+            "lastPage": "136",
+            "volume": "12"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 SER-80; LYS-221 AND CYS-227"
+          ]
+        },
+        {
+          "referenceNumber": 32,
+          "citation": {
+            "id": "9662401",
+            "citationType": "journal article",
+            "authors": [
+              "Hattersley A.T.",
+              "Beards F.",
+              "Ballantyne E.",
+              "Appleton M.",
+              "Harvey R.",
+              "Ellard S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9662401"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/953"
+              }
+            ],
+            "title": "Mutations in the glucokinase gene of the fetus result in reduced birth weight.",
+            "publicationDate": "1998",
+            "journal": "Nat. Genet.",
+            "firstPage": "268",
+            "lastPage": "270",
+            "volume": "19"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 HIS-108; SER-150; THR-259; ARG-299; TYR-382; THR-384 AND CYS-392"
+          ]
+        },
+        {
+          "referenceNumber": 33,
+          "citation": {
+            "id": "9435328",
+            "citationType": "journal article",
+            "authors": [
+              "Glaser B.",
+              "Kesavan P.",
+              "Heyman M.",
+              "Davis E.",
+              "Cuesta A.",
+              "Buchs A.",
+              "Stanley C.A.",
+              "Thornton P.S.",
+              "Permutt M.A.",
+              "Matschinsky F.M.",
+              "Herold K.C."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9435328"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1056/nejm199801223380404"
+              }
+            ],
+            "title": "Familial hyperinsulinism caused by an activating glucokinase mutation.",
+            "publicationDate": "1998",
+            "journal": "N. Engl. J. Med.",
+            "firstPage": "226",
+            "lastPage": "230",
+            "volume": "338"
+          },
+          "referencePositions": [
+            "VARIANT HHF3 MET-455"
+          ]
+        },
+        {
+          "referenceNumber": 34,
+          "citation": {
+            "id": "10588527",
+            "citationType": "journal article",
+            "authors": [
+              "Ng M.C.Y.",
+              "Cockburn B.N.",
+              "Lindner T.H.",
+              "Yeung V.T.F.",
+              "Chow C.-C.",
+              "So W.-Y.",
+              "Li J.K.Y.",
+              "Lo Y.M.D.",
+              "Lee Z.S.K.",
+              "Cockram C.S.",
+              "Critchley J.A.J.H.",
+              "Bell G.I.",
+              "Chan J.C.N."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "10588527"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1046/j.1464-5491.1999.00188.x"
+              }
+            ],
+            "title": "Molecular genetics of diabetes mellitus in Chinese subjects: identification of mutations in glucokinase and hepatocyte nuclear factor-1alpha genes in patients with early-onset type 2 diabetes mellitus/MODY.",
+            "publicationDate": "1999",
+            "journal": "Diabet. Med.",
+            "firstPage": "956",
+            "lastPage": "963",
+            "volume": "16"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 THR-110; ASP-119 AND VAL-385"
+          ]
+        },
+        {
+          "referenceNumber": 35,
+          "citation": {
+            "id": "11106831",
+            "citationType": "journal article",
+            "authors": [
+              "Nam J.H.",
+              "Lee H.C.",
+              "Kim Y.H.",
+              "Cha B.S.",
+              "Song Y.D.",
+              "Lim S.K.",
+              "Kim K.R.",
+              "Huh K.B."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11106831"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0168-8227(00)00191-1"
+              }
+            ],
+            "title": "Identification of glucokinase mutation in subjects with post-renal transplantation diabetes mellitus.",
+            "publicationDate": "2000",
+            "journal": "Diabetes Res. Clin. Pract.",
+            "firstPage": "169",
+            "lastPage": "176",
+            "volume": "50"
+          },
+          "referencePositions": [
+            "VARIANT MODY2 PRO-164"
+          ]
+        },
+        {
+          "referenceNumber": 36,
+          "citation": {
+            "id": "11372010",
+            "citationType": "journal article",
+            "authors": [
+              "Njoelstad P.R.",
+              "Soevik O.",
+              "Cuesta-Munoz A.",
+              "Bjoerkhaug L.",
+              "Massa O.",
+              "Barbetti F.",
+              "Undlien D.E.",
+              "Shiota C.",
+              "Magnuson M.A.",
+              "Molven A.",
+              "Matschinsky F.M.",
+              "Bell G.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11372010"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1056/nejm200105243442104"
+              }
+            ],
+            "title": "Neonatal diabetes mellitus due to complete glucokinase deficiency.",
+            "publicationDate": "2001",
+            "journal": "N. Engl. J. Med.",
+            "firstPage": "1588",
+            "lastPage": "1592",
+            "volume": "344"
+          },
+          "referencePositions": [
+            "INVOLVEMENT IN PNDM1",
+            "INVOLVEMENT IN MODY2",
+            "VARIANTS MODY2 LYS-210 AND MET-228",
+            "VARIANTS PNDM1 LYS-210 AND MET-228"
+          ]
+        },
+        {
+          "referenceNumber": 37,
+          "citation": {
+            "id": "11916951",
+            "citationType": "journal article",
+            "authors": [
+              "Christesen H.B.",
+              "Jacobsen B.B.",
+              "Odili S.",
+              "Buettger C.",
+              "Cuesta-Munoz A.",
+              "Hansen T.",
+              "Brusgaard K.",
+              "Massa O.",
+              "Magnuson M.A.",
+              "Shiota C.",
+              "Matschinsky F.M.",
+              "Barbetti F."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11916951"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/diabetes.51.4.1240"
+              }
+            ],
+            "title": "The second activating glucokinase mutation (A456V): implications for glucose homeostasis and diabetes therapy.",
+            "publicationDate": "2002",
+            "journal": "Diabetes",
+            "firstPage": "1240",
+            "lastPage": "1246",
+            "volume": "51"
+          },
+          "referencePositions": [
+            "VARIANT HHF3 VAL-456",
+            "CHARACTERIZATION OF VARIANT HHF3 VAL-456",
+            "FUNCTION",
+            "CATALYTIC ACTIVITY"
+          ]
+        },
+        {
+          "referenceNumber": 38,
+          "citation": {
+            "id": "12941786",
+            "citationType": "journal article",
+            "authors": [
+              "Gloyn A.L.",
+              "Noordam K.",
+              "Willemsen M.A.",
+              "Ellard S.",
+              "Lam W.W.",
+              "Campbell I.W.",
+              "Midgley P.",
+              "Shiota C.",
+              "Buettger C.",
+              "Magnuson M.A.",
+              "Matschinsky F.M.",
+              "Hattersley A.T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12941786"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/diabetes.52.9.2433"
+              }
+            ],
+            "title": "Insights into the biochemical and genetic basis of glucokinase activation from naturally occurring hypoglycemia mutations.",
+            "publicationDate": "2003",
+            "journal": "Diabetes",
+            "firstPage": "2433",
+            "lastPage": "2440",
+            "volume": "52"
+          },
+          "referencePositions": [
+            "VARIANT HHF3 ILE-65",
+            "CHARACTERIZATION OF VARIANT HHF3 ILE-65"
+          ]
+        },
+        {
+          "referenceNumber": 39,
+          "citation": {
+            "id": "15277402",
+            "citationType": "journal article",
+            "authors": [
+              "Cuesta-Munoz A.L.",
+              "Huopio H.",
+              "Otonkoski T.",
+              "Gomez-Zumaquero J.M.",
+              "Naentoe-Salonen K.",
+              "Rahier J.",
+              "Lopez-Enriquez S.",
+              "Garcia-Gimeno M.A.",
+              "Sanz P.",
+              "Soriguer F.C.",
+              "Laakso M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15277402"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/diabetes.53.8.2164"
+              }
+            ],
+            "title": "Severe persistent hyperinsulinemic hypoglycemia due to a de novo glucokinase mutation.",
+            "publicationDate": "2004",
+            "journal": "Diabetes",
+            "firstPage": "2164",
+            "lastPage": "2168",
+            "volume": "53"
+          },
+          "referencePositions": [
+            "VARIANT HHF3 CYS-214",
+            "CHARACTERIZATION OF VARIANT HHF3 CYS-214",
+            "FUNCTION",
+            "CATALYTIC ACTIVITY"
+          ]
+        },
+        {
+          "referenceNumber": 40,
+          "citation": {
+            "id": "16965331",
+            "citationType": "journal article",
+            "authors": [
+              "Vits L.",
+              "Beckers D.",
+              "Craen M.",
+              "de Beaufort C.",
+              "Vanfleteren E.",
+              "Dahan K.",
+              "Nollet A.",
+              "Vanhaverbeke G.",
+              "Imschoot S.V.",
+              "Bourguignon J.P.",
+              "Beauloye V.",
+              "Storm K.",
+              "Massa G.",
+              "Giri M.",
+              "Nobels F.",
+              "De Schepper J.",
+              "Rooman R.",
+              "Van den Bruel A.",
+              "Mathieu C.",
+              "Wuyts W."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "16965331"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1111/j.1399-0004.2006.00686.x"
+              }
+            ],
+            "title": "Identification of novel and recurrent glucokinase mutations in Belgian and Luxembourg maturity onset diabetes of the young patients.",
+            "publicationDate": "2006",
+            "journal": "Clin. Genet.",
+            "firstPage": "355",
+            "lastPage": "359",
+            "volume": "70"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 TRP-36; TYR-129; LEU-152; VAL-188; TRP-191; ARG-202; SER-223; MET-226; HIS-231; PHE-315; THR-378; PHE-434; TRP-441 AND GLN-447"
+          ]
+        },
+        {
+          "referenceNumber": 41,
+          "citation": {
+            "id": "17082186",
+            "citationType": "journal article",
+            "authors": [
+              "Heredia V.V.",
+              "Carlson T.J.",
+              "Garcia E.",
+              "Sun S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "17082186"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1074/jbc.m607987200"
+              }
+            ],
+            "title": "Biochemical basis of glucokinase activation and the regulation by glucokinase regulatory protein in naturally occurring mutations.",
+            "publicationDate": "2006",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "40201",
+            "lastPage": "40207",
+            "volume": "281"
+          },
+          "referencePositions": [
+            "CHARACTERIZATION OF VARIANTS HHF3 ILE-65; CYS-214; MET-455 AND VAL-456",
+            "MUTAGENESIS OF TYR-214 AND TYR-215",
+            "FUNCTION",
+            "CATALYTIC ACTIVITY"
+          ]
+        },
+        {
+          "referenceNumber": 42,
+          "citation": {
+            "id": "17573900",
+            "citationType": "journal article",
+            "authoringGroup": [
+              "Spanish MODY Group"
+            ],
+            "authors": [
+              "Estalella I.",
+              "Rica I.",
+              "Perez de Nanclares G.",
+              "Bilbao J.R.",
+              "Vazquez J.A.",
+              "San Pedro J.I.",
+              "Busturia M.A.",
+              "Castano L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "17573900"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1111/j.1365-2265.2007.02921.x"
+              }
+            ],
+            "title": "Mutations in GCK and HNF-1alpha explain the majority of cases with clinical diagnosis of MODY in Spain.",
+            "publicationDate": "2007",
+            "journal": "Clin. Endocrinol. (Oxf.)",
+            "firstPage": "538",
+            "lastPage": "546",
+            "volume": "67"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 GLU-16; ASN-19; PRO-20; TRP-36; SER-43; SER-44; 61-TYR--GLN-465 DEL; SER-61; LYS-70; ARG-72; PRO-77; GLU-78; ASP-80; ILE-82; HIS-108; PRO-116; LEU-182; 186-ARG--GLN-465 DEL; TYR-187; TRP-191; LEU-200; THR-202; MET-206; MET-209; SER-223; ARG-224; SER-227; MET-228; ARG-233; 234-TYR--GLN-465 DEL; GLY-252; ALA-255; LYS-256; ARG-261; LYS-265; LYS-298; TRP-308; HIS-377; VAL-379; LEU-383; 399-GLU--GLN-465 DEL; PHE-411; PRO-416; GLU-420 AND TRP-441"
+          ]
+        },
+        {
+          "referenceNumber": 43,
+          "citation": {
+            "id": "18322640",
+            "citationType": "journal article",
+            "authors": [
+              "Estalella I.",
+              "Garcia-Gimeno M.A.",
+              "Marina A.",
+              "Castano L.",
+              "Sanz P."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "18322640"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1007/s10038-008-0271-5"
+              }
+            ],
+            "title": "Biochemical characterization of novel glucokinase mutations isolated from Spanish maturity-onset diabetes of the young (MODY2) patients.",
+            "publicationDate": "2008",
+            "journal": "J. Hum. Genet.",
+            "firstPage": "460",
+            "lastPage": "466",
+            "volume": "53"
+          },
+          "referencePositions": [
+            "CHARACTERIZATION OF VARIANTS MODY2 SER-61; LEU-182; ARG-233; LYS-265; VAL-379 AND GLU-420",
+            "FUNCTION",
+            "CATALYTIC ACTIVITY"
+          ]
+        },
+        {
+          "referenceNumber": 44,
+          "citation": {
+            "id": "19884385",
+            "citationType": "journal article",
+            "authors": [
+              "Barbetti F.",
+              "Cobo-Vuilleumier N.",
+              "Dionisi-Vici C.",
+              "Toni S.",
+              "Ciampalini P.",
+              "Massa O.",
+              "Rodriguez-Bada P.",
+              "Colombo C.",
+              "Lenzi L.",
+              "Garcia-Gimeno M.A.",
+              "Bermudez-Silva F.J.",
+              "Rodriguez de Fonseca F.",
+              "Banin P.",
+              "Aledo J.C.",
+              "Baixeras E.",
+              "Sanz P.",
+              "Cuesta-Munoz A.L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "19884385"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1210/me.2009-0094"
+              }
+            ],
+            "title": "Opposite clinical phenotypes of glucokinase disease: Description of a novel activating mutation and contiguous inactivating mutations in human glucokinase (GCK) gene.",
+            "publicationDate": "2009",
+            "journal": "Mol. Endocrinol.",
+            "firstPage": "1983",
+            "lastPage": "1989",
+            "volume": "23"
+          },
+          "referencePositions": [
+            "VARIANT MODY2 TRP-441",
+            "CHARACTERIZATION OF VARIANT MODY2 TRP-441",
+            "VARIANT HHF3 LYS-442",
+            "CHARACTERIZATION OF VARIANT HHF3 LYS-442"
+          ]
+        },
+        {
+          "referenceNumber": 45,
+          "citation": {
+            "id": "20375417",
+            "citationType": "journal article",
+            "authors": [
+              "Kassem S.",
+              "Bhandari S.",
+              "Rodriguez-Bada P.",
+              "Motaghedi R.",
+              "Heyman M.",
+              "Garcia-Gimeno M.A.",
+              "Cobo-Vuilleumier N.",
+              "Sanz P.",
+              "Maclaren N.K.",
+              "Rahier J.",
+              "Glaser B.",
+              "Cuesta-Munoz A.L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "20375417"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1056/nejmc0909845"
+              }
+            ],
+            "title": "Large islets, beta-cell proliferation, and a glucokinase mutation.",
+            "publicationDate": "2010",
+            "journal": "N. Engl. J. Med.",
+            "firstPage": "1348",
+            "lastPage": "1350",
+            "volume": "362"
+          },
+          "referencePositions": [
+            "VARIANT HHF3 LEU-91",
+            "CHARACTERIZATION OF VARIANT HHF3 LEU-91"
+          ]
+        },
+        {
+          "referenceNumber": 46,
+          "citation": {
+            "id": "CI-7QBSRI8S6G7VD",
+            "citationType": "journal article",
+            "authors": [
+              "Kassem S.",
+              "Bhandari S.",
+              "Rodriguez-Bada P.",
+              "Motaghedi R.",
+              "Heyman M.",
+              "Garcia-Gimeno M.A.",
+              "Cobo-Vuilleumier N.",
+              "Sanz P.",
+              "Maclaren N.K.",
+              "Rahier J.",
+              "Glaser B.",
+              "Cuesta-Munoz A.L."
+            ],
+            "publicationDate": "2010",
+            "journal": "N. Engl. J. Med.",
+            "firstPage": "2178",
+            "lastPage": "2178",
+            "volume": "363"
+          },
+          "referencePositions": [
+            "ERRATUM OF PUBMED:20375417"
+          ]
+        },
+        {
+          "referenceNumber": 47,
+          "citation": {
+            "id": "21604084",
+            "citationType": "journal article",
+            "authors": [
+              "Steele A.M.",
+              "Tribble N.D.",
+              "Caswell R.",
+              "Wensley K.J.",
+              "Hattersley A.T.",
+              "Gloyn A.L.",
+              "Ellard S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "21604084"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1007/s00125-011-2194-5"
+              }
+            ],
+            "title": "The previously reported T342P GCK missense variant is not a pathogenic mutation causing MODY.",
+            "publicationDate": "2011",
+            "journal": "Diabetologia",
+            "firstPage": "2202",
+            "lastPage": "2205",
+            "volume": "54"
+          },
+          "referencePositions": [
+            "VARIANT PRO-342"
+          ]
+        },
+        {
+          "referenceNumber": 48,
+          "citation": {
+            "id": "22611063",
+            "citationType": "journal article",
+            "authors": [
+              "Beer N.L.",
+              "Osbak K.K.",
+              "van de Bunt M.",
+              "Tribble N.D.",
+              "Steele A.M.",
+              "Wensley K.J.",
+              "Edghill E.L.",
+              "Colcough K.",
+              "Barrett A.",
+              "Valentinova L.",
+              "Rundle J.K.",
+              "Raimondo A.",
+              "Grimsby J.",
+              "Ellard S.",
+              "Gloyn A.L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "22611063"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2337/dc11-2420"
+              }
+            ],
+            "title": "Insights into the pathogenicity of rare missense GCK variants from the identification and functional characterization of compound heterozygous and double mutations inherited in cis.",
+            "publicationDate": "2012",
+            "journal": "Diabetes Care",
+            "firstPage": "1482",
+            "lastPage": "1484",
+            "volume": "35"
+          },
+          "referencePositions": [
+            "VARIANTS MODY2 HIS-43; ASP-68; ASN-217; MET-225; LYS-248; ARG-261 AND ARG-261",
+            "CHARACTERIZATION OF VARIANTS MODY2 HIS-43; ASP-68; ASN-217; MET-225; LYS-248; ARG-261 AND ARG-261"
+          ]
+        },
+        {
+          "referenceNumber": 49,
+          "citation": {
+            "id": "25015100",
+            "citationType": "journal article",
+            "authoringGroup": [
+              "International NDM Consortium"
+            ],
+            "authors": [
+              "Raimondo A.",
+              "Chakera A.J.",
+              "Thomsen S.K.",
+              "Colclough K.",
+              "Barrett A.",
+              "De Franco E.",
+              "Chatelas A.",
+              "Demirbilek H.",
+              "Akcay T.",
+              "Alawneh H.",
+              "Flanagan S.E.",
+              "Van De Bunt M.",
+              "Hattersley A.T.",
+              "Gloyn A.L.",
+              "Ellard S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "25015100"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1093/hmg/ddu360"
+              }
+            ],
+            "title": "Phenotypic severity of homozygous GCK mutations causing neonatal or childhood-onset diabetes is primarily mediated through effects on protein stability.",
+            "publicationDate": "2014",
+            "journal": "Hum. Mol. Genet.",
+            "firstPage": "6432",
+            "lastPage": "6440",
+            "volume": "23"
+          },
+          "referencePositions": [
+            "VARIANTS PNDM1 LYS-40; CYS-43; ASP-50; ARG-72; THR-151; PRO-164; ALA-168; ARG-169; ARG-261; THR-393; LEU-397; LEU-441 AND THR-449",
+            "CHARACTERIZATION OF VARIANTS PNDM1 LYS-40; CYS-43; ASP-50; ARG-72; ALA-168; ARG-261; THR-393; LEU-397; LEU-441 AND THR-449",
+            "VARIANTS MODY2 ASN-160 AND MET-226",
+            "CHARACTERIZATION OF VARIANT MODY2 ASN-160 AND MET-226",
+            "FUNCTION",
+            "CATALYTIC ACTIVITY"
+          ]
+        },
+        {
+          "referenceNumber": 50,
+          "citation": {
+            "id": "28247534",
+            "citationType": "journal article",
+            "authoringGroup": [
+              "Spanish Congenital Hyperinsulinism Group"
+            ],
+            "authors": [
+              "Martinez R.",
+              "Gutierrez-Nogues A.",
+              "Fernandez-Ramos C.",
+              "Velayos T.",
+              "Vela A.",
+              "Navas M.A.",
+              "Castano L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "28247534"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1111/cen.13318"
+              }
+            ],
+            "title": "Heterogeneity in phenotype of hyperinsulinism caused by activating glucokinase mutations: a novel mutation and its functional characterization.",
+            "publicationDate": "2017",
+            "journal": "Clin. Endocrinol. (Oxf.)",
+            "firstPage": "778",
+            "lastPage": "783",
+            "volume": "86"
+          },
+          "referencePositions": [
+            "VARIANTS HHF3 ILE-65; LEU-91; CYS-99 AND LYS-442",
+            "CHARACTERIZATION OF VARIANT HHF3 CYS-99"
+          ]
+        }
+      ]
+    },
+    "generic_sites": [
+      {
+        "annotation_path": "/features/5",
+        "feature_id": null,
+        "location": {
+          "start": {
+            "value": 151,
+            "modifier": "EXACT"
+          },
+          "end": {
+            "value": 152,
+            "modifier": "EXACT"
+          },
+          "sequence": null
+        },
+        "sequence_scope": "canonical",
+        "residue_sequence": "SF",
+        "description": null,
+        "ligand_part": null,
+        "ligand_label": null,
+        "processed_products": [
+          {
+            "annotation_path": "/features/0",
+            "name": "Hexokinase-4",
+            "start": 1,
+            "end": 465
+          }
+        ],
+        "evidence": [
+          {
+            "annotation_path": "/features/5/evidences/0",
+            "evidence_code": "ECO:0000269",
+            "source": "PubMed",
+            "source_id": "15016359",
+            "category": "experimental"
+          }
+        ]
+      },
+      {
+        "annotation_path": "/features/6",
+        "feature_id": null,
+        "location": {
+          "start": {
+            "value": 168,
+            "modifier": "EXACT"
+          },
+          "end": {
+            "value": 169,
+            "modifier": "EXACT"
+          },
+          "sequence": null
+        },
+        "sequence_scope": "canonical",
+        "residue_sequence": "TK",
+        "description": null,
+        "ligand_part": null,
+        "ligand_label": null,
+        "processed_products": [
+          {
+            "annotation_path": "/features/0",
+            "name": "Hexokinase-4",
+            "start": 1,
+            "end": 465
+          }
+        ],
+        "evidence": [
+          {
+            "annotation_path": "/features/6/evidences/0",
+            "evidence_code": "ECO:0000269",
+            "source": "PubMed",
+            "source_id": "15016359",
+            "category": "experimental"
+          }
+        ]
+      },
+      {
+        "annotation_path": "/features/7",
+        "feature_id": null,
+        "location": {
+          "start": {
+            "value": 204,
+            "modifier": "EXACT"
+          },
+          "end": {
+            "value": 205,
+            "modifier": "EXACT"
+          },
+          "sequence": null
+        },
+        "sequence_scope": "canonical",
+        "residue_sequence": "ND",
+        "description": null,
+        "ligand_part": null,
+        "ligand_label": null,
+        "processed_products": [
+          {
+            "annotation_path": "/features/0",
+            "name": "Hexokinase-4",
+            "start": 1,
+            "end": 465
+          }
+        ],
+        "evidence": [
+          {
+            "annotation_path": "/features/7/evidences/0",
+            "evidence_code": "ECO:0000269",
+            "source": "PubMed",
+            "source_id": "15016359",
+            "category": "experimental"
+          }
+        ]
+      },
+      {
+        "annotation_path": "/features/9",
+        "feature_id": null,
+        "location": {
+          "start": {
+            "value": 231,
+            "modifier": "EXACT"
+          },
+          "end": {
+            "value": 231,
+            "modifier": "EXACT"
+          },
+          "sequence": null
+        },
+        "sequence_scope": "canonical",
+        "residue_sequence": "N",
+        "description": null,
+        "ligand_part": null,
+        "ligand_label": null,
+        "processed_products": [
+          {
+            "annotation_path": "/features/0",
+            "name": "Hexokinase-4",
+            "start": 1,
+            "end": 465
+          }
+        ],
+        "evidence": [
+          {
+            "annotation_path": "/features/9/evidences/0",
+            "evidence_code": "ECO:0000269",
+            "source": "PubMed",
+            "source_id": "15016359",
+            "category": "experimental"
+          }
+        ]
+      },
+      {
+        "annotation_path": "/features/10",
+        "feature_id": null,
+        "location": {
+          "start": {
+            "value": 256,
+            "modifier": "EXACT"
+          },
+          "end": {
+            "value": 256,
+            "modifier": "EXACT"
+          },
+          "sequence": null
+        },
+        "sequence_scope": "canonical",
+        "residue_sequence": "E",
+        "description": null,
+        "ligand_part": null,
+        "ligand_label": null,
+        "processed_products": [
+          {
+            "annotation_path": "/features/0",
+            "name": "Hexokinase-4",
+            "start": 1,
+            "end": 465
+          }
+        ],
+        "evidence": [
+          {
+            "annotation_path": "/features/10/evidences/0",
+            "evidence_code": "ECO:0000269",
+            "source": "PubMed",
+            "source_id": "15016359",
+            "category": "experimental"
+          }
+        ]
+      },
+      {
+        "annotation_path": "/features/11",
+        "feature_id": null,
+        "location": {
+          "start": {
+            "value": 290,
+            "modifier": "EXACT"
+          },
+          "end": {
+            "value": 290,
+            "modifier": "EXACT"
+          },
+          "sequence": null
+        },
+        "sequence_scope": "canonical",
+        "residue_sequence": "E",
+        "description": null,
+        "ligand_part": null,
+        "ligand_label": null,
+        "processed_products": [
+          {
+            "annotation_path": "/features/0",
+            "name": "Hexokinase-4",
+            "start": 1,
+            "end": 465
+          }
+        ],
+        "evidence": [
+          {
+            "annotation_path": "/features/11/evidences/0",
+            "evidence_code": "ECO:0000269",
+            "source": "PubMed",
+            "source_id": "15016359",
+            "category": "experimental"
+          }
+        ]
+      }
+    ],
+    "generic_cofactors": [],
+    "context_comments": [
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/0",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P17712"
+                },
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P52792"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11916951"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "15277402"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "17082186"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18322640"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19146401"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "25015100"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7742312"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "8325892"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "8878425"
+                }
+              ],
+              "value": "Catalyzes the phosphorylation of hexose, such as D-glucose, D-fructose and D-mannose, to hexose 6-phosphate (D-glucose 6-phosphate, D-fructose 6-phosphate and D-mannose 6-phosphate, respectively) (PubMed:11916951, PubMed:15277402, PubMed:17082186, PubMed:18322640, PubMed:19146401, PubMed:25015100, PubMed:7742312, PubMed:8325892). Compared to other hexokinases, has a weak affinity for D-glucose, and is effective only when glucose is abundant (By similarity). Mainly expressed in pancreatic beta cells and the liver and constitutes a rate-limiting step in glucose metabolism in these tissues (PubMed:11916951, PubMed:15277402, PubMed:18322640, PubMed:25015100, PubMed:8325892). Since insulin secretion parallels glucose metabolism and the low glucose affinity of GCK ensures that it can change its enzymatic activity within the physiological range of glucose concentrations, GCK acts as a glucose sensor in the pancreatic beta cell (By similarity). In pancreas, plays an important role in modulating insulin secretion (By similarity). In liver, helps to facilitate the uptake and conversion of glucose by acting as an insulin-sensitive determinant of hepatic glucose usage (By similarity). Required to provide D-glucose 6-phosphate for the synthesis of glycogen (PubMed:8878425). Mediates the initial step of glycolysis by catalyzing phosphorylation of D-glucose to D-glucose 6-phosphate (PubMed:7742312)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/1",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "a D-hexose + ATP = a D-hexose 6-phosphate + ADP + H(+)",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:22740"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:4194"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:30616"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:229467"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:456216"
+              }
+            ],
+            "ecNumber": "2.7.1.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "11916951"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "15277402"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "17082186"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "18322640"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "19146401"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "25015100"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "8325892"
+              }
+            ]
+          },
+          "physiologicalReactions": [
+            {
+              "directionType": "left-to-right",
+              "reactionCrossReference": {
+                "database": "Rhea",
+                "id": "RHEA:22741"
+              },
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11916951"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "15277402"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "17082186"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18322640"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19146401"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "25015100"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "8325892"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/2",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "D-fructose + ATP = D-fructose 6-phosphate + ADP + H(+)",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:16125"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:30616"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:37721"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:61527"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:456216"
+              }
+            ],
+            "ecNumber": "2.7.1.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "7742312"
+              }
+            ]
+          },
+          "physiologicalReactions": [
+            {
+              "directionType": "left-to-right",
+              "reactionCrossReference": {
+                "database": "Rhea",
+                "id": "RHEA:16126"
+              },
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7742312"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/3",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "D-glucose + ATP = D-glucose 6-phosphate + ADP + H(+)",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:17825"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:4167"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:30616"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:61548"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:456216"
+              }
+            ],
+            "ecNumber": "2.7.1.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "7742312"
+              }
+            ]
+          },
+          "physiologicalReactions": [
+            {
+              "directionType": "left-to-right",
+              "reactionCrossReference": {
+                "database": "Rhea",
+                "id": "RHEA:17826"
+              },
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7742312"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/4",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "D-mannose + ATP = D-mannose 6-phosphate + ADP + H(+)",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:11028"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:4208"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:30616"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58735"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:456216"
+              }
+            ],
+            "ecNumber": "2.7.1.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "7742312"
+              }
+            ]
+          },
+          "physiologicalReactions": [
+            {
+              "directionType": "left-to-right",
+              "reactionCrossReference": {
+                "database": "Rhea",
+                "id": "RHEA:11029"
+              },
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7742312"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "comment_type": "ACTIVITY REGULATION",
+        "annotation_path": "/comments/5",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "10456334"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "15016359"
+                }
+              ],
+              "value": "Subject to allosteric regulation (PubMed:15016359). Low glucose and high fructose-6-phosphate triggers association with the inhibitor GCKR followed by sequestration in the nucleus (PubMed:10456334)"
+            }
+          ],
+          "commentType": "ACTIVITY REGULATION"
+        }
+      },
+      {
+        "comment_type": "BIOPHYSICOCHEMICAL PROPERTIES",
+        "annotation_path": "/comments/6",
+        "data": {
+          "commentType": "BIOPHYSICOCHEMICAL PROPERTIES",
+          "kineticParameters": {
+            "michaelisConstants": [
+              {
+                "constant": 6.03,
+                "unit": "mM",
+                "substrate": "glucose (at 30 degrees Celsius and pH 7.5)",
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "7742312"
+                  }
+                ]
+              },
+              {
+                "constant": 4.35,
+                "unit": "mM",
+                "substrate": "mannose (at 30 degrees Celsius and pH 7.5)",
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "7742312"
+                  }
+                ]
+              },
+              {
+                "constant": 18.0,
+                "unit": "mM",
+                "substrate": "2-deoxyglucose (at 30 degrees Celsius and pH 7.5)",
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "7742312"
+                  }
+                ]
+              },
+              {
+                "constant": 240.0,
+                "unit": "mM",
+                "substrate": "fructose (at 30 degrees Celsius and pH 7.5)",
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "7742312"
+                  }
+                ]
+              },
+              {
+                "constant": 61.0,
+                "unit": "mM",
+                "substrate": "glucosamine (at 30 degrees Celsius and pH 9)",
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "7742312"
+                  }
+                ]
+              },
+              {
+                "constant": 4.5,
+                "unit": "mM",
+                "substrate": "ATP (at pH 7)",
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "7742312"
+                  }
+                ]
+              }
+            ],
+            "note": {
+              "texts": [
+                {
+                  "evidences": [
+                    {
+                      "evidenceCode": "ECO:0000269",
+                      "source": "PubMed",
+                      "id": "7742312"
+                    }
+                  ],
+                  "value": "kcat is 66.4 sec(-1) with glucose as substrate (at 30 degrees Celsius and pH 7.5) (PubMed:7742312). kcat is 56.4 sec(-1) with mannose as substrate (at 30 degrees Celsius and pH 7.5) (PubMed:7742312). kcat is 56.4 sec(-1) with 2-deoxyglucose as substrate (at 30 degrees Celsius and pH 7.5) (PubMed:7742312). kcat is 116.9 sec(-1) with fructose as substrate (at 30 degrees Celsius and pH 7.5) (PubMed:7742312). kcat is 19.9 sec(-1) with glucosamine as substrate (at 30 degrees Celsius and pH 9) (PubMed:7742312)."
+                }
+              ]
+            }
+          },
+          "phDependence": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000269",
+                    "source": "PubMed",
+                    "id": "7742312"
+                  }
+                ],
+                "value": "Optimum pH is 6-8 with glucose as substrate (PubMed:7742312). Optimum pH is 9-10 with glucosamine as substrate (PubMed:7742312)."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "comment_type": "SUBUNIT",
+        "annotation_path": "/comments/9",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "10456334"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "15016359"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19362831"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "23957911"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "24187134"
+                }
+              ],
+              "value": "Monomer (PubMed:15016359, PubMed:19362831, PubMed:23957911). Interacts with MIDN; the interaction occurs preferentially at low glucose levels and results in inhibition of hexokinase activity (PubMed:24187134). Interacts with GCKR; leading to sequestration in the nucleus (PubMed:10456334)"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        }
+      }
+    ],
+    "processed_products": [
+      {
+        "annotation_path": "/features/0",
+        "name": "Hexokinase-4",
+        "start": 1,
+        "end": 465
+      }
+    ],
+    "go_annotations": {
+      "status": "success",
+      "terms": [
+        {
+          "id": "GO:0001678",
+          "name": "intracellular glucose homeostasis",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0006006",
+          "name": "glucose metabolic process",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0006007",
+          "name": "glucose catabolic process",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0006096",
+          "name": "glycolytic process",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0006110",
+          "name": "regulation of glycolytic process",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0009749",
+          "name": "response to glucose",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0032024",
+          "name": "positive regulation of insulin secretion",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0032869",
+          "name": "cellular response to insulin stimulus",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0042593",
+          "name": "glucose homeostasis",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0044320",
+          "name": "cellular response to leptin stimulus",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0045721",
+          "name": "negative regulation of gluconeogenesis",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0045725",
+          "name": "positive regulation of glycogen biosynthetic process",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0050796",
+          "name": "regulation of insulin secretion",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0051156",
+          "name": "glucose 6-phosphate metabolic process",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0061621",
+          "name": "canonical glycolysis",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0070509",
+          "name": "calcium ion import",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0005634",
+          "name": "nucleus",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0005654",
+          "name": "nucleoplasm",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0005737",
+          "name": "cytoplasm",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0005739",
+          "name": "mitochondrion",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0005829",
+          "name": "cytosol",
+          "aspect": "CC",
+          "relations": [
+            "is_active_in",
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0032473",
+          "name": "cytoplasmic side of mitochondrial outer membrane",
+          "aspect": "CC",
+          "relations": [
+            "is_active_in"
+          ]
+        },
+        {
+          "id": "GO:0004340",
+          "name": "glucokinase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0004396",
+          "name": "hexokinase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0005524",
+          "name": "ATP binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0005536",
+          "name": "D-glucose binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0008865",
+          "name": "fructokinase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0019158",
+          "name": "mannokinase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0141089",
+          "name": "glucose sensor activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        }
+      ],
+      "request_ids": [
+        2
+      ],
+      "error": null
+    }
+  }
+}

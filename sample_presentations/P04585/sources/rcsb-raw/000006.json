@@ -1,0 +1,54 @@
+{
+  "query_id" : "d782721a-ae92-4615-b55a-7df4962ab3d8",
+  "result_type" : "polymer_entity",
+  "total_count" : 416,
+  "result_set" : [ {
+    "identifier" : "8FCC_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8FCC_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "8FCD_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8FCD_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "8FCE_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8FCE_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "8JYH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8JYI_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8JYJ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8T4E_3",
+    "score" : 1.0
+  }, {
+    "identifier" : "8TCJ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8TCK_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8TCL_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "8TCM_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "9DM9_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "9DM9_2",
+    "score" : 1.0
+  } ]
+}

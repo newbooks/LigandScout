@@ -1,0 +1,5370 @@
+{
+  "schema_version": 5,
+  "accession": "P04585",
+  "source": "UniProt",
+  "retrieved_at": "2026-11-06T01:02:37.999098Z",
+  "request": {
+    "url": "https://rest.uniprot.org/uniprotkb/P04585.json",
+    "parameters": {}
+  },
+  "source_version": "2026_04",
+  "status": "success",
+  "records": [
+    {
+      "compound_id": "CHEBI:18420",
+      "compound_name": "Mg(2+)",
+      "smiles": null,
+      "inchikey": null,
+      "target_description": "Gag-Pol polyprotein",
+      "evidence_type": "uniprot_annotation",
+      "measurement_type": null,
+      "measurement_value": null,
+      "measurement_unit": null,
+      "pmid": null,
+      "doi": null,
+      "source_url": "https://www.uniprot.org/uniprotkb/P04585/entry",
+      "source_record_id": null,
+      "target_id": "P04585",
+      "target_accessions": [
+        "P04585"
+      ],
+      "assay_id": null,
+      "document_id": null,
+      "assay_type": null,
+      "assay_description": null,
+      "target_organism": "Human immunodeficiency virus type 1 group M subtype B (isolate HXB2)",
+      "target_tax_id": "11706",
+      "target_relationship": null,
+      "target_confidence": null,
+      "target_match_status": "entry_annotation",
+      "variant_accession": null,
+      "variant_mutation": null,
+      "variant_isoform": null,
+      "activity_comment": null,
+      "data_validity_comment": null,
+      "potential_duplicate": null,
+      "parent_compound_id": null,
+      "measurement_relation": null,
+      "measurement_upper_value": null,
+      "measurement_text": null,
+      "measurement_basis": null,
+      "source_values": {
+        "aliases": [
+          "Mg(2+)"
+        ],
+        "binding_annotations": [
+          {
+            "annotation_path": "/features/39",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 697,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 697,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "1",
+                "note": "catalytic; for reverse transcriptase activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/40",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 772,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 772,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "1",
+                "note": "catalytic; for reverse transcriptase activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/41",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 773,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 773,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "1",
+                "note": "catalytic; for reverse transcriptase activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/42",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1030,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1030,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "2",
+                "note": "catalytic; for RNase H activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/43",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1065,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1065,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "12206668"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "2",
+                "note": "catalytic; for RNase H activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/44",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1085,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1085,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "2",
+                "note": "catalytic; for RNase H activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/45",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1136,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1136,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "12206668"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "2",
+                "note": "catalytic; for RNase H activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/50",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1211,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1211,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "3",
+                "note": "catalytic; for integrase activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/51",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1263,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1263,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "3",
+                "note": "catalytic; for integrase activity"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/52",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1299,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1299,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:18420"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "ligand": {
+                "name": "Mg(2+)",
+                "id": "ChEBI:CHEBI:18420",
+                "label": "3",
+                "note": "catalytic; for integrase activity"
+              }
+            }
+          }
+        ],
+        "cofactor_annotations": [
+          {
+            "annotation_path": "/comments/12/cofactors/0",
+            "data": {
+              "name": "Mg(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:18420"
+              }
+            },
+            "note": {
+              "texts": [
+                {
+                  "evidences": [
+                    {
+                      "evidenceCode": "ECO:0000250"
+                    }
+                  ],
+                  "value": "Binds 2 magnesium ions for reverse transcriptase polymerase activity."
+                }
+              ]
+            },
+            "evidence": [
+              {
+                "annotation_path": "/comments/12/cofactors/0/evidences/0",
+                "evidence_code": "ECO:0000250",
+                "source": null,
+                "source_id": null,
+                "category": "similarity"
+              }
+            ]
+          },
+          {
+            "annotation_path": "/comments/13/cofactors/0",
+            "data": {
+              "name": "Mg(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:18420"
+              }
+            },
+            "note": {
+              "texts": [
+                {
+                  "evidences": [
+                    {
+                      "evidenceCode": "ECO:0000250"
+                    }
+                  ],
+                  "value": "Binds 2 magnesium ions for ribonuclease H (RNase H) activity. Substrate-binding is a precondition for magnesium binding."
+                }
+              ]
+            },
+            "evidence": [
+              {
+                "annotation_path": "/comments/13/cofactors/0/evidences/0",
+                "evidence_code": "ECO:0000250",
+                "source": null,
+                "source_id": null,
+                "category": "similarity"
+              }
+            ]
+          },
+          {
+            "annotation_path": "/comments/14/cofactors/0",
+            "data": {
+              "name": "Mg(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:18420"
+              }
+            },
+            "note": {
+              "texts": [
+                {
+                  "evidences": [
+                    {
+                      "evidenceCode": "ECO:0000250"
+                    }
+                  ],
+                  "value": "Magnesium ions are required for integrase activity. Binds at least 1, maybe 2 magnesium ions."
+                }
+              ]
+            },
+            "evidence": [
+              {
+                "annotation_path": "/comments/14/cofactors/0/evidences/0",
+                "evidence_code": "ECO:0000250",
+                "source": null,
+                "source_id": null,
+                "category": "similarity"
+              }
+            ]
+          }
+        ]
+      },
+      "ligand_roles": [
+        "binding_site",
+        "cofactor"
+      ],
+      "binding_sites": [
+        {
+          "annotation_path": "/features/39",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 697,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 697,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "D",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "1",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/9",
+              "name": "Reverse transcriptase/ribonuclease H",
+              "start": 588,
+              "end": 1147
+            },
+            {
+              "annotation_path": "/features/10",
+              "name": "p51 RT",
+              "start": 588,
+              "end": 1027
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/39/evidences/0",
+              "evidence_code": "ECO:0000250",
+              "source": null,
+              "source_id": null,
+              "category": "similarity"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/40",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 772,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 772,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "D",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "1",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/9",
+              "name": "Reverse transcriptase/ribonuclease H",
+              "start": 588,
+              "end": 1147
+            },
+            {
+              "annotation_path": "/features/10",
+              "name": "p51 RT",
+              "start": 588,
+              "end": 1027
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/40/evidences/0",
+              "evidence_code": "ECO:0000250",
+              "source": null,
+              "source_id": null,
+              "category": "similarity"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/41",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 773,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 773,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "D",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "1",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/9",
+              "name": "Reverse transcriptase/ribonuclease H",
+              "start": 588,
+              "end": 1147
+            },
+            {
+              "annotation_path": "/features/10",
+              "name": "p51 RT",
+              "start": 588,
+              "end": 1027
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/41/evidences/0",
+              "evidence_code": "ECO:0000250",
+              "source": null,
+              "source_id": null,
+              "category": "similarity"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/42",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1030,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1030,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "D",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "2",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/9",
+              "name": "Reverse transcriptase/ribonuclease H",
+              "start": 588,
+              "end": 1147
+            },
+            {
+              "annotation_path": "/features/11",
+              "name": "p15",
+              "start": 1028,
+              "end": 1147
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "annotation_path": "/features/43",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1065,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1065,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "E",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "2",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/9",
+              "name": "Reverse transcriptase/ribonuclease H",
+              "start": 588,
+              "end": 1147
+            },
+            {
+              "annotation_path": "/features/11",
+              "name": "p15",
+              "start": 1028,
+              "end": 1147
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/43/evidences/0",
+              "evidence_code": "ECO:0000269",
+              "source": "PubMed",
+              "source_id": "12206668",
+              "category": "experimental"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/44",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1085,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1085,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "D",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "2",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/9",
+              "name": "Reverse transcriptase/ribonuclease H",
+              "start": 588,
+              "end": 1147
+            },
+            {
+              "annotation_path": "/features/11",
+              "name": "p15",
+              "start": 1028,
+              "end": 1147
+            }
+          ],
+          "evidence": []
+        },
+        {
+          "annotation_path": "/features/45",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1136,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1136,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "D",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "2",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/9",
+              "name": "Reverse transcriptase/ribonuclease H",
+              "start": 588,
+              "end": 1147
+            },
+            {
+              "annotation_path": "/features/11",
+              "name": "p15",
+              "start": 1028,
+              "end": 1147
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/45/evidences/0",
+              "evidence_code": "ECO:0000269",
+              "source": "PubMed",
+              "source_id": "12206668",
+              "category": "experimental"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/50",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1211,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1211,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "D",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "3",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/12",
+              "name": "Integrase",
+              "start": 1148,
+              "end": 1435
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/50/evidences/0",
+              "evidence_code": "ECO:0000250",
+              "source": null,
+              "source_id": null,
+              "category": "similarity"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/51",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1263,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1263,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "D",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "3",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/12",
+              "name": "Integrase",
+              "start": 1148,
+              "end": 1435
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/51/evidences/0",
+              "evidence_code": "ECO:0000250",
+              "source": null,
+              "source_id": null,
+              "category": "similarity"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/52",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1299,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1299,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "E",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": "3",
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/12",
+              "name": "Integrase",
+              "start": 1148,
+              "end": 1435
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/52/evidences/0",
+              "evidence_code": "ECO:0000305",
+              "source": null,
+              "source_id": null,
+              "category": "other"
+            }
+          ]
+        }
+      ],
+      "annotation_evidence": [
+        {
+          "annotation_path": "/features/39/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": null,
+          "source_id": null,
+          "category": "similarity"
+        },
+        {
+          "annotation_path": "/features/40/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": null,
+          "source_id": null,
+          "category": "similarity"
+        },
+        {
+          "annotation_path": "/features/41/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": null,
+          "source_id": null,
+          "category": "similarity"
+        },
+        {
+          "annotation_path": "/features/43/evidences/0",
+          "evidence_code": "ECO:0000269",
+          "source": "PubMed",
+          "source_id": "12206668",
+          "category": "experimental"
+        },
+        {
+          "annotation_path": "/features/45/evidences/0",
+          "evidence_code": "ECO:0000269",
+          "source": "PubMed",
+          "source_id": "12206668",
+          "category": "experimental"
+        },
+        {
+          "annotation_path": "/features/50/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": null,
+          "source_id": null,
+          "category": "similarity"
+        },
+        {
+          "annotation_path": "/features/51/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": null,
+          "source_id": null,
+          "category": "similarity"
+        },
+        {
+          "annotation_path": "/features/52/evidences/0",
+          "evidence_code": "ECO:0000305",
+          "source": null,
+          "source_id": null,
+          "category": "other"
+        },
+        {
+          "annotation_path": "/comments/12/cofactors/0/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": null,
+          "source_id": null,
+          "category": "similarity"
+        },
+        {
+          "annotation_path": "/comments/13/cofactors/0/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": null,
+          "source_id": null,
+          "category": "similarity"
+        },
+        {
+          "annotation_path": "/comments/14/cofactors/0/evidences/0",
+          "evidence_code": "ECO:0000250",
+          "source": null,
+          "source_id": null,
+          "category": "similarity"
+        }
+      ],
+      "structure_provenance": {
+        "provider": "RCSB CCD",
+        "status": "no_exact_mapping",
+        "requested_chemical_id": "CHEBI:18420",
+        "smiles_field": null,
+        "candidate_components": [],
+        "request_ids": [
+          3
+        ]
+      }
+    },
+    {
+      "compound_id": "CHEBI:29105",
+      "compound_name": "Zn(2+)",
+      "smiles": null,
+      "inchikey": null,
+      "target_description": "Gag-Pol polyprotein",
+      "evidence_type": "uniprot_annotation",
+      "measurement_type": null,
+      "measurement_value": null,
+      "measurement_unit": null,
+      "pmid": null,
+      "doi": null,
+      "source_url": "https://www.uniprot.org/uniprotkb/P04585/entry",
+      "source_record_id": null,
+      "target_id": "P04585",
+      "target_accessions": [
+        "P04585"
+      ],
+      "assay_id": null,
+      "document_id": null,
+      "assay_type": null,
+      "assay_description": null,
+      "target_organism": "Human immunodeficiency virus type 1 group M subtype B (isolate HXB2)",
+      "target_tax_id": "11706",
+      "target_relationship": null,
+      "target_confidence": null,
+      "target_match_status": "entry_annotation",
+      "variant_accession": null,
+      "variant_mutation": null,
+      "variant_isoform": null,
+      "activity_comment": null,
+      "data_validity_comment": null,
+      "potential_duplicate": null,
+      "parent_compound_id": null,
+      "measurement_relation": null,
+      "measurement_upper_value": null,
+      "measurement_text": null,
+      "measurement_basis": null,
+      "source_values": {
+        "aliases": [
+          "Zn(2+)"
+        ],
+        "binding_annotations": [
+          {
+            "annotation_path": "/features/46",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1159,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1159,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:29105"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000255",
+                  "source": "PROSITE-ProRule",
+                  "id": "PRU00450"
+                }
+              ],
+              "ligand": {
+                "name": "Zn(2+)",
+                "id": "ChEBI:CHEBI:29105"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/47",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1163,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1163,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:29105"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000255",
+                  "source": "PROSITE-ProRule",
+                  "id": "PRU00450"
+                }
+              ],
+              "ligand": {
+                "name": "Zn(2+)",
+                "id": "ChEBI:CHEBI:29105"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/48",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1187,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1187,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:29105"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000255",
+                  "source": "PROSITE-ProRule",
+                  "id": "PRU00450"
+                }
+              ],
+              "ligand": {
+                "name": "Zn(2+)",
+                "id": "ChEBI:CHEBI:29105"
+              }
+            }
+          },
+          {
+            "annotation_path": "/features/49",
+            "data": {
+              "type": "Binding site",
+              "location": {
+                "start": {
+                  "value": 1190,
+                  "modifier": "EXACT"
+                },
+                "end": {
+                  "value": 1190,
+                  "modifier": "EXACT"
+                }
+              },
+              "description": "",
+              "featureCrossReferences": [
+                {
+                  "database": "ChEBI",
+                  "id": "CHEBI:29105"
+                }
+              ],
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000255",
+                  "source": "PROSITE-ProRule",
+                  "id": "PRU00450"
+                }
+              ],
+              "ligand": {
+                "name": "Zn(2+)",
+                "id": "ChEBI:CHEBI:29105"
+              }
+            }
+          }
+        ],
+        "cofactor_annotations": []
+      },
+      "ligand_roles": [
+        "binding_site"
+      ],
+      "binding_sites": [
+        {
+          "annotation_path": "/features/46",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1159,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1159,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "H",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/12",
+              "name": "Integrase",
+              "start": 1148,
+              "end": 1435
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/46/evidences/0",
+              "evidence_code": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "source_id": "PRU00450",
+              "category": "sequence_analysis"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/47",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1163,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1163,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "H",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/12",
+              "name": "Integrase",
+              "start": 1148,
+              "end": 1435
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/47/evidences/0",
+              "evidence_code": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "source_id": "PRU00450",
+              "category": "sequence_analysis"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/48",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1187,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1187,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "C",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/12",
+              "name": "Integrase",
+              "start": 1148,
+              "end": 1435
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/48/evidences/0",
+              "evidence_code": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "source_id": "PRU00450",
+              "category": "sequence_analysis"
+            }
+          ]
+        },
+        {
+          "annotation_path": "/features/49",
+          "feature_id": null,
+          "location": {
+            "start": {
+              "value": 1190,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 1190,
+              "modifier": "EXACT"
+            },
+            "sequence": null
+          },
+          "sequence_scope": "canonical",
+          "residue_sequence": "C",
+          "description": null,
+          "ligand_part": null,
+          "ligand_label": null,
+          "processed_products": [
+            {
+              "annotation_path": "/features/1",
+              "name": "Gag-Pol polyprotein",
+              "start": 2,
+              "end": 1435
+            },
+            {
+              "annotation_path": "/features/12",
+              "name": "Integrase",
+              "start": 1148,
+              "end": 1435
+            }
+          ],
+          "evidence": [
+            {
+              "annotation_path": "/features/49/evidences/0",
+              "evidence_code": "ECO:0000255",
+              "source": "PROSITE-ProRule",
+              "source_id": "PRU00450",
+              "category": "sequence_analysis"
+            }
+          ]
+        }
+      ],
+      "annotation_evidence": [
+        {
+          "annotation_path": "/features/46/evidences/0",
+          "evidence_code": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "source_id": "PRU00450",
+          "category": "sequence_analysis"
+        },
+        {
+          "annotation_path": "/features/47/evidences/0",
+          "evidence_code": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "source_id": "PRU00450",
+          "category": "sequence_analysis"
+        },
+        {
+          "annotation_path": "/features/48/evidences/0",
+          "evidence_code": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "source_id": "PRU00450",
+          "category": "sequence_analysis"
+        },
+        {
+          "annotation_path": "/features/49/evidences/0",
+          "evidence_code": "ECO:0000255",
+          "source": "PROSITE-ProRule",
+          "source_id": "PRU00450",
+          "category": "sequence_analysis"
+        }
+      ],
+      "structure_provenance": {
+        "provider": "RCSB CCD",
+        "status": "no_exact_mapping",
+        "requested_chemical_id": "CHEBI:29105",
+        "smiles_field": null,
+        "candidate_components": [],
+        "request_ids": [
+          4
+        ]
+      }
+    }
+  ],
+  "error": null,
+  "policy": "uniprot-annotated-ligands-v1",
+  "warnings": [
+    {
+      "code": "inferred_annotation",
+      "message": "CHEBI:18420: Includes similarity/sequence-based evidence; not all annotations are experimental.",
+      "role": "CHEBI:18420"
+    },
+    {
+      "code": "inferred_annotation",
+      "message": "CHEBI:29105: Includes similarity/sequence-based evidence; not all annotations are experimental.",
+      "role": "CHEBI:29105"
+    },
+    {
+      "code": "structure_no_exact_mapping",
+      "message": "CHEBI:18420: SMILES no_exact_mapping.",
+      "role": "CHEBI:18420"
+    },
+    {
+      "code": "structure_no_exact_mapping",
+      "message": "CHEBI:29105: SMILES no_exact_mapping.",
+      "role": "CHEBI:29105"
+    }
+  ],
+  "counts": {
+    "candidate_targets": null,
+    "eligible_targets": null,
+    "candidate_activities": null,
+    "included_activities": null,
+    "excluded_activities": null,
+    "unverified_activities": null,
+    "candidate_assays": null,
+    "eligible_assays": null,
+    "complete": true,
+    "record_kind": "ligand_annotation",
+    "unique_ligands": 2,
+    "annotation_records": 2,
+    "identified_chemical_ids": 2,
+    "binding_site_annotations": 14,
+    "generic_binding_sites": 0,
+    "cofactor_annotations": 3,
+    "smiles_available": 0,
+    "smiles_unavailable": 2,
+    "candidate_entries": null,
+    "accepted_target_entities": null,
+    "examined_ligand_instances": null,
+    "included_ligand_instances": null,
+    "excluded_water_instances": null,
+    "instances_without_reported_contacts": null,
+    "instances_without_target_contacts": null,
+    "contact_sites": null,
+    "contact_residues": null,
+    "mapped_contact_residues": null
+  },
+  "selection_audit": {
+    "outcome_reason": null,
+    "targets": [],
+    "activities": [],
+    "assays": []
+  },
+  "source_context": {
+    "entry": {
+      "primary_accession": "P04585",
+      "query_accession": "P04585",
+      "secondary_accessions": [
+        "O09777",
+        "Q9WJC5"
+      ],
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "entry_name": "POL_HV1H2",
+      "protein_name": "Gag-Pol polyprotein",
+      "organism": "Human immunodeficiency virus type 1 group M subtype B (isolate HXB2)",
+      "taxon_id": 11706,
+      "sequence": "MGARASVLSGGELDRWEKIRLRPGGKKKYKLKHIVWASRELERFAVNPGLLETSEGCRQILGQLQPSLQTGSEELRSLYNTVATLYCVHQRIEIKDTKEALDKIEEEQNKSKKKAQQAAADTGHSNQVSQNYPIVQNIQGQMVHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIYKRWIILGLNKIVRMYSPTSILDIRQGPKEPFRDYVDRFYKTLRAEQASQEVKNWMTETLLVQNANPDCKTILKALGPAATLEEMMTACQGVGGPGHKARVLAEAMSQVTNSATIMMQRGNFRNQRKIVKCFNCGKEGHTARNCRAPRKKGCWKCGKEGHQMKDCTERQANFLREDLAFLQGKAREFSSEQTRANSPTRRELQVWGRDNNSPSEAGADRQGTVSFNFPQVTLWQRPLVTIKIGGQLKEALLDTGADDTVLEEMSLPGRWKPKMIGGIGGFIKVRQYDQILIEICGHKAIGTVLVGPTPVNIIGRNLLTQIGCTLNFPISPIETVPVKLKPGMDGPKVKQWPLTEEKIKALVEICTEMEKEGKISKIGPENPYNTPVFAIKKKDSTKWRKLVDFRELNKRTQDFWEVQLGIPHPAGLKKKKSVTVLDVGDAYFSVPLDEDFRKYTAFTIPSINNETPGIRYQYNVLPQGWKGSPAIFQSSMTKILEPFRKQNPDIVIYQYMDDLYVGSDLEIGQHRTKIEELRQHLLRWGLTTPDKKHQKEPPFLWMGYELHPDKWTVQPIVLPEKDSWTVNDIQKLVGKLNWASQIYPGIKVRQLCKLLRGTKALTEVIPLTEEAELELAENREILKEPVHGVYYDPSKDLIAEIQKQGQGQWTYQIYQEPFKNLKTGKYARMRGAHTNDVKQLTEAVQKITTESIVIWGKTPKFKLPIQKETWETWWTEYWQATWIPEWEFVNTPPLVKLWYQLEKEPIVGAETFYVDGAANRETKLGKAGYVTNRGRQKVVTLTDTTNQKTELQAIYLALQDSGLEVNIVTDSQYALGIIQAQPDQSESELVNQIIEQLIKKEKVYLAWVPAHKGIGGNEQVDKLVSAGIRKVLFLDGIDKAQDEHEKYHSNWRAMASDFNLPPVVAKEIVASCDKCQLKGEAMHGQVDCSPGIWQLDCTHLEGKVILVAVHVASGYIEAEVIPAETGQETAYFLLKLAGRWPVKTIHTDNGSNFTGATVRAACWWAGIKQEFGIPYNPQSQGVVESMNKELKKIIGQVRDQAEHLKTAVQMAVFIHNFKRKGGIGGYSAGERIVDIIATDIQTKELQKQITKIQNFRVYYRDSRNPLWKGPAKLLWKGEGAVVIQDNSDIKVVPRRKAKIIRDYGKQMAGDDCVASRQDED",
+      "sequence_length": 1435,
+      "entry_audit": {
+        "entryVersion": 269,
+        "sequenceVersion": 4,
+        "firstPublicDate": "1987-08-13",
+        "lastAnnotationUpdateDate": "2026-11-04",
+        "lastSequenceUpdateDate": "2007-01-23"
+      },
+      "references": [
+        {
+          "referenceNumber": 1,
+          "citation": {
+            "id": "3040055",
+            "citationType": "journal article",
+            "authors": [
+              "Ratner L.",
+              "Fisher A.",
+              "Jagodzinski L.L.",
+              "Mitsuya H.",
+              "Liou R.-S.",
+              "Gallo R.C.",
+              "Wong-Staal F."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "3040055"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1089/aid.1987.3.57"
+              }
+            ],
+            "title": "Complete nucleotide sequences of functional clones of the AIDS virus.",
+            "publicationDate": "1987",
+            "journal": "AIDS Res. Hum. Retroviruses",
+            "firstPage": "57",
+            "lastPage": "69",
+            "volume": "3"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC RNA]"
+          ]
+        },
+        {
+          "referenceNumber": 2,
+          "citation": {
+            "id": "CI-AP6ME5R1E4C7V",
+            "citationType": "submission",
+            "authors": [
+              "Ogata N.",
+              "Alter H.J.",
+              "Miller R.H.",
+              "Purcell R.H."
+            ],
+            "publicationDate": "JUN-1996",
+            "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+          },
+          "referencePositions": [
+            "SEQUENCE REVISION"
+          ]
+        },
+        {
+          "referenceNumber": 3,
+          "citation": {
+            "id": "CI-8H4UQ8PNNAGAI",
+            "citationType": "submission",
+            "authors": [
+              "Chappey C."
+            ],
+            "publicationDate": "MAR-1999",
+            "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC RNA]"
+          ]
+        },
+        {
+          "referenceNumber": 4,
+          "citation": {
+            "id": "2349226",
+            "citationType": "journal article",
+            "authors": [
+              "Farnet C.M.",
+              "Haseltine W.A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "2349226"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1073/pnas.87.11.4164"
+              }
+            ],
+            "title": "Integration of human immunodeficiency virus type 1 DNA in vitro.",
+            "publicationDate": "1990",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "4164",
+            "lastPage": "4168",
+            "volume": "87"
+          },
+          "referencePositions": [
+            "FUNCTION (INTEGRASE)"
+          ]
+        },
+        {
+          "referenceNumber": 5,
+          "citation": {
+            "id": "2162350",
+            "citationType": "journal article",
+            "authors": [
+              "Weber I.T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "2162350"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0021-9258(18)86974-5"
+              }
+            ],
+            "title": "Comparison of the crystal structures and intersubunit interactions of human immunodeficiency and Rous sarcoma virus proteases.",
+            "publicationDate": "1990",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "10492",
+            "lastPage": "10496",
+            "volume": "265"
+          },
+          "referencePositions": [
+            "DIMERIZATION (PROTEASE)"
+          ]
+        },
+        {
+          "referenceNumber": 6,
+          "citation": {
+            "id": "8420982",
+            "citationType": "journal article",
+            "authors": [
+              "Leavitt A.D.",
+              "Shiue L.",
+              "Varmus H.E."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8420982"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0021-9258(18)53969-7"
+              }
+            ],
+            "title": "Site-directed mutagenesis of HIV-1 integrase demonstrates differential effects on integrase functions in vitro.",
+            "publicationDate": "1993",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "2113",
+            "lastPage": "2119",
+            "volume": "268"
+          },
+          "referencePositions": [
+            "MUTAGENESIS OF HIS-1159; HIS-1163; GLN-1200; ASP-1211; SER-1228; ASP-1263; GLU-1299; ARG-1346 AND TRP-1382"
+          ]
+        },
+        {
+          "referenceNumber": 7,
+          "citation": {
+            "id": "8035478",
+            "citationType": "journal article",
+            "authors": [
+              "Cannon P.M.",
+              "Wilson W.",
+              "Byles E.",
+              "Kingsman S.M.",
+              "Kingsman A.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8035478"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.68.8.4768-4775.1994"
+              }
+            ],
+            "title": "Human immunodeficiency virus type 1 integrase: effect on viral replication of mutations at highly conserved residues.",
+            "publicationDate": "1994",
+            "journal": "J. Virol.",
+            "firstPage": "4768",
+            "lastPage": "4775",
+            "volume": "68"
+          },
+          "referencePositions": [
+            "MUTAGENESIS OF CYS-1187; CYS-1190; TRP-1208; ASP-1211; THR-1213; VAL-1222; SER-1228; THR-1262; ASP-1263; GLY-1270; ILE-1282; VAL-1298; GLU-1299; LYS-1306; ALA-1326 AND TRP-1382"
+          ],
+          "referenceComments": [
+            {
+              "value": "Isolate WI3",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "referenceNumber": 8,
+          "citation": {
+            "id": "8513493",
+            "citationType": "journal article",
+            "authors": [
+              "Luban J.",
+              "Bossolt K.L.",
+              "Franke E.K.",
+              "Kalpana G.V.",
+              "Goff S.P."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8513493"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0092-8674(93)90637-6"
+              }
+            ],
+            "title": "Human immunodeficiency virus type 1 Gag protein binds to cyclophilins A and B.",
+            "publicationDate": "1993",
+            "journal": "Cell",
+            "firstPage": "1067",
+            "lastPage": "1078",
+            "volume": "73"
+          },
+          "referencePositions": [
+            "INTERACTION OF CAPSID WITH HUMAN PPIA/CYPA"
+          ]
+        },
+        {
+          "referenceNumber": 9,
+          "citation": {
+            "id": "7801128",
+            "citationType": "journal article",
+            "authors": [
+              "Kalpana G.V.",
+              "Marmon S.",
+              "Wang W.",
+              "Crabtree G.R.",
+              "Goff S.P."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "7801128"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1126/science.7801128"
+              }
+            ],
+            "title": "Binding and stimulation of HIV-1 integrase by a human homolog of yeast transcription factor SNF5.",
+            "publicationDate": "1994",
+            "journal": "Science",
+            "firstPage": "2002",
+            "lastPage": "2006",
+            "volume": "266"
+          },
+          "referencePositions": [
+            "INTERACTION WITH HUMAN SMARCB1/INI1 (INTEGRASE)"
+          ]
+        },
+        {
+          "referenceNumber": 10,
+          "citation": {
+            "id": "7835426",
+            "citationType": "journal article",
+            "authors": [
+              "Gaedigk-Nitschko K.",
+              "Schoen A.",
+              "Wachinger G.",
+              "Erfle V.",
+              "Kohleisen B."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "7835426"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0014-5793(94)01370-g"
+              }
+            ],
+            "title": "Cleavage of recombinant and cell derived human immunodeficiency virus 1 (HIV-1) Nef protein by HIV-1 protease.",
+            "publicationDate": "1995",
+            "journal": "FEBS Lett.",
+            "firstPage": "275",
+            "lastPage": "278",
+            "volume": "357"
+          },
+          "referencePositions": [
+            "FUNCTION (PROTEASE)"
+          ]
+        },
+        {
+          "referenceNumber": 11,
+          "citation": {
+            "id": "8648689",
+            "citationType": "journal article",
+            "authors": [
+              "Braaten D.",
+              "Franke E.K.",
+              "Luban J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8648689"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.70.6.3551-3560.1996"
+              }
+            ],
+            "title": "Cyclophilin A is required for an early step in the life cycle of human immunodeficiency virus type 1 before the initiation of reverse transcription.",
+            "publicationDate": "1996",
+            "journal": "J. Virol.",
+            "firstPage": "3551",
+            "lastPage": "3560",
+            "volume": "70"
+          },
+          "referencePositions": [
+            "FUNCTION (CAPSID PROTEIN P24)"
+          ]
+        },
+        {
+          "referenceNumber": 12,
+          "citation": {
+            "id": "9223641",
+            "citationType": "journal article",
+            "authors": [
+              "Yoo S.",
+              "Myszka D.G.",
+              "Yeh C.",
+              "McMurray M.",
+              "Hill C.P.",
+              "Sundquist W.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9223641"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1006/jmbi.1997.1051"
+              }
+            ],
+            "title": "Molecular recognition in the HIV-1 capsid/cyclophilin A complex.",
+            "publicationDate": "1997",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "780",
+            "lastPage": "795",
+            "volume": "269"
+          },
+          "referencePositions": [
+            "MUTAGENESIS OF PRO-217; VAL-218; HIS-219; ALA-220; GLY-221; PRO-222; ILE-223; ALA-224 AND PRO-225",
+            "INTERACTION WITH HUMAN CYPA"
+          ]
+        },
+        {
+          "referenceNumber": 13,
+          "citation": {
+            "id": "9573231",
+            "citationType": "journal article",
+            "authors": [
+              "Gaur M.",
+              "Leavitt A.D."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9573231"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.72.6.4678-4685.1998"
+              }
+            ],
+            "title": "Mutations in the human immunodeficiency virus type 1 integrase D,D(35)E motif do not eliminate provirus formation.",
+            "publicationDate": "1998",
+            "journal": "J. Virol.",
+            "firstPage": "4678",
+            "lastPage": "4685",
+            "volume": "72"
+          },
+          "referencePositions": [
+            "MUTAGENESIS OF ASP-1211; ASP-1263 AND GLU-1299"
+          ]
+        },
+        {
+          "referenceNumber": 14,
+          "citation": {
+            "id": "10604476",
+            "citationType": "journal article",
+            "authors": [
+              "Dupont S.",
+              "Sharova N.",
+              "DeHoratius C.",
+              "Virbasius C.M.",
+              "Zhu X.",
+              "Bukrinskaya A.G.",
+              "Stevenson M.",
+              "Green M.R."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "10604476"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/45272"
+              }
+            ],
+            "title": "A novel nuclear export activity in HIV-1 matrix protein required for viral replication.",
+            "publicationDate": "1999",
+            "journal": "Nature",
+            "firstPage": "681",
+            "lastPage": "685",
+            "volume": "402"
+          },
+          "referencePositions": [
+            "MUTAGENESIS OF LYS-18; ARG-22 AND LYS-27"
+          ]
+        },
+        {
+          "referenceNumber": 15,
+          "citation": {
+            "id": "10494040",
+            "citationType": "journal article",
+            "authors": [
+              "Chang Y.Y.",
+              "Yu S.L.",
+              "Syu W.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "10494040"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1007/bf02253522"
+              }
+            ],
+            "title": "Organization of HIV-1 pol is critical for Pol polyprotein processing.",
+            "publicationDate": "1999",
+            "journal": "J. Biomed. Sci.",
+            "firstPage": "333",
+            "lastPage": "341",
+            "volume": "6"
+          },
+          "referencePositions": [
+            "PROTEOLYTIC PROCESSING OF POLYPROTEIN"
+          ]
+        },
+        {
+          "referenceNumber": 16,
+          "citation": {
+            "id": "9931246",
+            "citationType": "journal article",
+            "authors": [
+              "Negroni M.",
+              "Buc H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9931246"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1006/jmbi.1998.2460"
+              }
+            ],
+            "title": "Recombination during reverse transcription: an evaluation of the role of the nucleocapsid protein.",
+            "publicationDate": "1999",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "15",
+            "lastPage": "31",
+            "volume": "286"
+          },
+          "referencePositions": [
+            "FUNCTION (NUCLEOCAPSID PROTEIN P7)"
+          ]
+        },
+        {
+          "referenceNumber": 17,
+          "citation": {
+            "id": "11044125",
+            "citationType": "journal article",
+            "authors": [
+              "Cen S.",
+              "Khorchid A.",
+              "Gabor J.",
+              "Rong L.",
+              "Wainberg M.A.",
+              "Kleiman L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11044125"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.74.22.10796-10800.2000"
+              }
+            ],
+            "title": "Roles of Pr55(gag) and NCp7 in tRNA(3)(Lys) genomic placement and the initiation step of reverse transcription in human immunodeficiency virus type 1.",
+            "publicationDate": "2000",
+            "journal": "J. Virol.",
+            "firstPage": "10796",
+            "lastPage": "10800",
+            "volume": "74"
+          },
+          "referencePositions": [
+            "FUNCTION (NUCLEOCAPSID PROTEIN P7)"
+          ]
+        },
+        {
+          "referenceNumber": 18,
+          "citation": {
+            "id": "11160682",
+            "citationType": "journal article",
+            "authors": [
+              "Shehu-Xhilaga M.",
+              "Crowe S.M.",
+              "Mak J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11160682"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.75.4.1834-1841.2001"
+              }
+            ],
+            "title": "Maintenance of the Gag/Gag-Pol ratio is important for human immunodeficiency virus type 1 RNA dimerization and viral infectivity.",
+            "publicationDate": "2001",
+            "journal": "J. Virol.",
+            "firstPage": "1834",
+            "lastPage": "1841",
+            "volume": "75"
+          },
+          "referencePositions": [
+            "GAG/GAG-POL RATIO"
+          ]
+        },
+        {
+          "referenceNumber": 19,
+          "citation": {
+            "id": "12206668",
+            "citationType": "journal article",
+            "authors": [
+              "Cristofaro J.V.",
+              "Rausch J.W.",
+              "Le Grice S.F.",
+              "DeStefano J.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12206668"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi025871v"
+              }
+            ],
+            "title": "Mutations in the ribonuclease H active site of HIV-RT reveal a role for this site in stabilizing enzyme-primer-template binding.",
+            "publicationDate": "2002",
+            "journal": "Biochemistry",
+            "firstPage": "10968",
+            "lastPage": "10975",
+            "volume": "41"
+          },
+          "referencePositions": [
+            "ACTIVE SITES (REVERSE TRANSCRIPTASE/RIBONUCLEASE H)",
+            "MUTAGENESIS OF GLU-1065 AND ASP-1136"
+          ]
+        },
+        {
+          "referenceNumber": 20,
+          "citation": {
+            "id": "11929983",
+            "citationType": "journal article",
+            "authors": [
+              "Bosco D.A.",
+              "Eisenmesser E.Z.",
+              "Pochapsky S.",
+              "Sundquist W.I.",
+              "Kern D."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11929983"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1073/pnas.082100499"
+              }
+            ],
+            "title": "Catalysis of cis/trans isomerization in native HIV-1 capsid by human cyclophilin A.",
+            "publicationDate": "2002",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "5247",
+            "lastPage": "5252",
+            "volume": "99"
+          },
+          "referencePositions": [
+            "CIS/TRANS ISOMERIZATION (CAPSID PROTEIN P24)"
+          ]
+        },
+        {
+          "referenceNumber": 21,
+          "citation": {
+            "id": "11932404",
+            "citationType": "journal article",
+            "authors": [
+              "Guo J.",
+              "Wu T.",
+              "Kane B.F.",
+              "Johnson D.G.",
+              "Henderson L.E.",
+              "Gorelick R.J.",
+              "Levin J.G."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11932404"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.76.9.4370-4378.2002"
+              }
+            ],
+            "title": "Subtle alterations of the native zinc finger structures have dramatic effects on the nucleic acid chaperone activity of human immunodeficiency virus type 1 nucleocapsid protein.",
+            "publicationDate": "2002",
+            "journal": "J. Virol.",
+            "firstPage": "4370",
+            "lastPage": "4378",
+            "volume": "76"
+          },
+          "referencePositions": [
+            "MUTAGENESIS OF HIS-400; CYS-405; HIS-421 AND CYS-426"
+          ]
+        },
+        {
+          "referenceNumber": 22,
+          "citation": {
+            "id": "12477841",
+            "citationType": "journal article",
+            "authors": [
+              "Pettit S.C.",
+              "Gulnik S.",
+              "Everitt L.",
+              "Kaplan A.H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12477841"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.77.1.366-374.2003"
+              }
+            ],
+            "title": "The dimer interfaces of protease and extra-protease domains influence the activation of protease and the specificity of GagPol cleavage.",
+            "publicationDate": "2003",
+            "journal": "J. Virol.",
+            "firstPage": "366",
+            "lastPage": "374",
+            "volume": "77"
+          },
+          "referencePositions": [
+            "PROTEOLYTIC PROCESSING (GAG-POL POLYPROTEIN)"
+          ]
+        },
+        {
+          "referenceNumber": 23,
+          "citation": {
+            "id": "12660176",
+            "citationType": "journal article",
+            "authors": [
+              "Briggs J.A.",
+              "Wilk T.",
+              "Welker R.",
+              "Krausslich H.G.",
+              "Fuller S.D."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12660176"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1093/emboj/cdg143"
+              }
+            ],
+            "title": "Structural organization of authentic, mature HIV-1 virions and cores.",
+            "publicationDate": "2003",
+            "journal": "EMBO J.",
+            "firstPage": "1707",
+            "lastPage": "1715",
+            "volume": "22"
+          },
+          "referencePositions": [
+            "QUATERNARY STRUCTURE (CAPSID PROTEIN P24)"
+          ]
+        },
+        {
+          "referenceNumber": 24,
+          "citation": {
+            "id": "12505164",
+            "citationType": "journal article",
+            "authors": [
+              "Perales C.",
+              "Carrasco L.",
+              "Ventoso I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12505164"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0014-5793(02)03764-x"
+              }
+            ],
+            "title": "Cleavage of eIF4G by HIV-1 protease: effects on translation.",
+            "publicationDate": "2003",
+            "journal": "FEBS Lett.",
+            "firstPage": "89",
+            "lastPage": "94",
+            "volume": "533"
+          },
+          "referencePositions": [
+            "FUNCTION (PROTEASE)"
+          ]
+        },
+        {
+          "referenceNumber": 25,
+          "citation": {
+            "id": "15065874",
+            "citationType": "journal article",
+            "authors": [
+              "Tozser J.",
+              "Shulenin S.",
+              "Louis J.M.",
+              "Copeland T.D.",
+              "Oroszlan S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15065874"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi035625z"
+              }
+            ],
+            "title": "In vitro processing of HIV-1 nucleocapsid protein by the viral proteinase: effects of amino acid substitutions at the scissile bond in the proximal zinc finger sequence.",
+            "publicationDate": "2004",
+            "journal": "Biochemistry",
+            "firstPage": "4304",
+            "lastPage": "4312",
+            "volume": "43"
+          },
+          "referencePositions": [
+            "CLEAVAGE (NUCLEOCAPSID PROTEIN P7)"
+          ]
+        },
+        {
+          "referenceNumber": 26,
+          "citation": {
+            "id": "15183348",
+            "citationType": "journal article",
+            "authors": [
+              "Sluis-Cremer N.",
+              "Arion D.",
+              "Abram M.E.",
+              "Parniak M.A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15183348"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.biocel.2004.02.020"
+              }
+            ],
+            "title": "Proteolytic processing of an HIV-1 pol polyprotein precursor: insights into the mechanism of reverse transcriptase p66/p51 heterodimer formation.",
+            "publicationDate": "2004",
+            "journal": "Int. J. Biochem. Cell Biol.",
+            "firstPage": "1836",
+            "lastPage": "1847",
+            "volume": "36"
+          },
+          "referencePositions": [
+            "SUBUNIT (REVERSE TRANSCRIPTASE/RIBONUCLEASE H)",
+            "MUTAGENESIS OF 488-PHE--GLN-490 AND LEU-821",
+            "PROTEOLYTIC CLEAVAGE (GAG-POL POLYPROTEIN)"
+          ]
+        },
+        {
+          "referenceNumber": 27,
+          "citation": {
+            "id": "16221683",
+            "citationType": "journal article",
+            "authors": [
+              "Purohit V.",
+              "Balakrishnan M.",
+              "Kim B.",
+              "Bambara R.A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "16221683"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1074/jbc.m507839200"
+              }
+            ],
+            "title": "Evidence that HIV-1 reverse transcriptase employs the DNA 3' end directed primary/secondary RNase H cleavage mechanism during synthesis and strand transfer.",
+            "publicationDate": "2005",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "40534",
+            "lastPage": "40543",
+            "volume": "280"
+          },
+          "referencePositions": [
+            "FUNCTION (REVERSE TRANSCRIPTASE/RIBONUCLEASE H)"
+          ]
+        },
+        {
+          "referenceNumber": 28,
+          "citation": {
+            "id": "16904152",
+            "citationType": "journal article",
+            "authors": [
+              "Thomas J.A.",
+              "Shulenin S.",
+              "Coren L.V.",
+              "Bosche W.J.",
+              "Gagliardi T.D.",
+              "Gorelick R.J.",
+              "Oroszlan S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "16904152"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.virol.2006.07.011"
+              }
+            ],
+            "title": "Characterization of human immunodeficiency virus type 1 (HIV-1) containing mutations in the nucleocapsid protein at a putative HIV-1 protease cleavage site.",
+            "publicationDate": "2006",
+            "journal": "Virology",
+            "firstPage": "261",
+            "lastPage": "270",
+            "volume": "354"
+          },
+          "referencePositions": [
+            "MUTAGENESIS OF ASN-394"
+          ]
+        },
+        {
+          "referenceNumber": 29,
+          "citation": {
+            "id": "17070549",
+            "citationType": "journal article",
+            "authors": [
+              "Hagan N.A.",
+              "Fabris D."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "17070549"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.jmb.2006.09.081"
+              }
+            ],
+            "title": "Dissecting the protein-RNA and RNA-RNA interactions in the nucleocapsid-mediated dimerization and isomerization of HIV-1 stemloop 1.",
+            "publicationDate": "2007",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "396",
+            "lastPage": "410",
+            "volume": "365"
+          },
+          "referencePositions": [
+            "FUNCTION (NUCLEOCAPSID PROTEIN P7)"
+          ]
+        },
+        {
+          "referenceNumber": 30,
+          "citation": {
+            "id": "17108052",
+            "citationType": "journal article",
+            "authors": [
+              "Alfadhli A.",
+              "Huseby D.",
+              "Kapit E.",
+              "Colman D.",
+              "Barklis E."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "17108052"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.02122-06"
+              }
+            ],
+            "title": "Human immunodeficiency virus type 1 matrix protein assembles on membranes as a hexamer.",
+            "publicationDate": "2007",
+            "journal": "J. Virol.",
+            "firstPage": "1472",
+            "lastPage": "1478",
+            "volume": "81"
+          },
+          "referencePositions": [
+            "SUBUNIT (MATRIX PROTEIN P17)"
+          ]
+        },
+        {
+          "referenceNumber": 31,
+          "citation": {
+            "id": "17656588",
+            "citationType": "journal article",
+            "authors": [
+              "Saad J.S.",
+              "Kim A.",
+              "Ghanam R.H.",
+              "Dalton A.K.",
+              "Vogt V.M.",
+              "Wu Z.",
+              "Lu W.",
+              "Summers M.F."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "17656588"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1110/ps.072987607"
+              }
+            ],
+            "title": "Mutations that mimic phosphorylation of the HIV-1 matrix protein do not perturb the myristyl switch.",
+            "publicationDate": "2007",
+            "journal": "Protein Sci.",
+            "firstPage": "1793",
+            "lastPage": "1797",
+            "volume": "16"
+          },
+          "referencePositions": [
+            "MUTAGENESIS OF SER-6; SER-9; SER-67 AND SER-72",
+            "POST-TRANSCRIPTIONAL MODIFICATION"
+          ]
+        },
+        {
+          "referenceNumber": 32,
+          "citation": {
+            "id": "18722123",
+            "citationType": "journal article",
+            "authors": [
+              "Christ F.",
+              "Thys W.",
+              "De Rijck J.",
+              "Gijsbers R.",
+              "Albanese A.",
+              "Arosio D.",
+              "Emiliani S.",
+              "Rain J.C.",
+              "Benarous R.",
+              "Cereseto A.",
+              "Debyser Z."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "18722123"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.cub.2008.07.079"
+              }
+            ],
+            "title": "Transportin-SR2 imports HIV into the nucleus.",
+            "publicationDate": "2008",
+            "journal": "Curr. Biol.",
+            "firstPage": "1192",
+            "lastPage": "1202",
+            "volume": "18"
+          },
+          "referencePositions": [
+            "SUBCELLULAR LOCATION (INTEGRASE)"
+          ]
+        },
+        {
+          "referenceNumber": 33,
+          "citation": {
+            "id": "18343475",
+            "citationType": "journal article",
+            "authors": [
+              "Kafaie J.",
+              "Song R.",
+              "Abrahamyan L.",
+              "Mouland A.J.",
+              "Laughrea M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "18343475"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.virol.2008.02.001"
+              }
+            ],
+            "title": "Mapping of nucleocapsid residues important for HIV-1 genomic RNA dimerization and packaging.",
+            "publicationDate": "2008",
+            "journal": "Virology",
+            "firstPage": "592",
+            "lastPage": "610",
+            "volume": "375"
+          },
+          "referencePositions": [
+            "FUNCTION (NUCLEOCAPSID PROTEIN P7)"
+          ]
+        },
+        {
+          "referenceNumber": 34,
+          "citation": {
+            "id": "19914170",
+            "citationType": "journal article",
+            "authors": [
+              "Byeon I.J.",
+              "Meng X.",
+              "Jung J.",
+              "Zhao G.",
+              "Yang R.",
+              "Ahn J.",
+              "Shi J.",
+              "Concel J.",
+              "Aiken C.",
+              "Zhang P.",
+              "Gronenborn A.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "19914170"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.cell.2009.10.010"
+              }
+            ],
+            "title": "Structural convergence between Cryo-EM and NMR reveals intersubunit interactions critical for HIV-1 capsid function.",
+            "publicationDate": "2009",
+            "journal": "Cell",
+            "firstPage": "780",
+            "lastPage": "790",
+            "volume": "139"
+          },
+          "referencePositions": [
+            "SUBUNIT (CAPSID PROTEIN P24)",
+            "FUNCTION (CAPSID PROTEIN P24)"
+          ]
+        },
+        {
+          "referenceNumber": 35,
+          "citation": {
+            "id": "19956697",
+            "citationType": "journal article",
+            "authors": [
+              "Castello A.",
+              "Franco D.",
+              "Moral-Lopez P.",
+              "Berlanga J.J.",
+              "Alvarez E.",
+              "Wimmer E.",
+              "Carrasco L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "19956697"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1371/journal.pone.0007997"
+              }
+            ],
+            "title": "HIV- 1 protease inhibits Cap- and poly(A)-dependent translation upon eIF4GI and PABP cleavage.",
+            "publicationDate": "2009",
+            "journal": "PLoS ONE",
+            "firstPage": "E7997",
+            "lastPage": "E7997",
+            "volume": "4"
+          },
+          "referencePositions": [
+            "FUNCTION (PROTEASE)"
+          ]
+        },
+        {
+          "referenceNumber": 36,
+          "citation": {
+            "id": "19327811",
+            "citationType": "journal article",
+            "authors": [
+              "Alfadhli A.",
+              "Barklis R.L.",
+              "Barklis E."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "19327811"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.virol.2009.02.048"
+              }
+            ],
+            "title": "HIV-1 matrix organizes as a hexamer of trimers on membranes containing phosphatidylinositol-(4,5)-bisphosphate.",
+            "publicationDate": "2009",
+            "journal": "Virology",
+            "firstPage": "466",
+            "lastPage": "472",
+            "volume": "387"
+          },
+          "referencePositions": [
+            "SUBUNIT (MATRIX PROTEIN P17)"
+          ]
+        },
+        {
+          "referenceNumber": 37,
+          "citation": {
+            "id": "20573829",
+            "citationType": "journal article",
+            "authors": [
+              "Henning M.S.",
+              "Morham S.G.",
+              "Goff S.P.",
+              "Naghavi M.H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "20573829"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.00843-10"
+              }
+            ],
+            "title": "PDZD8 is a novel Gag-interacting factor that promotes retroviral infection.",
+            "publicationDate": "2010",
+            "journal": "J. Virol.",
+            "firstPage": "8990",
+            "lastPage": "8995",
+            "volume": "84"
+          },
+          "referencePositions": [
+            "INTERACTION OF GAG POLYPROTEIN WITH PDZD8"
+          ]
+        },
+        {
+          "referenceNumber": 38,
+          "citation": {
+            "id": "20554775",
+            "citationType": "journal article",
+            "authors": [
+              "Ao Z.",
+              "Danappa Jayappa K.",
+              "Wang B.",
+              "Zheng Y.",
+              "Kung S.",
+              "Rassart E.",
+              "Depping R.",
+              "Kohler M.",
+              "Cohen E.A.",
+              "Yao X."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "20554775"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.00508-10"
+              }
+            ],
+            "title": "Importin alpha3 interacts with HIV-1 integrase and contributes to HIV-1 nuclear import and replication.",
+            "publicationDate": "2010",
+            "journal": "J. Virol.",
+            "firstPage": "8650",
+            "lastPage": "8663",
+            "volume": "84"
+          },
+          "referencePositions": [
+            "FUNCTION (INTEGRASE)",
+            "INTERACTION OF INTEGRASE WITH HUMAN KPNA3"
+          ]
+        },
+        {
+          "referenceNumber": 39,
+          "citation": {
+            "id": "20828778",
+            "citationType": "journal article",
+            "authors": [
+              "Jalalirad M.",
+              "Laughrea M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "20828778"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.virol.2010.08.013"
+              }
+            ],
+            "title": "Formation of immature and mature genomic RNA dimers in wild-type and protease-inactive HIV-1: differential roles of the Gag polyprotein, nucleocapsid proteins NCp15, NCp9, NCp7, and the dimerization initiation site.",
+            "publicationDate": "2010",
+            "journal": "Virology",
+            "firstPage": "225",
+            "lastPage": "236",
+            "volume": "407"
+          },
+          "referencePositions": [
+            "FUNCTION (NUCLEOCAPSID PROTEIN P7)"
+          ]
+        },
+        {
+          "referenceNumber": 40,
+          "citation": {
+            "id": "23785198",
+            "citationType": "journal article",
+            "authors": [
+              "Shi J.",
+              "Friedman D.B.",
+              "Aiken C."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "23785198"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.00713-13"
+              }
+            ],
+            "title": "Retrovirus restriction by TRIM5 proteins requires recognition of only a small fraction of viral capsid subunits.",
+            "publicationDate": "2013",
+            "journal": "J. Virol.",
+            "firstPage": "9271",
+            "lastPage": "9278",
+            "volume": "87"
+          },
+          "referencePositions": [
+            "INTERACTION WITH MONKEY TRIM5"
+          ]
+        },
+        {
+          "referenceNumber": 41,
+          "citation": {
+            "id": "24132393",
+            "citationType": "journal article",
+            "authors": [
+              "Naicker P.",
+              "Seele P.",
+              "Dirr H.W.",
+              "Sayed Y."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "24132393"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1007/s10930-013-9517-y"
+              }
+            ],
+            "title": "F99 is critical for dimerization and activation of South African HIV-1 subtype C protease.",
+            "publicationDate": "2013",
+            "journal": "Protein J.",
+            "firstPage": "560",
+            "lastPage": "567",
+            "volume": "32"
+          },
+          "referencePositions": [
+            "DIMERIZATION (PROTEASE)"
+          ]
+        },
+        {
+          "referenceNumber": 42,
+          "citation": {
+            "id": "24554657",
+            "citationType": "journal article",
+            "authors": [
+              "Guth C.A.",
+              "Sodroski J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "24554657"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/jvi.02945-13"
+              }
+            ],
+            "title": "Contribution of PDZD8 to stabilization of the human immunodeficiency virus type 1 capsid.",
+            "publicationDate": "2014",
+            "journal": "J. Virol.",
+            "firstPage": "4612",
+            "lastPage": "4623",
+            "volume": "88"
+          },
+          "referencePositions": [
+            "INTERACTION OF CAPSID-NUCLEOCAPSID COMPLEX WITH HUMAN PDZD8"
+          ]
+        },
+        {
+          "referenceNumber": 43,
+          "citation": {
+            "id": "24500712",
+            "citationType": "journal article",
+            "authors": [
+              "Vlach J.",
+              "Samal A.B.",
+              "Saad J.S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "24500712"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1074/jbc.m113.543694"
+              }
+            ],
+            "title": "Solution structure of calmodulin bound to the binding domain of the HIV-1 matrix protein.",
+            "publicationDate": "2014",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "8697",
+            "lastPage": "8705",
+            "volume": "289"
+          },
+          "referencePositions": [
+            "INTERACTION OF MATRIX PROTEIN P17 WITH RAT CALM1"
+          ]
+        },
+        {
+          "referenceNumber": 44,
+          "citation": {
+            "id": "32053707",
+            "citationType": "journal article",
+            "authors": [
+              "Jurczyszak D.",
+              "Zhang W.",
+              "Terry S.N.",
+              "Kehrer T.",
+              "Bermudez Gonzalez M.C.",
+              "McGregor E.",
+              "Mulder L.C.F.",
+              "Eckwahl M.J.",
+              "Pan T.",
+              "Simon V."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "32053707"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1371/journal.ppat.1008305"
+              }
+            ],
+            "title": "HIV protease cleaves the antiviral m6A reader protein YTHDF3 in the viral particle.",
+            "publicationDate": "2020",
+            "journal": "PLoS Pathog.",
+            "firstPage": "e1008305",
+            "lastPage": "e1008305",
+            "volume": "16"
+          },
+          "referencePositions": [
+            "FUNCTION (PROTEASE)",
+            "CATALYTIC ACTIVITY (PROTEASE)"
+          ]
+        },
+        {
+          "referenceNumber": 45,
+          "citation": {
+            "id": "33542150",
+            "citationType": "journal article",
+            "authors": [
+              "Wang Q.",
+              "Gao H.",
+              "Clark K.M.",
+              "Mugisha C.S.",
+              "Davis K.",
+              "Tang J.P.",
+              "Harlan G.H.",
+              "DeSelm C.J.",
+              "Presti R.M.",
+              "Kutluay S.B.",
+              "Shan L."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "33542150"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1126/science.abe1707"
+              }
+            ],
+            "title": "CARD8 is an inflammasome sensor for HIV-1 protease activity.",
+            "publicationDate": "2021",
+            "journal": "Science",
+            "firstPage": "0",
+            "lastPage": "0",
+            "volume": "0"
+          },
+          "referencePositions": [
+            "FUNCTION (PROTEASE)",
+            "CATALYTIC ACTIVITY (PROTEASE)",
+            "ACTIVE SITE (PROTEASE)",
+            "MUTAGENESIS OF ASP-513"
+          ]
+        },
+        {
+          "referenceNumber": 46,
+          "citation": {
+            "id": "8791726",
+            "citationType": "journal article",
+            "authors": [
+              "Vogt V.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8791726"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1007/978-3-642-80145-7_4"
+              }
+            ],
+            "title": "Proteolytic processing and particle maturation.",
+            "publicationDate": "1996",
+            "journal": "Curr. Top. Microbiol. Immunol.",
+            "firstPage": "95",
+            "lastPage": "131",
+            "volume": "214"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 47,
+          "citation": {
+            "id": "9878383",
+            "citationType": "journal article",
+            "authors": [
+              "Turner B.G.",
+              "Summers M.F."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9878383"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1006/jmbi.1998.2354"
+              }
+            ],
+            "title": "Structural biology of HIV.",
+            "publicationDate": "1999",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "1",
+            "lastPage": "32",
+            "volume": "285"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 48,
+          "citation": {
+            "id": "11700285",
+            "citationType": "journal article",
+            "authors": [
+              "Negroni M.",
+              "Buc H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11700285"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1146/annurev.genet.35.102401.090551"
+              }
+            ],
+            "title": "Mechanisms of retroviral recombination.",
+            "publicationDate": "2001",
+            "journal": "Annu. Rev. Genet.",
+            "firstPage": "275",
+            "lastPage": "302",
+            "volume": "35"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 49,
+          "citation": {
+            "id": "11983066",
+            "citationType": "journal article",
+            "authors": [
+              "Dunn B.M.",
+              "Goodenow M.M.",
+              "Gustchina A.",
+              "Wlodawer A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11983066"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1186/gb-2002-3-4-reviews3006"
+              }
+            ],
+            "title": "Retroviral proteases.",
+            "publicationDate": "2002",
+            "journal": "Genome Biol.",
+            "firstPage": "REVIEWS3006.1",
+            "lastPage": "REVIEWS3006.7",
+            "volume": "3"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 50,
+          "citation": {
+            "id": "12873766",
+            "citationType": "journal article",
+            "authors": [
+              "Scarlata S.",
+              "Carter C."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12873766"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0005-2736(03)00163-9"
+              }
+            ],
+            "title": "Role of HIV-1 Gag domains in viral assembly.",
+            "publicationDate": "2003",
+            "journal": "Biochim. Biophys. Acta",
+            "firstPage": "62",
+            "lastPage": "72",
+            "volume": "1614"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 51,
+          "citation": {
+            "id": "15353349",
+            "citationType": "journal article",
+            "authors": [
+              "Turlure F.",
+              "Devroe E.",
+              "Silver P.A.",
+              "Engelman A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15353349"
+              },
+              {
+                "database": "DOI",
+                "id": "10.2741/1472"
+              }
+            ],
+            "title": "Human cell proteins and human immunodeficiency virus DNA integration.",
+            "publicationDate": "2004",
+            "journal": "Front. Biosci.",
+            "firstPage": "3187",
+            "lastPage": "3208",
+            "volume": "9"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 52,
+          "citation": {
+            "id": "16815734",
+            "citationType": "journal article",
+            "authors": [
+              "Sokolskaja E.",
+              "Luban J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "16815734"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.mib.2006.06.011"
+              }
+            ],
+            "title": "Cyclophilin, TRIM5, and innate immunity to HIV-1.",
+            "publicationDate": "2006",
+            "journal": "Curr. Opin. Microbiol.",
+            "firstPage": "404",
+            "lastPage": "408",
+            "volume": "9"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 53,
+          "citation": {
+            "id": "21762797",
+            "citationType": "journal article",
+            "authors": [
+              "Chukkapalli V.",
+              "Ono A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "21762797"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.jmb.2011.04.015"
+              }
+            ],
+            "title": "Molecular determinants that regulate plasma membrane association of HIV-1 Gag.",
+            "publicationDate": "2011",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "512",
+            "lastPage": "524",
+            "volume": "410"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 54,
+          "citation": {
+            "id": "24907482",
+            "citationType": "journal article",
+            "authors": [
+              "Darlix J.L.",
+              "de Rocquigny H.",
+              "Mauffret O.",
+              "Mely Y."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "24907482"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.virusres.2014.05.011"
+              }
+            ],
+            "title": "Retrospective on the all-in-one retroviral nucleocapsid protein.",
+            "publicationDate": "2014",
+            "journal": "Virus Res.",
+            "firstPage": "2",
+            "lastPage": "15",
+            "volume": "193"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 55,
+          "citation": {
+            "id": "24933691",
+            "citationType": "journal article",
+            "authors": [
+              "Tedbury P.R.",
+              "Freed E.O."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "24933691"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.tim.2014.04.012"
+              }
+            ],
+            "title": "The role of matrix in HIV-1 envelope glycoprotein incorporation.",
+            "publicationDate": "2014",
+            "journal": "Trends Microbiol.",
+            "firstPage": "372",
+            "lastPage": "378",
+            "volume": "22"
+          },
+          "referencePositions": [
+            "REVIEW"
+          ]
+        },
+        {
+          "referenceNumber": 56,
+          "citation": {
+            "id": "2682266",
+            "citationType": "journal article",
+            "authors": [
+              "Lapatto R.",
+              "Blundell T.",
+              "Hemmings A.",
+              "Overington J.",
+              "Wilderspin A.",
+              "Wood S.",
+              "Merson J.R.",
+              "Whittle P.J.",
+              "Danley D.E.",
+              "Geoghegan K.F.",
+              "Hawrylik S.J.",
+              "Lee S.E.",
+              "Scheld K.G.",
+              "Hobart P.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "2682266"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/342299a0"
+              }
+            ],
+            "title": "X-ray analysis of HIV-1 proteinase at 2.7-A resolution confirms structural homology among retroviral enzymes.",
+            "publicationDate": "1989",
+            "journal": "Nature",
+            "firstPage": "299",
+            "lastPage": "302",
+            "volume": "342"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 57,
+          "citation": {
+            "id": "1956054",
+            "citationType": "journal article",
+            "authors": [
+              "Krohn A.",
+              "Redshaw S.",
+              "Ritchie J.C.",
+              "Graves B.J.",
+              "Hatada M.H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1956054"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/jm00115a028"
+              }
+            ],
+            "title": "Novel binding mode of highly potent HIV-proteinase inhibitors incorporating the (R)-hydroxyethylamine isostere.",
+            "publicationDate": "1991",
+            "journal": "J. Med. Chem.",
+            "firstPage": "3340",
+            "lastPage": "3342",
+            "volume": "34"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH THE INHIBITOR RO 32-8959"
+          ]
+        },
+        {
+          "referenceNumber": 58,
+          "citation": {
+            "id": "1959614",
+            "citationType": "journal article",
+            "authors": [
+              "Omichinski J.G.",
+              "Clore G.M.",
+              "Sakaguchi K.",
+              "Appella E.",
+              "Gronenborn A.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1959614"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/0014-5793(91)80825-n"
+              }
+            ],
+            "title": "Structural characterization of a 39-residue synthetic peptide containing the two zinc binding domains from the HIV-1 p7 nucleocapsid protein by CD and NMR spectroscopy.",
+            "publicationDate": "1991",
+            "journal": "FEBS Lett.",
+            "firstPage": "25",
+            "lastPage": "30",
+            "volume": "292"
+          },
+          "referencePositions": [
+            "STRUCTURE BY NMR OF 390-406"
+          ]
+        },
+        {
+          "referenceNumber": 59,
+          "citation": {
+            "id": "1304383",
+            "citationType": "journal article",
+            "authors": [
+              "Thanki N.",
+              "Rao J.K.",
+              "Foundling S.I.",
+              "Howe W.J.",
+              "Moon J.B.",
+              "Hui J.O.",
+              "Tomasselli A.G.",
+              "Heinrikson R.L.",
+              "Thaisrivongs S.",
+              "Wlodawer A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "1304383"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1002/pro.5560010811"
+              }
+            ],
+            "title": "Crystal structure of a complex of HIV-1 protease with a dihydroxyethylene-containing inhibitor: comparisons with molecular modeling.",
+            "publicationDate": "1992",
+            "journal": "Protein Sci.",
+            "firstPage": "1061",
+            "lastPage": "1072",
+            "volume": "1"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH A DIHYDROXYETHYLENE-CONTAINING INHIBITOR"
+          ]
+        },
+        {
+          "referenceNumber": 60,
+          "citation": {
+            "id": "8289249",
+            "citationType": "journal article",
+            "authors": [
+              "Morellet N.",
+              "de Rocquigny H.",
+              "Mely Y.",
+              "Jullian N.",
+              "Demene H.",
+              "Ottmann M.",
+              "Gerard D.",
+              "Darlix J.L.",
+              "Fournie-Zaluski M.-C.",
+              "Roques B.P."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8289249"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0022-2836(05)80033-6"
+              }
+            ],
+            "title": "Conformational behaviour of the active and inactive forms of the nucleocapsid NCp7 of HIV-1 studied by 1H NMR.",
+            "publicationDate": "1994",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "287",
+            "lastPage": "301",
+            "volume": "235"
+          },
+          "referencePositions": [
+            "STRUCTURE BY NMR OF 390-430"
+          ]
+        },
+        {
+          "referenceNumber": 61,
+          "citation": {
+            "id": "8278812",
+            "citationType": "journal article",
+            "authors": [
+              "Lam P.Y.S.",
+              "Jadhav P.K.",
+              "Eyermann C.J.",
+              "Hodge C.N.",
+              "Ru Y.",
+              "Bacheler L.T.",
+              "Meek J.L.",
+              "Otto M.J.",
+              "Rayner M.M.",
+              "Wong Y.N.",
+              "Chang C.-H.",
+              "Weber P.C.",
+              "Jackson D.A.",
+              "Sharpe T.R.",
+              "Erickson-Viitanen S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8278812"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1126/science.8278812"
+              }
+            ],
+            "title": "Rational design of potent, bioavailable, nonpeptide cyclic ureas as HIV protease inhibitors.",
+            "publicationDate": "1994",
+            "journal": "Science",
+            "firstPage": "380",
+            "lastPage": "384",
+            "volume": "263"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH THE INHIBITOR XK263"
+          ]
+        },
+        {
+          "referenceNumber": 62,
+          "citation": {
+            "id": "7523679",
+            "citationType": "journal article",
+            "authors": [
+              "Stammers D.K.",
+              "Somers D.O.",
+              "Ross C.K.",
+              "Kirby I.",
+              "Ray P.H.",
+              "Wilson J.E.",
+              "Norman M.",
+              "Ren J.S.",
+              "Esnouf R.M.",
+              "Garman E.F.",
+              "Jones E.Y.",
+              "Stuart D.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "7523679"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1006/jmbi.1994.1604"
+              }
+            ],
+            "title": "Crystals of HIV-1 reverse transcriptase diffracting to 2.2 A resolution.",
+            "publicationDate": "1994",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "586",
+            "lastPage": "588",
+            "volume": "242"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 63,
+          "citation": {
+            "id": "8654825",
+            "citationType": "journal article",
+            "authors": [
+              "Matthews S.",
+              "Barlow P.",
+              "Clark N.",
+              "Kingsman S.",
+              "Kingsman A.",
+              "Campbell I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8654825"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1042/bst0230725"
+              }
+            ],
+            "title": "Refined solution structure of p17, the HIV matrix protein.",
+            "publicationDate": "1995",
+            "journal": "Biochem. Soc. Trans.",
+            "firstPage": "725",
+            "lastPage": "729",
+            "volume": "23"
+          },
+          "referencePositions": [
+            "STRUCTURE BY NMR OF 1-132"
+          ]
+        },
+        {
+          "referenceNumber": 64,
+          "citation": {
+            "id": "8535785",
+            "citationType": "journal article",
+            "authors": [
+              "Ren J.S.",
+              "Esnouf R.M.",
+              "Hopkins A.L.",
+              "Ross C.K.",
+              "Jones E.Y.",
+              "Stammers D.K.",
+              "Stuart D.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8535785"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0969-2126(01)00226-x"
+              }
+            ],
+            "title": "The structure of HIV-1 reverse transcriptase complexed with 9-chloro-TIBO: lessons for inhibitor design.",
+            "publicationDate": "1995",
+            "journal": "Structure",
+            "firstPage": "915",
+            "lastPage": "926",
+            "volume": "3"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 65,
+          "citation": {
+            "id": "7540935",
+            "citationType": "journal article",
+            "authors": [
+              "Esnouf R.M.",
+              "Ren J.S.",
+              "Ross C.K.",
+              "Jones E.Y.",
+              "Stammers D.K.",
+              "Stuart D.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "7540935"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/nsb0495-303"
+              }
+            ],
+            "title": "Mechanism of inhibition of HIV-1 reverse transcriptase by non-nucleoside inhibitors.",
+            "publicationDate": "1995",
+            "journal": "Nat. Struct. Biol.",
+            "firstPage": "303",
+            "lastPage": "308",
+            "volume": "2"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 66,
+          "citation": {
+            "id": "8648598",
+            "citationType": "journal article",
+            "authors": [
+              "Hopkins A.L.",
+              "Ren J.S.",
+              "Esnouf R.M.",
+              "Willcox B.E.",
+              "Jones E.Y.",
+              "Ross C.K.",
+              "Miyasaka T.",
+              "Walker R.T.",
+              "Tanaka H.",
+              "Stammers D.K.",
+              "Stuart D.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8648598"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/jm960056x"
+              }
+            ],
+            "title": "Complexes of HIV-1 reverse transcriptase with inhibitors of the HEPT series reveal conformational changes relevant to the design of potent non-nucleoside inhibitors.",
+            "publicationDate": "1996",
+            "journal": "J. Med. Chem.",
+            "firstPage": "1589",
+            "lastPage": "1600",
+            "volume": "39"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 67,
+          "citation": {
+            "id": "8807858",
+            "citationType": "journal article",
+            "authors": [
+              "Hodge C.N.",
+              "Aldrich P.E.",
+              "Bacheler L.T.",
+              "Chang C.-H.",
+              "Eyermann C.J.",
+              "Garber S.S.",
+              "Grubb M.",
+              "Jackson D.A.",
+              "Jadhav P.K.",
+              "Korant B.D.",
+              "Lam P.Y.S.",
+              "Maurin M.B.",
+              "Meek J.L.",
+              "Otto M.J.",
+              "Rayner M.M.",
+              "Reid C.",
+              "Sharpe T.R.",
+              "Shum L.",
+              "Winslow D.L.",
+              "Erickson-Viitanen S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8807858"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s1074-5521(96)90110-6"
+              }
+            ],
+            "title": "Improved cyclic urea inhibitors of the HIV-1 protease: synthesis, potency, resistance profile, human pharmacokinetics and X-ray crystal structure of DMP 450.",
+            "publicationDate": "1996",
+            "journal": "Chem. Biol.",
+            "firstPage": "301",
+            "lastPage": "314",
+            "volume": "3"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH COMPLEX WITH DMP450"
+          ]
+        },
+        {
+          "referenceNumber": 68,
+          "citation": {
+            "id": "8868486",
+            "citationType": "journal article",
+            "authors": [
+              "Yamazaki T.",
+              "Hinck A.P.",
+              "Wang Y.X.",
+              "Nicholson L.K.",
+              "Torchia D.A.",
+              "Wingfield P.",
+              "Stahl S.J.",
+              "Kaufman J.D.",
+              "Chang C.-H.",
+              "Domaille P.J.",
+              "Lam P.Y.S."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "8868486"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1002/pro.5560050311"
+              }
+            ],
+            "title": "Three-dimensional solution structure of the HIV-1 protease complexed with DMP323, a novel cyclic urea-type inhibitor, determined by nuclear magnetic resonance spectroscopy.",
+            "publicationDate": "1996",
+            "journal": "Protein Sci.",
+            "firstPage": "495",
+            "lastPage": "506",
+            "volume": "5"
+          },
+          "referencePositions": [
+            "STRUCTURE BY NMR OF 489-587 IN COMPLEX WITH THE INHIBITOR DMP323"
+          ]
+        },
+        {
+          "referenceNumber": 69,
+          "citation": {
+            "id": "9108091",
+            "citationType": "journal article",
+            "authors": [
+              "Esnouf R.M.",
+              "Ren J.S.",
+              "Hopkins A.L.",
+              "Ross C.K.",
+              "Jones E.Y.",
+              "Stammers D.K.",
+              "Stuart D.I."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9108091"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1073/pnas.94.8.3984"
+              }
+            ],
+            "title": "Unique features in the structure of the complex between HIV-1 reverse transcriptase and the bis(heteroaryl)piperazine (BHAP) U-90152 explain resistance mutations for this nonnucleoside inhibitor.",
+            "publicationDate": "1997",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "3984",
+            "lastPage": "3989",
+            "volume": "94"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 70,
+          "citation": {
+            "id": "9003516",
+            "citationType": "journal article",
+            "authors": [
+              "Jadhav P.K.",
+              "Ala P.J.",
+              "Woerner F.J.",
+              "Chang C.-H.",
+              "Garber S.S.",
+              "Anton E.D.",
+              "Bacheler L.T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9003516"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/jm960586t"
+              }
+            ],
+            "title": "Cyclic urea amides: HIV-1 protease inhibitors with low nanomolar potency against both wild type and protease inhibitor resistant mutants of HIV.",
+            "publicationDate": "1997",
+            "journal": "J. Med. Chem.",
+            "firstPage": "181",
+            "lastPage": "191",
+            "volume": "40"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 71,
+          "citation": {
+            "id": "9827997",
+            "citationType": "journal article",
+            "authors": [
+              "Kervinen J.",
+              "Lubkowski J.",
+              "Zdanov A.",
+              "Bhatt D.",
+              "Dunn B.M.",
+              "Hui K.Y.",
+              "Powell D.J.",
+              "Kay J.",
+              "Wlodawer A.",
+              "Gustchina A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9827997"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1002/pro.5560071108"
+              }
+            ],
+            "title": "Toward a universal inhibitor of retroviral proteases: comparative analysis of the interactions of LP-130 complexed with proteases from HIV-1, FIV, and EIAV.",
+            "publicationDate": "1998",
+            "journal": "Protein Sci.",
+            "firstPage": "2314",
+            "lastPage": "2323",
+            "volume": "7"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH THE INHIBITOR LP-130"
+          ]
+        },
+        {
+          "referenceNumber": 72,
+          "citation": {
+            "id": "9554878",
+            "citationType": "journal article",
+            "authors": [
+              "Jadhav P.K.",
+              "Woerner F.J.",
+              "Lam P.Y.",
+              "Hodge C.N.",
+              "Eyermann C.J.",
+              "Man H.W.",
+              "Daneker W.F.",
+              "Bacheler L.T.",
+              "Rayner M.M.",
+              "Meek J.L.",
+              "Erickson-Viitanen S.",
+              "Jackson D.A.",
+              "Calabrese J.C.",
+              "Schadt M.C.",
+              "Chang C.-H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9554878"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/jm970524i"
+              }
+            ],
+            "title": "Nonpeptide cyclic cyanoguanidines as HIV-1 protease inhibitors: synthesis, structure-activity relationships, and X-ray crystal structure studies.",
+            "publicationDate": "1998",
+            "journal": "J. Med. Chem.",
+            "firstPage": "1446",
+            "lastPage": "1455",
+            "volume": "41"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 73,
+          "citation": {
+            "id": "9790666",
+            "citationType": "journal article",
+            "authors": [
+              "Ala P.J.",
+              "Huston E.E.",
+              "Klabe R.M.",
+              "Jadhav P.K.",
+              "Lam P.Y.S.",
+              "Chang C.-H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9790666"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi980386e"
+              }
+            ],
+            "title": "Counteracting HIV-1 protease drug resistance: structural analysis of mutant proteases complexed with XV638 and SD146, cyclic urea amides with broad specificities.",
+            "publicationDate": "1998",
+            "journal": "Biochemistry",
+            "firstPage": "15042",
+            "lastPage": "15049",
+            "volume": "37"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 74,
+          "citation": {
+            "id": "9575185",
+            "citationType": "journal article",
+            "authors": [
+              "Ala P.J.",
+              "DeLoskey R.J.",
+              "Huston E.E.",
+              "Jadhav P.K.",
+              "Lam P.Y.S.",
+              "Eyermann C.J.",
+              "Hodge C.N.",
+              "Schadt M.C.",
+              "Lewandowski F.A.",
+              "Weber P.C.",
+              "McCabe D.D.",
+              "Duke J.L.",
+              "Chang C.-H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9575185"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1074/jbc.273.20.12325"
+              }
+            ],
+            "title": "Molecular recognition of cyclic urea HIV-1 protease inhibitors.",
+            "publicationDate": "1998",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "12325",
+            "lastPage": "12331",
+            "volume": "273"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 75,
+          "citation": {
+            "id": "9485357",
+            "citationType": "journal article",
+            "authors": [
+              "Louis J.M.",
+              "Dyda F.",
+              "Nashed N.T.",
+              "Kimmel A.R.",
+              "Davies D.R."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9485357"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi972059x"
+              }
+            ],
+            "title": "Hydrophilic peptides derived from the transframe region of Gag-Pol inhibit the HIV-1 protease.",
+            "publicationDate": "1998",
+            "journal": "Biochemistry",
+            "firstPage": "2105",
+            "lastPage": "2110",
+            "volume": "37"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH A TRIPEPTIDE INHIBITOR"
+          ]
+        },
+        {
+          "referenceNumber": 76,
+          "citation": {
+            "id": "9689112",
+            "citationType": "journal article",
+            "authors": [
+              "Ren J.S.",
+              "Esnouf R.M.",
+              "Hopkins A.L.",
+              "Jones E.Y.",
+              "Kirby I.",
+              "Keeling J.",
+              "Ross C.K.",
+              "Larder B.A.",
+              "Stuart D.I.",
+              "Stammers D.K."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9689112"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1073/pnas.95.16.9518"
+              }
+            ],
+            "title": "3'-azido-3'-deoxythymidine drug resistance mutations in HIV-1 reverse transcriptase can induce long range conformational changes.",
+            "publicationDate": "1998",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "9518",
+            "lastPage": "9523",
+            "volume": "95"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 77,
+          "citation": {
+            "id": "9772165",
+            "citationType": "journal article",
+            "authors": [
+              "Ren J.S.",
+              "Esnouf R.M.",
+              "Hopkins A.L.",
+              "Warren J.",
+              "Balzarini J.",
+              "Stuart D.I.",
+              "Stammers D.K."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9772165"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi981309m"
+              }
+            ],
+            "title": "Crystal structures of HIV-1 reverse transcriptase in complex with carboxanilide derivatives.",
+            "publicationDate": "1998",
+            "journal": "Biochemistry",
+            "firstPage": "14394",
+            "lastPage": "14403",
+            "volume": "37"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH CARBOXANILIDE DERIVATIVES"
+          ]
+        },
+        {
+          "referenceNumber": 78,
+          "citation": {
+            "id": "10429209",
+            "citationType": "journal article",
+            "authors": [
+              "Mahalingam B.",
+              "Louis J.M.",
+              "Reed C.C.",
+              "Adomat J.M.",
+              "Krouse J.",
+              "Wang Y.-F.",
+              "Harrison R.W.",
+              "Weber I.T."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "10429209"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1046/j.1432-1327.1999.00514.x"
+              }
+            ],
+            "title": "Structural and kinetic analysis of drug resistant mutants of HIV-1 protease.",
+            "publicationDate": "1999",
+            "journal": "Eur. J. Biochem.",
+            "firstPage": "238",
+            "lastPage": "245",
+            "volume": "263"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 79,
+          "citation": {
+            "id": "10890912",
+            "citationType": "journal article",
+            "authors": [
+              "Chen J.C.",
+              "Krucinski J.",
+              "Miercke L.J.",
+              "Finer-Moore J.S.",
+              "Tang A.H.",
+              "Leavitt A.D.",
+              "Stroud R.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "10890912"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1073/pnas.150220297"
+              }
+            ],
+            "title": "Crystal structure of the HIV-1 integrase catalytic core and C-terminal domains: a model for viral DNA binding.",
+            "publicationDate": "2000",
+            "journal": "Proc. Natl. Acad. Sci. U.S.A.",
+            "firstPage": "8233",
+            "lastPage": "8238",
+            "volume": "97"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 80,
+          "citation": {
+            "id": "11170214",
+            "citationType": "journal article",
+            "authors": [
+              "Pillai B.",
+              "Kannan K.K.",
+              "Hosur M.V."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11170214"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1002/1097-0134(20010401)43:1<57::aid-prot1017>3.0.co;2-d"
+              }
+            ],
+            "title": "1.9 A X-ray study shows closed flap conformation in crystals of tethered HIV-1 PR.",
+            "publicationDate": "2001",
+            "journal": "Proteins",
+            "firstPage": "57",
+            "lastPage": "64",
+            "volume": "43"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 81,
+          "citation": {
+            "id": "11575933",
+            "citationType": "journal article",
+            "authors": [
+              "Ren J.S.",
+              "Nichols C.E.",
+              "Bird L.E.",
+              "Chamberlain P.P.",
+              "Weaver K.L.",
+              "Short S.A.",
+              "Stuart D.I.",
+              "Stammers D.K."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "11575933"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1006/jmbi.2001.4988"
+              }
+            ],
+            "title": "Structural mechanisms of drug resistance for mutations at codons 181 and 188 in HIV-1 reverse transcriptase and the improved resilience of second generation non-nucleoside inhibitors.",
+            "publicationDate": "2001",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "795",
+            "lastPage": "805",
+            "volume": "312"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH INHIBITORS"
+          ]
+        },
+        {
+          "referenceNumber": 82,
+          "citation": {
+            "id": "12051725",
+            "citationType": "journal article",
+            "authors": [
+              "Kumar M.",
+              "Kannan K.K.",
+              "Hosur M.V.",
+              "Bhavesh N.S.",
+              "Chatterjee A.",
+              "Mittal R.",
+              "Hosur R.V."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12051725"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/s0006-291x(02)00482-5"
+              }
+            ],
+            "title": "Effects of remote mutation on the autolysis of HIV-1 PR: X-ray and NMR investigations.",
+            "publicationDate": "2002",
+            "journal": "Biochem. Biophys. Res. Commun.",
+            "firstPage": "395",
+            "lastPage": "401",
+            "volume": "294"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY"
+          ]
+        },
+        {
+          "referenceNumber": 83,
+          "citation": {
+            "id": "12534276",
+            "citationType": "journal article",
+            "authors": [
+              "Pari K.",
+              "Mueller G.A.",
+              "DeRose E.F.",
+              "Kirby T.W.",
+              "London R.E."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12534276"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/bi0204894"
+              }
+            ],
+            "title": "Solution structure of the RNase H domain of the HIV-1 reverse transcriptase in the presence of magnesium.",
+            "publicationDate": "2003",
+            "journal": "Biochemistry",
+            "firstPage": "639",
+            "lastPage": "650",
+            "volume": "42"
+          },
+          "referencePositions": [
+            "STRUCTURE BY NMR OF 1014-1147"
+          ]
+        },
+        {
+          "referenceNumber": 84,
+          "citation": {
+            "id": "15095972",
+            "citationType": "journal article",
+            "authors": [
+              "Ren J.S.",
+              "Nichols C.E.",
+              "Chamberlain P.P.",
+              "Weaver K.L.",
+              "Short S.A.",
+              "Stammers D.K."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15095972"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1016/j.jmb.2003.12.055"
+              }
+            ],
+            "title": "Crystal structures of HIV-1 reverse transcriptases mutated at codons 100, 106 and 108 and mechanisms of resistance to non-nucleoside inhibitors.",
+            "publicationDate": "2004",
+            "journal": "J. Mol. Biol.",
+            "firstPage": "569",
+            "lastPage": "578",
+            "volume": "336"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH INHIBITORS"
+          ]
+        },
+        {
+          "referenceNumber": 85,
+          "citation": {
+            "id": "15537347",
+            "citationType": "journal article",
+            "authors": [
+              "Freeman G.A.",
+              "Andrews C.W. III",
+              "Hopkins A.L.",
+              "Lowell G.S.",
+              "Schaller L.T.",
+              "Cowan J.R.",
+              "Gonzales S.S.",
+              "Koszalka G.W.",
+              "Hazen R.J.",
+              "Boone L.R.",
+              "Ferris R.G.",
+              "Creech K.L.",
+              "Roberts G.B.",
+              "Short S.A.",
+              "Weaver K.L.",
+              "Reynolds D.J.",
+              "Milton J.",
+              "Ren J.S.",
+              "Stuart D.I.",
+              "Stammers D.K.",
+              "Chan J.H."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "15537347"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1021/jm040072r"
+              }
+            ],
+            "title": "Design of non-nucleoside inhibitors of HIV-1 reverse transcriptase with improved drug resistance properties. 2.",
+            "publicationDate": "2004",
+            "journal": "J. Med. Chem.",
+            "firstPage": "5923",
+            "lastPage": "5936",
+            "volume": "47"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY IN COMPLEX WITH INHIBITORS"
+          ]
+        }
+      ]
+    },
+    "generic_sites": [],
+    "generic_cofactors": [],
+    "context_comments": [
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/0",
+        "data": {
+          "texts": [
+            {
+              "value": "Mediates, with Gag polyprotein, the essential events in virion assembly, including binding the plasma membrane, making the protein-protein interactions necessary to create spherical particles, recruiting the viral Env proteins, and packaging the genomic RNA via direct interactions with the RNA packaging sequence (Psi). Gag-Pol polyprotein may regulate its own translation, by the binding genomic RNA in the 5'-UTR. At low concentration, the polyprotein would promote translation, whereas at high concentration, the polyprotein would encapsidate genomic RNA and then shut off translation"
+            }
+          ],
+          "commentType": "FUNCTION",
+          "molecule": "Gag-Pol polyprotein"
+        }
+      },
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/1",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P12497"
+                }
+              ],
+              "value": "Targets the polyprotein to the plasma membrane via a multipartite membrane-binding signal, that includes its myristoylated N-terminus (By similarity). Matrix protein is part of the pre-integration complex. Implicated in the release from host cell mediated by Vpu. Binds to RNA (By similarity)"
+            }
+          ],
+          "commentType": "FUNCTION",
+          "molecule": "Matrix protein p17"
+        }
+      },
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/2",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P12497"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "12660176"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "23785198"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "24554657"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "8648689"
+                }
+              ],
+              "value": "Forms the conical core that encapsulates the genomic RNA-nucleocapsid complex in the virion (PubMed:8648689). Most core are conical, with only 7% tubular. The core is constituted by capsid protein hexamer subunits. The core is disassembled soon after virion entry (PubMed:12660176). Host restriction factors such as monkey TRIM5-alpha or TRIMCyp bind retroviral capsids and cause premature capsid disassembly, leading to blocks in reverse transcription. Capsid restriction by TRIM5 is one of the factors which restricts HIV-1 to the human species (PubMed:23785198). Host PIN1 apparently facilitates the virion uncoating (By similarity). On the other hand, interactions with PDZD8 or CYPA stabilize the capsid (PubMed:24554657)"
+            }
+          ],
+          "commentType": "FUNCTION",
+          "molecule": "Capsid protein p24"
+        }
+      },
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/3",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "11044125"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "17070549"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18343475"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "20828778"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "9931246"
+                }
+              ],
+              "value": "Encapsulates and protects viral dimeric unspliced genomic RNA (gRNA). Binds these RNAs through its zinc fingers. Acts as a nucleic acid chaperone which is involved in rearangement of nucleic acid secondary structure during gRNA retrotranscription. Also facilitates template switch leading to recombination. As part of the polyprotein, participates in gRNA dimerization, packaging, tRNA incorporation and virion assembly"
+            }
+          ],
+          "commentType": "FUNCTION",
+          "molecule": "Nucleocapsid protein p7"
+        }
+      },
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/4",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000255",
+                  "source": "PROSITE-ProRule",
+                  "id": "PRU00275"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "12505164"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19956697"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "32053707"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "33542150"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7835426"
+                }
+              ],
+              "value": "Aspartyl protease that mediates proteolytic cleavages of Gag and Gag-Pol polyproteins during or shortly after the release of the virion from the plasma membrane (PubMed:11932404, PubMed:9573231). Cleavages take place as an ordered, step-wise cascade to yield mature proteins (PubMed:11932404, PubMed:9573231). This process is called maturation (PubMed:11932404, PubMed:9573231). Displays maximal activity during the budding process just prior to particle release from the cell (PubMed:11932404, PubMed:9573231). Also cleaves Nef and Vif, probably concomitantly with viral structural proteins on maturation of virus particles (PubMed:7835426). Hydrolyzes host EIF4GI and PABP1 in order to shut off the capped cellular mRNA translation. The resulting inhibition of cellular protein synthesis serves to ensure maximal viral gene expression and to evade host immune response (PubMed:12660176, PubMed:19914170). Also mediates cleavage of host YTHDF3 (PubMed:32053707). Mediates cleavage of host CARD8, thereby activating the CARD8 inflammasome, leading to the clearance of latent HIV-1 in patient CD4(+) T-cells after viral reactivation; in contrast, HIV-1 can evade CARD8-sensing when its protease remains inactive in infected cells prior to viral budding (PubMed:33542150)"
+            }
+          ],
+          "commentType": "FUNCTION",
+          "molecule": "Protease"
+        }
+      },
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/5",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "16221683"
+                }
+              ],
+              "value": "Multifunctional enzyme that converts the viral RNA genome into dsDNA in the cytoplasm, shortly after virus entry into the cell. This enzyme displays a DNA polymerase activity that can copy either DNA or RNA templates, and a ribonuclease H (RNase H) activity that cleaves the RNA strand of RNA-DNA heteroduplexes in a partially processive 3' to 5' endonucleasic mode. Conversion of viral genomic RNA into dsDNA requires many steps. A tRNA(3)-Lys binds to the primer-binding site (PBS) situated at the 5'-end of the viral RNA. RT uses the 3' end of the tRNA primer to perform a short round of RNA-dependent minus-strand DNA synthesis. The reading proceeds through the U5 region and ends after the repeated (R) region which is present at both ends of viral RNA. The portion of the RNA-DNA heteroduplex is digested by the RNase H, resulting in a ssDNA product attached to the tRNA primer. This ssDNA/tRNA hybridizes with the identical R region situated at the 3' end of viral RNA. This template exchange, known as minus-strand DNA strong stop transfer, can be either intra- or intermolecular. RT uses the 3' end of this newly synthesized short ssDNA to perform the RNA-dependent minus-strand DNA synthesis of the whole template. RNase H digests the RNA template except for two polypurine tracts (PPTs) situated at the 5'-end and near the center of the genome. It is not clear if both polymerase and RNase H activities are simultaneous. RNase H probably can proceed both in a polymerase-dependent (RNA cut into small fragments by the same RT performing DNA synthesis) and a polymerase-independent mode (cleavage of remaining RNA fragments by free RTs). Secondly, RT performs DNA-directed plus-strand DNA synthesis using the PPTs that have not been removed by RNase H as primers. PPTs and tRNA primers are then removed by RNase H. The 3' and 5' ssDNA PBS regions hybridize to form a circular dsDNA intermediate. Strand displacement synthesis by RT to the PBS and PPT ends produces a blunt ended, linear dsDNA copy of the viral genome that includes long terminal repeats (LTRs) at both ends"
+            }
+          ],
+          "commentType": "FUNCTION",
+          "molecule": "Reverse transcriptase/ribonuclease H"
+        }
+      },
+      {
+        "comment_type": "FUNCTION",
+        "annotation_path": "/comments/6",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "20554775"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "2349226"
+                }
+              ],
+              "value": "Catalyzes viral DNA integration into the host chromosome, by performing a series of DNA cutting and joining reactions. This enzyme activity takes place after virion entry into a cell and reverse transcription of the RNA genome in dsDNA. The first step in the integration process is 3' processing. This step requires a complex comprising the viral genome, matrix protein, Vpr and integrase. This complex is called the pre-integration complex (PIC). The integrase protein removes 2 nucleotides from each 3' end of the viral DNA, leaving recessed CA OH's at the 3' ends. In the second step, the PIC enters cell nucleus. This process is mediated through integrase and Vpr proteins, and allows the virus to infect a non dividing cell. This ability to enter the nucleus is specific of lentiviruses, other retroviruses cannot and rely on cell division to access cell chromosomes. In the third step, termed strand transfer, the integrase protein joins the previously processed 3' ends to the 5' ends of strands of target cellular DNA at the site of integration. The 5'-ends are produced by integrase-catalyzed staggered cuts, 5 bp apart. A Y-shaped, gapped, recombination intermediate results, with the 5'-ends of the viral DNA strands and the 3' ends of target DNA strands remaining unjoined, flanking a gap of 5 bp. The last step is viral DNA integration into host chromosome. This involves host DNA repair synthesis in which the 5 bp gaps between the unjoined strands are filled in and then ligated. Since this process occurs at both cuts flanking the HIV genome, a 5 bp duplication of host DNA is produced at the ends of HIV-1 integration. Alternatively, Integrase may catalyze the excision of viral DNA just after strand transfer, this is termed disintegration"
+            }
+          ],
+          "commentType": "FUNCTION",
+          "molecule": "Integrase"
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/7",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "Specific for a P1 residue that is hydrophobic, and P1' variable, but often Pro.",
+            "ecNumber": "3.4.23.16",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "PROSITE-ProRule",
+                "id": "PRU00275"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "32053707"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "33542150"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/8",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "Endohydrolysis of RNA in RNA/DNA hybrids. Three different cleavage modes: 1. sequence-specific internal cleavage of RNA. Human immunodeficiency virus type 1 and Moloney murine leukemia virus enzymes prefer to cleave the RNA strand one nucleotide away from the RNA-DNA junction. 2. RNA 5'-end directed cleavage 13-19 nucleotides from the RNA end. 3. DNA 3'-end directed cleavage 15-20 nucleotides away from the primer terminus.",
+            "ecNumber": "3.1.26.13",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P03366"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/9",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "3'-end directed exonucleolytic cleavage of viral RNA-DNA hybrid.",
+            "ecNumber": "3.1.13.2"
+          }
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/10",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "DNA(n) + a 2'-deoxyribonucleoside 5'-triphosphate = DNA(n+1) + diphosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:22508"
+              },
+              {
+                "database": "Rhea",
+                "id": "RHEA-COMP:17339"
+              },
+              {
+                "database": "Rhea",
+                "id": "RHEA-COMP:17340"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:33019"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:61560"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:173112"
+              }
+            ],
+            "ecNumber": "2.7.7.49",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "PROSITE-ProRule",
+                "id": "PRU00405"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "comment_type": "CATALYTIC ACTIVITY",
+        "annotation_path": "/comments/11",
+        "data": {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "DNA(n) + a 2'-deoxyribonucleoside 5'-triphosphate = DNA(n+1) + diphosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:22508"
+              },
+              {
+                "database": "Rhea",
+                "id": "RHEA-COMP:17339"
+              },
+              {
+                "database": "Rhea",
+                "id": "RHEA-COMP:17340"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:33019"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:61560"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:173112"
+              }
+            ],
+            "ecNumber": "2.7.7.7",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "source": "PROSITE-ProRule",
+                "id": "PRU00405"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "comment_type": "COFACTOR",
+        "annotation_path": "/comments/12",
+        "data": {
+          "commentType": "COFACTOR",
+          "cofactors": [
+            {
+              "name": "Mg(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:18420"
+              }
+            }
+          ],
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250"
+                  }
+                ],
+                "value": "Binds 2 magnesium ions for reverse transcriptase polymerase activity."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "comment_type": "COFACTOR",
+        "annotation_path": "/comments/13",
+        "data": {
+          "commentType": "COFACTOR",
+          "cofactors": [
+            {
+              "name": "Mg(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:18420"
+              }
+            }
+          ],
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250"
+                  }
+                ],
+                "value": "Binds 2 magnesium ions for ribonuclease H (RNase H) activity. Substrate-binding is a precondition for magnesium binding."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "comment_type": "COFACTOR",
+        "annotation_path": "/comments/14",
+        "data": {
+          "commentType": "COFACTOR",
+          "cofactors": [
+            {
+              "name": "Mg(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:18420"
+              }
+            }
+          ],
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000250"
+                  }
+                ],
+                "value": "Magnesium ions are required for integrase activity. Binds at least 1, maybe 2 magnesium ions."
+              }
+            ]
+          }
+        }
+      },
+      {
+        "comment_type": "ACTIVITY REGULATION",
+        "annotation_path": "/comments/15",
+        "data": {
+          "texts": [
+            {
+              "value": "Protease: The viral protease is inhibited by many synthetic protease inhibitors (PIs), such as amprenavir, atazanavir, indinavir, loprinavir, nelfinavir, ritonavir and saquinavir. Use of protease inhibitors in tritherapy regimens permit more ambitious therapeutic strategies. Reverse transcriptase/ribonuclease H: RT can be inhibited either by nucleoside RT inhibitors (NRTIs) or by non nucleoside RT inhibitors (NNRTIs). NRTIs act as chain terminators, whereas NNRTIs inhibit DNA polymerization by binding a small hydrophobic pocket near the RT active site and inducing an allosteric change in this region. Classical NRTIs are abacavir, adefovir (PMEA), didanosine (ddI), lamivudine (3TC), stavudine (d4T), tenofovir (PMPA), zalcitabine (ddC), and zidovudine (AZT). Classical NNRTIs are atevirdine (BHAP U-87201E), delavirdine, efavirenz (DMP-266), emivirine (I-EBU), and nevirapine (BI-RG-587). The tritherapies used as a basic effective treatment of AIDS associate two NRTIs and one NNRTI"
+            }
+          ],
+          "commentType": "ACTIVITY REGULATION"
+        }
+      },
+      {
+        "comment_type": "SUBUNIT",
+        "annotation_path": "/comments/16",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P12497"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19327811"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "24500712"
+                }
+              ],
+              "value": "Homotrimer; further assembles as hexamers of trimers (PubMed:19327811). Interacts with gp41 (via C-terminus) (By similarity). Interacts with host CALM1; this interaction induces a conformational change in the Matrix protein, triggering exposure of the myristate group (PubMed:24500712). Interacts with host AP3D1; this interaction allows the polyprotein trafficking to multivesicular bodies during virus assembly (By similarity). Part of the pre-integration complex (PIC) which is composed of viral genome, matrix protein, Vpr and integrase (By similarity)"
+            }
+          ],
+          "commentType": "SUBUNIT",
+          "molecule": "Matrix protein p17"
+        }
+      },
+      {
+        "comment_type": "SUBUNIT",
+        "annotation_path": "/comments/17",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P12497"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19914170"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "20573829"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "23785198"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "8513493"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "9223641"
+                }
+              ],
+              "value": "Homodimer; the homodimer further multimerizes as homohexamers or homopentamers (PubMed:19914170). Interacts with human PPIA/CYPA (PubMed:9223641, PubMed:8513493); this interaction stabilizes the capsid. Interacts with human NUP153 (By similarity). Interacts with host PDZD8; this interaction stabilizes the capsid (PubMed:20573829). Interacts with monkey TRIM5; this interaction destabilizes the capsid (PubMed:23785198)"
+            }
+          ],
+          "commentType": "SUBUNIT",
+          "molecule": "Capsid protein p24"
+        }
+      },
+      {
+        "comment_type": "SUBUNIT",
+        "annotation_path": "/comments/18",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "2162350"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "24132393"
+                }
+              ],
+              "value": "Homodimer, whose active site consists of two apposed aspartic acid residues (PubMed:2162350, PubMed:24132393)"
+            }
+          ],
+          "commentType": "SUBUNIT",
+          "molecule": "Protease"
+        }
+      },
+      {
+        "comment_type": "SUBUNIT",
+        "annotation_path": "/comments/19",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P03366"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "15183348"
+                }
+              ],
+              "value": "Heterodimer of p66 RT and p51 RT (RT p66/p51) (PubMed:15183348). Heterodimerization of RT is essential for DNA polymerase activity (By similarity). The overall folding of the subdomains is similar in p66 RT and p51 RT but the spatial arrangements of the subdomains are dramatically different (By similarity)"
+            }
+          ],
+          "commentType": "SUBUNIT",
+          "molecule": "Reverse transcriptase/ribonuclease H"
+        }
+      },
+      {
+        "comment_type": "SUBUNIT",
+        "annotation_path": "/comments/20",
+        "data": {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P03367"
+                },
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P12497"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "19914170"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "7801128"
+                }
+              ],
+              "value": "Homotetramer; may further associate as a homohexadecamer (By similarity). Part of the pre-integration complex (PIC) which is composed of viral genome, matrix protein, Vpr and integrase. Interacts with human SMARCB1/INI1 and human PSIP1/LEDGF isoform 1 (PubMed:7801128). Interacts with human KPNA3; this interaction might play a role in nuclear import of the pre-. integration complex (PubMed:19914170). Interacts with human NUP153; this interaction might play a role in nuclear import of the pre-integration complex (By similarity)"
+            }
+          ],
+          "commentType": "SUBUNIT",
+          "molecule": "Integrase"
+        }
+      }
+    ],
+    "processed_products": [
+      {
+        "annotation_path": "/features/1",
+        "name": "Gag-Pol polyprotein",
+        "start": 2,
+        "end": 1435
+      },
+      {
+        "annotation_path": "/features/2",
+        "name": "Matrix protein p17",
+        "start": 2,
+        "end": 132
+      },
+      {
+        "annotation_path": "/features/3",
+        "name": "Capsid protein p24",
+        "start": 133,
+        "end": 363
+      },
+      {
+        "annotation_path": "/features/4",
+        "name": "Spacer peptide 1",
+        "start": 364,
+        "end": 377
+      },
+      {
+        "annotation_path": "/features/5",
+        "name": "Nucleocapsid protein p7",
+        "start": 378,
+        "end": 432
+      },
+      {
+        "annotation_path": "/features/6",
+        "name": "Transframe peptide",
+        "start": 433,
+        "end": 440
+      },
+      {
+        "annotation_path": "/features/7",
+        "name": "p6-pol",
+        "start": 441,
+        "end": 488
+      },
+      {
+        "annotation_path": "/features/8",
+        "name": "Protease",
+        "start": 489,
+        "end": 587
+      },
+      {
+        "annotation_path": "/features/9",
+        "name": "Reverse transcriptase/ribonuclease H",
+        "start": 588,
+        "end": 1147
+      },
+      {
+        "annotation_path": "/features/10",
+        "name": "p51 RT",
+        "start": 588,
+        "end": 1027
+      },
+      {
+        "annotation_path": "/features/11",
+        "name": "p15",
+        "start": 1028,
+        "end": 1147
+      },
+      {
+        "annotation_path": "/features/12",
+        "name": "Integrase",
+        "start": 1148,
+        "end": 1435
+      }
+    ],
+    "go_annotations": {
+      "status": "success",
+      "terms": [
+        {
+          "id": "GO:0006310",
+          "name": "DNA recombination",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0006508",
+          "name": "proteolysis",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0019058",
+          "name": "viral life cycle",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0039657",
+          "name": "symbiont-mediated suppression of host gene expression",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0044826",
+          "name": "viral genome integration into host DNA",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0046718",
+          "name": "symbiont entry into host cell",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0052151",
+          "name": "symbiont-mediated activation of host apoptosis",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0075523",
+          "name": "viral translational frameshifting",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0075713",
+          "name": "establishment of integrated proviral latency",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0075732",
+          "name": "viral penetration into host nucleus",
+          "aspect": "BP",
+          "relations": [
+            "involved_in"
+          ]
+        },
+        {
+          "id": "GO:0019013",
+          "name": "viral nucleocapsid",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0020002",
+          "name": "host cell plasma membrane",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0042025",
+          "name": "host cell nucleus",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0043657",
+          "name": "host cell",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0055036",
+          "name": "virion membrane",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0072494",
+          "name": "host multivesicular body",
+          "aspect": "CC",
+          "relations": [
+            "located_in"
+          ]
+        },
+        {
+          "id": "GO:0003677",
+          "name": "DNA binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0003723",
+          "name": "RNA binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0003887",
+          "name": "DNA-directed DNA polymerase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0003964",
+          "name": "RNA-directed DNA polymerase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0004190",
+          "name": "aspartic-type endopeptidase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0004523",
+          "name": "RNA-DNA hybrid ribonuclease activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0004533",
+          "name": "exoribonuclease H activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0005198",
+          "name": "structural molecule activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0008233",
+          "name": "peptidase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0008270",
+          "name": "zinc ion binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0008289",
+          "name": "lipid binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0008907",
+          "name": "integrase activity",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        },
+        {
+          "id": "GO:0042802",
+          "name": "identical protein binding",
+          "aspect": "MF",
+          "relations": [
+            "enables"
+          ]
+        }
+      ],
+      "request_ids": [
+        2
+      ],
+      "error": null
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "accession": "P00648",
+  "exchanges": [
+    {
+      "sequence": 1,
+      "request_id": 1,
+      "role": "entry",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://rest.uniprot.org/uniprotkb/P00648.json",
+      "parameters": {},
+      "retrieved_at": "2026-11-06T00:57:50.255937Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:50 GMT",
+        "content-type": "application/json",
+        "x-uniprot-release": "2026_04",
+        "x-uniprot-release-date": "04-November-2026"
+      },
+      "raw_path": "uniprot-raw/000001.json",
+      "sha256": "91cfe5c59e51fc75a39db49b131026955038078dee8514d38db04417846c1efc"
+    },
+    {
+      "sequence": 2,
+      "request_id": 2,
+      "role": "go_annotations",
+      "chemical_id": null,
+      "attempt": 1,
+      "redirect_hop": 0,
+      "url": "https://www.ebi.ac.uk/QuickGO/services/annotation/search",
+      "parameters": {
+        "geneProductId": "UniProtKB:P00648",
+        "limit": "200",
+        "page": "1"
+      },
+      "retrieved_at": "2026-11-06T00:57:50.903511Z",
+      "http_status": 200,
+      "transport_error": null,
+      "response_headers": {
+        "date": "Fri, 06 Nov 2026 00:57:50 GMT",
+        "content-type": "application/json"
+      },
+      "raw_path": "uniprot-raw/000002.json",
+      "sha256": "32b47fbce36ef34591a1b401f1613561f68b4023e68c8de195a6ae4af5c7214a"
+    }
+  ]
+}

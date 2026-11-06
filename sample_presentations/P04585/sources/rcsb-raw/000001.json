@@ -1,0 +1,306 @@
+{
+  "query_id" : "0b6e7316-8a22-4441-b1fa-cc1a7073f3d0",
+  "result_type" : "polymer_entity",
+  "total_count" : 416,
+  "result_set" : [ {
+    "identifier" : "1A30_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1BV7_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1BV9_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1BVE_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1BVG_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1BWA_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1BWB_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1C0T_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1C0T_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1C0U_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1C0U_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1C1B_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1C1B_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1C1C_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1C1C_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1DMP_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1DTQ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1DTQ_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1DTT_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1DTT_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1E6J_3",
+    "score" : 1.0
+  }, {
+    "identifier" : "1EP4_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1EP4_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1ESK_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1EX4_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1EXQ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1FB7_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1FK9_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1FK9_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1FKO_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1FKO_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1FKP_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1FKP_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1G6L_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1HIV_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1HVH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1HVR_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1HWR_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1HXB_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JKH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JKH_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLA_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLA_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLB_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLB_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLC_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLC_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLE_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLE_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLF_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLF_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLG_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLG_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLQ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1JLQ_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1KLM_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1KLM_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LV1_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LW0_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LW0_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LW2_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LW2_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LWC_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LWC_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LWE_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LWE_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LWF_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1LWF_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1NCP_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1O1W_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1ODW_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1ODX_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1ODY_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1QBR_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1QBS_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1QBT_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1QBU_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1REV_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1REV_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT1_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT1_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT2_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT2_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT3_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT3_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT4_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT4_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT5_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT5_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT6_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT6_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT7_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RT7_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RTD_4",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RTH_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RTH_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RTI_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RTI_2",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RTJ_1",
+    "score" : 1.0
+  }, {
+    "identifier" : "1RTJ_2",
+    "score" : 1.0
+  } ]
+}
