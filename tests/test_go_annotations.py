@@ -381,3 +381,46 @@ def test_long_function_text_gets_reading_breaks_without_loss():
         "Short paragraph.",
         "Next paragraph.",
     ]
+
+
+@pytest.mark.parametrize(
+    "entry_type,label",
+    [
+        ("UniProtKB reviewed (Swiss-Prot)", "UniProt | SwissProt"),
+        (
+            "UniProtKB unreviewed (TrEMBL)",
+            'UniProt | <s title="Unreviewed UniProtKB/TrEMBL entry">SwissProt</s>',
+        ),
+        (None, "UniProt | SwissProt status unavailable"),
+        ("Unexpected entry type", "UniProt | SwissProt status unavailable"),
+    ],
+)
+def test_go_heading_shows_entry_review_status(entry_type, label):
+    from types import SimpleNamespace
+    from ligandscout.go_annotations import render_go
+
+    result = SimpleNamespace(
+        retrieved_at="2026-11-06T12:00:00Z",
+        source_context={
+            "entry": {"entry_type": entry_type},
+            "go_annotations": {
+                "status": "no_matches",
+                "terms": [],
+                "request_ids": [],
+                "error": None,
+            },
+        },
+    )
+    page = render_go(result)
+    assert f"<h2>GO annotations ({label})</h2>" in page
+    assert "not the evidence level of each GO annotation" in page
+    if entry_type != "UniProtKB unreviewed (TrEMBL)":
+        assert "<s " not in page
+
+
+def test_go_heading_absent_source_does_not_claim_swissprot():
+    from ligandscout.go_annotations import render_go
+
+    page = render_go(None)
+    assert "SwissProt status unavailable" in page
+    assert "<s " not in page

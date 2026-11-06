@@ -13,7 +13,7 @@ Compounds and measurements can overlap across databases; counts are not a global
 
 - Source: BindingDB
 - Status: success
-- Retrieved at: 2026-11-06T01:52:59.423220Z
+- Retrieved at: 2026-11-06T13:03:37.785695Z
 - Unique compounds: 1051
 - Measurements: 1456
 
@@ -1482,7 +1482,7 @@ API-associated records, not confirmed binding partners. Target accession and ass
 ## UniProt
 
 - Status: success
-- Retrieved: 2026-11-06T01:53:00.908469Z
+- Retrieved: 2026-11-06T13:03:38.237544Z
 - [Annotated ligands, binding sites and evidence](uniprot-ligands.html)
 
 UniProt ligand/cofactor annotations may be experimental or inferred. CCD supplies chemical structure only; annotation alone does not prove direct binding.
@@ -5108,7 +5108,7 @@ Warning: CHEBI:30616: SMILES no\_exact\_mapping.
 ## RCSB PDB
 
 Status: success
-Retrieved: 2026-11-06T01:55:40.122560Z
+Retrieved: 2026-11-06T13:06:17.680900Z
 
 RCSB-reported residue contacts establish structural proximity, not affinity or physiological binding.
 
