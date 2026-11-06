@@ -2,7 +2,7 @@
   "schema_version": 5,
   "accession": "P35557",
   "source": "BindingDB",
-  "retrieved_at": "2026-11-06T01:52:59.423220Z",
+  "retrieved_at": "2026-11-06T13:03:37.785695Z",
   "request": {
     "url": "https://www.bindingdb.org/rest/getLigandsByUniprots",
     "parameters": {

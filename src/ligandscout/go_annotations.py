@@ -130,7 +130,16 @@ def enrich_go(result, data, **kwargs):
 
 def render_go(result):
     e = html.escape
-    lines = ['<section id="go-annotations"><h2>GO annotations (UniProt)</h2>']
+    entry_type = (
+        result.source_context.get("entry", {}).get("entry_type") if result else None
+    )
+    if entry_type == "UniProtKB reviewed (Swiss-Prot)":
+        label = "UniProt | SwissProt"
+    elif entry_type == "UniProtKB unreviewed (TrEMBL)":
+        label = 'UniProt | <s title="Unreviewed UniProtKB/TrEMBL entry">SwissProt</s>'
+    else:
+        label = "UniProt | SwissProt status unavailable"
+    lines = [f'<section id="go-annotations"><h2>GO annotations ({label})</h2>']
     section = result.source_context.get("go_annotations") if result else None
     if not section:
         return "\n".join(
@@ -140,7 +149,7 @@ def render_go(result):
             ]
         )
     lines.append(
-        f"<p>Retrieved: {e(result.retrieved_at)}. Terms from UniProt; explicit relation labels from QuickGO/GOA. Missing relations are not defaulted.</p>"
+        f"<p>Retrieved: {e(result.retrieved_at)}. SwissProt status describes the UniProt entry review status, not the evidence level of each GO annotation. Terms from UniProt; explicit relation labels from QuickGO/GOA. Missing relations are not defaulted.</p>"
     )
     if section["status"] == "unavailable":
         lines.append(

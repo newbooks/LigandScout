@@ -2,7 +2,7 @@
   "schema_version": 5,
   "accession": "P35557",
   "source": "RCSB PDB",
-  "retrieved_at": "2026-11-06T01:55:40.122560Z",
+  "retrieved_at": "2026-11-06T13:06:17.680900Z",
   "request": {
     "search_endpoint": "https://search.rcsb.org/rcsbsearch/v2/query",
     "query_accessions": [

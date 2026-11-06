@@ -11,11 +11,11 @@
       "redirect_hop": 0,
       "url": "https://rest.uniprot.org/uniprotkb/P35557.json",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:00.908469Z",
+      "retrieved_at": "2026-11-06T13:03:38.237544Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:00 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:38 GMT",
         "content-type": "application/json",
         "x-uniprot-release": "2026_04",
         "x-uniprot-release-date": "04-November-2026"
@@ -36,11 +36,11 @@
         "limit": "200",
         "page": "1"
       },
-      "retrieved_at": "2026-11-06T01:53:01.441737Z",
+      "retrieved_at": "2026-11-06T13:03:38.989729Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:00 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:38 GMT",
         "content-type": "application/json"
       },
       "raw_path": "uniprot-raw/000002.json",
@@ -57,11 +57,11 @@
       "parameters": {
         "json": "{\"query\":{\"type\":\"terminal\",\"service\":\"text_chem\",\"parameters\":{\"attribute\":\"rcsb_chem_comp_related.resource_accession_code\",\"operator\":\"exact_match\",\"value\":\"CHEBI:30616\"}},\"return_type\":\"mol_definition\",\"request_options\":{\"paginate\":{\"start\":0,\"rows\":100}}}"
       },
-      "retrieved_at": "2026-11-06T01:53:01.500255Z",
+      "retrieved_at": "2026-11-06T13:03:39.047237Z",
       "http_status": 204,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:01 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:38 GMT",
         "content-type": "application/json"
       },
       "raw_path": "uniprot-raw/000003.txt",

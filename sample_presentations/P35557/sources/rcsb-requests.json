@@ -13,15 +13,15 @@
       "parameters": {
         "json": "{\"query\":{\"type\":\"terminal\",\"service\":\"text\",\"parameters\":{\"attribute\":\"rcsb_polymer_entity_container_identifiers.reference_sequence_identifiers.database_accession\",\"operator\":\"exact_match\",\"value\":\"P35557\"}},\"return_type\":\"polymer_entity\",\"request_options\":{\"results_content_type\":[\"experimental\"],\"paginate\":{\"start\":0,\"rows\":100},\"sort\":[{\"sort_by\":\"rcsb_id\",\"direction\":\"asc\"}]}}"
       },
-      "retrieved_at": "2026-11-06T01:53:01.554347Z",
+      "retrieved_at": "2026-11-06T13:03:39.070000Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:01 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:39 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000001.json",
-      "sha256": "a08ad54bd610eab20cfc85a725b7cc969371ae68ee5c2f5f1a4bce562829183c"
+      "sha256": "d26dd1c99fe1f5a0472999b57025437cd80318ccd9f911fef51df754ddadb9c9"
     },
     {
       "sequence": 2,
@@ -32,11 +32,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1V4S/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:02.071889Z",
+      "retrieved_at": "2026-11-06T13:03:39.637691Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:02 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:39 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000002.json",
@@ -51,11 +51,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/1V4S",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:02.522045Z",
+      "retrieved_at": "2026-11-06T13:03:40.067859Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:02 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:40 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000003.json",
@@ -70,11 +70,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/1V4T/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:03.027387Z",
+      "retrieved_at": "2026-11-06T13:03:40.583136Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:03 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:40 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000004.json",
@@ -89,11 +89,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/1V4T",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:03.526583Z",
+      "retrieved_at": "2026-11-06T13:03:41.090538Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:03 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:41 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000005.json",
@@ -108,11 +108,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3A0I/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:04.040567Z",
+      "retrieved_at": "2026-11-06T13:03:41.583516Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:04 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:41 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000006.json",
@@ -127,11 +127,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3A0I",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:04.520320Z",
+      "retrieved_at": "2026-11-06T13:03:42.075220Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:04 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:42 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000007.json",
@@ -146,11 +146,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3F9M/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:05.026885Z",
+      "retrieved_at": "2026-11-06T13:03:42.590859Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:05 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:42 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000008.json",
@@ -165,11 +165,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3F9M",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:05.524094Z",
+      "retrieved_at": "2026-11-06T13:03:43.075253Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:05 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:43 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000009.json",
@@ -184,11 +184,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3FGU/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:06.028256Z",
+      "retrieved_at": "2026-11-06T13:03:43.596425Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:06 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:43 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000010.json",
@@ -203,11 +203,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3FGU",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:06.529298Z",
+      "retrieved_at": "2026-11-06T13:03:44.074176Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:06 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:44 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000011.json",
@@ -222,11 +222,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3FR0/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:07.045270Z",
+      "retrieved_at": "2026-11-06T13:03:44.579683Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:07 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:44 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000012.json",
@@ -241,11 +241,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3FR0",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:07.546385Z",
+      "retrieved_at": "2026-11-06T13:03:45.090105Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:07 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:45 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000013.json",
@@ -260,11 +260,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3GOI/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:08.047227Z",
+      "retrieved_at": "2026-11-06T13:03:45.595414Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:08 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:45 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000014.json",
@@ -279,11 +279,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3GOI",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:08.526726Z",
+      "retrieved_at": "2026-11-06T13:03:46.095049Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:08 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:46 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000015.json",
@@ -298,11 +298,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3H1V/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:09.031096Z",
+      "retrieved_at": "2026-11-06T13:03:46.581278Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:09 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:46 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000016.json",
@@ -317,11 +317,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3H1V",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:09.521417Z",
+      "retrieved_at": "2026-11-06T13:03:47.078656Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:09 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:47 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000017.json",
@@ -336,11 +336,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3ID8/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:10.030020Z",
+      "retrieved_at": "2026-11-06T13:03:47.573835Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:10 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:47 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000018.json",
@@ -355,11 +355,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3ID8",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:10.538195Z",
+      "retrieved_at": "2026-11-06T13:03:48.092989Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:10 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:48 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000019.json",
@@ -374,11 +374,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3IDH/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:11.031731Z",
+      "retrieved_at": "2026-11-06T13:03:48.577924Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:11 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:48 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000020.json",
@@ -393,11 +393,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3IDH",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:11.642682Z",
+      "retrieved_at": "2026-11-06T13:03:49.087506Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:11 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:49 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000021.json",
@@ -412,11 +412,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3IMX/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:12.036649Z",
+      "retrieved_at": "2026-11-06T13:03:49.586138Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:12 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:49 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000022.json",
@@ -431,11 +431,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3IMX",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:12.537966Z",
+      "retrieved_at": "2026-11-06T13:03:50.073370Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:12 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:50 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000023.json",
@@ -450,11 +450,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3QIC/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:13.030432Z",
+      "retrieved_at": "2026-11-06T13:03:50.596592Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:13 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:50 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000024.json",
@@ -469,11 +469,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3QIC",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:13.549262Z",
+      "retrieved_at": "2026-11-06T13:03:51.095281Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:13 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:51 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000025.json",
@@ -488,11 +488,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3S41/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:14.045541Z",
+      "retrieved_at": "2026-11-06T13:03:51.590440Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:14 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:51 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000026.json",
@@ -507,11 +507,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3S41",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:14.524067Z",
+      "retrieved_at": "2026-11-06T13:03:52.082924Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:14 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:52 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000027.json",
@@ -526,11 +526,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3VEV/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:15.056099Z",
+      "retrieved_at": "2026-11-06T13:03:52.587427Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:15 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:52 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000028.json",
@@ -545,11 +545,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3VEV",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:15.526841Z",
+      "retrieved_at": "2026-11-06T13:03:53.074236Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:15 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:53 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000029.json",
@@ -564,11 +564,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3VEY/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:16.061450Z",
+      "retrieved_at": "2026-11-06T13:03:53.581606Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:16 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:53 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000030.json",
@@ -583,11 +583,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3VEY",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:16.551274Z",
+      "retrieved_at": "2026-11-06T13:03:54.100154Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:16 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:54 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000031.json",
@@ -602,11 +602,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/3VF6/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:17.050477Z",
+      "retrieved_at": "2026-11-06T13:03:54.584694Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:17 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:54 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000032.json",
@@ -621,11 +621,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/3VF6",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:17.540439Z",
+      "retrieved_at": "2026-11-06T13:03:55.083588Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:17 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:55 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000033.json",
@@ -640,11 +640,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4DCH/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:18.044735Z",
+      "retrieved_at": "2026-11-06T13:03:55.599774Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:18 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:55 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000034.json",
@@ -659,11 +659,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4DCH",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:18.540726Z",
+      "retrieved_at": "2026-11-06T13:03:56.077966Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:18 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:56 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000035.json",
@@ -678,11 +678,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4DHY/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:19.051047Z",
+      "retrieved_at": "2026-11-06T13:03:56.592576Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:19 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:56 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000036.json",
@@ -697,11 +697,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4DHY",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:19.530767Z",
+      "retrieved_at": "2026-11-06T13:03:57.100656Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:19 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:57 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000037.json",
@@ -716,11 +716,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4ISE/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:20.053226Z",
+      "retrieved_at": "2026-11-06T13:03:57.599309Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:20 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:57 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000038.json",
@@ -735,11 +735,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4ISE",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:20.554838Z",
+      "retrieved_at": "2026-11-06T13:03:58.095972Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:20 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:58 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000039.json",
@@ -754,11 +754,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4ISF/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:21.059740Z",
+      "retrieved_at": "2026-11-06T13:03:58.601563Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:21 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:58 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000040.json",
@@ -773,11 +773,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4ISF",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:21.530073Z",
+      "retrieved_at": "2026-11-06T13:03:59.079834Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:21 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:59 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000041.json",
@@ -792,11 +792,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4ISG/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:22.035836Z",
+      "retrieved_at": "2026-11-06T13:03:59.589030Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:22 GMT",
+        "date": "Fri, 06 Nov 2026 13:03:59 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000042.json",
@@ -811,11 +811,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4ISG",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:22.553070Z",
+      "retrieved_at": "2026-11-06T13:04:00.106480Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:22 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:00 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000043.json",
@@ -830,11 +830,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4IWV/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:23.043789Z",
+      "retrieved_at": "2026-11-06T13:04:00.588108Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:23 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:00 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000044.json",
@@ -849,11 +849,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4IWV",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:23.539451Z",
+      "retrieved_at": "2026-11-06T13:04:01.091669Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:23 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:01 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000045.json",
@@ -868,11 +868,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4IXC/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:24.050927Z",
+      "retrieved_at": "2026-11-06T13:04:01.586961Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:24 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:01 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000046.json",
@@ -887,11 +887,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4IXC",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:24.531795Z",
+      "retrieved_at": "2026-11-06T13:04:02.093222Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:24 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:02 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000047.json",
@@ -906,11 +906,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4L3Q/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:25.057480Z",
+      "retrieved_at": "2026-11-06T13:04:02.590567Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:25 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:02 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000048.json",
@@ -925,11 +925,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4L3Q",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:25.535571Z",
+      "retrieved_at": "2026-11-06T13:04:03.089401Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:25 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:03 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000049.json",
@@ -944,11 +944,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4LC9/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:26.060427Z",
+      "retrieved_at": "2026-11-06T13:04:03.603415Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:26 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:03 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000050.json",
@@ -963,11 +963,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4LC9",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:26.560220Z",
+      "retrieved_at": "2026-11-06T13:04:04.092633Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:26 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:04 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000051.json",
@@ -982,11 +982,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4MLE/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:27.064438Z",
+      "retrieved_at": "2026-11-06T13:04:04.588846Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:27 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:04 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000052.json",
@@ -1001,11 +1001,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4MLE",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:27.540337Z",
+      "retrieved_at": "2026-11-06T13:04:05.108832Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:27 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:05 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000053.json",
@@ -1020,11 +1020,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4MLH/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:28.069830Z",
+      "retrieved_at": "2026-11-06T13:04:05.594691Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:28 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:05 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000054.json",
@@ -1039,11 +1039,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4MLH",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:28.554463Z",
+      "retrieved_at": "2026-11-06T13:04:06.091244Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:28 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:06 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000055.json",
@@ -1058,11 +1058,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4NO7/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:29.041649Z",
+      "retrieved_at": "2026-11-06T13:04:06.601530Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:29 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:06 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000056.json",
@@ -1077,11 +1077,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4NO7",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:29.541326Z",
+      "retrieved_at": "2026-11-06T13:04:07.090981Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:29 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:07 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000057.json",
@@ -1096,11 +1096,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/4RCH/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:30.055723Z",
+      "retrieved_at": "2026-11-06T13:04:07.597032Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:30 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:07 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000058.json",
@@ -1115,11 +1115,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/4RCH",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:30.547572Z",
+      "retrieved_at": "2026-11-06T13:04:08.103773Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:30 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:08 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000059.json",
@@ -1134,11 +1134,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/5V4W/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:31.038268Z",
+      "retrieved_at": "2026-11-06T13:04:08.592255Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:31 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:08 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000060.json",
@@ -1153,11 +1153,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/5V4W",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:31.545161Z",
+      "retrieved_at": "2026-11-06T13:04:09.088630Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:31 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:09 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000061.json",
@@ -1172,11 +1172,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/5V4X/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:32.061807Z",
+      "retrieved_at": "2026-11-06T13:04:09.598129Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:32 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:09 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000062.json",
@@ -1191,11 +1191,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/5V4X",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:32.563007Z",
+      "retrieved_at": "2026-11-06T13:04:10.089074Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:32 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:10 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000063.json",
@@ -1210,11 +1210,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/6E0E/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:33.061006Z",
+      "retrieved_at": "2026-11-06T13:04:10.593912Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:33 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:10 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000064.json",
@@ -1229,11 +1229,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/6E0E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:33.546570Z",
+      "retrieved_at": "2026-11-06T13:04:11.095531Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:33 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:11 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000065.json",
@@ -1248,11 +1248,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/6E0I/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:34.061986Z",
+      "retrieved_at": "2026-11-06T13:04:11.598466Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:34 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:11 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000066.json",
@@ -1267,11 +1267,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/6E0I",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:34.540764Z",
+      "retrieved_at": "2026-11-06T13:04:12.095429Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:34 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:12 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000067.json",
@@ -1286,11 +1286,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/7T78/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:35.066187Z",
+      "retrieved_at": "2026-11-06T13:04:12.608801Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:35 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:12 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000068.json",
@@ -1305,11 +1305,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/7T78",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:35.555542Z",
+      "retrieved_at": "2026-11-06T13:04:13.090274Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:35 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:13 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000069.json",
@@ -1324,11 +1324,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/polymer_entity/7T79/1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:36.058882Z",
+      "retrieved_at": "2026-11-06T13:04:13.613246Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:36 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:13 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000070.json",
@@ -1343,11 +1343,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/entry/7T79",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:36.550826Z",
+      "retrieved_at": "2026-11-06T13:04:14.114097Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:36 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:14 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000071.json",
@@ -1362,11 +1362,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1V4S/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:37.061249Z",
+      "retrieved_at": "2026-11-06T13:04:14.595416Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:37 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:14 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000072.json",
@@ -1381,11 +1381,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1V4S/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:37.544646Z",
+      "retrieved_at": "2026-11-06T13:04:15.106565Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:37 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:15 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000073.json",
@@ -1400,11 +1400,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1V4S/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:38.064473Z",
+      "retrieved_at": "2026-11-06T13:04:15.599597Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:38 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:15 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000074.json",
@@ -1419,11 +1419,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1V4S/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:38.558042Z",
+      "retrieved_at": "2026-11-06T13:04:16.111410Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:38 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:16 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000075.json",
@@ -1438,11 +1438,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1V4S/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:39.060823Z",
+      "retrieved_at": "2026-11-06T13:04:16.593305Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:39 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:16 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000076.json",
@@ -1457,11 +1457,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1V4S/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:39.541675Z",
+      "retrieved_at": "2026-11-06T13:04:17.103572Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:39 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:17 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000077.json",
@@ -1476,11 +1476,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1V4T/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:40.063442Z",
+      "retrieved_at": "2026-11-06T13:04:17.617430Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:40 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:17 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000078.json",
@@ -1495,11 +1495,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1V4T/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:40.547292Z",
+      "retrieved_at": "2026-11-06T13:04:18.116658Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:40 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:18 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000079.json",
@@ -1514,11 +1514,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1V4T/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:41.068039Z",
+      "retrieved_at": "2026-11-06T13:04:18.611936Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:41 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:18 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000080.json",
@@ -1533,11 +1533,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/1V4T/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:41.552018Z",
+      "retrieved_at": "2026-11-06T13:04:19.095582Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:41 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:19 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000081.json",
@@ -1552,11 +1552,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/1V4T/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:42.063771Z",
+      "retrieved_at": "2026-11-06T13:04:19.597945Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:42 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:19 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000082.json",
@@ -1571,11 +1571,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3A0I/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:42.555433Z",
+      "retrieved_at": "2026-11-06T13:04:20.099470Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:42 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:20 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000083.json",
@@ -1590,11 +1590,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3A0I/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:43.046792Z",
+      "retrieved_at": "2026-11-06T13:04:20.610452Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:43 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:20 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000084.json",
@@ -1609,11 +1609,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3A0I/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:43.549728Z",
+      "retrieved_at": "2026-11-06T13:04:21.093316Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:43 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:21 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000085.json",
@@ -1628,11 +1628,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3A0I/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:44.061301Z",
+      "retrieved_at": "2026-11-06T13:04:21.598537Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:44 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:21 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000086.json",
@@ -1647,11 +1647,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3A0I/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:44.543806Z",
+      "retrieved_at": "2026-11-06T13:04:22.098003Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:44 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:22 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000087.json",
@@ -1666,11 +1666,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3A0I/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:45.066455Z",
+      "retrieved_at": "2026-11-06T13:04:22.624279Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:45 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:22 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000088.json",
@@ -1685,11 +1685,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3F9M/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:45.558892Z",
+      "retrieved_at": "2026-11-06T13:04:23.096604Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:45 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:23 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000089.json",
@@ -1704,11 +1704,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3F9M/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:46.060348Z",
+      "retrieved_at": "2026-11-06T13:04:23.619761Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:46 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:23 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000090.json",
@@ -1723,11 +1723,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3F9M/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:46.563121Z",
+      "retrieved_at": "2026-11-06T13:04:24.101774Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:46 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:24 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000091.json",
@@ -1742,11 +1742,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3F9M/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:47.071979Z",
+      "retrieved_at": "2026-11-06T13:04:24.610009Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:47 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:24 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000092.json",
@@ -1761,11 +1761,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3FGU/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:47.558857Z",
+      "retrieved_at": "2026-11-06T13:04:25.116288Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:47 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:25 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000093.json",
@@ -1780,11 +1780,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3FGU/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:48.066835Z",
+      "retrieved_at": "2026-11-06T13:04:25.599318Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:48 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:25 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000094.json",
@@ -1799,11 +1799,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3FGU/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:48.568623Z",
+      "retrieved_at": "2026-11-06T13:04:26.134958Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:48 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:26 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000095.json",
@@ -1818,11 +1818,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3FGU/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:49.050747Z",
+      "retrieved_at": "2026-11-06T13:04:26.602635Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:49 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:26 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000096.json",
@@ -1837,11 +1837,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3FGU/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:49.552186Z",
+      "retrieved_at": "2026-11-06T13:04:27.104294Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:49 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:27 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000097.json",
@@ -1856,11 +1856,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3FGU/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:50.055696Z",
+      "retrieved_at": "2026-11-06T13:04:27.623498Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:50 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:27 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000098.json",
@@ -1875,11 +1875,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3FGU/5",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:50.566459Z",
+      "retrieved_at": "2026-11-06T13:04:28.118907Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:50 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:28 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000099.json",
@@ -1894,11 +1894,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3FGU/E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:51.050296Z",
+      "retrieved_at": "2026-11-06T13:04:28.609241Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:51 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:28 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000100.json",
@@ -1913,11 +1913,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3FR0/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:51.571859Z",
+      "retrieved_at": "2026-11-06T13:04:29.104846Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:51 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:29 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000101.json",
@@ -1932,11 +1932,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3FR0/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:52.064375Z",
+      "retrieved_at": "2026-11-06T13:04:29.605073Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:52 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:29 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000102.json",
@@ -1951,11 +1951,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3FR0/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:52.565424Z",
+      "retrieved_at": "2026-11-06T13:04:30.107415Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:52 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:30 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000103.json",
@@ -1970,11 +1970,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3FR0/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:53.051612Z",
+      "retrieved_at": "2026-11-06T13:04:30.602805Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:53 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:30 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000104.json",
@@ -1989,11 +1989,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3FR0/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:53.569945Z",
+      "retrieved_at": "2026-11-06T13:04:31.121949Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:53 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:31 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000105.json",
@@ -2008,11 +2008,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3FR0/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:54.072285Z",
+      "retrieved_at": "2026-11-06T13:04:31.604439Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:54 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:31 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000106.json",
@@ -2027,11 +2027,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3GOI/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:54.555159Z",
+      "retrieved_at": "2026-11-06T13:04:32.106580Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:54 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:32 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000107.json",
@@ -2046,11 +2046,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3GOI/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:55.076788Z",
+      "retrieved_at": "2026-11-06T13:04:32.631481Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:55 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:32 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000108.json",
@@ -2065,11 +2065,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3GOI/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:55.559096Z",
+      "retrieved_at": "2026-11-06T13:04:33.100290Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:55 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:33 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000109.json",
@@ -2084,11 +2084,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3GOI/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:56.071120Z",
+      "retrieved_at": "2026-11-06T13:04:33.603129Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:56 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:33 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000110.json",
@@ -2103,11 +2103,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3H1V/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:56.573585Z",
+      "retrieved_at": "2026-11-06T13:04:34.122079Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:56 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:34 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000111.json",
@@ -2122,11 +2122,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3H1V/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:57.052871Z",
+      "retrieved_at": "2026-11-06T13:04:34.608137Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:57 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:34 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000112.json",
@@ -2141,11 +2141,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3H1V/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:57.575122Z",
+      "retrieved_at": "2026-11-06T13:04:35.120396Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:57 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:35 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000113.json",
@@ -2160,11 +2160,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3H1V/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:58.067403Z",
+      "retrieved_at": "2026-11-06T13:04:35.602183Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:58 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:35 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000114.json",
@@ -2179,11 +2179,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3H1V/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:58.570077Z",
+      "retrieved_at": "2026-11-06T13:04:36.123325Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:58 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:36 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000115.json",
@@ -2198,11 +2198,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3H1V/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:59.071960Z",
+      "retrieved_at": "2026-11-06T13:04:36.618368Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:59 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:36 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000116.json",
@@ -2217,11 +2217,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3ID8/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:53:59.554078Z",
+      "retrieved_at": "2026-11-06T13:04:37.108864Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:53:59 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:37 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000117.json",
@@ -2236,11 +2236,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3ID8/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:00.076126Z",
+      "retrieved_at": "2026-11-06T13:04:37.624764Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:00 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:37 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000118.json",
@@ -2255,11 +2255,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3ID8/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:00.577190Z",
+      "retrieved_at": "2026-11-06T13:04:38.112173Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:00 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:38 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000119.json",
@@ -2274,11 +2274,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3ID8/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:01.069985Z",
+      "retrieved_at": "2026-11-06T13:04:38.624402Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:01 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:38 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000120.json",
@@ -2293,11 +2293,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3ID8/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:01.554610Z",
+      "retrieved_at": "2026-11-06T13:04:39.105647Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:01 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:39 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000121.json",
@@ -2312,11 +2312,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3ID8/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:02.054972Z",
+      "retrieved_at": "2026-11-06T13:04:39.617785Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:02 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:39 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000122.json",
@@ -2331,11 +2331,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3ID8/5",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:02.576589Z",
+      "retrieved_at": "2026-11-06T13:04:40.109949Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:02 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:40 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000123.json",
@@ -2350,11 +2350,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3ID8/E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:03.070953Z",
+      "retrieved_at": "2026-11-06T13:04:40.619012Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:03 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:40 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000124.json",
@@ -2369,11 +2369,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3ID8/6",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:03.570966Z",
+      "retrieved_at": "2026-11-06T13:04:41.114781Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:03 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:41 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000125.json",
@@ -2388,11 +2388,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3ID8/F",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:04.073509Z",
+      "retrieved_at": "2026-11-06T13:04:41.616621Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:04 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:41 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000126.json",
@@ -2407,11 +2407,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3IDH/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:04.558019Z",
+      "retrieved_at": "2026-11-06T13:04:42.117324Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:04 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:42 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000127.json",
@@ -2426,11 +2426,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3IDH/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:05.078124Z",
+      "retrieved_at": "2026-11-06T13:04:42.629491Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:05 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:42 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000128.json",
@@ -2445,11 +2445,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3IDH/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:05.559566Z",
+      "retrieved_at": "2026-11-06T13:04:43.111621Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:05 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:43 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000129.json",
@@ -2464,11 +2464,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3IDH/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:06.062435Z",
+      "retrieved_at": "2026-11-06T13:04:43.637118Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:06 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:43 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000130.json",
@@ -2483,11 +2483,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3IMX/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:06.565306Z",
+      "retrieved_at": "2026-11-06T13:04:44.115267Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:06 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:44 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000131.json",
@@ -2502,11 +2502,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3IMX/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:07.076511Z",
+      "retrieved_at": "2026-11-06T13:04:44.617765Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:07 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:44 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000132.json",
@@ -2521,11 +2521,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3IMX/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:07.568117Z",
+      "retrieved_at": "2026-11-06T13:04:45.134947Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:07 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:45 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000133.json",
@@ -2540,11 +2540,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3IMX/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:08.082717Z",
+      "retrieved_at": "2026-11-06T13:04:45.617267Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:08 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:45 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000134.json",
@@ -2559,11 +2559,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3IMX/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:08.563126Z",
+      "retrieved_at": "2026-11-06T13:04:46.127800Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:08 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:46 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000135.json",
@@ -2578,11 +2578,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3IMX/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:09.065848Z",
+      "retrieved_at": "2026-11-06T13:04:46.611437Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:09 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:46 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000136.json",
@@ -2597,11 +2597,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3QIC/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:09.559390Z",
+      "retrieved_at": "2026-11-06T13:04:47.115865Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:09 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:47 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000137.json",
@@ -2616,11 +2616,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3QIC/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:10.059891Z",
+      "retrieved_at": "2026-11-06T13:04:47.635844Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:10 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:47 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000138.json",
@@ -2635,11 +2635,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3QIC/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:10.561659Z",
+      "retrieved_at": "2026-11-06T13:04:48.116962Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:10 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:48 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000139.json",
@@ -2654,11 +2654,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3QIC/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:11.073394Z",
+      "retrieved_at": "2026-11-06T13:04:48.619911Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:11 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:48 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000140.json",
@@ -2673,11 +2673,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3QIC/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:11.566299Z",
+      "retrieved_at": "2026-11-06T13:04:49.132542Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:11 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:49 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000141.json",
@@ -2692,11 +2692,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3QIC/E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:12.058750Z",
+      "retrieved_at": "2026-11-06T13:04:49.613582Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:12 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:49 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000142.json",
@@ -2711,11 +2711,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3QIC/F",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:12.579878Z",
+      "retrieved_at": "2026-11-06T13:04:50.115972Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:12 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:50 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000143.json",
@@ -2730,11 +2730,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3QIC/G",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:13.063356Z",
+      "retrieved_at": "2026-11-06T13:04:50.628843Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:13 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:50 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000144.json",
@@ -2749,11 +2749,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3QIC/H",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:13.584781Z",
+      "retrieved_at": "2026-11-06T13:04:51.120488Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:13 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:51 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000145.json",
@@ -2768,11 +2768,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3S41/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:14.067649Z",
+      "retrieved_at": "2026-11-06T13:04:51.613177Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:14 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:51 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000146.json",
@@ -2787,11 +2787,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3S41/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:14.562270Z",
+      "retrieved_at": "2026-11-06T13:04:52.121044Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:14 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:52 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000147.json",
@@ -2806,11 +2806,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3S41/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:15.081047Z",
+      "retrieved_at": "2026-11-06T13:04:52.637112Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:15 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:52 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000148.json",
@@ -2825,11 +2825,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3S41/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:15.564577Z",
+      "retrieved_at": "2026-11-06T13:04:53.119388Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:15 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:53 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000149.json",
@@ -2844,11 +2844,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3S41/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:16.076426Z",
+      "retrieved_at": "2026-11-06T13:04:53.621478Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:16 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:53 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000150.json",
@@ -2863,11 +2863,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3S41/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:16.568051Z",
+      "retrieved_at": "2026-11-06T13:04:54.124304Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:16 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:54 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000151.json",
@@ -2882,11 +2882,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VEV/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:17.081652Z",
+      "retrieved_at": "2026-11-06T13:04:54.626389Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:17 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:54 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000152.json",
@@ -2901,11 +2901,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VEV/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:17.585126Z",
+      "retrieved_at": "2026-11-06T13:04:55.129175Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:17 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:55 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000153.json",
@@ -2920,11 +2920,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VEV/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:18.067111Z",
+      "retrieved_at": "2026-11-06T13:04:55.620876Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:18 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:55 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000154.json",
@@ -2939,11 +2939,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VEV/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:18.580094Z",
+      "retrieved_at": "2026-11-06T13:04:56.124376Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:18 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:56 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000155.json",
@@ -2958,11 +2958,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VEV/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:19.070679Z",
+      "retrieved_at": "2026-11-06T13:04:56.624657Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:19 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:56 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000156.json",
@@ -2977,11 +2977,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VEV/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:19.564912Z",
+      "retrieved_at": "2026-11-06T13:04:57.127681Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:19 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:57 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000157.json",
@@ -2996,11 +2996,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VEY/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:20.062842Z",
+      "retrieved_at": "2026-11-06T13:04:57.640035Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:20 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:57 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000158.json",
@@ -3015,11 +3015,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VEY/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:20.575318Z",
+      "retrieved_at": "2026-11-06T13:04:58.124464Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:20 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:58 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000159.json",
@@ -3034,11 +3034,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VEY/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:21.077955Z",
+      "retrieved_at": "2026-11-06T13:04:58.643410Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:21 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:58 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000160.json",
@@ -3053,11 +3053,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VEY/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:21.570314Z",
+      "retrieved_at": "2026-11-06T13:04:59.126204Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:21 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:59 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000161.json",
@@ -3072,11 +3072,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VEY/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:22.071796Z",
+      "retrieved_at": "2026-11-06T13:04:59.628308Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:22 GMT",
+        "date": "Fri, 06 Nov 2026 13:04:59 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000162.json",
@@ -3091,11 +3091,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VEY/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:22.584440Z",
+      "retrieved_at": "2026-11-06T13:05:00.140415Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:22 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:00 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000163.json",
@@ -3110,11 +3110,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VEY/5",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:23.066211Z",
+      "retrieved_at": "2026-11-06T13:05:00.623670Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:23 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:00 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000164.json",
@@ -3129,11 +3129,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VEY/E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:23.588855Z",
+      "retrieved_at": "2026-11-06T13:05:01.166311Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:23 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:01 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000165.json",
@@ -3148,11 +3148,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VF6/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:24.090878Z",
+      "retrieved_at": "2026-11-06T13:05:01.626304Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:24 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:01 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000166.json",
@@ -3167,11 +3167,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VF6/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:24.563175Z",
+      "retrieved_at": "2026-11-06T13:05:02.130077Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:24 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:02 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000167.json",
@@ -3186,11 +3186,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VF6/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:25.084576Z",
+      "retrieved_at": "2026-11-06T13:05:02.641429Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:25 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:02 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000168.json",
@@ -3205,11 +3205,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VF6/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:25.577366Z",
+      "retrieved_at": "2026-11-06T13:05:03.124087Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:25 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:03 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000169.json",
@@ -3224,11 +3224,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/3VF6/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:26.088580Z",
+      "retrieved_at": "2026-11-06T13:05:03.625179Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:26 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:03 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000170.json",
@@ -3243,11 +3243,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/3VF6/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:26.596524Z",
+      "retrieved_at": "2026-11-06T13:05:04.132415Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:26 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:04 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000171.json",
@@ -3262,11 +3262,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4DCH/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:27.071998Z",
+      "retrieved_at": "2026-11-06T13:05:04.630008Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:27 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:04 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000172.json",
@@ -3281,11 +3281,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4DCH/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:27.574419Z",
+      "retrieved_at": "2026-11-06T13:05:05.141250Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:27 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:05 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000173.json",
@@ -3300,11 +3300,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4DCH/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:28.132652Z",
+      "retrieved_at": "2026-11-06T13:05:05.624121Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:28 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:05 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000174.json",
@@ -3319,11 +3319,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4DCH/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:28.589555Z",
+      "retrieved_at": "2026-11-06T13:05:06.145923Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:28 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:06 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000175.json",
@@ -3338,11 +3338,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4DCH/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:29.092307Z",
+      "retrieved_at": "2026-11-06T13:05:06.627977Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:29 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:06 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000176.json",
@@ -3357,11 +3357,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4DCH/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:29.576082Z",
+      "retrieved_at": "2026-11-06T13:05:07.129856Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:29 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:07 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000177.json",
@@ -3376,11 +3376,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4DCH/E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:30.095342Z",
+      "retrieved_at": "2026-11-06T13:05:07.642591Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:30 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:07 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000178.json",
@@ -3395,11 +3395,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4DHY/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:30.588046Z",
+      "retrieved_at": "2026-11-06T13:05:08.155780Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:30 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:08 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000179.json",
@@ -3414,11 +3414,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4DHY/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:31.090539Z",
+      "retrieved_at": "2026-11-06T13:05:08.648467Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:31 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:08 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000180.json",
@@ -3433,11 +3433,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4DHY/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:31.592061Z",
+      "retrieved_at": "2026-11-06T13:05:09.133460Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:31 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:09 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000181.json",
@@ -3452,11 +3452,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4DHY/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:32.074267Z",
+      "retrieved_at": "2026-11-06T13:05:09.634678Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:32 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:09 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000182.json",
@@ -3471,11 +3471,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4DHY/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:32.596742Z",
+      "retrieved_at": "2026-11-06T13:05:10.125351Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:32 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:10 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000183.json",
@@ -3490,11 +3490,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4DHY/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:33.089723Z",
+      "retrieved_at": "2026-11-06T13:05:10.630296Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:33 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:10 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000184.json",
@@ -3509,11 +3509,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISE/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:33.591036Z",
+      "retrieved_at": "2026-11-06T13:05:11.130925Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:33 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:11 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000185.json",
@@ -3528,11 +3528,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISE/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:34.093436Z",
+      "retrieved_at": "2026-11-06T13:05:11.632459Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:34 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:11 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000186.json",
@@ -3547,11 +3547,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISE/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:34.575298Z",
+      "retrieved_at": "2026-11-06T13:05:12.135541Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:34 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:12 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000187.json",
@@ -3566,11 +3566,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISE/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:35.098375Z",
+      "retrieved_at": "2026-11-06T13:05:12.648147Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:35 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:12 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000188.json",
@@ -3585,11 +3585,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISE/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:35.590618Z",
+      "retrieved_at": "2026-11-06T13:05:13.138537Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:35 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:13 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000189.json",
@@ -3604,11 +3604,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISE/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:36.072202Z",
+      "retrieved_at": "2026-11-06T13:05:13.651591Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:36 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:13 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000190.json",
@@ -3623,11 +3623,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISF/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:36.574665Z",
+      "retrieved_at": "2026-11-06T13:05:14.154288Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:36 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:14 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000191.json",
@@ -3642,11 +3642,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISF/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:37.076264Z",
+      "retrieved_at": "2026-11-06T13:05:14.635333Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:37 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:14 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000192.json",
@@ -3661,11 +3661,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISF/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:37.579258Z",
+      "retrieved_at": "2026-11-06T13:05:15.153954Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:37 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:15 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000193.json",
@@ -3680,11 +3680,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISF/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:38.080748Z",
+      "retrieved_at": "2026-11-06T13:05:15.632341Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:38 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:15 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000194.json",
@@ -3699,11 +3699,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISF/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:38.573569Z",
+      "retrieved_at": "2026-11-06T13:05:16.154458Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:38 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:16 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000195.json",
@@ -3718,11 +3718,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISF/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:39.075042Z",
+      "retrieved_at": "2026-11-06T13:05:16.637832Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:39 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:16 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000196.json",
@@ -3737,11 +3737,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISG/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:39.577735Z",
+      "retrieved_at": "2026-11-06T13:05:17.138932Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:39 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:17 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000197.json",
@@ -3756,11 +3756,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISG/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:40.079416Z",
+      "retrieved_at": "2026-11-06T13:05:17.651179Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:40 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:17 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000198.json",
@@ -3775,11 +3775,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISG/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:40.580867Z",
+      "retrieved_at": "2026-11-06T13:05:18.152456Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:40 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:18 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000199.json",
@@ -3794,11 +3794,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISG/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:41.083591Z",
+      "retrieved_at": "2026-11-06T13:05:18.656233Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:41 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:18 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000200.json",
@@ -3813,11 +3813,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4ISG/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:41.594914Z",
+      "retrieved_at": "2026-11-06T13:05:19.137378Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:41 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:19 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000201.json",
@@ -3832,11 +3832,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4ISG/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:42.096890Z",
+      "retrieved_at": "2026-11-06T13:05:19.641420Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:42 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:19 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000202.json",
@@ -3851,11 +3851,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4IWV/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:42.590268Z",
+      "retrieved_at": "2026-11-06T13:05:20.141980Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:42 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:20 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000203.json",
@@ -3870,11 +3870,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4IWV/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:43.103165Z",
+      "retrieved_at": "2026-11-06T13:05:20.636617Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:43 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:20 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000204.json",
@@ -3889,11 +3889,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4IWV/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:43.594153Z",
+      "retrieved_at": "2026-11-06T13:05:21.136769Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:43 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:21 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000205.json",
@@ -3908,11 +3908,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4IWV/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:44.086402Z",
+      "retrieved_at": "2026-11-06T13:05:21.638778Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:44 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:21 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000206.json",
@@ -3927,11 +3927,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4IWV/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:44.579045Z",
+      "retrieved_at": "2026-11-06T13:05:22.140695Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:44 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:22 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000207.json",
@@ -3946,11 +3946,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4IWV/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:45.101938Z",
+      "retrieved_at": "2026-11-06T13:05:22.643436Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:45 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:22 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000208.json",
@@ -3965,11 +3965,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4IXC/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:45.583293Z",
+      "retrieved_at": "2026-11-06T13:05:23.145302Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:45 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:23 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000209.json",
@@ -3984,11 +3984,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4IXC/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:46.105938Z",
+      "retrieved_at": "2026-11-06T13:05:23.660610Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:46 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:23 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000210.json",
@@ -4003,11 +4003,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4IXC/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:46.597395Z",
+      "retrieved_at": "2026-11-06T13:05:24.141461Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:46 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:24 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000211.json",
@@ -4022,11 +4022,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4IXC/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:47.087663Z",
+      "retrieved_at": "2026-11-06T13:05:24.641845Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:47 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:24 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000212.json",
@@ -4041,11 +4041,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4IXC/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:47.609747Z",
+      "retrieved_at": "2026-11-06T13:05:25.163839Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:47 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:25 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000213.json",
@@ -4060,11 +4060,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4IXC/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:48.112379Z",
+      "retrieved_at": "2026-11-06T13:05:25.647245Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:48 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:25 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000214.json",
@@ -4079,11 +4079,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4L3Q/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:48.604158Z",
+      "retrieved_at": "2026-11-06T13:05:26.157410Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:48 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:26 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000215.json",
@@ -4098,11 +4098,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4L3Q/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:49.107111Z",
+      "retrieved_at": "2026-11-06T13:05:26.640633Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:49 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:26 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000216.json",
@@ -4117,11 +4117,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4L3Q/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:49.588969Z",
+      "retrieved_at": "2026-11-06T13:05:27.142851Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:49 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:27 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000217.json",
@@ -4136,11 +4136,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4L3Q/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:50.081615Z",
+      "retrieved_at": "2026-11-06T13:05:27.664941Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:50 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:27 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000218.json",
@@ -4155,11 +4155,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4LC9/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:50.582297Z",
+      "retrieved_at": "2026-11-06T13:05:28.156848Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:50 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:28 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000219.json",
@@ -4174,11 +4174,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4LC9/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:51.105853Z",
+      "retrieved_at": "2026-11-06T13:05:28.659579Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:51 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:28 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000220.json",
@@ -4193,11 +4193,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4LC9/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:51.597293Z",
+      "retrieved_at": "2026-11-06T13:05:29.161265Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:51 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:29 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000221.json",
@@ -4212,11 +4212,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4LC9/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:52.108740Z",
+      "retrieved_at": "2026-11-06T13:05:29.647260Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:52 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:29 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000222.json",
@@ -4231,11 +4231,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4MLE/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:52.601121Z",
+      "retrieved_at": "2026-11-06T13:05:30.156207Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:52 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:30 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000223.json",
@@ -4250,11 +4250,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4MLE/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:53.094896Z",
+      "retrieved_at": "2026-11-06T13:05:30.648849Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:53 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:30 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000224.json",
@@ -4269,11 +4269,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4MLE/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:53.602910Z",
+      "retrieved_at": "2026-11-06T13:05:31.139910Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:53 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:31 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000225.json",
@@ -4288,11 +4288,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4MLE/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:54.086891Z",
+      "retrieved_at": "2026-11-06T13:05:31.644302Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:54 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:31 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000226.json",
@@ -4307,11 +4307,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4MLH/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:54.587336Z",
+      "retrieved_at": "2026-11-06T13:05:32.144252Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:54 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:32 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000227.json",
@@ -4326,11 +4326,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4MLH/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:55.110401Z",
+      "retrieved_at": "2026-11-06T13:05:32.646441Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:55 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:32 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000228.json",
@@ -4345,11 +4345,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4MLH/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:55.592192Z",
+      "retrieved_at": "2026-11-06T13:05:33.149169Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:55 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:33 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000229.json",
@@ -4364,11 +4364,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4MLH/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:56.105416Z",
+      "retrieved_at": "2026-11-06T13:05:33.671688Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:56 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:33 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000230.json",
@@ -4383,11 +4383,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4NO7/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:56.605793Z",
+      "retrieved_at": "2026-11-06T13:05:34.162992Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:56 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:34 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000231.json",
@@ -4402,11 +4402,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4NO7/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:57.095526Z",
+      "retrieved_at": "2026-11-06T13:05:34.646602Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:57 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:34 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000232.json",
@@ -4421,11 +4421,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4NO7/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:57.605639Z",
+      "retrieved_at": "2026-11-06T13:05:35.148550Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:57 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:35 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000233.json",
@@ -4440,11 +4440,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4NO7/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:58.109434Z",
+      "retrieved_at": "2026-11-06T13:05:35.650270Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:58 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:35 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000234.json",
@@ -4459,11 +4459,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4RCH/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:58.610747Z",
+      "retrieved_at": "2026-11-06T13:05:36.171799Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:58 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:36 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000235.json",
@@ -4478,11 +4478,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4RCH/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:59.113018Z",
+      "retrieved_at": "2026-11-06T13:05:36.645181Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:59 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:36 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000236.json",
@@ -4497,11 +4497,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/4RCH/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:54:59.595223Z",
+      "retrieved_at": "2026-11-06T13:05:37.147252Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:54:59 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:37 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000237.json",
@@ -4516,11 +4516,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/4RCH/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:00.107932Z",
+      "retrieved_at": "2026-11-06T13:05:37.669130Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:00 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:37 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000238.json",
@@ -4535,11 +4535,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5V4W/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:00.599619Z",
+      "retrieved_at": "2026-11-06T13:05:38.170094Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:00 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:38 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000239.json",
@@ -4554,11 +4554,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/5V4W/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:01.112325Z",
+      "retrieved_at": "2026-11-06T13:05:38.673097Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:01 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:38 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000240.json",
@@ -4573,11 +4573,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5V4W/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:01.613927Z",
+      "retrieved_at": "2026-11-06T13:05:39.164646Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:01 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:39 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000241.json",
@@ -4592,11 +4592,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/5V4W/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:02.092517Z",
+      "retrieved_at": "2026-11-06T13:05:39.649796Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:02 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:39 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000242.json",
@@ -4611,11 +4611,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5V4W/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:02.613701Z",
+      "retrieved_at": "2026-11-06T13:05:40.167487Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:02 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:40 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000243.json",
@@ -4630,11 +4630,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/5V4W/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:03.116454Z",
+      "retrieved_at": "2026-11-06T13:05:40.651115Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:03 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:40 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000244.json",
@@ -4649,11 +4649,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5V4X/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:03.617529Z",
+      "retrieved_at": "2026-11-06T13:05:41.148075Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:03 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:41 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000245.json",
@@ -4668,11 +4668,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/5V4X/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:04.109560Z",
+      "retrieved_at": "2026-11-06T13:05:41.649735Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:04 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:41 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000246.json",
@@ -4687,11 +4687,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5V4X/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:04.602591Z",
+      "retrieved_at": "2026-11-06T13:05:42.155210Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:04 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:42 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000247.json",
@@ -4706,11 +4706,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/5V4X/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:05.114015Z",
+      "retrieved_at": "2026-11-06T13:05:42.674597Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:05 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:42 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000248.json",
@@ -4725,11 +4725,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/5V4X/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:05.596253Z",
+      "retrieved_at": "2026-11-06T13:05:43.155792Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:05 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:43 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000249.json",
@@ -4744,11 +4744,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/5V4X/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:06.099929Z",
+      "retrieved_at": "2026-11-06T13:05:43.667740Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:06 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:43 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000250.json",
@@ -4763,11 +4763,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/5V4X/E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:06.611697Z",
+      "retrieved_at": "2026-11-06T13:05:44.171199Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:06 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:44 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000251.json",
@@ -4782,11 +4782,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/5V4X/F",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:07.113596Z",
+      "retrieved_at": "2026-11-06T13:05:44.674034Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:07 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:44 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000252.json",
@@ -4801,11 +4801,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/6E0E/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:07.615381Z",
+      "retrieved_at": "2026-11-06T13:05:45.154294Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:07 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:45 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000253.json",
@@ -4820,11 +4820,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6E0E/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:08.117486Z",
+      "retrieved_at": "2026-11-06T13:05:45.657699Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:08 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:45 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000254.json",
@@ -4839,11 +4839,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/6E0E/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:08.619743Z",
+      "retrieved_at": "2026-11-06T13:05:46.163096Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:08 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:46 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000255.json",
@@ -4858,11 +4858,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6E0E/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:09.102451Z",
+      "retrieved_at": "2026-11-06T13:05:46.661270Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:09 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:46 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000256.json",
@@ -4877,11 +4877,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/6E0I/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:09.604288Z",
+      "retrieved_at": "2026-11-06T13:05:47.153306Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:09 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:47 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000257.json",
@@ -4896,11 +4896,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6E0I/B",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:10.096007Z",
+      "retrieved_at": "2026-11-06T13:05:47.655925Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:10 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:47 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000258.json",
@@ -4915,11 +4915,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/6E0I/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:10.598912Z",
+      "retrieved_at": "2026-11-06T13:05:48.159378Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:10 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:48 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000259.json",
@@ -4934,11 +4934,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6E0I/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:11.120496Z",
+      "retrieved_at": "2026-11-06T13:05:48.660424Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:11 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:48 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000260.json",
@@ -4953,11 +4953,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/6E0I/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:11.623289Z",
+      "retrieved_at": "2026-11-06T13:05:49.152838Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:11 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:49 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000261.json",
@@ -4972,11 +4972,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/6E0I/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:12.123417Z",
+      "retrieved_at": "2026-11-06T13:05:49.653808Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:12 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:49 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000262.json",
@@ -4991,11 +4991,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/7T78/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:12.617858Z",
+      "retrieved_at": "2026-11-06T13:05:50.156792Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:12 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:50 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000263.json",
@@ -5010,11 +5010,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T78/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:13.117969Z",
+      "retrieved_at": "2026-11-06T13:05:50.659947Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:13 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:50 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000264.json",
@@ -5029,11 +5029,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T78/G",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:13.620513Z",
+      "retrieved_at": "2026-11-06T13:05:51.181272Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:13 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:51 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000265.json",
@@ -5048,11 +5048,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/7T78/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:14.121892Z",
+      "retrieved_at": "2026-11-06T13:05:51.662959Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:14 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:51 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000266.json",
@@ -5067,11 +5067,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T78/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:14.604466Z",
+      "retrieved_at": "2026-11-06T13:05:52.156543Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:14 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:52 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000267.json",
@@ -5086,11 +5086,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T78/H",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:15.117187Z",
+      "retrieved_at": "2026-11-06T13:05:52.682380Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:15 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:52 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000268.json",
@@ -5105,11 +5105,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/7T78/4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:15.598566Z",
+      "retrieved_at": "2026-11-06T13:05:53.158782Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:15 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:53 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000269.json",
@@ -5124,11 +5124,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T78/E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:16.121206Z",
+      "retrieved_at": "2026-11-06T13:05:53.681888Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:16 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:53 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000270.json",
@@ -5143,11 +5143,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T78/I",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:16.631500Z",
+      "retrieved_at": "2026-11-06T13:05:54.165975Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:16 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:54 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000271.json",
@@ -5162,11 +5162,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/7T78/5",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:17.121111Z",
+      "retrieved_at": "2026-11-06T13:05:54.667305Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:17 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:54 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000272.json",
@@ -5181,11 +5181,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T78/F",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:17.603963Z",
+      "retrieved_at": "2026-11-06T13:05:55.159488Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:17 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:55 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000273.json",
@@ -5200,11 +5200,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/7T79/2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:18.126797Z",
+      "retrieved_at": "2026-11-06T13:05:55.660995Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:18 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:55 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000274.json",
@@ -5219,11 +5219,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T79/C",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:18.618731Z",
+      "retrieved_at": "2026-11-06T13:05:56.183218Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:18 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:56 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000275.json",
@@ -5238,11 +5238,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T79/E",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:19.120299Z",
+      "retrieved_at": "2026-11-06T13:05:56.666354Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:19 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:56 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000276.json",
@@ -5257,11 +5257,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity/7T79/3",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:19.612677Z",
+      "retrieved_at": "2026-11-06T13:05:57.177938Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:19 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:57 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000277.json",
@@ -5276,11 +5276,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T79/D",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:20.105626Z",
+      "retrieved_at": "2026-11-06T13:05:57.679200Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:20 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:57 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000278.json",
@@ -5295,11 +5295,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/nonpolymer_entity_instance/7T79/F",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:20.607398Z",
+      "retrieved_at": "2026-11-06T13:05:58.182102Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:20 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:58 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000279.json",
@@ -5314,11 +5314,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/0H4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:21.129380Z",
+      "retrieved_at": "2026-11-06T13:05:58.690385Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:21 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:58 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000280.json",
@@ -5333,11 +5333,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/0H5",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:21.621732Z",
+      "retrieved_at": "2026-11-06T13:05:59.186586Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:21 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:59 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000281.json",
@@ -5352,11 +5352,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/0H6",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:22.123159Z",
+      "retrieved_at": "2026-11-06T13:05:59.669371Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:22 GMT",
+        "date": "Fri, 06 Nov 2026 13:05:59 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000282.json",
@@ -5371,11 +5371,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/1FW",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:22.606884Z",
+      "retrieved_at": "2026-11-06T13:06:00.180549Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:22 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:00 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000283.json",
@@ -5390,11 +5390,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/1FX",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:23.107725Z",
+      "retrieved_at": "2026-11-06T13:06:00.662938Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:23 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:00 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000284.json",
@@ -5409,11 +5409,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/1FY",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:23.630253Z",
+      "retrieved_at": "2026-11-06T13:06:01.186339Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:23 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:01 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000285.json",
@@ -5428,11 +5428,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/1J9",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:24.112828Z",
+      "retrieved_at": "2026-11-06T13:06:01.667697Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:24 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:01 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000286.json",
@@ -5447,11 +5447,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/1JD",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:24.604283Z",
+      "retrieved_at": "2026-11-06T13:06:02.169568Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:24 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:02 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000287.json",
@@ -5466,11 +5466,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/2N8",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:25.108212Z",
+      "retrieved_at": "2026-11-06T13:06:02.683869Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:25 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:02 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000288.json",
@@ -5485,11 +5485,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/3LZ",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:25.609212Z",
+      "retrieved_at": "2026-11-06T13:06:03.163534Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:25 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:03 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000289.json",
@@ -5504,11 +5504,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/4DC",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:26.130679Z",
+      "retrieved_at": "2026-11-06T13:06:03.665735Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:26 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:03 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000290.json",
@@ -5523,11 +5523,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/8WJ",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:26.622681Z",
+      "retrieved_at": "2026-11-06T13:06:04.168142Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:26 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:04 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000291.json",
@@ -5542,11 +5542,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/8WM",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:27.126672Z",
+      "retrieved_at": "2026-11-06T13:06:04.671313Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:27 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:04 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000292.json",
@@ -5561,11 +5561,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/926",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:27.627241Z",
+      "retrieved_at": "2026-11-06T13:06:05.181582Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:27 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:05 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000293.json",
@@ -5580,11 +5580,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/AGS",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:28.131924Z",
+      "retrieved_at": "2026-11-06T13:06:05.674278Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:28 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:05 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000294.json",
@@ -5599,11 +5599,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/AJB",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:28.612960Z",
+      "retrieved_at": "2026-11-06T13:06:06.187596Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:28 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:06 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000295.json",
@@ -5618,11 +5618,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/AJI",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:29.134510Z",
+      "retrieved_at": "2026-11-06T13:06:06.670480Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:29 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:06 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000296.json",
@@ -5637,11 +5637,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/ANP",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:29.617155Z",
+      "retrieved_at": "2026-11-06T13:06:07.190684Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:29 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:07 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000297.json",
@@ -5656,11 +5656,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/B84",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:30.129368Z",
+      "retrieved_at": "2026-11-06T13:06:07.682560Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:30 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:07 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000298.json",
@@ -5675,11 +5675,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/BGC",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:30.611174Z",
+      "retrieved_at": "2026-11-06T13:06:08.178177Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:30 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:08 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000299.json",
@@ -5694,11 +5694,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/DMS",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:31.123597Z",
+      "retrieved_at": "2026-11-06T13:06:08.687331Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:31 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:08 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000300.json",
@@ -5713,11 +5713,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/EDO",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:31.635346Z",
+      "retrieved_at": "2026-11-06T13:06:09.170025Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:31 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:09 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000301.json",
@@ -5732,11 +5732,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/G1S",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:32.137016Z",
+      "retrieved_at": "2026-11-06T13:06:09.675815Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:32 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:09 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000302.json",
@@ -5751,11 +5751,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/G2T",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:32.621402Z",
+      "retrieved_at": "2026-11-06T13:06:10.171342Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:32 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:10 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000303.json",
@@ -5770,11 +5770,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/GLC",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:33.133719Z",
+      "retrieved_at": "2026-11-06T13:06:10.672736Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:33 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:10 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000304.json",
@@ -5789,11 +5789,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/GOL",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:33.633416Z",
+      "retrieved_at": "2026-11-06T13:06:11.195588Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:33 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:11 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000305.json",
@@ -5808,11 +5808,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/HKG",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:34.136379Z",
+      "retrieved_at": "2026-11-06T13:06:11.675310Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:34 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:11 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000306.json",
@@ -5827,11 +5827,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/HKM",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:34.618313Z",
+      "retrieved_at": "2026-11-06T13:06:12.195669Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:34 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:12 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000307.json",
@@ -5846,11 +5846,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/IOD",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:35.139970Z",
+      "retrieved_at": "2026-11-06T13:06:12.678047Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:35 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:12 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000308.json",
@@ -5865,11 +5865,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/K",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:35.612389Z",
+      "retrieved_at": "2026-11-06T13:06:13.180439Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:35 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:13 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000309.json",
@@ -5884,11 +5884,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/LOI",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:36.115523Z",
+      "retrieved_at": "2026-11-06T13:06:13.694103Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:36 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:13 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000310.json",
@@ -5903,11 +5903,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/MG",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:36.636371Z",
+      "retrieved_at": "2026-11-06T13:06:14.185308Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:36 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:14 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000311.json",
@@ -5922,11 +5922,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/MRK",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:37.129121Z",
+      "retrieved_at": "2026-11-06T13:06:14.684263Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:37 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:14 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000312.json",
@@ -5941,11 +5941,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/NA",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:37.621776Z",
+      "retrieved_at": "2026-11-06T13:06:15.199090Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:37 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:15 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000313.json",
@@ -5960,11 +5960,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/S41",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:38.145179Z",
+      "retrieved_at": "2026-11-06T13:06:15.682409Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:38 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:15 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000314.json",
@@ -5979,11 +5979,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/SO4",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:38.635672Z",
+      "retrieved_at": "2026-11-06T13:06:16.193713Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:38 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:16 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000315.json",
@@ -5998,11 +5998,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/TK1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:39.138601Z",
+      "retrieved_at": "2026-11-06T13:06:16.679320Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:39 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:16 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000316.json",
@@ -6017,11 +6017,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/VO1",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:39.619857Z",
+      "retrieved_at": "2026-11-06T13:06:17.177965Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:39 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:17 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000317.json",
@@ -6036,11 +6036,11 @@
       "redirect_hop": 0,
       "url": "https://data.rcsb.org/rest/v1/core/chemcomp/VO2",
       "parameters": {},
-      "retrieved_at": "2026-11-06T01:55:40.122560Z",
+      "retrieved_at": "2026-11-06T13:06:17.680900Z",
       "http_status": 200,
       "transport_error": null,
       "response_headers": {
-        "date": "Fri, 06 Nov 2026 01:55:40 GMT",
+        "date": "Fri, 06 Nov 2026 13:06:17 GMT",
         "content-type": "application/json"
       },
       "raw_path": "rcsb-raw/000318.json",
