@@ -11,7 +11,7 @@ import httpx
 import pytest
 
 from ligandscout.api_http import Audit, request_json
-from ligandscout.models import source_result_from_dict
+from ligandscout.models import source_result_from_dict, upgrade_result
 from ligandscout.report import (
     render_html,
     render_index,
@@ -66,7 +66,7 @@ def test_atp_cofactor_sites_and_reaction_not_ligands(fetch_uni):
     ]
     assert result.counts["unique_ligands"] == 2
     assert result.counts["binding_site_annotations"] == 3
-    assert source_result_from_dict(asdict(result)) == result
+    assert source_result_from_dict(asdict(result)) == upgrade_result(result)
 
 
 def test_group_same_id_across_cofactor_and_site(fetch_uni, uniprot_entry):
@@ -94,7 +94,9 @@ def test_generic_context_is_not_a_ligand(fetch_uni, uniprot_entry):
     assert "Generic binding sites" in page and "Catalytic Activity" in page
     assert "Reaction participants are context" in page
     assert "No specifically identified ligands" in page
-    assert source_result_from_dict(asdict(outcome.result)) == outcome.result
+    assert source_result_from_dict(asdict(outcome.result)) == upgrade_result(
+        outcome.result
+    )
 
 
 def test_name_only_hash_and_id_differences(fetch_uni, uniprot_entry):
@@ -154,7 +156,9 @@ def test_uncertain_and_alternate_sites(
     uniprot_entry.update(features=[f], comments=[])
     outcome, _ = fetch_uni(uniprot_entry)
     assert outcome.result.records[0].binding_sites[0]["residue_sequence"] == expected
-    assert source_result_from_dict(asdict(outcome.result)) == outcome.result
+    assert source_result_from_dict(asdict(outcome.result)) == upgrade_result(
+        outcome.result
+    )
     if sequence:
         assert "alternate sequence; residue letters unavailable" in render_html(
             outcome.result
@@ -215,7 +219,9 @@ def test_core_validation_failures(fetch_uni, uniprot_entry, mutation):
     outcome, _ = fetch_uni(uniprot_entry)
     assert outcome.result.status == "failed" and outcome.result.records == []
     assert outcome.result.error.kind == "schema" and outcome.result.source_context == {}
-    assert source_result_from_dict(asdict(outcome.result)) == outcome.result
+    assert source_result_from_dict(asdict(outcome.result)) == upgrade_result(
+        outcome.result
+    )
 
 
 def test_secondary_accession_resolution(fetch_uni, uniprot_entry):
@@ -253,7 +259,7 @@ def test_audited_storage_and_report_links(fetch_uni, tmp_path):
     result = source_result_from_dict(
         json.loads((folder / "sources/uniprot.json").read_text())
     )
-    assert result == outcome.result
+    assert result == upgrade_result(outcome.result)
     index = (folder / "index.html").read_text()
     assert 'href="uniprot-ligands.html"' in index and "Records</th>" in index
     assert "Measurements:" not in render_summary(result, folder=folder)
@@ -319,6 +325,8 @@ def test_sources_are_independent(
     payload, empty_uniprot, now, binding_fails, uniprot_fails
 ):
     def handler(request):
+        if request.url.host == "search.rcsb.org":
+            return httpx.Response(204)
         if request.url.host == "www.bindingdb.org":
             return (
                 httpx.Response(404)
@@ -339,6 +347,7 @@ def test_sources_are_independent(
     assert [s.result.status for s in run.sources] == [
         "failed" if binding_fails else "success",
         "failed" if uniprot_fails else "no_matches",
+        "no_matches",
     ]
     assert "BindingDB" in render_index(run) and "UniProt" in render_index(run)
     assert "## UniProt" in render_report(run)
@@ -420,7 +429,9 @@ def test_ccd_identity_and_descriptor_selection(
         and record.structure_provenance["status"] == expected
     )
     assert bool(record.smiles) == (expected == "available")
-    assert source_result_from_dict(asdict(outcome.result)) == outcome.result
+    assert source_result_from_dict(asdict(outcome.result)) == upgrade_result(
+        outcome.result
+    )
     page = render_html(outcome.result)
     if expected == "available":
         assert '<code class="smiles">' in page
@@ -683,7 +694,7 @@ def test_empty_lookup_has_a_raw_audit_file(fetch_uni, tmp_path):
         assert entry["sha256"] == hashlib.sha256(b"").hexdigest()
 
 
-def test_two_source_index_files_and_cli_failure_isolation(
+def test_three_source_index_files_and_cli_failure_isolation(
     monkeypatch, tmp_path, payload, empty_uniprot
 ):
     from typer.testing import CliRunner
@@ -694,6 +705,8 @@ def test_two_source_index_files_and_cli_failure_isolation(
     original = httpx.Client
 
     def handler(request):
+        if request.url.host == "search.rcsb.org":
+            return httpx.Response(204)
         if request.url.host == "www.bindingdb.org":
             return httpx.Response(404)
         assert request.url.host == "rest.uniprot.org"
@@ -708,7 +721,7 @@ def test_two_source_index_files_and_cli_failure_isolation(
     assert result.exit_code == 1
     folder = tmp_path / "results/P00699"
     page = (folder / "index.html").read_text()
-    for name in ("bindingdb", "uniprot"):
+    for name in ("bindingdb", "uniprot", "rcsb"):
         assert (folder / f"{name}-ligands.html").is_file()
         assert (folder / f"sources/{name}.json").is_file()
         assert f'href="{name}-ligands.html"' in page

@@ -4,6 +4,7 @@ from dataclasses import dataclass, field, replace
 
 SOURCE_POLICIES = {
     "BindingDB": "bindingdb-associated-v1",
+    "RCSB PDB": "rcsb-structural-contacts-v1",
     "UniProt": "uniprot-annotated-ligands-v1",
 }
 ANNOTATION_COUNTS = (
@@ -108,6 +109,7 @@ class SearchOutcome:
     result: SourceResult
     raw_body: bytes | None
     exchanges: list[HttpExchange] = field(default_factory=list)
+    reused: bool = False
 
 
 @dataclass
@@ -151,6 +153,8 @@ def upgrade_bindingdb(result: SourceResult) -> SourceResult:
 
 def upgrade_result(result: SourceResult) -> SourceResult:
     """Upgrade current adapter/saved results without inventing prior assay decisions."""
+    if result.schema_version == 5:
+        return result
     if result.schema_version == 1:
         result = upgrade_bindingdb(result)
     if result.schema_version == 2:
@@ -168,7 +172,13 @@ def upgrade_result(result: SourceResult) -> SourceResult:
             | {"record_kind": "measurement"}
             | dict.fromkeys(ANNOTATION_COUNTS),
         )
-    return result
+    from ligandscout.rcsb_schema import STRUCTURAL_COUNTS
+
+    return replace(
+        result,
+        schema_version=5,
+        counts=result.counts | dict.fromkeys(STRUCTURAL_COUNTS),
+    )
 
 
 def as_run(value: RunOutcome | SearchOutcome | SourceResult) -> RunOutcome:
@@ -180,7 +190,7 @@ def as_run(value: RunOutcome | SearchOutcome | SourceResult) -> RunOutcome:
     return RunOutcome(value.result.accession, [value])
 
 
-def source_result_from_dict(data: dict) -> SourceResult:
+def _source_result_from_dict(data: dict) -> SourceResult:
     """Read saved v1/v2/v3 results; never combine saved search runs."""
     import types
     from typing import get_args, get_origin, get_type_hints
@@ -207,7 +217,7 @@ def source_result_from_dict(data: dict) -> SourceResult:
     if (
         not isinstance(data, dict)
         or type(data.get("schema_version")) is not int
-        or data["schema_version"] not in (1, 2, 3, 4)
+        or data["schema_version"] not in (1, 2, 3, 4, 5)
     ):
         raise ValueError("Unsupported saved-result schema version.")
     legacy = data["schema_version"] == 1
@@ -305,6 +315,11 @@ def source_result_from_dict(data: dict) -> SourceResult:
         records=records,
         error=error,
     )
+    if result.source == "RCSB PDB":
+        from ligandscout.rcsb_schema import validate_result
+
+        validate_result(result)
+        return result
     if result.source == "UniProt":
         from ligandscout.uniprot_schema import validate_result
 
@@ -422,3 +437,29 @@ def source_result_from_dict(data: dict) -> SourceResult:
         ):
             raise ValueError("Invalid saved warning.")
     return upgrade_result(result)
+
+
+def source_result_from_dict(data: dict) -> SourceResult:
+    """Read legacy and current source results without combining saved runs."""
+    from ligandscout.rcsb_schema import STRUCTURAL_COUNTS
+
+    if (
+        isinstance(data, dict)
+        and type(data.get("schema_version")) is int
+        and data["schema_version"] == 5
+    ):
+        if data.get("source") == "RCSB PDB":
+            # Reuse the common typed field parser, then validate structural semantics.
+            result = _source_result_from_dict(data)
+            return result
+        counts = data.get("counts")
+        if not isinstance(counts, dict) or any(
+            k not in counts or counts[k] is not None for k in STRUCTURAL_COUNTS
+        ):
+            raise ValueError("Invalid source structural counts.")
+        projection = data | {
+            "schema_version": 4,
+            "counts": {k: v for k, v in counts.items() if k not in STRUCTURAL_COUNTS},
+        }
+        return upgrade_result(_source_result_from_dict(projection))
+    return upgrade_result(_source_result_from_dict(data))

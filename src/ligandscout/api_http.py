@@ -143,7 +143,7 @@ def request_json(
                     return final
                 destination, parameters = target, None
                 continue
-            if status == 204 and role == "ccd_search":
+            if status == 204 and role in ("ccd_search", "rcsb_search"):
                 return final
             if status != 200:
                 final.error = SourceError(

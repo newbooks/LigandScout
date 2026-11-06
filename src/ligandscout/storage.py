@@ -45,7 +45,13 @@ def save_results(outcome, *, root: Path) -> Path:
         if result.accession != run.accession:
             raise ValueError("Cannot combine different accessions.")
         slug = source_slug(result)
-        if result.source == "UniProt":
+        html_files.append(
+            (folder / f"{slug}-ligands.html", render_html(result).encode("utf-8"))
+        )
+        if source.reused:
+            # Refresh presentation while preserving saved data and API evidence.
+            continue
+        if result.source in ("UniProt", "RCSB PDB"):
             entries, referenced = [], set()
             for exchange in source.exchanges:
                 entry = asdict(exchange)
@@ -53,7 +59,7 @@ def save_results(outcome, *, root: Path) -> Path:
                 entry["raw_path"], entry["sha256"] = None, None
                 if body is not None:
                     relative = (
-                        f"uniprot-raw/{exchange.sequence:06d}.{raw_extension(body)}"
+                        f"{slug}-raw/{exchange.sequence:06d}.{raw_extension(body)}"
                     )
                     entry["raw_path"], entry["sha256"] = (
                         relative,
@@ -65,7 +71,7 @@ def save_results(outcome, *, root: Path) -> Path:
                 entries.append(entry)
             manifests.append(
                 (
-                    sources / "uniprot-requests.json",
+                    sources / f"{slug}-requests.json",
                     json_bytes(
                         {
                             "schema_version": 1,
@@ -75,7 +81,7 @@ def save_results(outcome, *, root: Path) -> Path:
                     ),
                 )
             )
-            raw_dir = sources / "uniprot-raw"
+            raw_dir = sources / f"{slug}-raw"
             if raw_dir.is_dir():
                 stale.extend(
                     path
@@ -94,9 +100,6 @@ def save_results(outcome, *, root: Path) -> Path:
                 for p in (sources / f"{slug}.raw.json", sources / f"{slug}.raw.txt")
                 if p != raw_path
             )
-        html_files.append(
-            (folder / f"{slug}-ligands.html", render_html(result).encode("utf-8"))
-        )
         source_files.append((sources / f"{slug}.json", json_bytes(asdict(result))))
     files = (
         raw_files
