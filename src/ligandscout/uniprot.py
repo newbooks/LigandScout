@@ -515,6 +515,7 @@ def parse_entry(data, *, query):
 
 def fetch_uniprot(query, *, client, sleep, now, monotonic):
     from ligandscout.ccd import enrich_ligands
+    from ligandscout.go_annotations import enrich_go
 
     LOG.info("Searching UniProt for %s", query)
     audit = Audit()
@@ -566,6 +567,15 @@ def fetch_uniprot(query, *, client, sleep, now, monotonic):
                 parsed.selection_audit,
             )
             result.warnings, result.status = parsed.warnings, parsed.status
+            enrich_go(
+                result,
+                response.data,
+                audit=audit,
+                client=client,
+                sleep=sleep,
+                now=now,
+                monotonic=monotonic,
+            )
             enrich_ligands(
                 result,
                 audit=audit,
